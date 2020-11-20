@@ -1,6 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import * as d3 from "d3";
-import './ChordDiagram.css';
+import "./ChordDiagram.css";
 
 function ChordDiagram() {
     const [data, setData] = useState(null);
@@ -103,7 +103,7 @@ function ChordDiagram() {
             const arcLabels = group.append("g")
                 .each((d) => { d.angle = (d.startAngle + d.endAngle) / 2; })
                 .attr("dy", ".35em")
-                .attr("class", "titles")
+                .attr("id", d => `avatar-${d.index}`)
                 .attr("transform", d => "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" + "translate(" + (innerRadius + 50) + ", 10)" + (d.angle > Math.PI ? "rotate(180)" : ""));
 
             arcLabels.append("clipPath")
@@ -187,9 +187,15 @@ function ChordDiagram() {
             function fadeIn(opacity) {
                 return function(d, i) {
                     // info panel...
+                    d3.select("#info-avatar").transition().duration(200).delay(200)
+                        .style("background-image", `url(${process.env.PUBLIC_URL}/avatars/${avatars[i.index]})`)
+                        .style("border", `5px solid ${colours[i.index]}`)
+                        .style("width", "150px").style("height", "150px");
+                    d3.select("#info-text").transition().duration(200).delay(200).style("display", "none");
                     d3.select("#info-name").transition().duration(200).delay(200).style("opacity", 1).text(names[i.index]);
                     d3.select("#info-total-lines").transition().duration(200).delay(200).style("opacity", 1).text(`${totalLines[i.index]} Lines`);
-                    d3.select("#info-spoke-to").transition().duration(200).delay(200).style("opacity", 1).text(`Spoke To ${spokeToString(spokeTo[i.index])}`);
+                    d3.select("#info-spoke-to-heading").transition().duration(200).delay(200).style("display", "inline-block");
+                    d3.select("#info-spoke-to").transition().duration(200).delay(200).style("opacity", 1).text(`${spokeToString(spokeTo[i.index])}`);
 
                     // chords...
                     const filteredIndices = new Set()
@@ -223,12 +229,16 @@ function ChordDiagram() {
                         }
                     }
                     
-                    // fade the arcs as well...
+                    // fade the arcs and avatars as well...
                     inverseFilteredIndices.forEach(index => {
                         svg.select("#arc-" + index)
                             .transition()
                             .style("stroke-opacity", opacity)
                             .style("fill-opacity", opacity);
+
+                        svg.select("#avatar-" + index)
+                            .transition()
+                            .style("opacity", opacity);
                     });
                 }
             }
@@ -236,8 +246,11 @@ function ChordDiagram() {
             function fadeOut(opacity) {
                 return function(d, i) {
                     // info panel...
-                    d3.select("#info-name").transition().duration(200).delay(200).style("opacity", 1).text("Hover over the characters for more info");
+                    d3.select("#info-avatar").transition().duration(200).delay(200).style("background-image", "none").style("border", "none").style("width", "0").style("height", "0");
+                    d3.select("#info-text").transition().duration(200).delay(200).style("display", "inline-block");
+                    d3.select("#info-name").transition().duration(200).delay(200).style("opacity", 0).text("");
                     d3.select("#info-total-lines").transition().duration(200).delay(200).style("opacity", 1).text("");
+                    d3.select("#info-spoke-to-heading").transition().duration(200).delay(200).style("display", "none");
                     d3.select("#info-spoke-to").transition().duration(200).delay(200).style("opacity", 1).text("");
 
                     // chords...
@@ -272,12 +285,16 @@ function ChordDiagram() {
                         }
                     }
                     
-                    // fade the arcs as well...
+                    // fade the arcs and avatars as well...
                     inverseFilteredIndices.forEach(index => {
                         svg.select("#arc-" + index)
                             .transition()
                             .style("stroke-opacity", opacity)
                             .style("fill-opacity", opacity);
+
+                        svg.select("#avatar-" + index)
+                            .transition()
+                            .style("opacity", 1);
                     });
                 }
             }
@@ -293,9 +310,12 @@ function ChordDiagram() {
     return (
         <div>
             <div id="info-panel">
-                <h4>Script Analysis</h4>
-                <p id="info-name">Hover over the characters for more info</p>
+                <h2>Script Analysis</h2>
+                <div id="info-avatar"></div>
+                <p id="info-text">Hover over the characters for more info!</p>
+                <h3 id="info-name"></h3>
                 <p id="info-total-lines"></p>
+                <h4 id="info-spoke-to-heading">Spoke To</h4>
                 <p id="info-spoke-to"></p>
             </div>
 

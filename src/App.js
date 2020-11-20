@@ -1,6 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import ChordDiagram from './ChordDiagram';
+import Welcome from './Welcome';
 
 function App() {
   return (
@@ -19,7 +20,9 @@ function App() {
           Learn React
         </a>
       </header> */}
+
       <ChordDiagram />
+      {/* <Welcome /> */}
     </div>
   );
 }

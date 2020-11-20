@@ -1,0 +1,128 @@
+.welcome-body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    /* font-family: 'Noto Sans HK', sans-serif; */
+    /* font-weight: 400; */
+    /* color: #fff; */
+    /* background: #f4f4f4; */
+  }
+
+  .wrapper {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    /* max-width: 1024px; */
+    height: 100vh;
+    /*border-radius: 20px;
+    border: 4px solid rgba(57, 54, 56, 1);*/
+    background: #000;
+    /*box-shadow: -5px 5px 20px 10px rgba(0, 0, 0, .3);*/
+  }
+
+  .loader {
+    position: absolute;
+    z-index: 2;
+    opacity: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100px;
+    height: 100px;
+  }
+
+  .loader__cube {
+    width: 100%;
+    height: 100%;
+    transform: rotate(45deg);
+    border: 1px solid #ffffff;
+  }
+
+  .loader__line {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    left: 50%;
+    transform: translateX(calc(-50% + 1px));
+    width: 1px;
+    background: #ffffff;
+  }
+
+  .sections {
+    z-index: 1;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    height: 100%;
+  }
+
+  .section {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    height: 100%;
+    cursor: pointer;
+  }
+
+  .section__line {
+    position: absolute;
+    z-index: 20;
+    top: 100%;
+    width: 1px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+
+  .section__img {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    left: 0;
+    right: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: none;
+    transition: opacity 0.4s ease;
+  }
+
+  .section__img--first {
+    background-image: url("./img/series_one.jpeg");
+  }
+
+  .section__img--second {
+    background-image: url("./img/series_two.jpeg");
+  }
+
+  .section__overlay {
+    position: absolute;
+    z-index: 5;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+  }
+
+  .section__title {
+    position: absolute;
+    z-index: 10;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 1;
+  }
+
+  .section__title-overlay {
+    position: absolute;
+    z-index: 15;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #000;
+  }
