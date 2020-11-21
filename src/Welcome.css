@@ -52,20 +52,31 @@
   .sections {
     z-index: 1;
     position: relative;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
+    display: flex;
+    justify-content: center;
+    /* grid-template-columns: repeat(9, 1fr); */
     height: 100%;
+    overflow-x: hidden;
   }
 
   .section {
-    position: relative;
     display: flex;
+    flex-basis: calc(100% / 9);
+    /* shrink sets the size of the other items in the flex box */
+    /* if zero then they will overflow */
+    /* flex-shrink: 0; */
+    transition: 1s;
+    position: relative;
     align-items: flex-end;
     justify-content: flex-end;
-    writing-mode: vertical-rl;
+    /* writing-mode: vertical-rl; */
     text-orientation: mixed;
     height: 100%;
     cursor: pointer;
+  }
+
+  .section:hover {
+    flex-basis: 80%;
   }
 
   .section__line {
@@ -97,6 +108,34 @@
     background-image: url("./img/series_two.jpeg");
   }
 
+  .section__img--third {
+    background-image: url("./img/series_three.jpeg");
+  }
+
+  .section__img--fourth {
+    background-image: url("./img/series_four.jpeg");
+  }
+
+  .section__img--fifth {
+    background-image: url("./img/series_five.jpeg");
+  }
+
+  .section__img--sixth {
+    background-image: url("./img/series_six.jpg");
+  }
+
+  .section__img--seventh {
+    background-image: url("./img/series_seven.jpg");
+  }
+
+  .section__img--eighth {
+    background-image: url("./img/series_eight.jpg");
+  }
+
+  .section__img--ninth {
+    background-image: url("./img/series_nine.jpg");
+  }
+
   .section__overlay {
     position: absolute;
     z-index: 5;
@@ -109,12 +148,18 @@
 
   .section__title {
     position: absolute;
+    right: -4px;
     z-index: 10;
     margin: 0;
     text-transform: uppercase;
-    font-size: 60px;
-    font-weight: 900;
-    line-height: 1;
+    font-size: 120px;
+    /* font-weight: 900; */
+    line-height: 0.8;
+    color: #000;
+    /* if supported, have an outlined font */
+    -webkit-text-fill-color: #fff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
   }
 
   .section__title-overlay {

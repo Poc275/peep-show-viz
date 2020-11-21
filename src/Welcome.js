@@ -63,6 +63,24 @@ function Welcome() {
         });
     }, []);
 
+    const goToSeries = (series) => {
+        // console.log(series);
+        const tl = gsap.timeline();
+        document.querySelectorAll(".section").forEach((section) => {
+            const sectionHeight = section.offsetHeight;
+            const animDelay = ((Math.floor(Math.random() * (10 - 4) + 4)) * 0.1);
+
+            tl.to(section, 1, { ease: "power2.easeInOut", top: `-=${sectionHeight}` }, animDelay);
+            tl.to(section, 0.5, { opacity: 0 }, animDelay + 0.1);
+        });
+
+        goToChordDiagram();
+    }
+
+    const goToChordDiagram = () => {
+        console.log("goToChordDiagram");
+    }
+
     return (
         <div className="welcome-body">
             <div className="wrapper">
@@ -73,11 +91,11 @@ function Welcome() {
 
                 <div id="sections" className="sections">
 
-                    <div className="section section--first">
+                    <div className="section section--first" onClick={() => goToSeries("one")}>
                         <div className="section__line"></div>
                         <div className="section__img section__img--first"></div>
                         <div className="section__overlay"></div>
-                        <h2 className="section__title">Series One</h2>
+                        <h2 className="section__title">1</h2>
                         <div className="section__title-overlay"></div>
                     </div>
 
@@ -85,7 +103,7 @@ function Welcome() {
                         <div className="section__line"></div>
                         <div className="section__img section__img--second"></div>
                         <div className="section__overlay"></div>
-                        <h2 className="section__title">Series Two</h2>
+                        <h2 className="section__title">2</h2>
                         <div className="section__title-overlay"></div>
                     </div>
 
@@ -93,55 +111,55 @@ function Welcome() {
                         <div className="section__line"></div>
                         <div className="section__img section__img--third"></div>
                         <div className="section__overlay"></div>
-                        <h2 className="section__title">Series Two</h2>
+                        <h2 className="section__title">3</h2>
                         <div className="section__title-overlay"></div>
                     </div>
 
-                    <div className="section section--second">
+                    <div className="section section--fourth">
                         <div className="section__line"></div>
-                        <div className="section__img section__img--second"></div>
+                        <div className="section__img section__img--fourth"></div>
                         <div className="section__overlay"></div>
-                        <h2 className="section__title">Series Two</h2>
+                        <h2 className="section__title">4</h2>
                         <div className="section__title-overlay"></div>
                     </div>
 
-                    <div className="section section--second">
+                    <div className="section section--fifth">
                         <div className="section__line"></div>
-                        <div className="section__img section__img--second"></div>
+                        <div className="section__img section__img--fifth"></div>
                         <div className="section__overlay"></div>
-                        <h2 className="section__title">Series Two</h2>
+                        <h2 className="section__title">5</h2>
                         <div className="section__title-overlay"></div>
                     </div>
 
-                    <div className="section section--second">
+                    <div className="section section--sixth">
                         <div className="section__line"></div>
-                        <div className="section__img section__img--second"></div>
+                        <div className="section__img section__img--sixth"></div>
                         <div className="section__overlay"></div>
-                        <h2 className="section__title">Series Two</h2>
+                        <h2 className="section__title">6</h2>
                         <div className="section__title-overlay"></div>
                     </div>
 
-                    <div className="section section--second">
+                    <div className="section section--seventh">
                         <div className="section__line"></div>
-                        <div className="section__img section__img--second"></div>
+                        <div className="section__img section__img--seventh"></div>
                         <div className="section__overlay"></div>
-                        <h2 className="section__title">Series Two</h2>
+                        <h2 className="section__title">7</h2>
                         <div className="section__title-overlay"></div>
                     </div>
 
-                    <div className="section section--second">
+                    <div className="section section--eighth">
                         <div className="section__line"></div>
-                        <div className="section__img section__img--second"></div>
+                        <div className="section__img section__img--eighth"></div>
                         <div className="section__overlay"></div>
-                        <h2 className="section__title">Series Two</h2>
+                        <h2 className="section__title">8</h2>
                         <div className="section__title-overlay"></div>
                     </div>
 
-                    <div className="section section--second">
+                    <div className="section section--ninth">
                         <div className="section__line"></div>
-                        <div className="section__img section__img--second"></div>
+                        <div className="section__img section__img--ninth"></div>
                         <div className="section__overlay"></div>
-                        <h2 className="section__title">Series Two</h2>
+                        <h2 className="section__title">9</h2>
                         <div className="section__title-overlay"></div>
                     </div>
                 </div>
