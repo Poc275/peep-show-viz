@@ -2,25 +2,30 @@
 import './App.css';
 import ChordDiagram from './ChordDiagram';
 import Welcome from './Welcome';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Switch, Route, useLocation } from 'react-router-dom';
+import { CSSTransition, TransitionGroup } from 'react-transition-group';
 
 function App() {
-  return (
-    <Router>
-      {/* <div className="App"> */}
-        {/* <ChordDiagram /> */}
-        {/* <Welcome /> */}
-      {/* </div> */}
+  let location = useLocation();
 
-      <Switch>
-        <Route exact path="/">
-          <Welcome />
-        </Route>
-        <Route path="/:series/explore">
-          <ChordDiagram />
-        </Route>
-      </Switch>
-    </Router>
+  return (
+    <TransitionGroup>
+      <CSSTransition 
+        key={location.key}
+        classNames="fade"
+        timeout={1300}
+      >
+        <Switch location={location}>
+          <Route exact path="/">
+            <Welcome />
+          </Route>
+
+          <Route path="/:series/explore">
+            <ChordDiagram />
+          </Route>
+        </Switch>
+      </CSSTransition>
+    </TransitionGroup>
   );
 }
 

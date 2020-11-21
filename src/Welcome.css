@@ -6,7 +6,7 @@
     /* font-family: 'Noto Sans HK', sans-serif; */
     /* font-weight: 400; */
     /* color: #fff; */
-    /* background: #f4f4f4; */
+    background: #f4f4f4;
   }
 
   .wrapper {
@@ -15,6 +15,7 @@
     width: 100%;
     /* max-width: 1024px; */
     height: 100vh;
+    overflow-y: hidden;
     /*border-radius: 20px;
     border: 4px solid rgba(57, 54, 56, 1);*/
     background: #000;
@@ -56,7 +57,7 @@
     justify-content: center;
     /* grid-template-columns: repeat(9, 1fr); */
     height: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   .section {

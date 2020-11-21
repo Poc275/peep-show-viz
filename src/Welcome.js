@@ -1,10 +1,11 @@
 import React, { useEffect } from "react";
 import { gsap } from "gsap";
-import { useHistory } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 import "./Welcome.css";
 
 function Welcome() {
     const history = useHistory();
+    let location = useLocation();
 
     useEffect(() => {
         const tl = gsap.timeline();
@@ -67,17 +68,19 @@ function Welcome() {
 
     const goToSeries = (series) => {
         // console.log(series);
-        const tl = gsap.timeline({
-            onComplete: () => { history.push(`${series}/explore`); }
-        });
+        // const tl = gsap.timeline({
+        //     onComplete: () => { history.push(`${series}/explore`); }
+        // });
 
-        document.querySelectorAll(".section").forEach((section) => {
-            const sectionHeight = section.offsetHeight;
-            const animDelay = ((Math.floor(Math.random() * (10 - 4) + 4)) * 0.1);
+        // document.querySelectorAll(".section").forEach((section) => {
+        //     const sectionHeight = section.offsetHeight;
+        //     const animDelay = ((Math.floor(Math.random() * (10 - 4) + 4)) * 0.1);
 
-            tl.to(section, 1, { ease: "power2.easeInOut", top: `-=${sectionHeight}` }, animDelay);
-            tl.to(section, 0.5, { opacity: 0 }, animDelay + 0.1);
-        });
+        //     tl.to(section, 1, { ease: "power2.easeInOut", top: `-=${sectionHeight}` }, animDelay);
+        //     tl.to(section, 0.5, { opacity: 0 }, animDelay + 0.1);
+        // });
+
+        history.push(`${series}/explore`);
     }
 
     return (
