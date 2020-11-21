@@ -1,17 +1,19 @@
 import React, { useEffect, useState, useRef } from "react";
+import { useParams } from "react-router-dom";
 import * as d3 from "d3";
 import "./ChordDiagram.css";
 
 function ChordDiagram() {
     const [data, setData] = useState(null);
     const svgContainer = useRef(null);
+    const { series } = useParams();
 
     // fetch data hook
     useEffect(() => {
         async function fetchChordData(url) {
             await fetch(url).then(res => res.json()).then(json => setData(json));
         }
-        fetchChordData(`${process.env.PUBLIC_URL}/data/chord-data-series-one.json`);
+        fetchChordData(`${process.env.PUBLIC_URL}/data/chord-data-series-${series}.json`);
     }, []);
 
     // initialise chord diagram hook
