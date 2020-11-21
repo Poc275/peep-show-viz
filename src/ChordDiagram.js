@@ -310,7 +310,7 @@ function ChordDiagram() {
     }, [data]);
 
     return (
-        <div>
+        <>
             <div id="info-panel">
                 <h2>Script Analysis</h2>
                 <div id="info-avatar"></div>
@@ -322,7 +322,7 @@ function ChordDiagram() {
             </div>
 
             <svg ref={svgContainer}></svg>
-        </div>
+        </>
     );
 }
 

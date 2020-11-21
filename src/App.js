@@ -1,9 +1,9 @@
 // import logo from './logo.svg';
 import './App.css';
-import ChordDiagram from './ChordDiagram';
 import Welcome from './Welcome';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
+import Explorer from './Explorer';
 
 function App() {
   let location = useLocation();
@@ -21,7 +21,7 @@ function App() {
           </Route>
 
           <Route path="/:series/explore">
-            <ChordDiagram />
+            <Explorer />
           </Route>
         </Switch>
       </CSSTransition>
