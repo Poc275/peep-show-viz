@@ -106,7 +106,7 @@ function ChordDiagram() {
                 .each((d) => { d.angle = (d.startAngle + d.endAngle) / 2; })
                 .attr("dy", ".35em")
                 .attr("id", d => `avatar-${d.index}`)
-                .attr("transform", d => "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" + "translate(" + (innerRadius + 50) + ", 10)" + (d.angle > Math.PI ? "rotate(180)" : ""));
+                .attr("transform", d => "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" + "translate(" + (innerRadius + 50) + ", 10)" + (d.angle > Math.PI ? "rotate(180)" : "translate(-14, -18)"));
 
             arcLabels.append("clipPath")
                     .attr("id", d => `avatar-clip-${d.index}`)
