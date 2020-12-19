@@ -106,7 +106,7 @@ function ChordDiagram() {
                 .each((d) => { d.angle = (d.startAngle + d.endAngle) / 2; })
                 .attr("dy", ".35em")
                 .attr("id", d => `avatar-${d.index}`)
-                .attr("transform", d => "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" + "translate(" + (innerRadius + 50) + ", 10)" + (d.angle > Math.PI ? "rotate(180)" : "translate(-14, -18)"));
+                .attr("transform", d => "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" + "translate(" + (innerRadius + 50) + ", 10)" + (d.angle > Math.PI ? "rotate(180)" : "translate(-20, -16)"));
 
             arcLabels.append("clipPath")
                     .attr("id", d => `avatar-clip-${d.index}`)
@@ -195,8 +195,8 @@ function ChordDiagram() {
                         .style("width", "150px").style("height", "150px");
                     d3.select("#info-text").transition().duration(200).delay(200).style("display", "none");
                     d3.select("#info-name").transition().duration(200).delay(200).style("opacity", 1).text(names[i.index]);
-                    d3.select("#info-total-lines").transition().duration(200).delay(200).style("opacity", 1).text(`${totalLines[i.index]} Lines`);
-                    d3.select("#info-spoke-to-heading").transition().duration(200).delay(200).style("display", "inline-block");
+                    d3.select("#info-total-lines").transition().duration(200).delay(200).style("opacity", 1).text(totalLines[i.index] === 1 ? `${totalLines[i.index]} Line` : `${totalLines[i.index]} Lines`);
+                    d3.select("#info-spoke-to-heading").transition().duration(200).delay(200).style("display", "block");
                     d3.select("#info-spoke-to").transition().duration(200).delay(200).style("opacity", 1).text(`${spokeToString(spokeTo[i.index])}`);
 
                     // chords...

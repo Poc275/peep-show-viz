@@ -1,0 +1,115 @@
+{
+    "going": {
+        "total": 84,
+        "who": {
+            "Mark": 31,
+            "Jeremy": 26,
+            "Sophie": 8,
+            "Toni": 5,
+            "Johnson": 4,
+            "Jeff": 2,
+            "Valerie": 1,
+            "Paula": 1,
+            "Super Hans": 1
+        }
+    },
+    "really": {
+        "total": 83,
+        "who": {
+            "Mark": 30,
+            "Jeremy": 25,
+            "Sophie": 6,
+            "Toni": 3,
+            "Therapist": 2,
+            "Super Hans": 2,
+            "Valerie": 1,
+            "Paramedic": 1,
+            "Johnson": 1
+        }
+    },
+    "mean": {
+        "total": 66,
+        "who": {
+            "Mark": 46,
+            "Jeremy": 32,
+            "Sophie": 6,
+            "Toni": 4,
+            "Valerie": 3,
+            "Paula": 3,
+            "Johnson": 3,
+            "Barbara": 1,
+            "TV": 1
+        }
+    },
+    "maybe": {
+        "total": 54,
+        "who": {
+            "Jeremy": 10,
+            "Mark": 6,
+            "Super Hans": 1
+        }
+    },
+    "fine": {
+        "total": 36,
+        "who": {
+            "Mark": 18,
+            "Jeremy": 5,
+            "Sophie": 3,
+            "Toni": 2,
+            "Johnson": 1
+        }
+    },
+    "actually": {
+        "total": 35,
+        "who": {
+            "Mark": 14,
+            "Jeremy": 10,
+            "Sophie": 2,
+            "Barry": 1,
+            "Jeff": 1,
+            "Valerie": 1,
+            "Johnson": 1,
+            "Super Hans": 1
+        }
+    },
+    "nice": {
+        "total": 34,
+        "who": {
+            "Mark": 17,
+            "Jeremy": 9,
+            "Sophie": 4
+        }
+    },
+    "sure": {
+        "total": 33,
+        "who": {
+            "Jeremy": 10,
+            "Mark": 10,
+            "Sophie": 7,
+            "Barbara": 1,
+            "Jeff": 1,
+            "Johnson": 1
+        }
+    },
+    "much": {
+        "total": 30,
+        "who": {
+            "Mark": 15,
+            "Jeremy": 9,
+            "Sophie": 2,
+            "Toni": 2
+        }
+    },
+    "shit": {
+        "total": 28,
+        "who": {
+            "Jeremy": 13,
+            "Mark": 9,
+            "Super Hans": 3,
+            "Toni": 2,
+            "Valerie": 1,
+            "Paula": 1,
+            "Johnson": 1
+        }
+    }
+}

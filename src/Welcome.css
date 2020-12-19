@@ -74,10 +74,12 @@
     text-orientation: mixed;
     height: 100%;
     cursor: pointer;
+    opacity: 0.6;
   }
 
   .section:hover {
     flex-basis: 80%;
+    opacity: 1;
   }
 
   .section__line {

@@ -1,4 +1,24 @@
 #explorer-container {
+    /* height: 100vh; */
+    /* overflow: hidden; */
+    /* scroll-snap-type: y mandatory; */
+}
+
+.visualisation {
+    padding: 0;
+    margin: 0;
     height: 100vh;
     overflow: hidden;
 }
+
+/* #chord {
+    background-color: red;
+}
+
+#words {
+    background-color: blue;
+}
+
+#locations {
+    background-color: orange;
+} */

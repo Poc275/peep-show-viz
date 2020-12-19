@@ -756,7 +756,7 @@
         {
             "name": "Sophie",
             "colour": "#A9251E",
-            "avatar": "sophie.png",
+            "avatar": "sophie.jpg",
             "totalLines": 117,
             "spokeTo": [
                 [
@@ -796,7 +796,7 @@
         {
             "name": "Jeff",
             "colour": "#5147BB",
-            "avatar": "jeff.png",
+            "avatar": "jeff.jpg",
             "totalLines": 68,
             "spokeTo": [
                 [
@@ -884,7 +884,7 @@
         {
             "name": "Others",
             "colour": "#333333",
-            "avatar": "others.png",
+            "avatar": "others.jpg",
             "totalLines": 20,
             "spokeTo": [
                 [
@@ -940,7 +940,7 @@
         {
             "name": "Gwyn",
             "colour": "#b2df8a",
-            "avatar": "gwyn.png",
+            "avatar": "gwyn.jpg",
             "totalLines": 15,
             "spokeTo": [
                 [
@@ -1080,7 +1080,7 @@
         {
             "name": "MacLeish",
             "colour": "#fb8072",
-            "avatar": "macleish.png",
+            "avatar": "macleish.jpg",
             "totalLines": 21,
             "spokeTo": [
                 [

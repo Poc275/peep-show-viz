@@ -577,7 +577,7 @@
         {
             "name": "Sophie",
             "colour": "#A9251E",
-            "avatar": "sophie.png",
+            "avatar": "sophie.jpg",
             "totalLines": 162,
             "spokeTo": [
                 [
@@ -605,7 +605,7 @@
         {
             "name": "Boys",
             "colour": "#111111",
-            "avatar": "boys.png",
+            "avatar": "boys.jpg",
             "totalLines": 9,
             "spokeTo": [
                 [
@@ -617,7 +617,7 @@
         {
             "name": "TV",
             "colour": "#555555",
-            "avatar": "tv.png",
+            "avatar": "tv.jpg",
             "totalLines": 9,
             "spokeTo": [
                 [
@@ -725,7 +725,7 @@
         {
             "name": "Others",
             "colour": "#333333",
-            "avatar": "others.png",
+            "avatar": "others.jpg",
             "totalLines": 14,
             "spokeTo": [
                 [
@@ -745,7 +745,7 @@
         {
             "name": "Jeff",
             "colour": "#5147BB",
-            "avatar": "jeff.png",
+            "avatar": "jeff.jpg",
             "totalLines": 25,
             "spokeTo": [
                 [
@@ -785,7 +785,7 @@
         {
             "name": "Valerie",
             "colour": "#ffff99",
-            "avatar": "valerie.png",
+            "avatar": "valerie.jpg",
             "totalLines": 28,
             "spokeTo": [
                 [
@@ -861,7 +861,7 @@
         {
             "name": "Band member",
             "colour": "#333333",
-            "avatar": "band-member.png",
+            "avatar": "band-member.jpg",
             "totalLines": 5,
             "spokeTo": [
                 [
@@ -905,7 +905,7 @@
         {
             "name": "Paramedic",
             "colour": "#222222",
-            "avatar": "paramedic.png",
+            "avatar": "paramedic.jpg",
             "totalLines": 3,
             "spokeTo": [
                 [
