@@ -6,6 +6,7 @@ import ChordDiagram from './ChordDiagram';
 import "./Explorer.css";
 import WordSearch from "./WordSearch";
 import Locations from "./visualisations/Locations";
+import Timeline from "./visualisations/Timeline";
 
 function Explorer() {
     const { series } = useParams();
@@ -51,6 +52,10 @@ function Explorer() {
             {/* <section className="visualisation" id="locations" style={{ background: `radial-gradient(#fff, 85%, ${seriesColours[series - 1]})` }}>
                 <Locations />
             </section> */}
+
+            <section className="visualisation" id="words" style={{ background: `radial-gradient(#fff, 85%, ${seriesColours[series - 1]})` }}>
+                <Timeline />
+            </section>
         </div>
     );
 }
