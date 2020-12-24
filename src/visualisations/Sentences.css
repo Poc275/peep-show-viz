@@ -1,0 +1,21 @@
+.axis {
+    color: grey;
+    opacity: 0.5;
+    stroke-width: 0.2;
+    /* transform: translate(-0.5px, 0px); */
+}
+
+.axis .domain {
+    display: none;
+}
+
+.axis .tick text {
+    display: none;
+}
+
+svg {
+    /* border: 1px solid red; */
+    margin: 0;
+    padding: 0;
+    border: none;
+}

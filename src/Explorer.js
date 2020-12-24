@@ -7,6 +7,7 @@ import "./Explorer.css";
 import WordSearch from "./WordSearch";
 import Locations from "./visualisations/Locations";
 import Timeline from "./visualisations/Timeline";
+import Sentences from "./visualisations/Sentences";
 
 function Explorer() {
     const { series } = useParams();
@@ -41,11 +42,11 @@ function Explorer() {
 
     return (
         <div id="explorer-container">
-            <section className="visualisation" id="chord" style={{ background: `radial-gradient(#fff, 85%, ${seriesColours[series - 1]})` }}>
+            <section className="visualisation" id="chord">
                 <ChordDiagram />
             </section>
 
-            <section className="visualisation" id="words" style={{ background: `radial-gradient(#fff, 85%, ${seriesColours[series - 1]})` }}>
+            <section className="visualisation" id="words">
                 <WordSearch />
             </section>
 
@@ -53,8 +54,12 @@ function Explorer() {
                 <Locations />
             </section> */}
 
-            <section className="visualisation" id="words" style={{ background: `radial-gradient(#fff, 85%, ${seriesColours[series - 1]})` }}>
+            <section className="visualisation" id="words">
                 <Timeline />
+            </section>
+
+            <section className="visualisation" id="words">
+                <Sentences />
             </section>
         </div>
     );
