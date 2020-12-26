@@ -3,13 +3,14 @@ import * as d3 from "d3";
 
 function SentencesChart(sentenceData) {
     const chart = useRef(null);
-    const { data } = sentenceData;
-    // console.log(data);
+    const { data, index } = sentenceData;
+    const speaker = index % 2 === 0 ? "Mark" : "Jeremy";
+    const episode = Math.floor((index / 2) + 1);
 
     // initialise viz hook
     useEffect(() => {
         const margin = {
-            top: 20,
+            top: 60,
             right: 50,
             bottom: 20, 
             left: 50
@@ -74,6 +75,22 @@ function SentencesChart(sentenceData) {
                     .attr("fill", d => d.Internal ? "tomato" : "dodgerblue")
                     .on("mouseover", function(d, i) { d3.select(this).attr("opacity", "0.25") })
                     .on("mouseout", function(d, i) { d3.select(this).attr("opacity", "1") });
+
+             // Draw header.
+            const header = svg.append('g')
+                .attr('class', 'bar-header')
+                .attr('transform', `translate(0,${-margin.top * 0.6})`)
+                .attr("text-anchor", "middle")
+                .append('text');
+
+            header.append('tspan').text(speaker);
+
+            header.append('tspan')
+                .attr('x', 0)
+                .attr('dy', '1.5em')
+                .style('font-size', '0.8em')
+                .style('fill', '#555')
+                .text(`Episode ${episode}`);
         }
 
         // effect cleanup function

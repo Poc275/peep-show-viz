@@ -55,7 +55,7 @@ function Sentences() {
     
     return (
         <>
-            { datasets.map((d, idx) => <SentencesChart key={idx} data={d[0]} />) }
+            { datasets.map((d, idx) => <SentencesChart key={idx} data={d[0]} index={idx} />) }
             { datasets.map((d, idx) => <Averages key={idx} data={d[0]} />) }
             { datasets.map((d, idx) => <InternalProportion key={idx} data={d[0]} />) }
             { topNounDatasets.map((d, idx) => <TopNouns key={idx} topNounData={d[0]} />) }
