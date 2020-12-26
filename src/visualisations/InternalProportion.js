@@ -39,12 +39,12 @@ function InteralProportion(sentenceData) {
             .call(xAxis);
 
         if(data) {
-            const maxRadius = 25;
+            const maxRadius = 350;
             const internalPercentage = data.filter(d => d.Internal).length / data.length;
             const externalPercentage = data.filter(d => d.Internal === false).length / data.length;
 
-            const internalRadius = internalPercentage * maxRadius;
-            const externalRadius = externalPercentage * maxRadius;
+            const internalRadius = Math.sqrt(internalPercentage * maxRadius);
+            const externalRadius = Math.sqrt(externalPercentage * maxRadius);
             
             const internalArc = d3.arc().innerRadius(0).outerRadius(internalRadius).startAngle(180 * (Math.PI / 180)).endAngle(360 * (Math.PI / 180));
             const externalArc = d3.arc().innerRadius(0).outerRadius(externalRadius).startAngle(0).endAngle(180 * (Math.PI / 180));
