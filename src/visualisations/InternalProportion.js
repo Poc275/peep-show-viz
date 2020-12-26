@@ -49,13 +49,16 @@ function InteralProportion(sentenceData) {
             const internalArc = d3.arc().innerRadius(0).outerRadius(internalRadius).startAngle(180 * (Math.PI / 180)).endAngle(360 * (Math.PI / 180));
             const externalArc = d3.arc().innerRadius(0).outerRadius(externalRadius).startAngle(0).endAngle(180 * (Math.PI / 180));
 
+            // move down 20px to centralise
             svg.append("path")
                 .attr("d", internalArc)
-                .attr("fill", "tomato");
+                .attr("fill", "tomato")
+                .attr("transform", "translate(0, 20)");
 
             svg.append("path")
                 .attr("d", externalArc)
-                .attr("fill", "dodgerblue");
+                .attr("fill", "dodgerblue")
+                .attr("transform", "translate(0, 20)");
         }
 
         // effect cleanup function

@@ -5,6 +5,7 @@ import SentencesChart from "./SentencesChart";
 import Averages from "./Averages";
 import InternalProportion from "./InternalProportion";
 import "./Sentences.css";
+import TopNouns from "./TopNouns";
 
 function Sentences() {
     const schema = (d) => {
@@ -19,6 +20,7 @@ function Sentences() {
 
     const { series } = useParams();
     const [datasets, setDatasets] = useState([]);
+    const [topNounDatasets, setTopNounDatasets] = useState([]);
 
     // fetch data hook
     useEffect(() => {
@@ -33,8 +35,21 @@ function Sentences() {
                 }
             });
         }
+
+        async function fetchTopNounData(url) {
+            d3.json(url).then(data => {
+                for(let i = 1; i <= 6; i++) {
+                    const markTopNouns = data["Mark"][`Episode_${i}`];
+                    const jezTopNouns = data["Jeremy"][`Episode_${i}`];
+                    
+                    setTopNounDatasets(prevDatasets => [...prevDatasets, [markTopNouns]]);
+                    setTopNounDatasets(prevDatasets => [...prevDatasets, [jezTopNouns]]);
+                }
+            });
+        }
         
         fetchSentenceData(`${process.env.PUBLIC_URL}/data/mark-vs-jez/mark-vs-jez-words-s${series}.csv`);
+        fetchTopNounData(`${process.env.PUBLIC_URL}/data/mark-vs-jez/top-nouns-s${series}.json`);
     }, [series]);
 
     
@@ -43,6 +58,7 @@ function Sentences() {
             { datasets.map((d, idx) => <SentencesChart key={idx} data={d[0]} />) }
             { datasets.map((d, idx) => <Averages key={idx} data={d[0]} />) }
             { datasets.map((d, idx) => <InternalProportion key={idx} data={d[0]} />) }
+            { topNounDatasets.map((d, idx) => <TopNouns key={idx} topNounData={d[0]} />) }
         </>
     );
 }
