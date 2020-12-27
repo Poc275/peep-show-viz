@@ -65,8 +65,8 @@ function SentencesChart(sentenceData) {
                     .attr("x", 0)
                     .attr("y", d => y(d.index))
                     .attr("width", d => x(d.NumWords))
-                    // .attr("height", y.step())
-                    .attr("height", 2)
+                    .attr("height", y.step())
+                    // .attr("height", 2)
                     .attr("class", "num-words-bar")
                     .attr("transform", (d) => {
                         let width = x(d.NumWords);
