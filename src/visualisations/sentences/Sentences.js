@@ -48,8 +48,8 @@ function Sentences() {
             });
         }
         
-        fetchSentenceData(`${process.env.PUBLIC_URL}/data/mark-vs-jez/mark-vs-jez-words-s${series}.csv`);
-        fetchTopNounData(`${process.env.PUBLIC_URL}/data/mark-vs-jez/top-nouns-s${series}.json`);
+        fetchSentenceData(`${process.env.PUBLIC_URL}/data/sentences/sentences-s${series}.csv`);
+        fetchTopNounData(`${process.env.PUBLIC_URL}/data/sentences/top-nouns-s${series}.json`);
     }, [series]);
 
     

@@ -20,7 +20,7 @@ function WordSearch() {
         async function fetchWordData(url) {
             d3.csv(url).then(data => setData(data));
         }
-        fetchWordData(`${process.env.PUBLIC_URL}/data/S${series}_Lines.csv`);
+        fetchWordData(`${process.env.PUBLIC_URL}/data/lines/S${series}_Lines.csv`);
     }, [series]);
 
     // search hook

@@ -13,7 +13,7 @@ function ChordDiagram() {
         async function fetchChordData(url) {
             await fetch(url).then(res => res.json()).then(json => setData(json));
         }
-        fetchChordData(`${process.env.PUBLIC_URL}/data/chord-data-series-${series}.json`);
+        fetchChordData(`${process.env.PUBLIC_URL}/data/chords/chord-data-series-${series}.json`);
     }, []);
 
     // initialise chord diagram hook

@@ -2,12 +2,12 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import gsap from "gsap";
 import ScrollTrigger from "gsap/ScrollTrigger";
-import ChordDiagram from './ChordDiagram';
+import ChordDiagram from "./visualisations/chord/ChordDiagram";
 import "./Explorer.css";
-import WordSearch from "./WordSearch";
-import Locations from "./visualisations/Locations";
-import Timeline from "./visualisations/Timeline";
-import Sentences from "./visualisations/Sentences";
+import WordSearch from "./visualisations/words/WordSearch";
+import Locations from "./visualisations/locations/Locations";
+import Timeline from "./visualisations/timeline/Timeline";
+import Sentences from "./visualisations/sentences/Sentences";
 
 function Explorer() {
     const { series } = useParams();
