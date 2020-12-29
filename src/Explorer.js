@@ -50,9 +50,10 @@ function Explorer() {
                 <WordSearch />
             </section>
 
-            {/* <section className="visualisation" id="locations" style={{ background: `radial-gradient(#fff, 85%, ${seriesColours[series - 1]})` }}>
+            {/* style={{ background: `radial-gradient(#fff, 85%, ${seriesColours[series - 1]})` }} */}
+            <section className="visualisation" id="locations">
                 <Locations />
-            </section> */}
+            </section>
 
             <section className="visualisation" id="words">
                 <Timeline />
