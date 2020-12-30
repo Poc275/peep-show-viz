@@ -1,0 +1,11 @@
+.xaxis .domain {
+    stroke: none;
+}
+
+.tooltip {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    background: #eee;
+    max-width: 200px;
+}

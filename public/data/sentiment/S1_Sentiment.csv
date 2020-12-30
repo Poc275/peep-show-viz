@@ -1,0 +1,2138 @@
+,neg,neu,pos,compound,sentence,episode,speaker,length
+0,0.552,0.448,0.0,-0.5709,This is fucking wicked.,1,Jeremy,4
+1,0.0,0.624,0.376,0.3415,I am almost definitely a musical genius.,1,Jeremy,7
+2,0.0,1.0,0.0,0.0,"Maybe a tattoo on my chest, but of my face.",1,Jeremy,10
+3,0.0,1.0,0.0,0.0,"She's on there, she's on there.",1,Mark,6
+4,0.0,1.0,0.0,0.0,Got to get the same bus home.,1,Mark,7
+5,0.0,0.728,0.272,0.4574,"Yes, I am the lord of the bus, said he!",1,Mark,10
+6,0.0,1.0,0.0,0.0,She's not on here.,1,Mark,4
+7,0.253,0.46,0.287,0.0772,We must stop meeting like this.,1,Sophie,6
+8,0.0,1.0,0.0,0.0,I was right behind you.,1,Sophie,5
+9,0.531,0.469,0.0,-0.5267,"Of course, stupid music.",1,Mark,4
+10,0.0,1.0,0.0,0.0,So what did you make of Jeff's memo?,1,Sophie,8
+11,0.0,1.0,0.0,0.0,Already it's too late.,1,Mark,4
+12,0.0,1.0,0.0,0.0,"Maybe if we hit a bump I can slip it out, or keep schtum, ride it out.",1,Mark,17
+13,0.0,1.0,0.0,0.0,"Gonna need to waggle eventually, keep the circulation going",1,Mark,9
+14,0.0,0.741,0.259,0.2732,"Oh God there's something, Mark, have you?",1,Sophie,7
+15,0.172,0.828,0.0,-0.1154,"Oh, I was going to say, but I just, sorry.",1,Mark,10
+16,0.0,0.714,0.286,0.34,"Of course, she's giving you the book-off.",1,Mark,7
+17,0.355,0.645,0.0,-0.431,"Women don't want your hand under their bottoms, Mark.",1,Mark,9
+18,0.0,1.0,0.0,0.0,"""She sat on it officer, it was an accident.""",1,Mark,9
+19,0.0,1.0,0.0,0.0,"""Of course it was, now get in with the nonces.""",1,Mark,10
+20,0.0,1.0,0.0,0.0,"Oi mate, can I have some of your Coke?",1,Boys,9
+21,0.173,0.827,0.0,-0.3182,"They're going to trap me, and their brothers will hack me to",1,Mark,12
+22,0.0,1.0,0.0,0.0,"I said, can I have a bit of your",1,Boys,9
+23,0.0,1.0,0.0,0.0,"Here, look, you can",1,Mark,4
+24,0.0,1.0,0.0,0.0,"Hey look, he's a paedo!",1,Boys,5
+25,0.0,1.0,0.0,0.0,You're not a paedo.,1,Mark,4
+26,0.0,0.526,0.474,0.4019,You're definitely not a paedo.,1,Mark,5
+27,0.167,0.833,0.0,-0.296,Those kids have no idea whatsoever of what went on at Stalingrad.,1,Mark,12
+28,0.176,0.824,0.0,-0.5423,"Although I can in no way compare my struggle of reading it with that of the Red Army, it has been a very big read.",1,Mark,25
+29,0.0,0.602,0.398,0.6486,I'm basically hoping to meet someone who's exactly like myself.,1,TV,10
+30,0.0,1.0,0.0,0.0,That's exactly the opposite of what I'm looking for.,1,Mark,9
+31,0.0,1.0,0.0,0.0,"I'm telling you, now I know whatshisname felt when he finished the Mona Lisa - knackered.",1,Jeremy,16
+32,0.0,1.0,0.0,0.0,So how was your day?,1,Jeremy,5
+33,0.206,0.588,0.206,0.0,"Well, Toni came round to drop this off.",1,Jeremy,8
+34,0.0,1.0,0.0,0.0,"Did you, you know, make your move?",1,Mark,7
+35,0.216,0.784,0.0,-0.296,"No, she was going to Starbucks to read a book.",1,Jeremy,10
+36,0.0,1.0,0.0,0.0,It's one of her things.,1,Jeremy,5
+37,0.0,0.786,0.214,0.2924,"Besides, the move, it's not a whole Sophie uptight situation.",1,Jeremy,10
+38,0.304,0.696,0.0,-0.5423,We're just gradually sliding into a... a fuck buddy scenario.,1,Jeremy,10
+39,0.402,0.345,0.253,-0.3182,"Yeah, a buddy, you can fuck.",1,Jeremy,6
+40,0.0,0.686,0.314,0.6269,I mean we're both so relaxed about the whole sex thing.,1,Jeremy,11
+41,0.0,1.0,0.0,0.0,Last time I was around there I watched a porno.,1,Jeremy,10
+42,0.0,1.0,0.0,0.0,Four in the afternoon - just me and her watching a porno.,1,Jeremy,12
+43,0.0,1.0,0.0,0.0,"I mean, that's me.",1,Jeremy,4
+44,0.19,0.81,0.0,-0.2755,I'm not ready for the kind of thing you're after.,1,Jeremy,10
+45,0.0,1.0,0.0,0.0,The whole... someone to go to Waitrose with.,1,Jeremy,8
+46,0.196,0.804,0.0,-0.0572,I don't want to go to Waitrose.,1,Mark,7
+47,0.603,0.172,0.224,-0.4939,I want a fuck buddy.,1,Mark,5
+48,0.312,0.446,0.241,-0.2023,I wish I was her fuck buddy next door.,1,Jeremy,7
+49,0.0,1.0,0.0,0.0,We could do it through the wall.,1,Jeremy,7
+50,0.0,1.0,0.0,0.0,How thick is wall?,1,Jeremy,4
+51,0.0,1.0,0.0,0.0,"So, which Starbucks does she go to?",1,Mark,7
+52,0.0,1.0,0.0,0.0,"Come on, come on.",1,Mark,4
+53,0.0,0.794,0.206,0.0772,I want to go to the shop.,1,Mark,7
+54,0.0,1.0,0.0,0.0,"Need a poo, got to have loo paper.",1,Mark,8
+55,0.0,1.0,0.0,0.0,I should be able to just walk out of my own front door.,1,Mark,13
+56,0.508,0.492,0.0,-0.4767,What's wrong with me?,1,Mark,4
+57,0.0,0.728,0.272,0.6249,Would be great if a car just ploughed into the lot of them.,1,Mark,13
+58,0.0,0.625,0.375,0.2023,"Hi Toni, I'm fine.",1,Mark,4
+59,0.17,0.83,0.0,-0.4767,"I was just checking the letterbox for... sometimes they get stuck in there and the next thing you know, your phone's cut off.",1,Mark,22
+60,0.206,0.667,0.127,-0.3182,"God, you know they haven't got any Alpen at that stupid corner shop.",1,Toni,13
+61,0.0,1.0,0.0,0.0,"I said ""Have you got any Alpen?""",1,Toni,7
+62,0.0,1.0,0.0,0.0,"I said ""Well, are you going to be ordering any in?""",1,Toni,11
+63,0.0,1.0,0.0,0.0,and he said he didn't know!,1,Toni,6
+64,0.342,0.658,0.0,-0.3818,"Oh right, that is a bit crap.",1,Mark,7
+65,0.0,1.0,0.0,0.0,What kind of a shop doesn't have Alpen?,1,Toni,8
+66,0.0,0.694,0.306,0.296,"Yeah, I mean... you could, have some.",1,Mark,7
+67,0.0,1.0,0.0,0.0,What are you doing?,1,Mark,4
+68,0.0,1.0,0.0,0.0,What about the poo?,1,Mark,4
+69,0.0,1.0,0.0,0.0,If I can just hold it in...,1,Mark,7
+70,0.0,1.0,0.0,0.0,I think it's retreating.,1,Mark,4
+71,0.0,1.0,0.0,0.0,"So, here we are then.",1,Mark,5
+72,0.0,0.729,0.271,0.3818,It always makes me think of skiing holidays.,1,Toni,8
+73,0.0,0.722,0.278,0.4019,We always used to go skiing on holiday.,1,Toni,8
+74,0.0,1.0,0.0,0.0,"Me, my mum, my sister.",1,Toni,5
+75,0.0,1.0,0.0,0.0,I've got a sister.,1,Mark,4
+76,0.0,1.0,0.0,0.0,She's a lawyer actually.,1,Mark,4
+77,0.0,1.0,0.0,0.0,What does your sister do?,1,Mark,5
+78,0.0,1.0,0.0,0.0,That's what you get for trying to flirt.,1,Mark,8
+79,0.61,0.39,0.0,-0.5709,"That's terrible, I'm so sorry.",1,Mark,5
+80,0.0,0.631,0.369,0.5448,"I suppose, I mean at least it's not cancer.",1,Mark,9
+81,0.595,0.405,0.0,-0.6597,It's a form of cancer.,1,Toni,5
+82,0.727,0.273,0.0,-0.8402,My gran died of cancer.,1,Mark,5
+83,0.0,0.649,0.351,0.4019,Although hopefully your sister won't... obviously.,1,Mark,6
+84,0.0,1.0,0.0,0.0,"Listen, let's talk about something else.",1,Mark,6
+85,0.0,0.545,0.455,0.3612,Do you like Blackadder?,1,Mark,4
+86,0.0,1.0,0.0,0.0,I got the Blackadder set for Christmas.,1,Mark,7
+87,0.0,1.0,0.0,0.0,"I never really, I mean…",1,Toni,5
+88,0.656,0.104,0.24,-0.4588,"No, no, sure, forget it.",1,Mark,5
+89,0.0,0.408,0.592,0.4404,I know something funny.,1,Mark,4
+90,0.0,1.0,0.0,0.0,And he's been working on it for about a month!,1,Mark,10
+91,0.0,0.543,0.457,0.6369,"Wait, this is the best bit.",1,Mark,6
+92,0.0,1.0,0.0,0.0,"This Grammy goes out to my homeboys in Compton, the Japanese people who mean so much to me.",1,Jeremy,18
+93,0.0,0.69,0.31,0.2023,"Hey, Mark's playing my track.",1,Jeremy,5
+94,0.31,0.69,0.0,-0.5574,"Ah, he just can't get enough of that shit.",1,Jeremy,9
+95,0.299,0.342,0.359,0.1779,Humiliate your best mate just to.,1,Mark,6
+96,0.253,0.747,0.0,-0.2584,I mean why didn't we just play Othello?,1,Mark,8
+97,0.0,0.543,0.457,0.6369,Oh I'd love to bang her.,1,Mark,6
+98,0.0,0.762,0.238,0.3612,"Just buckle down, do your time like Leslie Grantham.",1,Mark,9
+99,0.0,1.0,0.0,0.0,"Hey Jez, you're up.",1,Mark,4
+100,0.0,1.0,0.0,0.0,I'm making chicken tikka.,1,Mark,4
+101,0.0,0.796,0.204,0.6249,"Plus, I've bought us lots of great stuff: Dune on DVD, Bakewell slices, gin and Sara Lee.",1,Mark,14
+102,0.0,1.0,0.0,0.0,"Plus, I was thinking, you know that thirty quid you owe me?",1,Mark,12
+103,0.0,0.645,0.355,0.296,"Let's call it quits, yeah?",1,Mark,5
+104,0.0,1.0,0.0,0.0,"I mean not quits, but you know.",1,Mark,7
+105,0.234,0.766,0.0,-0.2812,"I'm just really, really, really, really sorry Jeremy.",1,Mark,8
+106,0.0,1.0,0.0,0.0,Cos it was only a balls up.,1,Mark,7
+107,0.0,0.735,0.265,0.2023,"I ballsed up, and now we're fine.",1,Mark,7
+108,0.0,0.848,0.152,0.3612,This'll be ready in a minute and we can eat it in front of Hitler's Henchmen.,1,Mark,15
+109,0.0,1.0,0.0,0.0,Maybe he doesn't mind.,1,Mark,4
+110,0.0,1.0,0.0,0.0,Maybe nobody minds about things as much as me.,1,Mark,9
+111,0.0,0.824,0.176,0.4939,I need to find out for a friend the name of that Chinese doctor she was raving about.,1,Mark,18
+112,0.372,0.628,0.0,-0.8519,It was Dr Ying Fu Yip... Wang Shong Pang... Fang Wang Dang Dong Ning Po Ku.,1,Jeremy,16
+113,0.0,1.0,0.0,0.0,"I see, I get it.",1,Mark,5
+114,0.0,1.0,0.0,0.0,You were lampooning me.,1,Mark,4
+115,0.0,1.0,0.0,0.0,It was a simple lampoon.,1,Mark,5
+116,0.191,0.609,0.2,0.0258,"Pint of Guinness please, no logo on the foam.",1,Super Hans,9
+117,0.355,0.645,0.0,-0.296,No logo on the foam?,1,Jeremy,5
+118,0.0,1.0,0.0,0.0,"You don't buy into all that one, do ya?",1,Super Hans,9
+119,0.0,1.0,0.0,0.0,"What the old ""Ooh, I've got a clover in me foam.",1,Super Hans,11
+120,0.196,0.804,0.0,-0.296,"No, what you're doing there is you're drinking an advert.",1,Super Hans,10
+121,0.0,1.0,0.0,0.0,"So, you got our track?",1,Super Hans,5
+122,0.454,0.546,0.0,-0.4874,"No, I've been thinking, I'm not sure.",1,Jeremy,7
+123,0.545,0.455,0.0,-0.5574,I think maybe it's shit.,1,Jeremy,5
+124,0.419,0.581,0.0,-0.5574,"Hold it cowboy, rewind, what's shit?",1,Super Hans,6
+125,0.0,0.652,0.348,0.4939,It's just I found Mark laughing at it.,1,Jeremy,8
+126,0.0,1.0,0.0,0.0,"What, so Mr, fucking, Ocean Colour Pants don't get it.",1,Super Hans,10
+127,0.0,0.308,0.692,0.5413,Well quelle fucking surprise.,1,Super Hans,4
+128,0.0,1.0,0.0,0.0,"Plus, he was doing it in front of Toni.",1,Jeremy,9
+129,0.0,1.0,0.0,0.0,"Mate, you gotta get some rewengay.",1,Super Hans,6
+130,0.0,0.783,0.217,0.3612,"Listen, the whole industry's run by suits like your mate.",1,Super Hans,10
+131,0.0,1.0,0.0,0.0,Do you think that's why we haven't got a deal yet?,1,Jeremy,11
+132,0.0,1.0,0.0,0.0,Of course it is.,1,Super Hans,4
+133,0.0,1.0,0.0,0.0,"They're all a bunch of Marks, ain't they?",1,Super Hans,8
+134,0.1,0.9,0.0,-0.4588,"Sitting behind on their big marble desks, ties done up to eleven, clicking their fingers to the fucking Lighthouse Family, getting their dicks sucked by a big Alsatian dog.",1,Super Hans,29
+135,0.559,0.441,0.0,-0.5859,They're all perverts mate.,1,Super Hans,4
+136,0.0,1.0,0.0,0.0,All in with each other.,1,Super Hans,5
+137,0.0,1.0,0.0,0.0,"It's not who you know, it's who you blow.",1,Super Hans,8
+138,0.0,1.0,0.0,0.0,Why shouldn't I go for Toni?,1,Mark,6
+139,0.472,0.528,0.0,-0.3976,So she scares me.,1,Mark,4
+140,0.18,0.602,0.218,0.128,You can have good relationship with someone that scares you.,1,Mark,10
+141,0.0,1.0,0.0,0.0,Look at me and dad.,1,Mark,5
+142,0.0,0.314,0.686,0.8286,"Relax, relax, it's OK, you're not a paedo.",1,Mark,8
+143,0.0,1.0,0.0,0.0,You're just a normal human being walking past some simple children.,1,Mark,11
+144,0.0,0.572,0.428,0.4574,"Hey look, it's clean shirt!",1,Boys,5
+145,0.0,1.0,0.0,0.0,What does that mean?,1,Mark,4
+146,0.0,0.696,0.304,0.541,How do you get that shirt so clean mate?,1,Boys,9
+147,0.0,1.0,0.0,0.0,You can handle it.,1,Mark,4
+148,0.0,1.0,0.0,0.0,Use the power of reason.,1,Mark,5
+149,0.089,0.911,0.0,-0.1901,"Look, I know it must be difficult being a kid, not a lot of schemes, but you know, I'm not the borough.",1,Mark,22
+150,0.0,0.519,0.481,0.2144,I wish I was but.,1,Mark,5
+151,0.447,0.236,0.318,-0.2714,Fuck off clean shirt!,1,Boys,4
+152,0.0,1.0,0.0,0.0,I'm just a man.,1,Mark,4
+153,0.0,1.0,0.0,0.0,Don't kick my bum!,1,Mark,4
+154,0.0,1.0,0.0,0.0,"Me and Toni, Toni and me.",1,Mark,6
+155,0.0,0.787,0.213,0.4019,When his kooky charm starts to cloy I'll be right there.,1,Mark,11
+156,0.515,0.294,0.191,-0.4939,Fuck buddy number two.,1,Mark,4
+157,0.148,0.71,0.142,-0.0258,"Yeah right, wait for the crumbs to fall while my nuts slowly shrivel.",1,Mark,13
+158,0.0,0.707,0.293,0.4404,"Actually I hope they do shrivel, they're getting disturbingly…",1,Mark,9
+159,0.0,0.517,0.483,0.4215,I thought you liked pork.,1,Jeremy,5
+160,0.0,1.0,0.0,0.0,What does it mean?,1,Mark,4
+161,0.209,0.321,0.471,0.3885,"Look, I'm sorry, OK?",1,Mark,4
+162,0.381,0.619,0.0,-0.4019,I'm sorry I humiliated you in front of Toni.,1,Mark,9
+163,0.0,1.0,0.0,0.0,"Don't think I can't see you Mark, trying to get a slice of my action because Sophie the office girl won't put out.",1,Jeremy,23
+164,0.0,1.0,0.0,0.0,"Oh right, the gloves are off are they?",1,Mark,8
+165,0.0,0.613,0.387,0.743,"Well, perhaps it's best you do know what I think of your music.",1,Mark,13
+166,0.0,0.561,0.439,0.5709,Well let's have some more truth shall we?,1,Jeremy,8
+167,0.0,0.698,0.302,0.3802,"Cause the truth is, you're a posh spaz!",1,Jeremy,8
+168,0.0,0.616,0.384,0.7818,"Oh really, well I'd love to know in what way I am a posh spaz.",1,Mark,15
+169,0.0,0.857,0.143,0.3612,In the way you're always doing posh spazzy things like tidying up and ironing your socks.,1,Jeremy,16
+170,0.0,1.0,0.0,0.0,I do not iron my socks!,1,Mark,6
+171,0.0,0.803,0.197,0.4019,I'm going to the party and I'll get her in the end.,1,Mark,12
+172,0.0,1.0,0.0,0.0,"I have the power of the brain, the most erotic muscle.",1,Mark,11
+173,0.281,0.469,0.25,-0.1027,The longbow beats the crossbow my idiotic friend.,1,Mark,8
+174,0.0,1.0,0.0,0.0,"Look, just lay off.",1,Mark,4
+175,0.0,1.0,0.0,0.0,"Oh, I get it.",1,Jeremy,4
+176,0.0,1.0,0.0,0.0,Are you going to do me in?,1,Jeremy,7
+177,0.0,1.0,0.0,0.0,Are you going to punch me Mark?,1,Jeremy,7
+178,0.0,1.0,0.0,0.0,Is that what's going to happen?,1,Jeremy,6
+179,0.0,0.616,0.384,0.6808,"You just... you... you're lucky I don't... you're just very, very lucky.",1,Mark,12
+180,0.0,1.0,0.0,0.0,"You're an animal, Corrigan.",1,Jeremy,4
+181,0.297,0.664,0.04,-0.8459,"You have to keep your tie done up to eleven otherwise all this grey, ugly, office envy sludge will just spill out and drown you!",1,Jeremy,25
+182,0.589,0.411,0.0,-0.5093,And you've got weird nuts!,1,Jeremy,5
+183,0.0,0.933,0.067,0.0772,"If you're going to watch the TV in your dressing gown, you might want to put some pants on.",1,Jeremy,19
+184,0.0,0.517,0.483,0.5688,So I'm glad we cleared the air.,1,Mark,7
+185,0.0,0.256,0.744,0.7003,"I feel better, much better.",1,Mark,5
+186,0.0,0.615,0.385,0.3612,Like a weight has been lifted.,1,Mark,6
+187,0.0,1.0,0.0,0.0,That's exactly how I feel.,1,Jeremy,5
+188,0.0,1.0,0.0,0.0,"It's the guys, come on in.",1,Toni,6
+189,0.0,1.0,0.0,0.0,"Who, what, why, where?",1,Jeremy,4
+190,0.0,0.27,0.73,0.6597,Well that's the fun.,1,Toni,4
+191,0.0,1.0,0.0,0.0,"I don't know anyone, these are our neighbours.",1,Toni,8
+192,0.0,0.598,0.402,0.5719,Did you think I was going to invite my friends?,1,Toni,10
+193,0.171,0.741,0.088,-0.4404,"I'll tell you, you find out who your real friends are when you set fire to Hampton Court Maze because you can't take any more of your husband's shit.",1,Toni,29
+194,0.0,0.67,0.33,0.6597,"Yeah, well its great to know your neighbours, I mean not just from a home security point of view but also…",1,Mark,21
+195,0.157,0.649,0.195,0.1779,"If I laugh at everything she says, I'm bound to at least get a suck job.",1,Jeremy,16
+196,0.341,0.659,0.0,-0.2732,"Maybe I should forget it, leave her to him.",1,Mark,9
+197,0.0,1.0,0.0,0.0,Concentrate on the long game.,1,Mark,5
+198,0.0,1.0,0.0,0.0,"Work on a six pack by Christmas then make, Why should I?",1,Mark,12
+199,0.0,0.741,0.259,0.5411,We really had something going when we were laughing at Jeremy!,1,Mark,11
+200,0.0,1.0,0.0,0.0,"Oh too late, they're bonding.",1,Mark,5
+201,0.0,1.0,0.0,0.0,It's only a fridge magnet.,1,Toni,5
+202,0.0,0.683,0.317,0.5023,I know but it looks just like a fried egg.,1,Jeremy,8
+203,0.0,0.849,0.151,0.1531,"Yeah, but if I pull out now, that's the deposit gone.",1,Paula,11
+204,0.0,1.0,0.0,0.0,On the other hand...,1,Paula,4
+205,0.362,0.638,0.0,-0.5267,"Jesus, how did I get trapped with her?",1,Jeremy,8
+206,0.252,0.486,0.262,0.0276,She's definitely the most boring person here.,1,Jeremy,7
+207,0.0,0.837,0.163,0.6249,"I mean they look great, they're probably talking about how they're going to make a real life porn movie with a proper story and everything.",1,Jeremy,25
+208,0.0,1.0,0.0,0.0,I could do the music.,1,Jeremy,5
+209,0.0,1.0,0.0,0.0,So where do you live in the building?,1,Jeremy,8
+210,0.0,1.0,0.0,0.0,"Oh I don't live here, I'm Toni's sister.",1,Paula,8
+211,0.0,0.672,0.328,0.4466,"Oh, OK, and what do you do?",1,Jeremy,7
+212,0.0,1.0,0.0,0.0,I work in the music business.,1,Paula,6
+213,0.0,0.406,0.594,0.6581,That's just really amazing!,1,Jeremy,4
+214,0.0,1.0,0.0,0.0,"Everyone writes down someone famous, we swap, put them on our foreheads and you work out who we are by asking questions.",1,Toni,22
+215,0.0,0.577,0.423,0.707,It's really really funny because you... anyway lets just play.,1,Toni,10
+216,0.0,0.645,0.355,0.296,"Heh-heh, yeah this is it.",1,Jeremy,5
+217,0.0,0.417,0.583,0.6369,Paula's gonna love this.,1,Jeremy,4
+218,0.465,0.535,0.0,-0.7717,"No, no, no Jez, when you're finished just drop your Rizla in the bowl.",1,Toni,14
+219,0.0,0.741,0.259,0.2732,"Oh well, could I do mine again then?",1,Jeremy,8
+220,0.242,0.758,0.0,-0.1511,"We're not playing for points, mate.",1,Mark,6
+221,0.231,0.769,0.0,-0.2732,"Come on, just drop it in old chap.",1,Barry,8
+222,0.0,1.0,0.0,0.0,"Go on, this one's mine!",1,Mark,5
+223,0.0,0.645,0.355,0.296,"Yeah, how did you know?",1,Mark,5
+224,0.0,1.0,0.0,0.0,"Hey Jeremy, have you worked out your...?",1,Toni,7
+225,0.0,1.0,0.0,0.0,"Don't even go there, it is literally impossible.",1,Jeremy,8
+226,0.0,1.0,0.0,0.0,Turns out I was just someone's secretary!,1,Jeremy,7
+227,0.0,1.0,0.0,0.0,"The Home Secretary, Jeremy.",1,Mark,4
+228,0.0,1.0,0.0,0.0,You're the Home Secretary.,1,Mark,4
+229,0.0,1.0,0.0,0.0,We're just popping next door.,1,Jeremy,5
+230,0.0,1.0,0.0,0.0,You're going next door?,1,Mark,4
+231,0.0,0.536,0.464,0.3818,The coast is clear.,1,Mark,4
+232,0.0,0.509,0.491,0.4389,The coast is clear!,1,Mark,4
+233,0.0,1.0,0.0,0.0,I'm taking Paula back to listen to my work.,1,Jeremy,9
+234,0.0,0.526,0.474,0.7964,She seems like someone who'd appreciate a good track when she heard it.,1,Jeremy,13
+235,0.0,0.698,0.302,0.3802,"Cool, don't do anything I wouldn't do sis!",1,Toni,8
+236,0.449,0.551,0.0,-0.7088,Which leaves a hell of a lot of leeway!,1,Toni,9
+237,0.0,1.0,0.0,0.0,I am in here.,1,Mark,4
+238,0.0,1.0,0.0,0.0,Can I have a word?,1,Mark,5
+239,0.0,0.597,0.403,0.4019,"Yes, that's right, I'm going.",1,Jeremy,5
+240,0.0,0.536,0.464,0.3818,The coast is clear.,1,Jeremy,4
+241,0.0,0.771,0.229,0.631,I don't expect you'll get very far but by all means have a pop at the champ.,1,Jeremy,17
+242,0.308,0.49,0.203,-0.3612,"I though I better tell you, Paula, she's... she has cancer.",1,Mark,11
+243,0.0,0.633,0.367,0.4404,I just thought I'd better mention it.,1,Mark,7
+244,0.0,0.688,0.312,0.2057,You don't wanna drop a clanger.,1,Mark,6
+245,0.0,1.0,0.0,0.0,Is it Jamie Oliver?,1,Others,4
+246,0.0,0.506,0.494,0.4466,"Look, you're a cockmuncher, OK?",1,Jeremy,5
+247,0.0,0.587,0.413,0.5448,"Of course, you can't catch cancer.",1,Jeremy,6
+248,0.0,1.0,0.0,0.0,"I mean, I'd have heard.",1,Jeremy,5
+249,0.0,0.438,0.562,0.6289,"Yeah OK, I think I've heard enough.",1,Paula,7
+250,0.0,1.0,0.0,0.0,Do you really think so?,1,Jeremy,5
+251,0.0,0.299,0.701,0.5719,"Yeah, I mean I like it.",1,Paula,6
+252,0.0,0.313,0.687,0.6588,I mean... that's great!,1,Jeremy,4
+253,0.083,0.917,0.0,-0.1139,"Listen, I'm guessing you didn't invite me round to your room just to listen to some tape.",1,Paula,17
+254,0.0,1.0,0.0,0.0,"Of course, it's who you blow.",1,Jeremy,4
+255,0.0,1.0,0.0,0.0,I know the rules.,1,Jeremy,4
+256,0.0,1.0,0.0,0.0,"Let's get it on, baby.",1,Jeremy,5
+257,0.157,0.843,0.0,-0.0772,"Barry, that guy is one serious power tripper.",1,Toni,8
+258,0.0,1.0,0.0,0.0,He was all over my Rizla game!,1,Toni,7
+259,0.0,0.754,0.246,0.4466,"OK Mark, you asked for it, now you got it.",1,Mark,10
+260,0.333,0.667,0.0,-0.5423,"She's looking for a fuck buddy, gotta change gears.",1,Mark,9
+261,0.104,0.896,0.0,-0.296,"He just so ""Yah, take the A304"" I mean ""Yes, we can see your hairy chest, and no, we're not impressed.""",1,Toni,21
+262,0.0,0.804,0.196,0.296,Yeah so Jeremy tells me you two watched a porno together.,1,Mark,11
+263,0.0,1.0,0.0,0.0,"You know, I'd be into…",1,Mark,5
+264,0.0,1.0,0.0,0.0,That wasn't a porno.,1,Toni,4
+265,0.0,1.0,0.0,0.0,That was The English Patient.,1,Toni,5
+266,0.545,0.455,0.0,-0.5574,What an idiotic boob.,1,Mark,4
+267,0.0,1.0,0.0,0.0,"He's out, I'm in.",1,Mark,4
+268,0.0,1.0,0.0,0.0,"Now, what's my shtick?",1,Mark,4
+269,0.0,1.0,0.0,0.0,"You know, the Red Army shot sixteen thousand of their own men at Stalingrad.",1,Mark,14
+270,0.167,0.833,0.0,-0.296,"And of course, the majority of the Wehrmacht had no winter clothing.",1,Mark,12
+271,0.0,1.0,0.0,0.0,I'm the tank commander now Barry.,1,Mark,6
+272,0.0,0.656,0.344,0.2732,Well I know how they feel.,1,Toni,6
+273,0.0,1.0,0.0,0.0,"You know, you buy classic but classic keeps changing.",1,Toni,9
+274,0.0,1.0,0.0,0.0,"See, by the winter of '42, the whole city was surrounded by the massed 6th army.",1,Mark,16
+275,0.0,1.0,0.0,0.0,It was pressing and pressing.,1,Mark,5
+276,0.0,1.0,0.0,0.0,The Russians couldn't hold on much longer.,1,Mark,7
+277,0.0,1.0,0.0,0.0,Many wanted to submit...,1,Mark,4
+278,0.212,0.788,0.0,-0.2235,"Mark, you know I just don't bang anyone, yeah.",1,Toni,9
+279,0.333,0.667,0.0,-0.5423,I'm not some kind of next-door fuck jar.,1,Toni,8
+280,0.283,0.717,0.0,-0.7579,"No, no, of course not, what I mean is that the German supply lines were stretched, Zhukov countered and the siege was broken.",1,Mark,23
+281,0.0,1.0,0.0,0.0,And that's the story of Stalingrad.,1,Mark,6
+282,0.0,0.467,0.533,0.6908,"You're a sunshine coach, bringing a last smile to…",1,Jeremy,9
+283,0.0,1.0,0.0,0.0,"Urgh, if we've got to do this, do you mind keeping the hat on?",1,Jeremy,14
+284,0.0,1.0,0.0,0.0,"We don't have to do anything, Jeremy.",1,Paula,7
+285,0.0,1.0,0.0,0.0,I'd just rather not.,1,Jeremy,4
+286,0.0,0.876,0.124,0.34,"We could take Polaroids of me, you know, all excited and you could take them away or something.",1,Jeremy,18
+287,0.0,0.763,0.237,0.4201,"I am very keen to sort you out, so to speak.",1,Jeremy,11
+288,0.0,0.412,0.588,0.431,Not a fuck jar.,1,Mark,4
+289,0.359,0.393,0.248,0.0382,"Don't dwell, no need to dwell.",1,Mark,6
+290,0.0,0.594,0.406,0.6249,"So your sister, she looks great considering...",1,Mark,7
+291,0.0,1.0,0.0,0.0,Considering she doesn't have any dress sense?,1,Toni,7
+292,0.468,0.532,0.0,-0.5267,"No, no, you know, the whole thing.",1,Mark,7
+293,0.355,0.645,0.0,-0.296,Oh no that's not Paula.,1,Toni,5
+294,0.122,0.778,0.1,-0.1027,"No, Paula's doing fine, apart from her idea of a birthday present is a bunch of CD singles.",1,Toni,18
+295,0.0,0.538,0.462,0.7184,"And yes, I do know you get them for free.",1,Toni,10
+296,0.0,1.0,0.0,0.0,I was thinking someone should run to the offy before it shuts.,1,Barry,12
+297,0.0,0.568,0.432,0.5859,I can win on the second front.,1,Mark,7
+298,0.0,0.388,0.612,0.6948,This is so perfect.,1,Mark,4
+299,0.0,1.0,0.0,0.0,I'm gonna be the knight on horseback with an armful of booze and enough nachos to feed the Mexican army.,1,Mark,20
+300,0.0,0.467,0.533,0.6908,Why don't you fuck the fuck off?,1,Mark,7
+301,0.346,0.654,0.0,-0.5729,"Just run the gauntlet, the little bastards will...",1,Mark,8
+302,0.0,0.656,0.344,0.2732,It's gonna shut as well.,1,Mark,5
+303,0.0,0.698,0.302,0.0772,"Uh, excuse me, mate?",1,Mark,4
+304,0.197,0.803,0.0,-0.3919,"Sorry to bother you, this is a bit embarrassing really but you couldn't possibly buy me a couple bottles of wine, Pinot Grigio maybe?",1,Mark,24
+305,0.0,1.0,0.0,0.0,"Look, it's that paedo!",1,Boys,4
+306,0.0,0.741,0.259,0.4201,"But on the song, do you really like it?",1,Jeremy,9
+307,0.143,0.612,0.245,0.25,I mean it's hard to get that excited about.,1,Paula,7
+308,0.0,0.82,0.18,0.296,"Yeah, I guess you're not in the right frame of mind to...",1,Jeremy,12
+309,0.0,1.0,0.0,0.0,"Don't go on about it, Jesus.",1,Jeremy,6
+310,0.0,1.0,0.0,0.0,I mean are you going to do any more work on it?,1,Paula,12
+311,0.0,1.0,0.0,0.0,How much time has she got?,1,Jeremy,6
+312,0.0,1.0,0.0,0.0,"I mean, how long are you planning to stay in your job?",1,Jeremy,12
+313,0.0,1.0,0.0,0.0,"You know, as long as I last.",1,Paula,7
+314,0.0,1.0,0.0,0.0,"Look, should you be doing that?",1,Jeremy,6
+315,0.442,0.558,0.0,-0.6956,"Probably not, but you know, fuck it.",1,Paula,7
+316,0.0,0.595,0.405,0.5267,"You know, I do think you're brave.",1,Jeremy,7
+317,0.0,0.557,0.443,0.6087,"I just think you're very, very brave.",1,Jeremy,7
+318,0.0,1.0,0.0,0.0,"I make my decisions, I stick by them.",1,Paula,8
+319,0.178,0.704,0.117,-0.3164,"Everybody said you couldn't market acid jazz to the over 30s and I was like ""Fuck that shit!""",1,Paula,18
+320,0.212,0.442,0.345,0.3612,"Listen to you, you beautiful crazy thing.",1,Jeremy,7
+321,0.688,0.312,0.0,-0.6597,I meant... the cancer.,1,Jeremy,4
+322,0.655,0.345,0.0,-0.8221,The bloody cancer eating you away!,1,Jeremy,6
+323,0.278,0.379,0.343,0.0085,"OK, would you like it if I did have cancer?",1,Paula,8
+324,0.0,1.0,0.0,0.0,I bet Zhukov would've got some booze.,1,Mark,7
+325,0.0,1.0,0.0,0.0,"I think it's winding down a bit now actually, mate.",1,Barry,10
+326,0.272,0.432,0.296,-0.2942,I suppose you think cancer is this huge enormous practical joke!,1,Jeremy,11
+327,0.303,0.697,0.0,-0.188,"Oh Jeremy, I'm so sorry.",1,Mark,5
+328,0.524,0.476,0.0,-0.5267,"No, no you're quite the guy.",1,Jeremy,6
+329,0.303,0.536,0.161,-0.7177,Certainly not the kind of sicko to ruin someone's music career by suggesting that certain other people have cancer!,1,Jeremy,18
+330,0.0,0.577,0.423,0.296,What joke is next?,1,Jeremy,4
+331,0.534,0.466,0.0,-0.68,"Hey Jez, your mum's dead!",1,Jeremy,5
+332,0.63,0.37,0.0,-0.7783,I accidentally told him Paula had cancer.,1,Mark,7
+333,0.437,0.563,0.0,-0.4767,"Jeremy, Mark got it wrong.",1,Toni,5
+334,0.318,0.682,0.0,-0.4215,"He thought Paula was ill, she's not.",1,Toni,7
+335,0.545,0.455,0.0,-0.34,It was a mistake.,1,Toni,4
+336,0.0,0.905,0.095,0.3182,I'm sure if Kerry was here she'd be rolling round the floor except she couldn't cause she's head to toe in acupuncture needles.,1,Jeremy,23
+337,0.444,0.556,0.0,-0.34,"Listen mate, I made a mistake.",1,Mark,6
+338,0.0,1.0,0.0,0.0,It was you who wouldn't give the name of the doctor for Toni's sister.,1,Mark,14
+339,0.0,1.0,0.0,0.0,He wouldn't give the name for Sal?,1,Paula,7
+340,0.0,1.0,0.0,0.0,What's the big deal?,1,Jeremy,4
+341,0.0,0.86,0.14,0.0772,So I didn't give him the number for Dr Tang.,1,Jeremy,10
+342,0.0,1.0,0.0,0.0,Sticking a few needles in her face at fifty quid a pop is not going to fix that.,1,Jeremy,18
+343,0.213,0.609,0.178,-0.1449,"OK, I think it's time for you boys to fuck off now, hmm?",1,Barry,13
+344,0.0,0.439,0.561,0.7698,"Yeah, well really really nice to catch up, Soph.",1,Mark,9
+345,0.0,0.526,0.474,0.4019,"Yes, that's the way.",1,Mark,4
+346,0.0,1.0,0.0,0.0,"Toni's Russia - vast, mysterious, unconquerable.",1,Mark,6
+347,0.224,0.776,0.0,-0.3818,"Sophie's Poland - manageable, won't put up too much of a fight.",1,Mark,12
+348,0.0,0.486,0.514,0.4995,"OK. You want some, do you?",1,Mark,6
+349,0.0,0.822,0.178,0.0772,Do you want a taste of my steel?,1,Mark,8
+350,0.0,1.0,0.0,0.0,I wonder what kind of socks Sophie wears.,2,Mark,8
+351,0.0,1.0,0.0,0.0,Do women wear socks?,2,Mark,4
+352,0.0,0.556,0.444,0.5859,"Well, yes, sometimes is the answer to that.",2,Mark,8
+353,0.0,1.0,0.0,0.0,"Socks before or after trousers, but never socks before pants, that's the rule.",2,Mark,13
+354,0.33,0.412,0.258,-0.1779,"Makes a man look scary, like a chicken.",2,Mark,8
+355,0.34,0.66,0.0,-0.5574,He just does not give one solitary shit.,2,Mark,8
+356,0.0,0.645,0.355,0.296,"Yeah, take that, big Suze.",2,Jeremy,5
+357,0.0,1.0,0.0,0.0,Your toilet-seat regime is over.,2,Jeremy,5
+358,0.0,1.0,0.0,0.0,"Brown for first course, white for pudding.",2,Mark,7
+359,0.0,0.649,0.351,0.4019,"Brown is savoury, white's the treat.",2,Mark,6
+360,0.0,0.549,0.451,0.8126,'Course I'm the one who's laughing because I actually love brown toast.,2,Mark,12
+361,0.08,0.679,0.241,0.5574,Sorry I didn't manage to hook up with you and Super Hans last night...,2,Mark,14
+362,0.0,1.0,0.0,0.0,"Wedge of ballast, then bed again.",2,Jeremy,6
+363,0.0,0.8,0.2,0.3612,"then Barbara pops up with ""Is the Birbeck file ready yet?""",2,Mark,11
+364,0.176,0.69,0.134,-0.1406,It's a bit like the crusher in Star Wars but red hot.,2,Jeremy,12
+365,0.132,0.739,0.128,-0.0258,What if Mum and Dad were trapped in one and I had a big hook I could swing down to rescue one of them.,2,Jeremy,24
+366,0.0,1.0,0.0,0.0,Who would I pick?,2,Jeremy,4
+367,0.149,0.601,0.249,0.2869,I didn't get a chance to tell you the good news.,2,Mark,11
+368,0.0,0.864,0.136,0.296,"Yeah, there's a vacancy going for a clerical assistant and I've managed to swing you an interview.",2,Mark,17
+369,0.0,1.0,0.0,0.0,I can't be a clerical assistant.,2,Jeremy,6
+370,0.106,0.894,0.0,-0.2263,"You wouldn't ask the Chemical Brothers to do your laundry for you, they'd be off their tits.",2,Jeremy,17
+371,0.0,1.0,0.0,0.0,So is tomorrow at eleven all right?,2,Mark,7
+372,0.0,1.0,0.0,0.0,I'll set the video.,2,Jeremy,4
+373,0.119,0.752,0.128,0.0516,"It's a damn good company and it'll be the two of us together, Jez and Mez, the El Dude Brothers.",2,Mark,20
+374,0.0,1.0,0.0,0.0,"Mm-hmm, it's just the music, it's really starting to hot up.",2,Jeremy,11
+375,0.0,0.721,0.279,0.4767,"You know how much I respect your music, it's just…",2,Mark,10
+376,0.0,0.766,0.234,0.8244,"Super Hans said he's come up with a bass loop for our new track that is so good that when he tried turning it off, he literally couldn't.",2,Jeremy,28
+377,0.0,1.0,0.0,0.0,He actually physically couldn't do it.,2,Jeremy,6
+378,0.0,1.0,0.0,0.0,I'm on your side.,2,Mark,4
+379,0.0,1.0,0.0,0.0,"Every artist needs his patron but, you know, there's a limit.",2,Mark,11
+380,0.0,1.0,0.0,0.0,"I'm not some kind of land baron trying to milk his cash cow, it's just…",2,Mark,15
+381,0.0,0.675,0.325,0.3412,"Don't worry, you'll get your milk.",2,Jeremy,6
+382,0.0,1.0,0.0,0.0,This track's a banker.,2,Jeremy,4
+383,0.459,0.541,0.0,-0.5267,Everybody needs their Somethin' Stupid.,2,Jeremy,5
+384,0.0,1.0,0.0,0.0,"The guy who wrote that, he's probably up to his neck in penny loafers and blue pool tables.",2,Jeremy,18
+385,0.0,0.656,0.344,0.2732,"Blimey, what's God up to?",2,Jeremy,5
+386,0.0,0.884,0.116,0.4404,"But listen Jeremy, just in case the song doesn't work out, maybe you'd better fill this out and fax it over by three.",2,Mark,23
+387,0.0,0.323,0.677,0.743,"And have a great day, yeah?",2,Mark,6
+388,0.0,0.408,0.592,0.4404,Have a good one.,2,Jeremy,4
+389,0.0,1.0,0.0,0.0,"Maybe next time I have breakfast, he'll make me sit a fucking exam.",2,Jeremy,13
+390,0.0,0.814,0.186,0.1531,I wonder what Sophie's flirty cartoon will be today.,2,Mark,9
+391,0.0,1.0,0.0,0.0,I really should ask her out for lunch.,2,Mark,8
+392,0.0,1.0,0.0,0.0,Can you hold that?,2,Mark,4
+393,0.406,0.594,0.0,-0.6249,"I mean, what's the worst that could happen?",2,Mark,8
+394,0.423,0.577,0.0,-0.296,She could say no.,2,Mark,4
+395,0.437,0.563,0.0,-0.4767,"Actually, that would be terrible.",2,Mark,5
+396,0.487,0.513,0.0,-0.6908,It would destroy me if she said no.,2,Mark,8
+397,0.0,1.0,0.0,0.0,"There is a notice, you know, about only riding the lift to the first floor.",2,Mark,15
+398,0.231,0.769,0.0,-0.4019,"You're wasting mine and other people's time, not to mention…",2,Mark,10
+399,0.0,0.667,0.333,0.3612,People like him should wear stickers.,2,Mark,6
+400,0.0,1.0,0.0,0.0,They've got them for their cars.,2,Mark,6
+401,0.0,1.0,0.0,0.0,"Go on, ask her.",2,Mark,4
+402,0.0,1.0,0.0,0.0,"I mean, would... how's your day going thus far?",2,Mark,9
+403,0.0,0.588,0.412,0.4215,Have a nice shower or bath?,2,Mark,6
+404,0.0,1.0,0.0,0.0,"Why, do I smell?",2,Sophie,4
+405,0.301,0.411,0.288,-0.0258,"God, no, you don't smell.",2,Mark,5
+406,0.0,0.517,0.483,0.4215,"I mean, you smell nice.",2,Mark,5
+407,0.0,1.0,0.0,0.0,Not that I've smelt you.,2,Mark,5
+408,0.0,1.0,0.0,0.0,What have I become?,2,Mark,4
+409,0.0,0.672,0.328,0.5994,Super Hans said he'll be here in twenty minutes.,2,Jeremy,9
+410,0.0,1.0,0.0,0.0,Means I've got at least an hour.,2,Jeremy,7
+411,0.0,1.0,0.0,0.0,I bet Mark's got some porn here somewhere.,2,Jeremy,8
+412,0.0,0.506,0.494,0.4466," OK, where's today's cartoon?",2,Mark,4
+413,0.319,0.29,0.391,0.128,No discernible romantic overtones.,2,Mark,4
+414,0.0,0.63,0.37,0.4466,"OK pen, let's flirt with Sophie.",2,Mark,6
+415,0.423,0.577,0.0,-0.296,Mark's got no conception.,2,Jeremy,4
+416,0.0,0.796,0.204,0.5927,"He thinks I'm so... but really I'm busting my creative balls here, day in, day out.",2,Jeremy,16
+417,0.211,0.789,0.0,-0.1531,"No, but it's all, ""Where's the money?",2,Jeremy,7
+418,0.0,1.0,0.0,0.0,"I mean where's the rent, Mr. Jim Morrison?",2,Jeremy,8
+419,0.29,0.538,0.172,-0.1916,"No, you don't like the attack dog, do you, Mr. Keats?",2,Jeremy,11
+420,0.247,0.753,0.0,-0.3164,Hold on I think I've struck the mother lode!,2,Jeremy,9
+421,0.535,0.465,0.0,-0.6808, What the hell is that?,2,Mark,5
+422,0.0,1.0,0.0,0.0,"That is very gay, that's what that is.",2,Mark,8
+423,0.473,0.527,0.0,-0.4003,"Come on, go crazy!",2,Mark,4
+424,0.0,0.589,0.411,0.4199,You're hungry like the wolf!,2,Mark,5
+425,0.0,1.0,0.0,0.0,Maybe this is his porn.,2,Jeremy,5
+426,0.0,0.312,0.688,0.765, (I'm giving her a love heart.,2,Mark,6
+427,0.773,0.227,0.0,-0.7009,"No, no, it's not good.",2,Mark,5
+428,0.286,0.714,0.0,-0.34,"Think ""crazy horse"", think ""in your face"".",2,Mark,7
+429,0.0,1.0,0.0,0.0,What would Jeremy do?,2,Mark,4
+430,0.308,0.481,0.212,0.0,"Heh heh, yeah, that's it, love's for Nazis.)",2,Mark,8
+431,0.175,0.603,0.223,0.2003,"I'm a dirty hobbit and she's a sexy elf so she might be ""Ohh!",2,Jeremy,14
+432,0.0,1.0,0.0,0.0,"Take off my bodkin and my jerkin.""",2,Jeremy,7
+433,0.0,0.577,0.423,0.296,"Oh, yeah, pixie ears.",2,Jeremy,4
+434,0.0,1.0,0.0,0.0,What if she was a hobbit slayer?,2,Jeremy,7
+435,0.0,0.658,0.342,0.3818,I'd just use my enchanted amulet.,2,Jeremy,6
+436,0.0,1.0,0.0,0.0,"Yield to me, hobbit-slayer.",2,Jeremy,4
+437,0.242,0.758,0.0,-0.1531,You will touch my magic cock.,2,Jeremy,6
+438,0.19,0.67,0.14,-0.2263,And then I go and seal the deal by doing something wicked like this car-toon.,2,Mark,15
+439,0.0,1.0,0.0,0.0,So what do you think?,2,Super Hans,5
+440,0.513,0.487,0.0,-0.2755,I don't like it.,2,Jeremy,4
+441,0.0,0.189,0.811,0.5106,"Yeah well, I do.",2,Super Hans,4
+442,0.0,0.704,0.296,0.2732,"Well this is it, is it?",2,Super Hans,6
+443,0.0,1.0,0.0,0.0,This is the end of the Hair Blair Bunch.,2,Super Hans,9
+444,0.0,1.0,0.0,0.0,"Uh, we are not the Hair Blair Bunch.",2,Jeremy,8
+445,0.157,0.843,0.0,-0.0772,"Sorry, this is the end of Spunk Bubble.",2,Super Hans,8
+446,0.0,1.0,0.0,0.0,This is the end of Mama's Kumquat.,2,Jeremy,7
+447,0.102,0.898,0.0,-0.2057,"This is not the end of Mama's Kumquat Jez, cos I never agreed to it being Mama's Kumquat.",2,Super Hans,18
+448,0.0,1.0,0.0,0.0,"Look, if this is it, if this is John and Paul 1970, then I need money, for the equipment.",2,Jeremy,19
+449,0.309,0.488,0.203,-0.3182,"This is like your whole Balearic bullshit, innit?",2,Super Hans,8
+450,0.0,0.802,0.198,0.6369,"One minute, it's all, ""Oh I love ya, man,"" the next, it's ""Where's that fifty quid you owe me?""",2,Super Hans,19
+451,0.0,1.0,0.0,0.0,"Look I'm just saying I need money, and…",2,Jeremy,8
+452,0.5,0.278,0.222,-0.6124,"Shit is as shit does, my friend.",2,Super Hans,7
+453,0.389,0.611,0.0,-0.6249,"Oh look Jez, I'm sorry mate this is all bullshit.",2,Super Hans,10
+454,0.0,1.0,0.0,0.0,We can't just let the Hair Blair Bunch…,2,Super Hans,8
+455,0.0,1.0,0.0,0.0,We are not the Hair Blair Bunch!,2,Jeremy,7
+456,0.5,0.5,0.0,-0.7906,That is the single worst single bloody idea ever.,2,Mark,9
+457,0.0,1.0,0.0,0.0,"I mean, a swastika!",2,Mark,4
+458,0.0,0.732,0.268,0.296,"Oh, yeah, do what Jeremy would do.",2,Mark,7
+459,0.0,0.508,0.492,0.4404,"Thanks, Jeremy, you tit.",2,Mark,4
+460,0.237,0.667,0.096,-0.4391,"I want to fax this off then oh, Toni, I feel incredibly tired.",2,Jeremy,13
+461,0.0,1.0,0.0,0.0,Let's just both lie down on your bed.,2,Jeremy,8
+462,0.0,0.756,0.244,0.4404,"Hope she gets out the bong, not the fucking cafetiere.",2,Jeremy,10
+463,0.0,0.577,0.423,0.296,Yeah so I was wondering.,2,Jeremy,5
+464,0.0,1.0,0.0,0.0,"You're an urban, switched-on kind of lady.",2,Jeremy,7
+465,0.0,1.0,0.0,0.0,"You've probably got a fax machine and all that stuff, right?",2,Jeremy,11
+466,0.0,0.515,0.485,0.5719,"Yeah right, like I'd have a fax machine.",2,Toni,8
+467,0.0,1.0,0.0,0.0,What have you just come from the 1980s?,2,Toni,8
+468,0.0,0.873,0.127,0.1901,"This is like that movie The Spaceman and King Arthur, but in reverse.",2,Toni,13
+469,0.518,0.482,0.0,-0.7543,No I was just got this crappy job application.,2,Jeremy,9
+470,0.0,1.0,0.0,0.0,"Listen, tell me something Jeremy.",2,Toni,5
+471,0.0,1.0,0.0,0.0,Have you ever tried washing up without using washing-up liquid?,2,Toni,10
+472,0.0,1.0,0.0,0.0,Has Mark been talking to you?,2,Jeremy,6
+473,0.0,0.828,0.172,0.4019,"Could you clean a pot or a pan without using a scrubbing brush, a sponge or a scouring pad?",2,Toni,19
+474,0.0,1.0,0.0,0.0,I don't think so.,2,Jeremy,4
+475,0.0,1.0,0.0,0.0,So what you're saying is these kinds of products are essential.,2,Toni,11
+476,0.216,0.784,0.0,-0.296,The kind of products no one could do without?,2,Toni,9
+477,0.0,0.792,0.208,0.2732,"Well, you're kind of making me say that, but—-",2,Jeremy,9
+478,0.134,0.717,0.149,0.0694,"Now the first thing to say is that this is definitely not pyramid selling, OK?",2,Toni,15
+479,0.0,1.0,0.0,0.0,"Enter the pit of Sarlacc, little crisps.",2,Mark,7
+480,0.384,0.616,0.0,-0.6808,"Of course, she's ignoring me, this morning I sent her a bloody swastika.",2,Mark,13
+481,0.205,0.65,0.145,-0.296,"This is the worst thing that has ever happened to anyone ever and... relax, Mark.",2,Mark,15
+482,0.0,1.0,0.0,0.0,You're not Hitler in his bunker.,2,Mark,6
+483,0.0,1.0,0.0,0.0,He was really under the cosh.,2,Mark,6
+484,0.0,1.0,0.0,0.0,"Mind you, at least he had a girlfriend.",2,Mark,8
+485,0.085,0.722,0.193,0.3885,"OK, enough mooning, let's strap on the nosebag and eat some serious work.",2,Mark,13
+486,0.0,0.737,0.263,0.3612,"I mean, does that look like a pyramid to you?",2,Toni,10
+487,0.0,0.526,0.474,0.4019,"Clearly, it's not a pyramid.",2,Toni,5
+488,0.0,0.455,0.545,0.8625,"And it's like a big, lovely club with free money for everyone?",2,Jeremy,12
+489,0.0,0.494,0.506,0.6249,"I mean it sounds great, but…",2,Jeremy,6
+490,0.0,0.476,0.524,0.5106,Free money for everyone?,2,Toni,4
+491,0.0,1.0,0.0,0.0,"Look out the window Jeremy, that's never going to happen, not in this old world.",2,Toni,15
+492,0.128,0.872,0.0,-0.296,"No, see, the early birds are going to find their bird table covered in money pie.",2,Toni,16
+493,0.0,0.866,0.134,0.5267,"But the Johnny and Sally Come-Latelys, they get a slice of the pie, but then they look closer and oh, dear, it's only pastry.",2,Toni,24
+494,0.0,1.0,0.0,0.0,"Boo-hoo, Johnny and Sally.",2,Toni,4
+495,0.0,1.0,0.0,0.0,Are you with me?,2,Toni,4
+496,0.0,1.0,0.0,0.0,Blown it with Sophie.,2,Mark,4
+497,0.0,0.682,0.318,0.3252,"Never met her, not necessarily a disadvantage.",2,Mark,7
+498,0.0,1.0,0.0,0.0,"Why don't I get this fixed, why don't I ever get this fucking thing fixed?!",2,Mark,15
+499,0.241,0.759,0.0,-0.5423,"Every night it's fift- ah, it always comes out eventually, fuck it.",2,Mark,12
+500,0.0,1.0,0.0,0.0,"Oh, I'm so, you did?",2,Mark,5
+501,0.0,0.82,0.18,0.296,"Yeah, it's meant to be me and Barbara from Personnel, right?",2,Sophie,11
+502,0.07,0.821,0.109,0.1655,"And she's handing me this heart of holiday pay, um but in the heart, it's just...",2,Sophie,16
+503,0.444,0.556,0.0,-0.6124,"That's so Barbara, she's such a racist.",2,Sophie,7
+504,0.0,0.874,0.126,0.0772,"Listen, Sophie, I was wondering if I could get your home number.",2,Mark,12
+505,0.0,1.0,0.0,0.0,"I mean, for work, in case I need to swap a shift or... that is, if you don't…",2,Mark,18
+506,0.259,0.588,0.153,-0.2263,"No, I don't, if that's what you want.",2,Sophie,8
+507,0.0,1.0,0.0,0.0,She's actually writing it.,2,Mark,4
+508,0.0,1.0,0.0,0.0,"Oh, hang on, this isn't enough numbers.",2,Mark,7
+509,0.306,0.694,0.0,-0.296,"Oh, no, it is enough numbers.",2,Mark,6
+510,0.0,0.583,0.417,0.6124,"Oh, God, I hope she doesn't mind about my balls.",2,Mark,10
+511,0.0,1.0,0.0,0.0,"One step out of line, the slightest hint of any maverick behaviour and you will be out.",2,TV,17
+512,0.2,0.8,0.0,-0.5423,"If it's such a bad thing to do things by the book, there wouldn't be a book.",2,Mark,17
+513,0.0,1.0,0.0,0.0,Have to keep an eye on him if he gets it.,2,Mark,11
+514,0.0,1.0,0.0,0.0,"If there's one thing JLB does not need, it's a maverick.",2,Mark,11
+515,0.0,0.741,0.259,0.2732,"So anyway, things went rather well with…",2,Mark,7
+516,0.0,1.0,0.0,0.0,I bet he did it.,2,Jeremy,5
+517,0.0,1.0,0.0,0.0,Just because he's black?,2,Mark,4
+518,0.185,0.815,0.0,-0.3595,"No, I mean, not because- he was at the garage at the beginning!",2,Jeremy,13
+519,0.0,1.0,0.0,0.0,I know what you meant.,2,Mark,5
+520,0.0,0.822,0.178,0.0772,"Anyway, in the end, I got Sophie's number.",2,Mark,8
+521,0.0,1.0,0.0,0.0,We already know he's the only one with the key to the lock-up.,2,Jeremy,13
+522,0.0,1.0,0.0,0.0,So do you think I should give her a call?,2,Mark,10
+523,0.0,1.0,0.0,0.0,"I probably should, shouldn't I. Oh I really don't know if I should.",2,Mark,13
+524,0.0,0.588,0.412,0.2732,"Well, maybe you should.",2,Jeremy,4
+525,0.0,0.789,0.211,0.4466,"OK listen, if God's doing mountains or sky or water, I'll call.",2,Mark,12
+526,0.0,1.0,0.0,0.0,"If he's doing trees or critters, I won't.",2,Mark,8
+527,0.0,0.656,0.344,0.2732,"All right, let God decide.",2,Jeremy,5
+528,0.0,0.654,0.346,0.5719,"He did do it, but for a nice reason.",2,Jeremy,9
+529,0.5,0.5,0.0,-0.6124,"Who's the racist now, Mark?",2,Jeremy,5
+530,0.166,0.466,0.368,0.4624,"If you heard that, please ignore it, I'm not a racist.",2,Mark,11
+531,0.0,0.707,0.293,0.4404,Anyway uh it's good to hear your voice.,2,Mark,8
+532,0.171,0.568,0.261,0.5267,"I know it's only a recording but you have got a bloody nice voice and... God, I just called up to say hi and then, then I go and spoil it all by saying something stupid like I like you.",2,Mark,40
+533,0.0,1.0,0.0,0.0,"I mean, not that.",2,Mark,4
+534,0.048,0.87,0.082,0.2732,"But anyway I noticed that the paper in the photocopier is running a bit low so I know it's not really your job but uh well you know, so, uh see you tomorrow.",2,Mark,33
+535,1.0,0.0,0.0,-0.9359,"Fuck, fuck, fuck, fuck!",2,Mark,4
+536,0.484,0.516,0.0,-0.6901,I've really fucked it haven't I?,2,Mark,6
+537,0.688,0.312,0.0,-0.6597,Have I fucked it?,2,Mark,4
+538,0.0,0.441,0.559,0.5859,Maybe it was charming.,2,Jeremy,4
+539,0.0,1.0,0.0,0.0,It was the behaviour of an oddball.,2,Mark,7
+540,0.423,0.577,0.0,-0.296,"No, not an oddball.",2,Jeremy,4
+541,0.112,0.888,0.0,-0.1326,"You may not play by the rules, but by Christ, you get results.",2,Jeremy,13
+542,0.174,0.826,0.0,-0.2263,"Come on, let's go and have a drink, forget about it.",2,Jeremy,11
+543,0.213,0.787,0.0,-0.2263,Have you forgotten about the phone call yet?,2,Jeremy,8
+544,0.0,1.0,0.0,0.0,"Tell me Mark, how much washing-up do you think you could do without any washing-up liquid?",2,Jeremy,16
+545,0.0,0.721,0.279,0.4767,And what about our friends and neighbours and colleagues?,2,Jeremy,9
+546,0.0,1.0,0.0,0.0,"I mean everyone needs cleaning products and that's the one thing that's never gonna change, right?",2,Jeremy,16
+547,0.0,0.667,0.333,0.3612,Why are you talking like this?,2,Mark,6
+548,0.0,0.371,0.629,0.624,"Well, that's a very interesting question.",2,Jeremy,6
+549,0.0,1.0,0.0,0.0,"Now, the first thing to say would be that this is not pyramid selling.",2,Jeremy,14
+550,0.0,1.0,0.0,0.0,You're doing pyramid selling?,2,Mark,4
+551,0.595,0.405,0.0,-0.5267,"No no, not pyramid selling.",2,Jeremy,5
+552,0.0,1.0,0.0,0.0,I can't believe you're into pyramid selling.,2,Mark,7
+553,0.0,1.0,0.0,0.0," Listen, listen, it's not pyramid selling, it's network marketing and it's a guaranteed money-making.",2,Jeremy,14
+554,0.0,1.0,0.0,0.0,"Mark I've seen the, the charts.",2,Jeremy,6
+555,0.0,1.0,0.0,0.0,Why didn't you tell me about the charts?,2,Mark,8
+556,0.278,0.722,0.0,-0.4019,Are you trying to piss on my bonfire?,2,Jeremy,8
+557,0.203,0.602,0.195,-0.0258,I'm trying to protect you from pissing all over yourself.,2,Mark,10
+558,0.0,0.756,0.244,0.3089,I'm not about to piss all over myself.,2,Jeremy,8
+559,0.31,0.69,0.0,-0.4019,"I'm, I'm pissing into the big time.",2,Jeremy,7
+560,0.0,1.0,0.0,0.0,You're still coming to the interview.,2,Mark,6
+561,0.0,1.0,0.0,0.0,"Listen, Jeremy, you don't seem to understand.",2,Mark,7
+562,0.169,0.831,0.0,-0.0572,Nothing you want is ever gonna happen.,2,Mark,7
+563,0.0,1.0,0.0,0.0,That's the real world.,2,Mark,4
+564,0.0,1.0,0.0,0.0,"Your hair isn't red, people don't walk around on stilts.",2,Mark,10
+565,0.0,1.0,0.0,0.0,"Maybe somewhere, you can earn a living sitting around drinking margaritas through a curly plastic straw, but in this world, you've got to turn up, log on and grind out.",2,Mark,30
+566,0.0,0.789,0.211,0.1531,Yeah but if you get in early…,2,Jeremy,7
+567,0.0,1.0,0.0,0.0,"Come Friday, you will owe me three months' rent.",2,Mark,9
+568,0.0,1.0,0.0,0.0,You're coming to the interview.,2,Mark,5
+569,0.0,1.0,0.0,0.0,"Oh I'll come to the interview, all right, but I don't think I'll be getting the job.",2,Jeremy,17
+570,0.376,0.624,0.0,-0.3412,"Uh, nothing, just something funny.",2,Jeremy,5
+571,0.0,0.612,0.388,0.5859,Maybe she will think it was charming.,2,Mark,7
+572,0.067,0.861,0.072,0.0516,"Just keep clear of her until you've worked out a, I could say Jeremy had a gun and made me sing it, because he's a crackhead and he does that sort of thing all the time.",2,Mark,36
+573,0.13,0.58,0.29,0.5719,"Yeah yeah, that sounds great, me living in my crack house, maybe you can be a crack bitch, and sit on my...",2,Mark,22
+574,0.558,0.442,0.0,-0.743,"Shit, sugar, fudge, piss, poop, pants, bollocks.",2,Mark,7
+575,0.0,1.0,0.0,0.0,I'm in the Ardennes!,2,Mark,4
+576,0.0,1.0,0.0,0.0,You can't touch me in the Ardennes.,2,Mark,7
+577,0.0,1.0,0.0,0.0,Concealed in the cupboard.,2,Mark,4
+578,0.0,0.577,0.423,0.4466,Everything's OK in the cupboard.,2,Mark,5
+579,0.0,0.58,0.42,0.4404,I'm safe in the cupboard.,2,Mark,5
+580,0.0,1.0,0.0,0.0,You're in the stationery cupboard.,2,Jeff,5
+581,0.0,0.336,0.664,0.7845,"Well um, I hope you're having a good time.",2,Jeff,9
+582,0.0,1.0,0.0,0.0,I'm just in the cupboard right now.,2,Mark,7
+583,0.0,0.732,0.268,0.296,"About the message, we'll talk later, yeah?",2,Mark,7
+584,0.0,0.506,0.494,0.4466,"OK, here we go.",2,Jeremy,4
+585,0.0,0.706,0.294,0.3612,Operation 'Come Over Like an Unemployable Freak'.,2,Jeremy,7
+586,0.0,0.822,0.178,0.0772,Do you want to walk this way?,2,Barbara,7
+587,0.15,0.773,0.077,-0.3863,"I might wobble because I'm still a bit pissed from last night you see, and I don't want to get your hopes up 'cause I have to say, I'm only really here because, you know…",2,Jeremy,35
+588,0.0,1.0,0.0,0.0,Obviously you know Mark Corrigan.,2,Barbara,5
+589,0.0,1.0,0.0,0.0,Mark's one of the team of loan managers you'd be working for...,2,Barbara,12
+590,0.0,0.679,0.321,0.2247,Got to be really careful.,2,Jeremy,5
+591,0.156,0.701,0.144,0.2057,"Don't want to get the job, don't want to piss off the land baron.",2,Jeremy,14
+592,0.366,0.282,0.352,-0.0258,He looks like crap.,2,Mark,4
+593,0.133,0.758,0.109,-0.128,"we have to make sure we've ticked all the boxes, so to speak and kept everything above board.",2,Barbara,18
+594,0.0,0.909,0.091,0.3182,"So if I can outline the basic requirements of the role you'll be undertaking, you'll basically be responsible for updating and maintaining the filing system.",2,Barbara,25
+595,0.105,0.674,0.221,0.3706,Now that probably doesn't sound very important but the truth is...,2,Barbara,11
+596,0.474,0.526,0.0,-0.5574,"Shit, what's she talking about?",2,Jeremy,5
+597,0.0,1.0,0.0,0.0,"I'm Di, she's Bashir.",2,Jeremy,4
+598,0.0,1.0,0.0,0.0,"is a portal through which the whole company communicates, and if you think about it...",2,Barbara,15
+599,0.063,0.673,0.265,0.6705,"Great, he'll be able to pay off the Blockbusters fine, plus I'll be able to order him around.",2,Mark,18
+600,0.0,0.759,0.241,0.431,"Not horrible, just ""Jeremy, could you file this for me?",2,Mark,10
+601,0.0,1.0,0.0,0.0,"Jeremy, could you take that for me?",2,Mark,7
+602,0.326,0.674,0.0,-0.4404,"Jeremy, could you suck this for me?""",2,Mark,7
+603,0.0,1.0,0.0,0.0,Where did that come from?,2,Mark,5
+604,0.0,0.566,0.434,0.6566,one of the most valuable assets a company can have.,2,Barbara,10
+605,0.0,1.0,0.0,0.0,"Now, do you have any experience in this field?",2,Barbara,9
+606,0.0,1.0,0.0,0.0,"Er, I've done quite a lot, actually.",2,Jeremy,7
+607,0.0,1.0,0.0,0.0,"I mean, not formal filing but alphabeti-ba-cising the videos, doing the spices.",2,Jeremy,12
+608,0.0,0.909,0.091,0.0772,I suppose what I'd want to do is build on that experience in a professional zone.,2,Jeremy,16
+609,0.0,0.244,0.756,0.7345,"God, that sounded amazing!",2,Jeremy,4
+610,0.0,0.663,0.337,0.2584,Don't accidentally get the bugger.,2,Jeremy,5
+611,0.0,1.0,0.0,0.0,"So, I see you used to be a nurse.",2,Barbara,9
+612,0.0,1.0,0.0,0.0,Wouldn't filing be a bit of a step down?,2,Barbara,9
+613,0.0,0.645,0.355,0.296,"Yeah, I suppose it would, actually.",2,Jeremy,6
+614,0.0,0.632,0.368,0.5413,Although I'm looking for something more relaxing.,2,Jeremy,7
+615,0.0,1.0,0.0,0.0,"I expect Jeremy knows what he means, Mark.",2,Barbara,8
+616,0.097,0.425,0.478,0.7402,"No, challenging is right, um, but a bit more of a relaxing challenge.",2,Jeremy,13
+617,0.0,0.642,0.358,0.4201,More like doing a crossword than a tracheotomy.,2,Jeremy,8
+618,0.279,0.481,0.24,-0.1027,My natural bloody charm's only swinging it.,2,Jeremy,7
+619,0.0,1.0,0.0,0.0,Got to do something.,2,Jeremy,4
+620,0.0,1.0,0.0,0.0,It's just a thing I have.,2,Jeremy,6
+621,0.0,1.0,0.0,0.0,Facial spa... you do not have…,2,Mark,6
+622,0.0,0.656,0.344,0.2732,"Well, um I guess that's everything.",2,Barbara,6
+623,0.0,0.737,0.263,0.3612,"Jeremy, is there anything you'd like to ask?",2,Barbara,8
+624,0.0,1.0,0.0,0.0,"Barbara, how much washing-up do you think you could do without any washing-up liquid?",2,Jeremy,14
+625,0.0,0.517,0.483,0.4215,It's a unique business opportunity.,2,Jeremy,5
+626,0.185,0.815,0.0,-0.1513,"It's pyramid selling Barbara, I'm very sorry and…",2,Mark,8
+627,0.0,1.0,0.0,0.0,"It's not pyramid selling, Mark.",2,Jeremy,5
+628,0.244,0.756,0.0,-0.4404,It is pyramid selling and you're making a fool of yourself.,2,Mark,11
+629,0.428,0.572,0.0,-0.4574,You're pissing on my bonfire!,2,Jeremy,5
+630,0.454,0.546,0.0,-0.3595,There is no bonfire!,2,Mark,4
+631,0.374,0.626,0.0,-0.4574,Because you keep pissing on it!,2,Jeremy,6
+632,0.444,0.556,0.0,-0.3384,This is really low.,2,Mark,4
+633,0.0,0.619,0.381,0.5106,"Yeah, well, at least I don't fancy elves and pixies.",2,Jeremy,10
+634,0.0,1.0,0.0,0.0,What does that mean?,2,Mark,4
+635,0.217,0.783,0.0,-0.3595,I literally have no idea what that is supposed to mean!,2,Mark,11
+636,0.0,0.335,0.665,0.7865,"OK uh well, thanks for coming in.",2,Barbara,7
+637,0.0,1.0,0.0,0.0,We'll be in touch.,2,Barbara,4
+638,0.463,0.316,0.221,-0.5095,"Well, that was a fucking disaster.",2,Mark,6
+639,0.571,0.26,0.169,-0.6239,"I want reparations, brutal reparations!",2,Mark,5
+640,0.0,0.606,0.394,0.0772,I want the Rhineland.,2,Mark,4
+641,0.0,1.0,0.0,0.0,It's going to be 1919 all over again.,2,Mark,8
+642,0.558,0.442,0.0,-0.5848,Fuck the inevitable backlash!,2,Mark,4
+643,0.0,0.106,0.894,0.8126,"Calm, honest and mature.",2,Mark,4
+644,0.0,1.0,0.0,0.0,I just bumped into your flatmate in reception.,2,Sophie,8
+645,0.0,0.583,0.417,0.6124,"Yeah I liked him, he kept talking about washing up.",2,Sophie,10
+646,0.0,0.334,0.666,0.7159,"Very funny, like Jim Carrey.",2,Sophie,5
+647,0.0,0.645,0.355,0.296,"Yeah, I know what you mean.",2,Mark,6
+648,0.0,1.0,0.0,0.0,"Get your tanks off my lawn, Jeremy.",2,Mark,7
+649,0.0,1.0,0.0,0.0,"But uh listen, Sophie, about the message last night.",2,Mark,9
+650,0.0,0.556,0.444,0.4588,I want to kind of come clean really.,2,Mark,8
+651,0.071,0.631,0.298,0.775,"It's a bit embarrassing but, well, the thing is Jeremy, sometimes, for a laugh, makes me say things with a bread knife.",2,Mark,22
+652,0.0,1.0,0.0,0.0,I mean he's obviously not a crackhead but…,2,Mark,8
+653,0.128,0.872,0.0,-0.3612,"Look, Mark you don't have to... about the phone message, you don't have to be embarrassed about it.",2,Sophie,18
+654,0.0,1.0,0.0,0.0,"Of course not, it's just one of those things.",2,Sophie,9
+655,0.0,1.0,0.0,0.0,And you haven't told anyone about it?,2,Mark,7
+656,0.0,0.333,0.667,0.8402,"Oh, thank you, thank you, thank you, thank you.",2,Mark,9
+657,0.0,0.515,0.485,0.5727,"Calm down, she's not bloody Pontius Pilate.",2,Mark,7
+658,0.0,0.412,0.588,0.8555,"Yeah, well, you know the truth is... the truth is, I suppose I like you.",2,Mark,15
+659,0.0,1.0,0.0,0.0,That's why I said the song.,2,Mark,6
+660,0.538,0.462,0.0,-0.5423,Is that such a crime?,2,Mark,5
+661,0.0,0.816,0.184,0.4019,Should I be hounded to the ends of the Earth just for liking you?,2,Mark,14
+662,0.184,0.684,0.132,-0.25,"I like you and if you can't handle it, you can just, you know, fuck off.",2,Mark,16
+663,0.364,0.413,0.223,-0.1779,"No, no, I think I can handle you liking me.",2,Sophie,10
+664,0.0,0.756,0.244,0.4404,"Thanks for bringing in Jeremy, he was quite the find.",2,Barbara,10
+665,0.204,0.513,0.282,0.1548,"Er, yeah right, I'm really sorry.",2,Mark,6
+666,0.0,0.756,0.244,0.4404,"I mean, I thought it would be a good, that he might, but…",2,Mark,13
+667,0.0,0.405,0.595,0.5267,"Feeling better now, are we?",2,Mark,5
+668,0.0,1.0,0.0,0.0,"Hey, I see you!",2,Mark,4
+669,0.0,1.0,0.0,0.0,He used to have a limp!,2,Mark,6
+670,0.0,1.0,0.0,0.0,"I mean, he pretended to have a limp.",2,Mark,8
+671,0.508,0.492,0.0,-0.4753,He's a faking little peg-leg!,2,Mark,5
+672,0.276,0.623,0.101,-0.5659,"Well, fuck you if you're not doing small talk, I'm not going to help us out.",2,Mark,16
+673,0.175,0.567,0.258,0.1531, And then I go and spoil it all by saying something stupid like I like you.,2,Jeff,16
+674,0.623,0.377,0.0,-0.5106, Life's all pain.,3,Mark,4
+675,0.912,0.088,0.0,-0.886,"Pain, rejection and gloom.",3,Mark,4
+676,0.101,0.899,0.0,-0.1759,"Why do we even pretend there's anything other than a yawning blankness at the heart of, Hey!",3,Mark,17
+677,0.0,0.448,0.552,0.5719,I am doing excellent shopping.,3,Mark,5
+678,0.216,0.784,0.0,-0.5106,My depressed state of mind means I am being even more frugal than normal.,3,Mark,14
+679,0.265,0.735,0.0,-0.5574,You do realize tinned food is just for crackheads and wars.,3,Jeremy,11
+680,0.0,1.0,0.0,0.0,This stuff is 78 pence a hundred millilitres.,3,Mark,8
+681,0.0,0.714,0.286,0.7003,"Yeah, it's first pressing, or do you want to wait until everyone else has had their fun with the olives?",3,Jeremy,20
+682,0.0,0.549,0.451,0.7506,"Fourth pressing, yeah, like that's going to be a party in your mouth.",3,Jeremy,13
+683,0.0,1.0,0.0,0.0,"Look Jeremy, we've been through this before.",3,Mark,7
+684,0.0,1.0,0.0,0.0,I do the joint shopping solo because I don't make impulse purchases and I'm less swayed by the power of…,3,Mark,20
+685,0.209,0.622,0.169,-0.1815,I just came here to tell you we've been invited to a very wicked party.,3,Jeremy,15
+686,0.193,0.511,0.295,0.2023,Do I look like the kind of man who goes to wicked parties?,3,Mark,13
+687,0.0,1.0,0.0,0.0,Why don't you ask Toni?,3,Mark,5
+688,0.359,0.641,0.0,-0.4215,I did actually but she said no.,3,Jeremy,7
+689,0.0,0.847,0.153,0.4404,"But it's better this way, two lads, we gotta get out there, grooving, doing it, you know?",3,Jeremy,17
+690,0.0,1.0,0.0,0.0,It's been a long time for either of us.,3,Jeremy,9
+691,0.0,0.741,0.259,0.4199,"I haven't had my oats in something like, two weeks!",3,Jeremy,10
+692,0.0,1.0,0.0,0.0,Nine months and thirteen days.,3,Jeremy,5
+693,0.0,1.0,0.0,0.0,I mean look at us!,3,Jeremy,5
+694,0.0,1.0,0.0,0.0,People are gonna think we spend the whole day wanking.,3,Jeremy,10
+695,0.0,0.655,0.345,0.2755,"Don't be ridiculous, they're homey.",3,Mark,5
+696,0.385,0.615,0.0,-0.3612,They're for wiping up mess.,3,Mark,5
+697,0.0,1.0,0.0,0.0,"Why do you think they're called ""man size?""",3,Jeremy,8
+698,0.0,0.556,0.444,0.3382,Well they're for men!,3,Mark,4
+699,0.0,1.0,0.0,0.0,"Men's noses, big manly snot.",3,Mark,5
+700,0.0,1.0,0.0,0.0,"Oh Mark, come on man, let it go.",3,Jeremy,8
+701,0.154,0.726,0.119,-0.1708,Why do you have to have a huge can of lager that makes you really really drunk?,3,Mark,17
+702,0.508,0.492,0.0,-0.4767,What's wrong with moderation?,3,Mark,4
+703,0.0,0.747,0.253,0.2617,Yeah but what if you want to get Sophie back home?,3,Jeremy,11
+704,0.0,0.86,0.14,0.0772,You might want to get her all lathered up.,3,Jeremy,9
+705,0.0,1.0,0.0,0.0,That's not going to be happening any time soon.,3,Mark,9
+706,0.0,1.0,0.0,0.0,I mean it's not a date or anything because I've got a megapass.,3,Mark,13
+707,0.0,1.0,0.0,0.0,How do you feel about row G by the way?,3,Mark,10
+708,0.104,0.56,0.336,0.5994,"Oh, Mark, listen, I'm sorry, I'd love to but...",3,Sophie,9
+709,0.0,1.0,0.0,0.0,I've got this thing.,3,Sophie,4
+710,0.0,0.748,0.252,0.7227,"Oh man I'm... but listen, this is the perfect time to get back in the game.",3,Jeremy,16
+711,0.0,1.0,0.0,0.0,"You know, two guys, together, out, looking for... it.",3,Jeremy,9
+712,0.216,0.784,0.0,-0.5106,How much pain can I experience at home with a spaghetti carbonara and Das Boot.,3,Mark,14
+713,0.0,1.0,0.0,0.0,It's eight o'clock on a Friday night.,3,Jeremy,7
+714,0.0,0.761,0.239,0.296,"Most people aren't doing their shopping now, yeah?",3,Jeremy,8
+715,0.0,0.732,0.268,0.296,"Most people are out right now, yeah?",3,Jeremy,7
+716,0.19,0.517,0.293,0.296,"No queues, so who exactly is winning then?",3,Mark,8
+717,0.0,0.641,0.359,0.6166,"OK, well, I'm here, so I'll just sit here and drink.",3,Mark,11
+718,0.468,0.532,0.0,-0.5267,No one can stop me doing that.,3,Mark,7
+719,0.494,0.506,0.0,-0.5994,Just drink myself to death.,3,Mark,5
+720,0.0,1.0,0.0,0.0,I bet he gets sex tonight and I have to listen to it through the wall.,3,Mark,16
+721,0.167,0.833,0.0,-0.34,Maybe she might go to the bathroom and accidentally come into my room.,3,Mark,13
+722,0.268,0.732,0.0,-0.296,"No, she says ""whoops"" and goes out.",3,Mark,7
+723,0.355,0.645,0.0,-0.296,Stop doing this to yourself.,3,Mark,5
+724,0.0,0.091,0.909,0.8388,"OK, OK, playing it cool?",3,Jeremy,5
+725,0.259,0.741,0.0,-0.5423,"All right, how about I go a little Oscar Wilde on your ass?",3,Jeremy,13
+726,0.0,1.0,0.0,0.0,So I always go for the first pressing.,3,Jeremy,8
+727,0.0,0.798,0.202,0.5106,"I mean why wait until everyone else has had their fun with the olives, right?",3,Jeremy,15
+728,0.0,1.0,0.0,0.0,This is the 21st Century.,3,Jeremy,5
+729,0.0,0.381,0.619,0.7579,Olive oil is a perfectly acceptable topic.,3,Jeremy,7
+730,0.0,1.0,0.0,0.0,"Someone here's got psoriasis, one of the less common skin ailments.",3,Mark,11
+731,0.159,0.647,0.194,0.1531,"Basic yeast infection, rash if you're thinking glamorous, athlete's foot if you're not.",3,Mark,13
+732,0.6,0.4,0.0,-0.4588,A fellow migraine sufferer?,3,Mark,4
+733,0.122,0.696,0.181,0.2535,"Everyone at this party isn't as young, fit and single as they're making out.",3,Mark,14
+734,0.12,0.677,0.203,0.2732,"Yes let's face it, we're all falling apart piece by piece.",3,Mark,11
+735,0.133,0.867,0.0,-0.0191,Doesn't matter if you're single or in a couple.,3,Mark,9
+736,0.234,0.766,0.0,-0.0572,I don't want them to thaw.,3,Mark,6
+737,0.0,1.0,0.0,0.0,You got Findus Crispy Pancakes.,3,Valerie,5
+738,0.405,0.595,0.0,-0.5267,"They're just so... disgusting, aren't they?",3,Valerie,6
+739,0.0,1.0,0.0,0.0,"So my sister, who's a smackhead, I ended up there for Christmas dinner and we had turkey Findus Crispy Pancakes.",3,Valerie,20
+740,0.625,0.375,0.0,-0.7177,I wanted to kill myself!,3,Valerie,5
+741,0.0,0.667,0.333,0.3612,That would be the natural reaction.,3,Mark,6
+742,0.0,1.0,0.0,0.0,Can I have a jam doughnut?,3,Valerie,6
+743,0.0,1.0,0.0,0.0,So who exactly are you trying to bone tonight?,3,Valerie,9
+744,0.0,1.0,0.0,0.0,Oh I'm not in the game.,3,Mark,6
+745,0.0,0.593,0.407,0.6705,"If I can get my shopping home intact, I'll be happy.",3,Mark,11
+746,0.0,0.508,0.492,0.7003,"Just like, be honest about it, you know.",3,Valerie,8
+747,0.0,1.0,0.0,0.0,"I mean, let's line up, two naked rows, best-looking people can pick the best-looking, the dregs get the dregs and we can all just go home early and get it over with.",3,Valerie,32
+748,0.0,0.715,0.285,0.4927,"That, to me, is a very attractive system you're proposing.",3,Mark,10
+749,0.333,0.667,0.0,-0.5423,And it saves them having to humiliate themselves.,3,Valerie,8
+750,0.0,1.0,0.0,0.0,"I mean, check out this guy.",3,Valerie,6
+751,0.259,0.741,0.0,-0.1027,Knew this would pay off.,3,Jeremy,5
+752,0.0,1.0,0.0,0.0,"""Yeah, I did this"", ""I go there"".",3,Jeremy,7
+753,0.0,0.63,0.37,0.4466,"OK, there's a new guy in town.",3,Jeremy,7
+754,0.0,0.385,0.615,0.4939,Probably just a friend.,3,Jeremy,4
+755,0.0,0.426,0.574,0.6597,"Yeah, me, her and her friend.",3,Jeremy,6
+756,0.0,0.4,0.6,0.7184,"God, she must be loving this.",3,Jeremy,6
+757,0.0,1.0,0.0,0.0,I feel so cheap.,3,Jeremy,4
+758,0.0,1.0,0.0,0.0,I really thought we had something.,3,Jeremy,6
+759,0.0,0.848,0.152,0.3612,"So you work in an office and you've got, like, your computer and your desk.",3,Valerie,15
+760,0.296,0.462,0.242,-0.1188,"God, that is so fucking weird!",3,Valerie,6
+761,0.18,0.533,0.287,0.1531,"Yeah, well you know, everything's decaying, so the way I see it.",3,Mark,12
+762,0.0,0.508,0.492,0.8655,Has there ever been a better time to save up for a very comfortable sofa?,3,Mark,15
+763,0.0,1.0,0.0,0.0,"She's a teenager for God's sake, Mark.",3,Mark,7
+764,0.0,1.0,0.0,0.0,You'll get castrated by the menfolk.,3,Mark,6
+765,0.0,0.656,0.344,0.2732,"Maybe she's a- Oh, God.",3,Mark,5
+766,0.0,1.0,0.0,0.0,Are you selling insurance?,3,Others,4
+767,0.132,0.719,0.15,0.0772,"No need to look like you're sitting on a brush, man, we're only razzing you.",3,Others,15
+768,0.0,1.0,0.0,0.0,We are the mods!,3,Others,4
+769,0.0,1.0,0.0,0.0,We are the mods!,3,Others,4
+770,0.0,1.0,0.0,0.0,"We are, we are, we are the mods!",3,Others,8
+771,0.506,0.494,0.0,-0.6249,My brother is such a dickhead.,3,Valerie,6
+772,0.478,0.222,0.3,-0.3818,I wish he was dead.,3,Valerie,5
+773,0.0,1.0,0.0,0.0,Oh that's a bit much.,3,Mark,5
+774,0.189,0.811,0.0,-0.1027,Just pretend you need his bone marrow.,3,Mark,7
+775,0.0,1.0,0.0,0.0,I can't believe she's snogging him already.,3,Jeremy,7
+776,0.0,0.6,0.4,0.25,The dream is over.,3,Jeremy,4
+777,0.0,1.0,0.0,0.0,"Hey Jez, I just wanted to tell you we're going... to the Lazerbowl.",3,Mark,13
+778,0.0,1.0,0.0,0.0,We're going to the Lazerbowl?,3,Jeremy,5
+779,0.0,0.577,0.423,0.296,"Yeah, me and Valerie.",3,Mark,4
+780,0.107,0.711,0.183,0.4659,We were going to kill her brother but then we thought it might be more fun to go to the Lazerbowl.,3,Mark,21
+781,0.0,1.0,0.0,0.0,"Me, you and Valerie are going to the Lazerbowl?",3,Jeremy,9
+782,0.0,0.845,0.155,0.296,"I hadn't thought you would be... maybe I'll see you later at home, yeah?",3,Mark,14
+783,0.0,1.0,0.0,0.0,Would you mind taking the shopping?,3,Mark,6
+784,0.0,1.0,0.0,0.0,I've left some stuff in the freezer compartment.,3,Mark,8
+785,0.0,1.0,0.0,0.0,I could bring someone along?,3,Jeremy,5
+786,0.0,1.0,0.0,0.0,"I know, I'll call Toni.",3,Jeremy,5
+787,0.095,0.649,0.255,0.5719,"Yeah, no, this is perfect cause I'll just say ""Me, Mark and Valerie are off down the Lazerbowl.",3,Jeremy,18
+788,0.0,0.822,0.178,0.0772,"Do you want a piece of the action?""",3,Jeremy,8
+789,0.365,0.238,0.396,-0.2942,"and she'll be like ""Hell yeah!",3,Jeremy,6
+790,0.605,0.395,0.0,-0.6808,"Why the hell not?""",3,Jeremy,4
+791,0.0,0.741,0.259,0.3612,"Yeah, so he was all ""Do you want a piece of the action?""",3,Toni,13
+792,0.485,0.297,0.218,-0.5707,"and I was all ""Hell yeah!",3,Toni,6
+793,0.0,0.69,0.31,0.4019,I mean this is definitely not the rehearsal.,3,Toni,8
+794,0.0,1.0,0.0,0.0,Why not go to the Lazerbowl with the kid next door?,3,Toni,11
+795,0.397,0.345,0.259,-0.3818,"I mean honestly, why the hell not?""",3,Toni,7
+796,0.0,1.0,0.0,0.0,I've got to take Jeremy's advice more often.,3,Mark,8
+797,0.0,1.0,0.0,0.0,"I'm out on a date with a teenage goth, smoking pot in the Lazerbowl toilets.",3,Mark,15
+798,0.0,1.0,0.0,0.0,This is literally it.,3,Mark,4
+799,0.0,0.805,0.195,0.4404,This is the sort of thing people do when they're having a good time.,3,Mark,14
+800,0.0,1.0,0.0,0.0,I don't know if…,3,Mark,4
+801,0.0,0.508,0.492,0.4404,It's good stuff Mark.,3,Toni,4
+802,0.0,0.656,0.344,0.2732,I strongly advise you... toke it.,3,Toni,6
+803,0.0,0.843,0.157,0.0772,Do you want me to give you blowback?,3,Valerie,8
+804,0.0,0.792,0.208,0.2732,"Oh my God, it's the last days of Rome.",3,Mark,9
+805,0.0,0.827,0.173,0.3182,"Sure, just open your mouth and breathe in when I click my fingers.",3,Valerie,13
+806,0.0,1.0,0.0,0.0,I am a drug user.,3,Mark,5
+807,0.0,1.0,0.0,0.0,"This is mate, we're having it.",3,Jeremy,6
+808,0.0,1.0,0.0,0.0,"Jez, the faces, the faces.",3,Mark,5
+809,0.0,1.0,0.0,0.0,"Follow the finger, follow the fingers!",3,Jeremy,6
+810,0.0,1.0,0.0,0.0,Don't poke my eyes!,3,Mark,4
+811,0.0,1.0,0.0,0.0,Don't poke my eyes!,3,Mark,4
+812,0.0,1.0,0.0,0.0,Are you getting visuals?,3,Jeremy,4
+813,0.0,1.0,0.0,0.0,I don't think so.,3,Mark,4
+814,0.474,0.526,0.0,-0.4019,What if I lose it?,3,Mark,5
+815,0.0,1.0,0.0,0.0,"I'm not going to do a poo, am I Jez?",3,Mark,10
+816,0.688,0.312,0.0,-0.5267,No of course no.,3,Jeremy,4
+817,0.0,0.5,0.5,0.6124,"Look, everything's going brilliantly, right?",3,Jeremy,5
+818,0.0,1.0,0.0,0.0,Now we've got to work together as a team.,3,Jeremy,9
+819,0.0,0.761,0.239,0.296,"Work things up into a bit of a lather, yeah?",3,Jeremy,10
+820,0.0,0.364,0.636,0.7384,Jez is so great.,3,Mark,4
+821,0.147,0.41,0.443,0.6527,He's like an idiot savant but not so stupid.,3,Mark,9
+822,0.0,1.0,0.0,0.0,I bet he's totally sorting this whole night in his head for us right now.,3,Mark,15
+823,0.0,1.0,0.0,0.0,"I could say we've both got enormous cocks, might be the clincher.",3,Jeremy,12
+824,0.0,0.494,0.506,0.6249,I'm having a just... great time.,3,Toni,6
+825,0.174,0.826,0.0,-0.2263,"So, girls, what's the weirdest place you've ever... done it?",3,Jeremy,10
+826,0.0,1.0,0.0,0.0,I had a steward eat me at the multi-faith area at Dubai airport.,3,Toni,13
+827,0.388,0.299,0.313,-0.128,"God, that was depressing.",3,Toni,4
+828,0.0,1.0,0.0,0.0,"Valerie, how about you?",3,Jeremy,4
+829,0.0,0.222,0.778,0.7906,I believe true love waits.,3,Valerie,5
+830,0.0,0.694,0.306,0.296,"Yeah, right, obviously, no... me too.",3,Mark,6
+831,0.0,0.63,0.37,0.4466,"OK, so, what's everyone's favourite record?",3,Jeremy,6
+832,0.0,1.0,0.0,0.0,What was all that about?,3,Valerie,5
+833,0.0,0.618,0.382,0.4754,I guess she just really likes Sledgehammer.,3,Mark,6
+834,0.419,0.581,0.0,-0.5574,"I mean, that is a shit song, right?",3,Valerie,8
+835,0.0,1.0,0.0,0.0,I mean it's so... outdated.,3,Mark,5
+836,0.223,0.777,0.0,-0.6486,"And suddenly, I'm in front of the middle-aged court for crimes against being an old fucker.",3,Valerie,16
+837,0.403,0.597,0.0,-0.4019,"Right, I mean what's her problem?",3,Mark,6
+838,0.0,1.0,0.0,0.0,I've never heard of Level 42 either.,3,Mark,7
+839,0.367,0.633,0.0,-0.188,"Guys, I'm so sorry.",3,Mark,4
+840,0.0,1.0,0.0,0.0,"You are allowed to hit the pins, you know.",3,Valerie,9
+841,0.0,0.706,0.294,0.3612,"In some bowling alleys, you're actually encouraged.",3,Valerie,7
+842,0.163,0.535,0.302,0.2584,I just didn't want to disturb them.,3,Mark,7
+843,0.0,0.704,0.296,0.2732,Well that's very kind of you.,3,Valerie,6
+844,0.0,1.0,0.0,0.0,You're quite the gentleman.,3,Valerie,4
+845,0.0,1.0,0.0,0.0,"I- Valerie and I- I mean we just met and we thought we might come here for a few bowls, and I'm high, obviously.",3,Mark,24
+846,0.0,1.0,0.0,0.0,I've been with Jeff.,3,Sophie,4
+847,0.0,1.0,0.0,0.0,This should be in the bag.,3,Jeremy,6
+848,0.0,1.0,0.0,0.0,"She's come to the Lazerbowl with me, why isn't this in the bag?",3,Jeremy,13
+849,0.309,0.426,0.266,-0.1027,She looks like she hates me.,3,Jeremy,6
+850,0.0,1.0,0.0,0.0,"It's eat as much as you can, you know.",3,Jeremy,9
+851,0.206,0.561,0.234,0.0772,"No, it's eat as much as you like.",3,Toni,7
+852,0.319,0.435,0.246,-0.128,There's no competitive element implied.,3,Toni,5
+853,0.0,0.541,0.459,0.5267,"At £3.99, I know who's winning.",3,Jeremy,6
+854,0.39,0.61,0.0,-0.4926,How dare she criticise Peter Gabriel!,3,Toni,6
+855,0.11,0.89,0.0,-0.0276,"With her little ""screw me"" haircut, and all so ""nee-nee-nee-ee.""",3,Toni,10
+856,0.0,0.714,0.286,0.25,You know he single-handedly created WOMAD.,3,Toni,6
+857,0.185,0.42,0.395,0.3595,"Oh God, please stop talking about Peter Gabriel!",3,Jeremy,8
+858,0.0,1.0,0.0,0.0,I can't believe it.,3,Valerie,4
+859,0.0,1.0,0.0,0.0,I'm on a double date with guys from the office.,3,Valerie,10
+860,0.0,0.349,0.651,0.6808,It's like being on Friends.,3,Valerie,4
+861,0.222,0.635,0.143,-0.3612,So do you guys get pissed at the Christmas party and photocopy your arses?,3,Valerie,14
+862,0.0,0.694,0.306,0.296,"Yeah, Jeff did do that, actually.",3,Mark,6
+863,0.0,0.849,0.151,0.1531,Yeah but that was before everyone else started doing it.,3,Jeff,10
+864,0.0,1.0,0.0,0.0,You were something of a trendsetter in that area.,3,Mark,9
+865,0.0,1.0,0.0,0.0,"So, Valerie, you still at school or what?",3,Jeff,8
+866,0.0,1.0,0.0,0.0,"She's at college, actually.",3,Mark,4
+867,0.0,0.577,0.423,0.296,Yeah that's still college.,3,Mark,4
+868,0.0,1.0,0.0,0.0,So what's you favourite subject then?,3,Jeff,6
+869,0.116,0.665,0.219,0.2681,I'm sure Valerie doesn't want to talk about subjects.,3,Sophie,9
+870,0.0,0.227,0.773,0.7003,"Sure, sure, of course, yeah.",3,Jeff,5
+871,0.0,0.682,0.318,0.6369,"So who do you think is best in S-Club, then?",3,Jeff,10
+872,0.0,1.0,0.0,0.0,"Oh, I'm not really into them, but I hear they have a big gay following.",3,Valerie,15
+873,0.234,0.629,0.137,-0.4033,"For the worst thing that could possibly happen, this is going extremely well.",3,Mark,13
+874,0.062,0.863,0.074,0.1027,Maybe I can just really get into Peter Gabriel and go mental and marry her and cut off from society and just have lots of sex and agree with her about everything.,3,Jeremy,32
+875,0.0,0.818,0.182,0.4404,"This is why you should stick to the little cans, ah, the simple pleasures.",3,Mark,14
+876,0.0,0.408,0.592,0.4404,Having a good night?,3,Jeff,4
+877,0.0,1.0,0.0,0.0,You seem to have narrowed it down to the one lane anyway.,3,Jeff,12
+878,0.0,0.526,0.474,0.6597,"Well you know, it's just a bit of fun.",3,Mark,9
+879,0.0,1.0,0.0,0.0,I'm never going to be able to go now.,3,Mark,9
+880,0.0,1.0,0.0,0.0,Why can't I go?,3,Mark,4
+881,0.0,0.353,0.647,0.6705,"Yeah, just a bit of fun.",3,Jeff,6
+882,0.0,0.515,0.485,0.765,Nice after a lovely Italian and a couple bottles of wine.,3,Jeff,11
+883,0.0,0.667,0.333,0.3612,Sophie seemed to like it anyway.,3,Jeff,6
+884,0.0,1.0,0.0,0.0,Why didn't I ask her?,3,Mark,5
+885,0.0,0.435,0.565,0.5994,"She loved it, actually.",3,Jeff,4
+886,0.0,1.0,0.0,0.0,"Mark, can you break a tenner for the johnny machine.",3,Jeff,10
+887,0.0,1.0,0.0,0.0,"Actually, I think I'm all right.",3,Jeff,6
+888,0.0,1.0,0.0,0.0,I'm thinking a couple of packs of normal.,3,Jeff,8
+889,0.0,1.0,0.0,0.0,"Knobblies are a bit of a con, aren't they?",3,Jeff,9
+890,0.0,0.581,0.419,0.5574,Maybe a couple of fruities for a laugh.,3,Jeff,8
+891,0.42,0.58,0.0,-0.4404,"She hates fruit, except pears.",3,Mark,5
+892,0.468,0.532,0.0,-0.6597,"If there's pear flavour, I'm fucked.",3,Mark,6
+893,0.0,0.737,0.263,0.5073,Well I can't stop hanging on for you because I never started hanging on for you!,3,Toni,16
+894,0.0,0.626,0.374,0.3382,"Well, here's the headlines, buddy!",3,Toni,5
+895,0.0,0.506,0.494,0.5904,"I can do who I want, when I want, where I want, and I will, OK?",3,Toni,16
+896,0.0,1.0,0.0,0.0,This is not the rehearsal.,3,Toni,5
+897,0.0,1.0,0.0,0.0,"Come on, clock's ticking.",3,Jeremy,4
+898,0.0,1.0,0.0,0.0,Got to raise my game.,3,Jeremy,5
+899,0.0,1.0,0.0,0.0,"So, fourth pressing, fifth pressing.",3,Jeremy,5
+900,0.0,1.0,0.0,0.0,What's that all about?,3,Jeremy,4
+901,0.0,0.769,0.231,0.5106,Why wait until everyone else has had their fun with the olives?,3,Jeremy,12
+902,0.0,0.453,0.547,0.5598,That is so true.,3,Toni,4
+903,0.0,0.732,0.268,0.4466,"Listen, let's talk more back at my place, OK?",3,Toni,9
+904,0.0,0.656,0.344,0.2732,"Oh my God, I knew it.",3,Jeremy,6
+905,0.0,0.495,0.505,0.4703,So this is nice.,3,Mark,4
+906,0.362,0.638,0.0,-0.1779,Kind of weird but...,3,Mark,4
+907,0.0,0.745,0.255,0.6249,"Great, so I was just wondering how you ended up coming out with Jeff.",3,Mark,14
+908,0.0,0.588,0.412,0.2732,"Oh right, well I suppose...",3,Sophie,5
+909,0.0,1.0,0.0,0.0,Is that all it takes?,3,Mark,5
+910,0.0,0.282,0.718,0.6249,It certainly does help.,3,Sophie,4
+911,0.0,1.0,0.0,0.0,I mean I did actually ask you myself.,3,Mark,8
+912,0.0,0.69,0.31,0.5423,"Yes, but I was already... and I didn't say anything because well, you know.",3,Sophie,14
+913,0.0,0.495,0.505,0.4703,"So, Valerie seems nice.",3,Sophie,4
+914,0.0,1.0,0.0,0.0,"Oh, Valerie, she's nothing.",3,Mark,4
+915,0.445,0.555,0.0,-0.3412,That didn't sound good.,3,Mark,4
+916,0.0,0.615,0.385,0.3626,It's just... A little nice out.,3,Mark,6
+917,0.0,0.556,0.444,0.4939,I'm a friend of her brother's.,3,Mark,6
+918,0.538,0.462,0.0,-0.5423,"He's a total wanker, actually.",3,Mark,5
+919,0.0,0.734,0.266,0.4404,"So, have you had a good time on your... date?",3,Mark,10
+920,0.0,0.169,0.831,0.5994,"Yes, I mean yeah.",3,Sophie,4
+921,0.0,1.0,0.0,0.0,You know what you're getting with Pizza Hut.,3,Sophie,8
+922,0.0,1.0,0.0,0.0,"So, old seat sniffer, he didn't sniff any of the seats or anything, didn't he?",3,Mark,15
+923,0.0,0.476,0.524,0.296,"That's a joke, Mark.",3,Sophie,4
+924,0.0,0.797,0.203,0.4215,A rumour that I don't think is appropriate for you to... Jeff's a nice guy.,3,Sophie,15
+925,0.09,0.556,0.354,0.645,"I'm having a nice time so let's just leave it at that, OK?",3,Sophie,13
+926,0.0,0.508,0.492,0.4404,You're having a good time.,3,Mark,5
+927,0.0,0.462,0.538,0.7906,"Good, because obviously, I'm having a great time too.",3,Mark,9
+928,0.0,0.535,0.465,0.8271,"Well that makes two of us because like I said, I'm having a great time.",3,Sophie,15
+929,0.0,1.0,0.0,0.0,She's not going to do it.,3,Mark,6
+930,0.0,1.0,0.0,0.0,They won't do it.,3,Mark,4
+931,0.521,0.211,0.268,-0.5574,"Wow, fuck you Lord of Death.",3,Jeremy,6
+932,0.31,0.69,0.0,-0.4019,I'm still full of piss and vinegar.,3,Jeremy,7
+933,0.0,0.595,0.405,0.5267,"Mmm, doing it with a sexy neighbour.",3,Jeremy,7
+934,0.0,1.0,0.0,0.0,That... why is she sucking it?,3,Jeremy,6
+935,0.205,0.795,0.0,-0.4767,Maybe she's practising for my... are you allowed to say when it hurts?,3,Jeremy,13
+936,0.0,1.0,0.0,0.0,So I divided them into three piles,3,Tony,7
+937,0.0,0.508,0.492,0.4404,Maybe this is good?,3,Jeremy,4
+938,0.0,1.0,0.0,0.0,Maybe this kind of turns me on?,3,Jeremy,7
+939,0.072,0.733,0.195,0.4327,"OK, if it doesn't matter to you, I'm having the Bhundu Boys album.",3,Tony,13
+940,0.0,1.0,0.0,0.0,You wouldn't have even heard of them if it wasn't for me!,3,Tony,12
+941,0.565,0.435,0.0,-0.5983,That is such shit!,3,Toni,4
+942,0.0,1.0,0.0,0.0,I think maybe I'll…,3,Jeremy,4
+943,0.0,1.0,0.0,0.0,You're not going anywhere.,3,Toni,4
+944,0.0,0.816,0.184,0.4019,"You'll have to do something a bit special to catch me up now, mate.",3,Jeff,14
+945,0.0,1.0,0.0,0.0,Don't let him know he's got to you.,3,Mark,8
+946,0.0,1.0,0.0,0.0,"I think I can manage that, mate.",3,Mark,7
+947,0.0,1.0,0.0,0.0,"Watch me bowl, Jeff!",3,Mark,4
+948,0.0,1.0,0.0,0.0,"I'm bowling all right, I'm bowling fruit!",3,Mark,7
+949,0.0,1.0,0.0,0.0,I'm on another level!,3,Mark,4
+950,0.0,1.0,0.0,0.0,This is some sort of test.,3,Jeremy,6
+951,0.0,0.265,0.735,0.8074,Sort of like The Great Escape.,3,Jeremy,5
+952,0.0,0.673,0.327,0.5267,"Don't answer in English, just brave it out.",3,Jeremy,8
+953,0.0,0.303,0.697,0.5574,"Yeah, I play the keyboard.",3,Jeremy,5
+954,0.0,0.839,0.161,0.3612,"You always fancied one of those keyboards you hold like a guitar, didn't you Tony?",3,Toni,15
+955,0.0,0.667,0.333,0.3612,I used to like a lot of things.,3,Tony,8
+956,0.0,1.0,0.0,0.0,They're going to use me for a sex game and then burn me in the bath.,3,Jeremy,16
+957,0.0,0.828,0.172,0.3612,That the three of us can sit together and have a drink like adults.,3,Toni,14
+958,0.0,1.0,0.0,0.0,"In fact, why don't we have a toast?",3,Tony,8
+959,0.0,1.0,0.0,0.0,Someone get the carving knife and get it over with.,3,Jeremy,10
+960,0.0,0.667,0.333,0.3612,Do you think I like this job?,3,Others,7
+961,0.0,0.896,0.104,0.4215,Do you think it makes it any easier for me spending the rest of night trying to prise shopping out of our frankly antiquated system?,3,Others,25
+962,0.464,0.536,0.0,-0.1531,"I'm sorry, I'm really sorry.",3,Mark,5
+963,0.0,1.0,0.0,0.0,I thought they would just…,3,Mark,5
+964,0.0,0.755,0.245,0.0772,"I've got your number, mate.",3,Others,5
+965,0.0,1.0,0.0,0.0,I've got you by the shoes.,3,Others,6
+966,0.369,0.631,0.0,-0.4442,He doesn't care about the shoes!,3,Valerie,6
+967,0.206,0.794,0.0,-0.0772,"Come on, he said he's sorry.",3,Sophie,6
+968,0.0,1.0,0.0,0.0,Give him back the shoes.,3,Sophie,5
+969,0.0,1.0,0.0,0.0,What do you know about my shoes?,3,Mark,7
+970,0.0,0.672,0.328,0.4466,"Look, we're going to head off, OK.",3,Jeff,7
+971,0.0,1.0,0.0,0.0,I can vouch for him so could you put it all on my card?,3,Jeff,14
+972,0.0,1.0,0.0,0.0,"Soph, you should stay and bowl!",3,Mark,6
+973,0.0,1.0,0.0,0.0,Bowl the night away with us!,3,Mark,6
+974,0.0,1.0,0.0,0.0,"Er, I don't know...",3,Sophie,4
+975,0.0,0.796,0.204,0.5562,"Once they get the stuff out, we can have a little tournament and it'll be fun!",3,Mark,16
+976,0.271,0.729,0.0,-0.353,"Mark, I don't want to be a killjoy but I don't think the plastic can take the strain.",3,Jeff,18
+977,0.0,0.732,0.268,0.296,"Mark, they're going home to bone, yeah?",3,Valerie,7
+978,0.0,0.462,0.538,0.3603,"Don't screw things up, yeah?",3,Valerie,5
+979,0.0,0.58,0.42,0.4404,You have a good night now.,3,Jeff,6
+980,0.0,1.0,0.0,0.0,Don't think about it.,3,Mark,4
+981,0.0,1.0,0.0,0.0,"If you don't think about it, it won't happen.",3,Mark,9
+982,0.0,1.0,0.0,0.0,I bet Sophie and Jeff are doing a lot of talking right now.,3,Mark,13
+983,0.25,0.615,0.135,-0.2177,"Yeah, she can really talk, probably boring him rigid about the Celestine Prophecy.",3,Mark,13
+984,0.412,0.588,0.0,-0.8555,"Maybe Jeff's bought loads of booze, Sophie could be pissed - too pissed to mind.",3,Mark,15
+985,0.0,0.625,0.375,0.3404,She's squeezing my- don't complain!,3,Mark,5
+986,0.0,1.0,0.0,0.0,Is she going for...?,3,Jeremy,4
+987,0.413,0.587,0.0,-0.2755,But I'm not ready.,3,Jeremy,4
+988,0.384,0.616,0.0,-0.3595,There's no action down there!,3,Jeremy,5
+989,0.0,0.489,0.511,0.6408,"Look, are you sure this is OK?",3,Jeremy,7
+990,0.0,1.0,0.0,0.0,Isn't Tony going to mind?,3,Jeremy,5
+991,0.166,0.834,0.0,-0.3802,Tony lost his license with mine when he went off with a SCRUBBER CALLED LINDSAY!,3,Toni,14
+992,0.277,0.723,0.0,-0.3182,She hasn't said anything about my nuts.,3,Mark,7
+993,0.159,0.841,0.0,-0.1779,She's probably too young to know how weird they are.,3,Mark,10
+994,0.0,1.0,0.0,0.0,I'm having sex with a teenage girl!,3,Mark,7
+995,0.0,1.0,0.0,0.0,Sophie wouldn't... not with the seat-sniffer.,3,Mark,6
+996,0.0,1.0,0.0,0.0,I mean we've got a connection.,3,Mark,6
+997,0.0,0.54,0.46,0.3724,This is not wrong.,3,Mark,4
+998,0.0,1.0,0.0,0.0,Just try and memorise it for later.,3,Mark,7
+999,0.0,0.588,0.412,0.4215,"Mm, this could be nice.",3,Mark,5
+1000,0.0,0.233,0.767,0.765,"A nice, lovely neck rub.",3,Mark,5
+1001,0.555,0.445,0.0,-0.7177,She's trying to kill me!,3,Mark,5
+1002,0.209,0.791,0.0,-0.2755,Why didn't you say if you didn't like it?,3,Mark,9
+1003,0.0,0.527,0.473,0.6696,My ex used to love that!,3,Valerie,6
+1004,0.0,1.0,0.0,0.0,It was just the... not breathing.,3,Mark,6
+1005,0.0,0.476,0.524,0.68,"Oh my God, oh my God, oh my God!",3,Jeremy,9
+1006,0.0,0.715,0.285,0.4199,You can be as loud as you like!,3,Toni,8
+1007,0.0,0.406,0.594,0.6588,I'm having great sex!,3,Toni,4
+1008,0.0,1.0,0.0,0.0,Couldn't we close the door?,3,Jeremy,5
+1009,0.0,1.0,0.0,0.0,The idea of being caught turns me on!,3,Toni,8
+1010,0.0,1.0,0.0,0.0,But we've already been caught.,3,Jeremy,5
+1011,0.0,1.0,0.0,0.0,What about the cappuccino machine?,3,Tony,5
+1012,0.0,1.0,0.0,0.0,YOU'RE NEVER TAKING THE GAGGIA!,3,Toni,5
+1013,0.0,0.58,0.42,0.4404,Thanks for letting me stay.,3,Valerie,5
+1014,0.0,1.0,0.0,0.0,It's just my sister's in my room and...,3,Valerie,8
+1015,0.419,0.427,0.154,-0.4767,"No problem, I'll be fine on the sofa.",3,Mark,8
+1016,0.0,1.0,0.0,0.0,Have you got everything you need?,3,Mark,6
+1017,0.114,0.762,0.124,0.0258,Do you want me to leave the hall light on?,3,Mark,10
+1018,0.293,0.4,0.307,0.0258,"No, right, sure, of course.",3,Mark,5
+1019,0.0,0.575,0.425,0.7102,"God, she does look kind of great in my pyjamas.",3,Mark,10
+1020,0.524,0.476,0.0,-0.5106,Why is that sick?,3,Mark,4
+1021,0.0,1.0,0.0,0.0,"Valerie, I was thinking, the sofa…",3,Mark,6
+1022,0.0,0.527,0.473,0.6696,THIS IS THE BEST SEX EVER!,3,Toni,6
+1023,0.0,1.0,0.0,0.0,"So I was thinking, the sofa.",3,Mark,6
+1024,0.0,1.0,0.0,0.0,YOU ARE THE DADDY!,3,Toni,4
+1025,0.0,0.698,0.302,0.0762,Don't screw this up.,4,Mark,4
+1026,0.0,1.0,0.0,0.0,"So, Mr Corrigan, we've examined your loan application and I just have one question for you.",4,Johnson,16
+1027,0.688,0.312,0.0,-0.765,"Are you a pathetic, worthless punk?",4,Johnson,6
+1028,0.0,1.0,0.0,0.0,"Right, because I'm going to turn you down as if you were a hippie parasite.",4,Johnson,15
+1029,0.0,0.175,0.825,0.5719,"Yeah, I like it.",4,Mark,4
+1030,0.256,0.595,0.149,-0.4215, And then I'm going to make you feel like you're a turkey fucker.,4,Johnson,13
+1031,0.31,0.69,0.0,-0.5574,"Because I'm a big man, and you're a shit heel, right?",4,Johnson,11
+1032,0.0,1.0,0.0,0.0,That is just so spot on.,4,Mark,6
+1033,0.0,0.435,0.565,0.9231,"Or I could treat Mr Corrigan like a valued and respected customer, and we'd both end up winners.",4,Johnson,18
+1034,0.0,1.0,0.0,0.0,"Isn't that right, Mr Corrigan?",4,Johnson,5
+1035,0.0,0.488,0.512,0.6369,"Alan Johnson, I'm in love.",4,Mark,5
+1036,0.0,0.543,0.457,0.6369,"I'm in love with you, Johnson.",4,Mark,6
+1037,0.174,0.497,0.329,0.3612, There are two basic energies in the world - stress and relaxation.,4,TV,12
+1038,0.0,0.562,0.438,0.5994," Super Hans, what are we doing?",4,Jeremy,6
+1039,0.0,1.0,0.0,0.0, We are looking through the other end of the telescope.,4,Super Hans,10
+1040,0.404,0.596,0.0,-0.2572, I don't feel very well.,4,Jeremy,5
+1041,0.538,0.462,0.0,-0.5423,Did something bad happen?,4,Jeremy,4
+1042,0.14,0.449,0.411,0.6633," Everything's OK. Look, there's two basic energies in the world - stress and relaxation.",4,Super Hans,14
+1043,0.0,1.0,0.0,0.0, Did I break through?,4,Jeremy,4
+1044,0.0,0.588,0.412,0.6369,You passed out after the love beans.,4,Super Hans,7
+1045,0.2,0.8,0.0,-0.128,You thought the table was being ironic.,4,Super Hans,7
+1046,0.412,0.588,0.0,-0.5423," But, what was the bad thing?",4,Jeremy,6
+1047,0.0,0.822,0.178,0.5994,"[Looks at some dental floss, and has a flashback to the previous night, where Super Hans is in the bathroom]",4,Jeremy,20
+1048,0.0,0.611,0.389,0.6249, That will probably become clear later... Like the French Revolution.,4,Super Hans,10
+1049,0.0,1.0,0.0,0.0, I think we need to tidy up.,4,Jeremy,7
+1050,0.0,1.0,0.0,0.0,That is the one thing I stand against.,4,Super Hans,8
+1051,0.555,0.445,0.0,-0.3595,A thousand times no!,4,Super Hans,4
+1052,0.0,1.0,0.0,0.0," Hi, come in, come in.",4,Mark,5
+1053,0.0,1.0,0.0,0.0,Ask her to go the bar.,4,Mark,6
+1054,0.0,1.0,0.0,0.0,Ask her to go to the bar!,4,Mark,7
+1055,0.0,1.0,0.0,0.0, We're just watching a bit of Morse.,4,Jeff,7
+1056,0.0,0.737,0.263,0.3612,Would you like to watch a bit of Morse?,4,Jeff,9
+1057,0.0,1.0,0.0,0.0, I don't think right now.,4,Sophie,5
+1058,0.0,1.0,0.0,0.0,"Mark, I just wanted to say about the lift…",4,Sophie,9
+1059,0.0,0.845,0.155,0.296," Yeah, it's just that... the thing is, I forgot about Debbie's chair, the wheelchair.",4,Sophie,14
+1060,0.0,0.82,0.18,0.296," Yeah, and I think it will take up quite a bit of room.",4,Sophie,13
+1061,0.0,0.784,0.216,0.296," And Dave's been helping her, so I said to him...",4,Sophie,10
+1062,0.0,0.426,0.574,0.4019, I mean I could... help.,4,Mark,5
+1063,0.0,1.0,0.0,0.0,It's just Dave's been... you know.,4,Sophie,6
+1064,0.0,1.0,0.0,0.0,Nothing must unseat Dave.,4,Mark,4
+1065,0.347,0.653,0.0,-0.1513, I'm really sorry Mark.,4,Sophie,4
+1066,0.0,0.867,0.133,0.3182,I'm sure you'd be able to get a lift from somewhere else or the train or something.,4,Sophie,17
+1067,0.0,0.286,0.714,0.6124,"Thanks, well, see ya.",4,Sophie,4
+1068,0.0,0.69,0.31,0.4019,"Go on, yes, I now what you're thinking.",4,Mark,8
+1069,0.229,0.51,0.261,0.128,"I'm shit, you're great, I'm the worm, you're the king.",4,Mark,10
+1070,0.384,0.331,0.285,-0.3612,"Yeah, well eat your nuts and go fuck yourself.",4,Mark,9
+1071,0.0,0.521,0.479,0.5574,"God, I feel like loam, a piece of loam.",4,Jeremy,9
+1072,0.0,1.0,0.0,0.0,"Jesus, what am I talking about?",4,Jeremy,6
+1073,0.0,0.526,0.474,0.4019,I wish Mark was here.,4,Jeremy,5
+1074,0.0,1.0,0.0,0.0,I don't need drugs.,4,Jeremy,4
+1075,0.0,0.661,0.339,0.6249,I mean what great music was ever made on drugs?,4,Jeremy,10
+1076,0.205,0.795,0.0,-0.8402,"Bowie, obviously, The Floyd, The Prodge, Aphex - the list is endless really, but they could be done twice as fast with half the mess if they just... Ahh, was that the bad thing?",4,Jeremy,34
+1077,0.072,0.761,0.167,0.4838,"Heh, Mark will be so pleased when he sees this, he's just so- Maybe I could open my bank statements.",4,Jeremy,18
+1078,0.24,0.521,0.24,0.0,Maybe you can be boring and cool.,4,Jeremy,7
+1079,0.0,1.0,0.0,0.0,I only asked about the bus.,4,Mark,6
+1080,0.403,0.597,0.0,-0.659,No need to make out I'm some kind of freak.,4,Mark,10
+1081,0.0,0.924,0.076,0.3182,"Checking in to the hotel it's all ""Can we get you fresh whatever"" and once you're on the way out it's ""one of you is liable for the cashews.""",4,Mark,29
+1082,0.0,1.0,0.0,0.0,That fucking... What's the story there?,4,Mark,6
+1083,0.313,0.687,0.0,-0.6249,This is the worst thing to happen to anyone ever.,4,Mark,10
+1084,0.0,1.0,0.0,0.0,Oh my fucking life.,4,Mark,4
+1085,0.0,1.0,0.0,0.0,"It is Mark, isn't it?",4,Johnson,5
+1086,0.0,0.27,0.73,0.6597," Yes, yes it is.",4,Mark,4
+1087,0.0,0.793,0.207,0.144, So do you want a lift or what?,4,Johnson,8
+1088,0.0,0.417,0.583,0.6369, Oh I would love a lift.,4,Mark,6
+1089,0.0,0.682,0.318,0.6369,This is the best thing that's happened to anyone ever.,4,Mark,10
+1090,0.0,0.567,0.433,0.8122,"Friends with a big, black businessman like it's the most natural thing in the world.",4,Mark,15
+1091,0.406,0.594,0.0,-0.7589,"If he got accused of a crime he hadn't committed, I could come to his aid.",4,Mark,16
+1092,0.0,1.0,0.0,0.0, The El Dude Brothers are back in town!,4,Jeremy,8
+1093,0.0,1.0,0.0,0.0," Come on in, sit down.",4,Jeremy,5
+1094,0.0,1.0,0.0,0.0,Tell me all about your trip.,4,Jeremy,6
+1095,0.0,0.843,0.157,0.0772,"I want to hear everything, all the gory details.",4,Jeremy,9
+1096,0.0,1.0,0.0,0.0,Did you bring back any little tiny soaps?,4,Jeremy,8
+1097,0.0,1.0,0.0,0.0," Jez, are you all right?",4,Mark,5
+1098,0.0,0.618,0.382,0.4754,"That's very nice and everything, Jez.",4,Mark,6
+1099,0.0,1.0,0.0,0.0,I should open some wine.,4,Mark,5
+1100,0.0,0.534,0.466,0.7269,I've actually got rather a good friend coming over later.,4,Mark,10
+1101,0.396,0.604,0.0,-0.3875,But you haven't got a friend.,4,Jeremy,6
+1102,0.0,1.0,0.0,0.0," Phony Tony, I call him.",4,Johnson,5
+1103,0.0,1.0,0.0,0.0,This government's all spin.,4,Johnson,4
+1104,0.0,1.0,0.0,0.0,It's all smoke and mirrors.,4,Johnson,5
+1105,0.513,0.487,0.0,-0.2755,I couldn't agree more.,4,Mark,4
+1106,0.0,1.0,0.0,0.0, And the way he licks Bush's arse.,4,Johnson,7
+1107,0.0,0.85,0.15,0.2762," So, OK, they're spending more on schools and hospitals, but where's the evidence?",4,Johnson,13
+1108,0.0,1.0,0.0,0.0,"I mean, what schools?",4,Johnson,4
+1109,0.0,1.0,0.0,0.0,I mean where the heck are they?,4,Johnson,7
+1110,0.0,1.0,0.0,0.0,Can you see them?,4,Johnson,4
+1111,0.0,0.282,0.718,0.6249,"This is good, yeah.",4,Jeremy,4
+1112,0.0,0.636,0.364,0.6124,I mean three guys sitting around shooting the shit.,4,Jeremy,9
+1113,0.315,0.685,0.0,-0.3182,Politics doesn't have to be boring.,4,Jeremy,6
+1114,0.0,1.0,0.0,0.0,A lot of Moby stuff is political...,4,Jeremy,7
+1115,0.311,0.444,0.244,-0.1531,"Yeah, it's all lies, isn't it?",4,Jeremy,6
+1116,0.0,1.0,0.0,0.0,I mean don't tell me Blair wears a suit and tie when he's lounging around at home watching Big Brother.,4,Jeremy,20
+1117,0.0,1.0,0.0,0.0,Not in front of Johnson.,4,Mark,5
+1118,0.0,1.0,0.0,0.0," How do you mean, exactly?",4,Johnson,5
+1119,0.0,0.69,0.31,0.5563, What I mean is that they should be more honest.,4,Jeremy,10
+1120,0.151,0.692,0.157,0.0258,"I mean, at least Tony Adams from the IRA, he's like ""Yeah, I shoot people.",4,Jeremy,15
+1121,0.0,0.444,0.556,0.3612,"I like shooting people.""",4,Jeremy,4
+1122,0.066,0.792,0.142,0.4455,"You know, if they were more honest, then maybe people would vote and not switch straight over when the news comes on.",4,Jeremy,22
+1123,0.0,1.0,0.0,0.0, You turn over when the news comes on?,4,Johnson,8
+1124,0.0,0.426,0.574,0.4019,Maybe for a treat.,4,Jeremy,4
+1125,0.0,0.549,0.451,0.6249,"But generally it's great, isn't it?",4,Jeremy,6
+1126,0.0,0.526,0.474,0.4019,Who do you support?,4,Jeremy,4
+1127,0.0,0.588,0.412,0.4215,"Mark likes Israel, I'm Palestine.",4,Jeremy,5
+1128,0.18,0.574,0.245,0.2006,Makes it more interesting when you pick a... no?,4,Jeremy,9
+1129,0.0,0.835,0.165,0.4144," So if you like, I'll show you what I've done so far on the book.",4,Mark,15
+1130,0.0,1.0,0.0,0.0,Business Secrets of the Pharaohs?,4,Mark,5
+1131,0.0,1.0,0.0,0.0,It's only the opening chapter but it gives a flavour of...,4,Mark,11
+1132,0.558,0.442,0.0,-0.5848,That's the bad thing!,4,Jeremy,4
+1133,0.0,1.0,0.0,0.0,Can I have a look?,4,Jeremy,5
+1134,0.0,1.0,0.0,0.0, It doesn't seem to...,4,Mark,4
+1135,0.0,1.0,0.0,0.0,Look what you've... is it all right?,4,Jeremy,7
+1136,0.242,0.758,0.0,-0.1531," No, but it wasn't working when…",4,Mark,6
+1137,0.159,0.739,0.102,-0.25,It was working fine and then you spilled your drink on it and it broke.,4,Jeremy,15
+1138,0.0,1.0,0.0,0.0,That's what I saw.,4,Jeremy,4
+1139,0.0,1.0,0.0,0.0,"Me and Johnson, Johnson and me.",4,Mark,6
+1140,0.0,1.0,0.0,0.0,We only met a fortnight ago.,4,Mark,6
+1141,0.0,1.0,0.0,0.0,Everything's happening so fast!,4,Mark,4
+1142,0.0,1.0,0.0,0.0,I don't know what to say.,4,Mark,6
+1143,0.0,0.714,0.286,0.1531," Yeah, but the relocation thing.",4,Mark,5
+1144,0.0,1.0,0.0,0.0,Moving out on Jeremy.,4,Mark,4
+1145,0.298,0.702,0.0,-0.1779,"It feels a bit weird, Dad.",4,Mark,6
+1146,0.0,1.0,0.0,0.0, It feels weird... Daddy-O.,4,Mark,4
+1147,0.0,0.704,0.296,0.2732," Well, nowadays, email and so forth.",4,Mark,6
+1148,0.0,1.0,0.0,0.0,Do I really need to move to Cardiff?,4,Mark,8
+1149,0.0,1.0,0.0,0.0, Let me tell you a story Mark.,4,Johnson,7
+1150,0.0,1.0,0.0,0.0,It's about a pair of mountain climbers.,4,Johnson,7
+1151,0.391,0.609,0.0,-0.8402,"One's climbing the mountain, the other one is injured, weak, unhealthy, clinging to the first guy's leg.",4,Johnson,17
+1152,0.0,1.0,0.0,0.0," So the first guy has choice, right.",4,Johnson,7
+1153,0.076,0.844,0.08,0.0258,"Let his pal cling on and they're both yak food, or shake him off and make it to the top - solo.",4,Johnson,22
+1154,0.0,1.0,0.0,0.0,I've got tell him.,4,Mark,4
+1155,0.0,1.0,0.0,0.0,How am I going to tell him?,4,Mark,7
+1156,0.538,0.462,0.0,-0.5423,"Oh, this is horrible.",4,Mark,4
+1157,0.42,0.58,0.0,-0.4404,"He might crumble, he's weak.",4,Mark,5
+1158,0.0,1.0,0.0,0.0," So, what do you make of this place?",4,Mark,8
+1159,0.0,0.874,0.126,0.0772,You just choose whatever you want from the revolving belt.,4,Mark,10
+1160,0.0,0.508,0.492,0.4404,This could be good.,4,Jeremy,4
+1161,0.0,0.615,0.385,0.3612,Just like the old days.,4,Jeremy,5
+1162,0.0,1.0,0.0,0.0,Don't slag off Johnson... yet.,4,Jeremy,5
+1163,0.0,1.0,0.0,0.0, Johnson told me about it.,4,Mark,5
+1164,0.0,1.0,0.0,0.0,"Apparently, according to Johnson, wasabi sauce is…",4,Mark,7
+1165,0.0,0.704,0.296,0.6369,"If you love Johnson that much, why don't you marry him?",4,Jeremy,11
+1166,0.0,1.0,0.0,0.0, Where did this come from all of a sudden?,4,Mark,9
+1167,0.0,0.794,0.206,0.0762, Why don't you actually screw him?,4,Jeremy,6
+1168,0.0,0.692,0.308,0.4588,"I mean, since you clearly want to do that, why don't you?",4,Jeremy,12
+1169,0.0,1.0,0.0,0.0,"Look, I've got nothing against... being gay, but I'm not and neither is Johnson.",4,Mark,14
+1170,0.0,1.0,0.0,0.0,"He's black, in case you hadn't noticed, which I expect you had.",4,Mark,12
+1171,0.0,0.762,0.238,0.3612," Oh, just because he's black, I have to like him.",4,Jeremy,10
+1172,0.466,0.534,0.0,-0.5411,That's political correctness gone mad!,4,Jeremy,5
+1173,0.0,1.0,0.0,0.0,"Look, Mark, I'm sorry...",4,Jeremy,4
+1174,0.138,0.862,0.0,-0.34,I'm probably just the sort of person who'd be gay and repress it even to himself.,4,Mark,16
+1175,0.08,0.746,0.174,0.2263,"The thing is, well, there's no easy way to put this but Johnson's invited me in with him.",4,Mark,18
+1176,0.0,1.0,0.0,0.0,"He wants me to get into bed, team up with him.",4,Mark,11
+1177,0.0,1.0,0.0,0.0,It would mean relocating to Cardiff.,4,Mark,6
+1178,0.0,1.0,0.0,0.0," Look, I really feel I need to go for this, Jez.",4,Mark,11
+1179,0.0,1.0,0.0,0.0,"Look, it not as if it's the end for us.",4,Mark,10
+1180,0.0,1.0,0.0,0.0,We're still the El Dude Brothers.,4,Mark,6
+1181,0.0,1.0,0.0,0.0,We'll always be the El Dude Brothers.,4,Mark,7
+1182,0.0,1.0,0.0,0.0,I can't spend my life with you at base camp.,4,Mark,10
+1183,0.0,0.115,0.885,0.7695," OK, OK. That's fine.",4,Jeremy,4
+1184,0.0,0.625,0.375,0.2023,I'm fine with that.,4,Jeremy,4
+1185,0.0,0.547,0.453,0.485,"If I keep smiling, maybe he won't leave.",4,Jeremy,8
+1186,0.0,0.522,0.478,0.6705,"Actually, this is a pretty cool place, isn't it?",4,Jeremy,9
+1187,0.0,1.0,0.0,0.0,"These are bit long for me, actually.",4,Jeremy,7
+1188,0.0,0.633,0.367,0.4404,I hope he doesn't do anything drastic.,4,Mark,7
+1189,0.0,1.0,0.0,0.0,"So, tell me all about the wasabi sauce.",4,Jeremy,8
+1190,0.268,0.732,0.0,-0.765,"If he hangs himself over this, I could put an orange in his mouth and say it was a fatal wanking accident.",4,Mark,22
+1191,0.0,0.708,0.292,0.5095," I'm so glad you came here for a follow-up, man.",4,Mark,10
+1192,0.0,1.0,0.0,0.0,You totally blew apart Barbara's stone age business paradigm.,4,Mark,9
+1193,0.0,0.615,0.385,0.3612, Like taking candy from a baby.,4,Johnson,6
+1194,0.0,1.0,0.0,0.0,Maybe I do fancy him?,4,Mark,5
+1195,0.0,0.714,0.286,0.4939,"He's handsome, not in a gay way, it's just obvious.",4,Mark,10
+1196,0.0,1.0,0.0,0.0,He's a good-looking guy.,4,Mark,4
+1197,0.0,1.0,0.0,0.0,"You know Alan, of course.",4,Mark,5
+1198,0.0,0.476,0.524,0.296," Yeah, quite a seminar.",4,Sophie,4
+1199,0.383,0.617,0.0,-0.4767,You know Barbara went home crying.,4,Sophie,6
+1200,0.0,1.0,0.0,0.0," Hey, I'm just the doctor.",4,Johnson,5
+1201,0.0,1.0,0.0,0.0,I didn't make the needle sharp.,4,Johnson,6
+1202,0.0,1.0,0.0,0.0," It's not a wig, Alan, that's actually her hair.",4,Sophie,9
+1203,0.0,0.847,0.153,0.2023," You've got to admit, Soph, she was asking a lot of questions.",4,Mark,12
+1204,0.0,0.65,0.35,0.5106," Yeah, well I just thought you two big kahunas should know.",4,Sophie,11
+1205,0.108,0.539,0.353,0.6124,"You point them to a lift and they're like ""No thanks, I'm fine with the stairs.""",4,Johnson,16
+1206,0.0,0.659,0.341,0.7351,I do want to be with him all the time... but could I think about kissing?,4,Mark,16
+1207,0.0,0.656,0.344,0.2732,Well I'm thinking about it.,4,Mark,5
+1208,0.196,0.804,0.0,-0.296,"No I'm not, I'm just thinking about thinking about it.",4,Mark,10
+1209,0.0,0.714,0.286,0.5267,"Yeah, she's very... yeah, I could have a little thing going there with Sophie, actually.",4,Mark,15
+1210,0.0,0.741,0.259,0.2732,Well my advice is keep it little.,4,Johnson,7
+1211,0.181,0.819,0.0,-0.4767,Does a balance sheet ever come crying and saying it needs time to think about things?,4,Johnson,16
+1212,0.214,0.786,0.0,-0.4585, A business doesn't say it loves you and then run off with a buddy.,4,Johnson,14
+1213,0.0,1.0,0.0,0.0,"I mean take a look at her, mate.",4,Johnson,8
+1214,0.169,0.482,0.349,0.3612,Take a good hard look at her.,4,Johnson,7
+1215,0.0,1.0,0.0,0.0,What do you see?,4,Johnson,4
+1216,0.0,0.878,0.122,0.3612,"What do you actually see in her compared to a supermodel like, say Giselle, or any of the other supermodels?",4,Johnson,20
+1217,0.0,0.462,0.538,0.5413,I think she's very pretty.,4,Mark,5
+1218,0.0,1.0,0.0,0.0," Come on, look at her arse.",4,Johnson,6
+1219,0.0,0.682,0.318,0.6369,Is that the best arse you're ever going to get?,4,Johnson,10
+1220,0.0,1.0,0.0,0.0,Do you stick on that arse?,4,Johnson,6
+1221,0.0,0.625,0.375,0.2023,"Come on, admit it.",4,Johnson,4
+1222,0.0,1.0,0.0,0.0,She's got a fat arse.,4,Johnson,5
+1223,0.0,0.699,0.301,0.3506," Well she's... Maybe it is a bit... nice, but in a sense...",4,Mark,12
+1224,0.0,1.0,0.0,0.0," Look, if we're going to do this, it's just you and me.",4,Johnson,12
+1225,0.643,0.357,0.0,-0.7351,"No stress buster mini breaks, no women.",4,Johnson,7
+1226,0.0,1.0,0.0,0.0,"Just us, a pile of Chinese food and a couple of fuck-off spreadsheets.",4,Johnson,13
+1227,0.0,1.0,0.0,0.0,"Take me Johnson, I'm yours!",4,Mark,5
+1228,0.0,0.33,0.67,0.7269," Yeah, Jeremy and Super Hans.",4,Super Hans,5
+1229,0.0,0.684,0.316,0.5719,"This is perfect man, cos I'm being evicted soon.",4,Super Hans,9
+1230,0.152,0.548,0.3,0.464," Yeah, we're going to have parties in this place that go beyond fun and actually get really, really nasty.",4,Super Hans,19
+1231,0.0,1.0,0.0,0.0,"So, when's the iron duke moving out?",4,Super Hans,7
+1232,0.0,1.0,0.0,0.0," Um, I don't know.",4,Jeremy,4
+1233,0.0,1.0,0.0,0.0,Maybe a few weeks.,4,Jeremy,4
+1234,0.0,1.0,0.0,0.0,I mean nothing's really decided yet.,4,Jeremy,6
+1235,0.0,1.0,0.0,0.0," Tell you what, as a fucking off present, why don't we spike him?",4,Super Hans,13
+1236,0.0,0.5,0.5,0.6124," Yeah, or maybe get him a nice watch?",4,Jeremy,8
+1237,0.0,0.805,0.195,0.5574," He'll be like ""Oh, I couldn't make the meeting today boss, got to fax my soul of to God for an upgrade.""",4,Super Hans,22
+1238,0.0,1.0,0.0,0.0,This could be all right.,4,Jeremy,5
+1239,0.0,1.0,0.0,0.0,I'll just get Mark to make us a cleaning rota.,4,Jeremy,10
+1240,0.0,1.0,0.0,0.0,We'll just stick religiously to the rota.,4,Jeremy,7
+1241,0.226,0.774,0.0,-0.3862,There's probably much less to worry about with gay sex.,4,Mark,10
+1242,0.186,0.814,0.0,-0.1531,I mean you know where you are with a cock.,4,Mark,10
+1243,0.0,1.0,0.0,0.0,"Still, even if I am gay, Johnson isn't.",4,Mark,8
+1244,0.113,0.887,0.0,-0.1027,"I mean it's going to be hard enough turning me gay, let alone…",4,Mark,13
+1245,0.0,0.577,0.423,0.4466,"OK, listen to the Johnson.",4,Mark,5
+1246,0.091,0.909,0.0,-0.2755," I've been meaning to say but I didn't get the chance, in case you're wondering, about the other day, back from the hotel.",4,Sophie,23
+1247,0.534,0.466,0.0,-0.5334," Didn't faze me, sweetheart.",4,Mark,4
+1248,0.0,1.0,0.0,0.0,That was probably a bit too much.,4,Mark,7
+1249,0.071,0.877,0.052,-0.2023," Yeah, because in the end, Dave had to go early and I knocked on your door and Jeff said you'd gone and it seemed rude not to you know, so that's what happened in case you were wondering at all.",4,Sophie,40
+1250,0.0,1.0,0.0,0.0,"That's all very possible, totally possible.",4,Mark,6
+1251,0.0,0.506,0.494,0.4466, Mark are you OK?,4,Sophie,4
+1252,0.0,0.598,0.402,0.5216,"You weren't pissed off, were you?",4,Sophie,6
+1253,0.0,1.0,0.0,0.0, You seem a bit...,4,Sophie,4
+1254,0.0,0.674,0.326,0.4404,I hope everything's still... with us... all right.,4,Sophie,8
+1255,0.0,0.46,0.54,0.7057,"She's beautiful, I'm not gay, forget Johnson!",4,Mark,7
+1256,0.0,1.0,0.0,0.0,Are you all right?,4,Sophie,4
+1257,0.324,0.147,0.529,0.1027," Fine, no it's fine.",4,Mark,4
+1258,0.0,1.0,0.0,0.0,"Just nothing, a bump.",4,Mark,4
+1259,0.0,1.0,0.0,0.0,"It's staring you in the face, Mark.",4,Mark,7
+1260,0.0,1.0,0.0,0.0,There's only one other sex to try.,4,Mark,7
+1261,0.298,0.357,0.345,0.1027,Good old unfriendly Mr Patel.,4,Mark,5
+1262,0.0,1.0,0.0,0.0,"Never says a word... whether you're buying cornflakes, fabric softener, or gay porn.",4,Mark,13
+1263,0.0,0.689,0.311,0.4023,"So here we go, watch without prejudice.",4,Mark,7
+1264,0.0,1.0,0.0,0.0,I'm just testing the water.,4,Mark,5
+1265,0.0,1.0,0.0,0.0,I'm a sexual scientist.,4,Mark,4
+1266,0.0,1.0,0.0,0.0,So I'm keeping in trim.,4,Mark,5
+1267,0.0,1.0,0.0,0.0,"Typical evening in, Johnson's doing the spreadsheet.",4,Mark,7
+1268,0.0,1.0,0.0,0.0,There's nothing to be afraid of.,4,Mark,6
+1269,0.0,0.781,0.219,0.4754,It was very popular with the Romans and they got a lot done.,4,Mark,13
+1270,0.0,1.0,0.0,0.0,How's it going Johnson?,4,Mark,4
+1271,0.0,0.102,0.898,0.8316,"Yeah, some good kissing.",4,Mark,4
+1272,0.0,1.0,0.0,0.0,Maybe I'm just bi-curious?,4,Mark,4
+1273,0.0,1.0,0.0,0.0,"What if that was actually Johnson, would that make me hotter?",4,Mark,11
+1274,0.0,1.0,0.0,0.0,What about if he had Sophie's face?,4,Mark,7
+1275,0.0,1.0,0.0,0.0,Or Sophie body with Johnson's face.,4,Mark,6
+1276,0.0,1.0,0.0,0.0,"Mum, dad, I'm bi-curious.",4,Mark,4
+1277,0.0,0.577,0.423,0.296,"Yeah right, the bum.",4,Mark,4
+1278,0.0,0.61,0.39,0.3724,Nothing wrong with the bum.,4,Mark,5
+1279,0.0,0.562,0.438,0.5983,That's a bit too rich for me!,4,Mark,7
+1280,0.0,1.0,0.0,0.0,I just don't know!,4,Mark,4
+1281,0.0,1.0,0.0,0.0," Do you think he really wondered, Sting?",4,Jeremy,7
+1282,0.0,0.606,0.394,0.5994,If the Russians loved their children too?,4,Jeremy,7
+1283,0.15,0.68,0.17,0.0772," No, it's a rhetorical question, you know, like ""Can you feel The Force?""",4,Mark,13
+1284,0.0,1.0,0.0,0.0,"or ""Do they know it's Christmas?""",4,Mark,6
+1285,0.0,0.598,0.402,0.8779,"He really seems to be sincerely hoping the Russians love their children too, which I think is a little patronising.",4,Jeremy,20
+1286,0.0,1.0,0.0,0.0, I really need to pick up my laptop from the IT guy before Johnson gets here.,4,Mark,16
+1287,0.0,1.0,0.0,0.0, I could drive you.,4,Jeremy,4
+1288,0.0,0.741,0.259,0.2732," Well, he gave you the keys Mark.",4,Jeremy,7
+1289,0.078,0.922,0.0,-0.296," No, he forgot the keys after the pub and then he called to put me in charge of the keys until such a time he reclaims the keys.",4,Mark,26
+1290,0.124,0.707,0.168,0.079," It's probably some kind of initiative test, you know ""Will you walk like some kind of stupid duck or will you drive like Clarkson?""",4,Jeremy,24
+1291,0.0,1.0,0.0,0.0, What if something happened?,4,Mark,4
+1292,0.0,1.0,0.0,0.0,Suddenly something's going to happen.,4,Jeremy,5
+1293,0.0,1.0,0.0,0.0,Suddenly I'm going to drive off the non-existent quayside.,4,Jeremy,9
+1294,0.0,1.0,0.0,0.0,"Listen, I'm insured on my mum's insurance to drive any car.",4,Jeremy,11
+1295,0.123,0.877,0.0,-0.1027,"It's freezing out there, Johnson won't mind... if he's a real mate.",4,Jeremy,12
+1296,0.0,1.0,0.0,0.0, You're insured on any car?,4,Mark,5
+1297,0.0,1.0,0.0,0.0,"Who's the Johnson now, huh?",4,Jeremy,5
+1298,0.0,1.0,0.0,0.0,"Who's the Johnson now, Johnson?",4,Jeremy,5
+1299,0.0,1.0,0.0,0.0,Shall we open her up a bit?,4,Jeremy,7
+1300,0.0,1.0,0.0,0.0,We're almost at the office now and…,4,Mark,7
+1301,0.0,0.633,0.367,0.4404," If it feels good, do it.",4,Jeremy,6
+1302,0.0,1.0,0.0,0.0,Isn't that Johnson's whole philosophy?,4,Jeremy,5
+1303,0.0,0.417,0.583,0.6369,They love it really.,4,Jeremy,4
+1304,0.0,1.0,0.0,0.0,That was Mica from...,4,Mark,4
+1305,0.0,0.556,0.444,0.4926,I hope they didn't recognise me!,4,Mark,6
+1306,0.0,0.811,0.189,0.2732, Well what do you two do in the car then?,4,Jeremy,10
+1307,0.0,1.0,0.0,0.0,Don't tell me you just sit around and talk about what the VAT is on cigarillos?,4,Jeremy,16
+1308,0.0,1.0,0.0,0.0,Sometimes he lets me do the gears.,4,Mark,7
+1309,0.0,1.0,0.0,0.0," Hey, I've got an idea.",4,Jeremy,5
+1310,0.0,1.0,0.0,0.0, This doesn't feel right.,4,Mark,4
+1311,0.0,1.0,0.0,0.0, This is so right.,4,Jeremy,4
+1312,0.0,1.0,0.0,0.0, But I can't drive.,4,Mark,4
+1313,0.0,1.0,0.0,0.0,All you have to do is believe.,4,Jeremy,7
+1314,0.0,0.845,0.155,0.4466," Now just very very slowly take your foot off the clutch and just tickle the accelerator, OK?",4,Jeremy,17
+1315,0.0,1.0,0.0,0.0,Look at me go!,4,Mark,4
+1316,0.0,1.0,0.0,0.0,"Look at me driving, Jez!",4,Mark,5
+1317,0.0,1.0,0.0,0.0, You're driving... very slowly in first gear.,4,Jeremy,7
+1318,0.0,0.39,0.61,0.5707," Yeah, oh yeah, come on!",4,Mark,5
+1319,0.0,0.484,0.516,0.4926," That's right, It's easy!",4,Jeremy,4
+1320,0.0,1.0,0.0,0.0,"Now, just give it a bit more juice and hang a right.",4,Jeremy,12
+1321,0.0,1.0,0.0,0.0," Hey, isn't that Sophie?",4,Jeremy,4
+1322,0.0,0.577,0.423,0.296,"Yeah, h-how do I er…",4,Mark,5
+1323,0.348,0.652,0.0,-0.1531, How do I do stopping?,4,Mark,5
+1324,0.697,0.303,0.0,-0.7088,"No, no, no, the middle one!",4,Jeremy,6
+1325,0.0,1.0,0.0,0.0," Blimey, Mark, when did you...?",4,Sophie,5
+1326,0.0,1.0,0.0,0.0,"It's not an old banger though is it, Mark?",4,Sophie,9
+1327,0.0,1.0,0.0,0.0,It's a brand new Beemer.,4,Sophie,5
+1328,0.0,0.749,0.251,0.3291," Yeah, and you'd probably like a spin, but we're just tooling around town.",4,Mark,13
+1329,0.0,1.0,0.0,0.0,"You know, it's a guy thing.",4,Mark,6
+1330,0.0,0.753,0.247,0.3182," Mate, are you sure you're all right to-?",4,Jeremy,8
+1331,0.0,1.0,0.0,0.0,"See you around, Soph.",4,Mark,4
+1332,0.0,1.0,0.0,0.0,Do you think he's going to mind?,4,Jeff,7
+1333,0.0,1.0,0.0,0.0,I think it's possible he might mind.,4,Jeff,7
+1334,0.0,1.0,0.0,0.0," But Mark can't drive, why did he...?",4,Sophie,7
+1335,0.0,0.69,0.31,0.4019, You've got to help me out here.,4,Mark,7
+1336,0.0,0.794,0.206,0.5994,I'll tell Super Hans to move his stuff out cause you're going to be staying now.,4,Jeremy,16
+1337,0.0,1.0,0.0,0.0," Look, Jez, you've got to take the rap.",4,Mark,8
+1338,0.0,1.0,0.0,0.0,"I mean, you don't have to but...",4,Mark,7
+1339,0.0,1.0,0.0,0.0,"I have a future whereas you... not don't, just, it's different!",4,Mark,11
+1340,0.0,1.0,0.0,0.0,He's grasping at straws.,4,Jeremy,4
+1341,0.0,0.448,0.552,0.5719,Johnson loves that car.,4,Jeremy,4
+1342,0.0,1.0,0.0,0.0,It's all over for them.,4,Jeremy,5
+1343,0.0,0.654,0.346,0.6486,Might as well get some brownie points by acting the big friend.,4,Jeremy,12
+1344,0.0,0.842,0.158,0.2195,"If you really, really want me to mate, I'll do it.",4,Jeremy,11
+1345,0.375,0.625,0.0,-0.34,I'll face the firing squad.,4,Jeremy,5
+1346,0.0,0.508,0.492,0.4404,You're such a good guy.,4,Mark,5
+1347,0.0,1.0,0.0,0.0,We'll be in Cardiff together within the fortnight.,4,Mark,8
+1348,0.0,1.0,0.0,0.0," Mark, I'm a little concerned.",4,Johnson,5
+1349,0.0,1.0,0.0,0.0,My 5 Series isn't where I left it.,4,Johnson,8
+1350,0.383,0.617,0.0,-0.4767,I'm afraid something terrible has happened.,4,Mark,6
+1351,0.0,1.0,0.0,0.0, What's happened to my car?,4,Johnson,5
+1352,0.26,0.481,0.26,0.0," Yes, there's a bit of a problem there, actually.",4,Jeremy,9
+1353,0.0,0.806,0.194,0.5574,"You see, I borrowed the keys, drove it around for a bit of a laugh and then I crashed it.",4,Jeremy,20
+1354,0.0,1.0,0.0,0.0," I mean, he says ""borrowed"", but really I had no...",4,Mark,10
+1355,0.0,1.0,0.0,0.0,"So, you got the Newport projections?",4,Johnson,6
+1356,0.0,1.0,0.0,0.0,You trusted... you gave the keys to…,4,Jeremy,7
+1357,0.0,1.0,0.0,0.0,"I'm insured out of my arse, mate.",4,Johnson,7
+1358,0.0,1.0,0.0,0.0,"Nothing can touch me, I'm covered.",4,Johnson,6
+1359,0.0,1.0,0.0,0.0,"So, sushi or cappuccino?",4,Johnson,4
+1360,0.757,0.243,0.0,-0.7374,"Shit, he doesn't care.",4,Jeremy,4
+1361,0.0,0.536,0.464,0.3818,Mark's in the clear.,4,Jeremy,4
+1362,0.0,0.656,0.344,0.636,"It's going to be me and Super Hans, forever!",4,Jeremy,9
+1363,0.423,0.577,0.0,-0.296,"No, don't go, because...",4,Jeremy,4
+1364,0.0,0.682,0.318,0.3252,I just can't take these lies anymore.,4,Jeremy,7
+1365,0.0,1.0,0.0,0.0,He smashed up your car.,4,Jeremy,5
+1366,0.293,0.707,0.0,-0.4404,"He did it because he hates you, really.",4,Jeremy,8
+1367,0.312,0.601,0.087,-0.7054," You really are a bitter loser, aren't you, Mr ""No Logo"", Mr ""Work A Day For World Peace""?",4,Johnson,18
+1368,0.0,1.0,0.0,0.0,"Mark, shall we split?",4,Johnson,4
+1369,0.0,1.0,0.0,0.0,This is never gonna work!,4,Jeremy,5
+1370,0.0,1.0,0.0,0.0,You don't know him.,4,Jeremy,4
+1371,0.0,1.0,0.0,0.0,You don't know anything about him!,4,Jeremy,6
+1372,0.0,0.667,0.333,0.3612,How does he like his toast?,4,Jeremy,6
+1373,0.0,0.833,0.167,0.4215, He likes it in a business class seat of a Virgin Atlantic flight to New York City.,4,Johnson,17
+1374,0.0,0.588,0.412,0.4215,He likes it with a…,4,Johnson,5
+1375,0.0,0.797,0.203,0.4215,He likes one brown with Marmite and one white with lime marmalade.,4,Jeremy,12
+1376,0.0,1.0,0.0,0.0, I'm so outta here.,4,Johnson,4
+1377,0.308,0.692,0.0,-0.652,You can't because the truth is he doesn't love you for your business plan.,4,Jeremy,14
+1378,0.0,0.519,0.481,0.5719,He loves you for your...,4,Jeremy,5
+1379,0.0,0.519,0.481,0.5719,He loves you for you.,4,Jeremy,5
+1380,0.0,1.0,0.0,0.0," Jeremy, for God's sake!",4,Mark,4
+1381,0.0,1.0,0.0,0.0,I can handle that.,4,Jeremy,4
+1382,0.0,0.625,0.375,0.2023,I'm fine with that.,4,Jeremy,4
+1383,0.0,1.0,0.0,0.0," Look, I'm a businessman.",4,Johnson,4
+1384,0.0,1.0,0.0,0.0,That's what I am.,4,Johnson,4
+1385,0.0,1.0,0.0,0.0,That's what I do.,4,Johnson,4
+1386,0.0,1.0,0.0,0.0,I don't want... this.,4,Johnson,4
+1387,0.0,1.0,0.0,0.0,I didn't come here for this.,4,Johnson,6
+1388,0.36,0.64,0.0,-0.5216,"Mark, you don't love me do you?",4,Johnson,7
+1389,0.0,0.27,0.73,0.6597,"Yes yes, maybe a bit.",4,Mark,5
+1390,0.0,1.0,0.0,0.0,"I do possibly, somewhat.",4,Mark,4
+1391,0.0,1.0,0.0,0.0,"But Alan, it's not how it seems.",4,Mark,7
+1392,0.0,0.417,0.583,0.4939,I'm 85% sure I'm straight.,4,Mark,5
+1393,0.0,0.927,0.073,0.4466,"It's just I do have feelings for you and, in principle, I'm not against more... it's just, I don't think I'll know till it's right there in front of me, whether I'll be able to go through with it, OK?",4,Mark,40
+1394,0.0,0.543,0.457,0.6369," You love me, not the business?",4,Johnson,6
+1395,0.0,1.0,0.0,0.0, I just don't know any more!,4,Mark,6
+1396,0.0,0.588,0.412,0.6369, I think it's best if you go now.,4,Jeremy,8
+1397,0.0,1.0,0.0,0.0,I'm 25 years old.,4,TV,4
+1398,0.379,0.621,0.0,-0.0572,I don't want this.,4,Mark,4
+1399,0.0,1.0,0.0,0.0,"Possibly bi, but basically uncurious.",4,Mark,5
+1400,0.38,0.087,0.533,0.6705," I love beauty, hate arrogance and I love sucking cock.",4,TV,10
+1401,0.467,0.533,0.0,-0.5423,That was the bad thing.,4,Jeremy,5
+1402,0.0,1.0,0.0,0.0," Right, my turn now.",4,Super Hans,4
+1403,0.0,0.781,0.219,0.4215,"If I get promoted to loan supervisor, that's an extra 160 a month.",5,Mark,13
+1404,0.0,1.0,0.0,0.0,Four months - weekend in Zurich.,5,Mark,6
+1405,0.0,1.0,0.0,0.0,If I get it.,5,Mark,4
+1406,0.0,1.0,0.0,0.0,I should've ironed my... why didn't I iron my fucking tie?,5,Mark,11
+1407,0.0,1.0,0.0,0.0,I thought you'd be out by now.,5,Sophie,7
+1408,0.0,1.0,0.0,0.0,Haven't been in yet.,5,Mark,4
+1409,0.0,1.0,0.0,0.0," Remember, it's just Barbara and Lucy in there.",5,Sophie,8
+1410,0.218,0.075,0.707,0.7579,"Relax, have a bloody good laugh.",5,Sophie,6
+1411,0.0,0.135,0.865,0.7506,Have a nice laugh.,5,Mark,4
+1412,0.0,0.781,0.219,0.4215,Do you think Jeff's charity squash stuff's gonna count for much?,5,Mark,11
+1413,0.0,0.487,0.513,0.4949," Mark, don't worry, it'll be fine.",5,Sophie,6
+1414,0.0,0.685,0.315,0.3182,I'm sure you're gonna get it.,5,Sophie,6
+1415,0.0,1.0,0.0,0.0,"Sophie, have you ever been to Zurich?",5,Mark,7
+1416,0.0,1.0,0.0,0.0,"Talking of which, badminton round-robin.",5,Mark,5
+1417,0.0,1.0,0.0,0.0,You still on for Wednesday?,5,Mark,5
+1418,0.0,1.0,0.0,0.0," And I was thinking, afterwards…",5,Mark,5
+1419,0.583,0.417,0.0,-0.6369,"Hey fuckface, you're on.",5,Jeff,4
+1420,0.508,0.492,0.0,-0.7351,"Forget it mate, you're dead in the water.",5,Mark,8
+1421,0.0,0.686,0.314,0.4939,I'm going to be relaxing all over you.,5,Mark,8
+1422,0.0,0.5,0.5,0.4588, Welcome to my world.,5,Super Hans,4
+1423,0.0,0.674,0.326,0.5949," Man, I am so glad you got me in here.",5,Jeremy,10
+1424,0.202,0.674,0.124,-0.34,"So, let's go down to the studio and start riffing on some shit, yeah?",5,Jeremy,14
+1425,0.0,1.0,0.0,0.0,"Although obviously one of us has to be on reception at any one time, unless Hazel can cover.",5,Super Hans,18
+1426,0.0,0.405,0.595,0.4466," OK, I get it.",5,Jeremy,4
+1427,0.23,0.626,0.145,-0.2895,We bide our time until we pick the perfect moment to start really shaking shit up and get noticed.,5,Jeremy,19
+1428,0.0,0.813,0.187,0.7712," Yeah, although one of the best ways to get noticed early on is to pick up a four-pinter on the way in, ask Ron if he wants a latte before you... Jesus, man!",5,Super Hans,32
+1429,0.278,0.444,0.278,0.0,You got like a Blair Witch ear.,5,Super Hans,7
+1430,0.0,1.0,0.0,0.0,"You know, next-door Toni.",5,Jeremy,4
+1431,0.0,1.0,0.0,0.0," Oh, the one you wrote er... Toni's theme for?",5,Super Hans,8
+1432,0.0,0.667,0.333,0.3612, She's like some kind of drug.,5,Jeremy,6
+1433,0.0,0.517,0.483,0.6808,Kind of like ketamine... but with nicer hair.,5,Jeremy,8
+1434,0.0,0.704,0.296,0.2732," Well, you're all set, ain't you?",5,Super Hans,6
+1435,0.0,0.714,0.286,0.4939,"You, my friend, are a music studio reception runner now.",5,Super Hans,10
+1436,0.0,1.0,0.0,0.0,Gets the women hot.,5,Super Hans,4
+1437,0.326,0.326,0.348,0.0516,It's a savage garden my friend.,5,Super Hans,6
+1438,0.0,1.0,0.0,0.0,Shall I ask what he means?,5,Jeremy,6
+1439,0.0,0.626,0.374,0.3384,The interview went really well.,5,Mark,5
+1440,0.0,0.571,0.429,0.4588,Glad I didn't mention the phones.,5,Mark,6
+1441,0.0,1.0,0.0,0.0,Keep the big idea on ice for now.,5,Mark,8
+1442,0.351,0.649,0.0,-0.4019,Maybe I should've mentioned the blind kids.,5,Mark,7
+1443,0.0,0.783,0.217,0.3612,Although I could've sounded like I just did it for my CV.,5,Mark,12
+1444,0.0,0.748,0.252,0.4019,I definitely did not do that just for my CV.,5,Mark,10
+1445,0.0,1.0,0.0,0.0," Mark, Barbara's asked me to let you know there's news.",5,Sophie,10
+1446,0.0,1.0,0.0,0.0, What's... they didn't give it to Jeff?,5,Mark,7
+1447,0.688,0.312,0.0,-0.5267," No, no they didn't.",5,Sophie,4
+1448,0.306,0.694,0.0,-0.296," No, Mark, let me... sit down.",5,Sophie,6
+1449,0.0,1.0,0.0,0.0,"Um, they didn't give it to Jeff but they didn't give it you either.",5,Sophie,14
+1450,0.0,0.418,0.582,0.6783, Is this... is this a funny joke?,5,Mark,7
+1451,0.144,0.856,0.0,-0.1779,"This is... it's weird, really weird, but Barbara, she asked me to temporarily take over the supervisor role.",5,Sophie,18
+1452,0.0,0.202,0.798,0.7845," Well good, that's really good.",5,Mark,5
+1453,0.0,0.492,0.508,0.7351,"Great, well I'll just get on with these.",5,Mark,8
+1454,0.605,0.395,0.0,-0.6808,What the hell happened?,5,Mark,4
+1455,0.0,1.0,0.0,0.0," Apparently, Barbara thought no-one came up to the required standard and they decided as an interim…",5,Sophie,16
+1456,0.0,1.0,0.0,0.0,What's the real deal?,5,Mark,4
+1457,0.0,1.0,0.0,0.0,What's the story behind the story?,5,Mark,6
+1458,0.0,1.0,0.0,0.0, Does there need to be a…,5,Sophie,6
+1459,0.068,0.768,0.164,0.5023," No, I mean you know, you know how I think of you but, you've got to say I'm the better loan manager.",5,Mark,22
+1460,0.0,1.0,0.0,0.0,You've got to say that.,5,Mark,5
+1461,0.0,1.0,0.0,0.0," You've got to say that, haven't you?",5,Mark,7
+1462,0.0,0.653,0.347,0.4927, You're very good at your job Mark.,5,Sophie,7
+1463,0.0,1.0,0.0,0.0, That's quite all right.,5,Sophie,4
+1464,0.0,1.0,0.0,0.0,Now do you reckon you can finish off the Hertfordshire file?,5,Sophie,11
+1465,0.0,0.656,0.344,0.2732," Well, it's not a big... just...",5,Sophie,6
+1466,0.0,0.577,0.423,0.296,"Yep, I'll do that.",5,Mark,4
+1467,0.24,0.497,0.262,0.2003,And if you could just dance a death clog dance all over my hopes and dreams and leave a girl turd in my happy place… Shit!,5,Mark,26
+1468,0.0,1.0,0.0,0.0,I should've milked those blindies dry!,5,Mark,6
+1469,0.0,0.944,0.056,0.296," Yeah, so this really similar to much larger version of the old graphics equaliser that you might have had on your hi-fi, in that it takes the graphics - which is another word for music - and it equalises them.",5,Jeremy,40
+1470,0.365,0.635,0.0,-0.3182,"I've lost her, she's gone.",5,Jeremy,5
+1471,0.206,0.794,0.0,-0.3804,"Christ, I'm actually quite boring when I put my mind to it.",5,Jeremy,12
+1472,0.0,1.0,0.0,0.0, And you've got the Chemical Brothers in six?,5,Toni,8
+1473,0.0,1.0,0.0,0.0,"Come on, this is it.",5,Jeremy,5
+1474,0.0,0.845,0.155,0.2975,"So, just sitting here, it's almost like you can feel your mojo expanding.",5,Jeremy,13
+1475,0.0,1.0,0.0,0.0," Jez, you haven't seen my book in here?",5,Super Hans,8
+1476,0.423,0.577,0.0,-0.296," No, I don't think it's…",5,Jeremy,5
+1477,0.0,1.0,0.0,0.0,Is that Burroughs and the Drug Culture?,5,Toni,6
+1478,0.0,0.308,0.692,0.6696,I love that book!,5,Toni,4
+1479,0.0,0.706,0.294,0.3612,I've been reading it for like a year.,5,Super Hans,8
+1480,0.0,0.89,0.11,0.3802,"I'm on the bit where Kerouac finishes his Benzedrine high, looks back at his novel and realises he wasn't even holding a pen!",5,Super Hans,22
+1481,0.241,0.638,0.122,-0.4678,"Course, Ginsberg right in the corner laughing, but, crying at the same time.",5,Super Hans,13
+1482,0.0,0.423,0.577,0.6249,"Oh great, they've clicked.",5,Jeremy,4
+1483,0.0,1.0,0.0,0.0, I read it for my book club.,5,Toni,7
+1484,0.0,1.0,0.0,0.0," So, Jez, you think you can have a look at that thing for me on reception?",5,Super Hans,16
+1485,0.0,0.656,0.344,0.2732,"Well it's, er, gone again.",5,Super Hans,5
+1486,0.524,0.476,0.0,-0.296," No, I fixed it.",5,Jeremy,4
+1487,0.0,0.722,0.278,0.4019," I was just down there, it's definitely not working.",5,Super Hans,9
+1488,0.0,1.0,0.0,0.0, The thing... you fixed.,5,Super Hans,4
+1489,0.0,1.0,0.0,0.0," Listen, I'm just showing Toni around at the…",5,Jeremy,8
+1490,0.0,0.625,0.375,0.2023,Your thing sounds important.,5,Toni,4
+1491,0.0,0.698,0.302,0.5994, Super Hans could show me the rest of the equipment.,5,Toni,10
+1492,0.0,0.476,0.524,0.5106,There's a bond of trust.,5,Jeremy,5
+1493,0.0,0.645,0.355,0.5106,He won't break the bond of trust.,5,Jeremy,7
+1494,0.718,0.282,0.0,-0.6249,"You'll be sorry, bitch.",5,Mark,4
+1495,0.0,0.378,0.622,0.509,I couldn't hate her!,5,Mark,4
+1496,0.0,1.0,0.0,0.0,Why oh why oh why didn't I tell them the phones thing?!,5,Mark,12
+1497,0.0,1.0,0.0,0.0,The phones thing rocks!,5,Mark,4
+1498,0.417,0.583,0.0,-0.6486,"Sophie, climbing over my dead body to...",5,Mark,7
+1499,0.0,0.756,0.244,0.3089,"It's not her fault, she doesn't even realise.",5,Mark,8
+1500,0.0,1.0,0.0,0.0,She's just a stooge.,5,Mark,4
+1501,0.587,0.18,0.234,-0.7088,"A beautiful, stupid, ugly, shitting, filthy grasping stooge!",5,Mark,8
+1502,0.0,1.0,0.0,0.0,"Hey, come on Mark, keep it real.",5,Mark,7
+1503,0.529,0.471,0.0,-0.6705,Don't let this ruin things.,5,Mark,5
+1504,0.132,0.868,0.0,-0.4939,"Besides, once you're going steady, you can grind her down, put her handbag in the fridge and tell her she's going mad.",5,Mark,22
+1505,0.0,1.0,0.0,0.0,It's just a game.,5,Mark,4
+1506,0.0,1.0,0.0,0.0,"Mousetrap, Downfall, Hunt the Yorkshire Ripper...",5,Mark,6
+1507,0.0,0.541,0.459,0.3716,It's not her fault!,5,Mark,4
+1508,0.0,1.0,0.0,0.0,Why didn't I mention the fucking phones?!,5,Mark,7
+1509,0.0,0.526,0.474,0.5423,"Well played, shall we call it a day?",5,Sophie,8
+1510,0.062,0.705,0.233,0.4854," I'm sorry, I'd love to play another game, but I've been invited to this dinner thing.",5,Sophie,16
+1511,0.0,1.0,0.0,0.0, I thought we were going for dinner!,5,Mark,7
+1512,0.0,1.0,0.0,0.0, I though we said.,5,Mark,4
+1513,0.0,1.0,0.0,0.0, I don't think we said.,5,Sophie,5
+1514,0.0,1.0,0.0,0.0,Because the whole team's going and Barbara was…,5,Sophie,8
+1515,0.355,0.645,0.0,-0.3174," Sorry Mark, it's really rude but I thought you...",5,Sophie,9
+1516,0.485,0.515,0.0,-0.6908,She is going to kill me.,5,Mark,6
+1517,0.0,0.589,0.411,0.2716,It's all totally fine.,5,Mark,4
+1518,0.0,1.0,0.0,0.0,"She's my guest, I invited her.",5,Jeremy,6
+1519,0.0,1.0,0.0,0.0,Why should I be the one making Ron lattes all day?,5,Jeremy,11
+1520,0.262,0.738,0.0,-0.4939,Just showing Toni the old drum loop from Bomb Dog.,5,Super Hans,10
+1521,0.344,0.656,0.0,-0.2732,She'll get bored of him.,5,Jeremy,5
+1522,0.219,0.521,0.26,0.1027,Just like she got bored of me.,5,Jeremy,7
+1523,0.0,0.753,0.247,0.3182,You sure you can get home from here?,5,Sophie,8
+1524,0.0,1.0,0.0,0.0,You can never go home again.,5,Mark,6
+1525,0.0,1.0,0.0,0.0,Is this where it all ends?,5,Mark,6
+1526,0.0,1.0,0.0,0.0,Or is this... where it all starts!,5,Mark,7
+1527,0.0,0.508,0.492,0.4404,This is a good idea.,5,Mark,5
+1528,0.0,0.406,0.594,0.6588,This is a great idea!,5,Mark,5
+1529,0.0,1.0,0.0,0.0,It's exactly the sort of thing they're looking for and it's exactly what they're not expecting!,5,Mark,16
+1530,0.0,1.0,0.0,0.0," Alan, Mike, Barbara!",5,Mark,4
+1531,0.0,0.674,0.326,0.4404,Hope you don't mind if I butt in.,5,Mark,8
+1532,0.0,0.692,0.308,0.6002," Don't worry, I'm not going to tuck in courtesy of the expense account.",5,Mark,13
+1533,0.0,0.548,0.452,0.836,I just thought this might be a good opportunity for me to share with you my vision of…,5,Mark,18
+1534,0.0,1.0,0.0,0.0, Can this wait till tomorrow?,5,Barbara,5
+1535,0.0,1.0,0.0,0.0, Can JLB's future wait till tomorrow?,5,Mark,6
+1536,0.104,0.682,0.214,0.5279,"I don't think so, and I think you'll agree when you hear the great idea that I was just too darn frigging scared to spill at interview.",5,Mark,27
+1537,0.0,0.755,0.245,0.0772," Mate, I know you want to…",5,Others,6
+1538,0.0,0.349,0.651,0.6808,This was definitely a good idea.,5,Mark,6
+1539,0.0,1.0,0.0,0.0,Reroute the phones to everyone's mobiles.,5,Mark,6
+1540,0.0,1.0,0.0,0.0,"Twenty-four hour, face-to-face, round the clock customer freakin' service!",5,Mark,9
+1541,0.0,0.763,0.237,0.4199,"It's like ""Hey I'm clocking off, finger to the customer!""",5,Mark,10
+1542,0.0,0.588,0.412,0.2732,Well not anymore because…,5,Mark,4
+1543,0.0,0.656,0.344,0.6369," Probably best if you go home now, old son.",5,Others,9
+1544,0.374,0.626,0.0,-0.4574, But I've worked with blind kids!,5,Mark,6
+1545,0.0,1.0,0.0,0.0,I'm the full package!,5,Mark,4
+1546,0.0,1.0,0.0,0.0,I'll have my action plan on you desk first thing in the morning.,5,Mark,13
+1547,0.0,0.349,0.651,0.6808,This was definitely a good idea.,5,Mark,6
+1548,0.434,0.377,0.189,-0.383,There's no chance this wasn't a good idea.,5,Mark,8
+1549,0.0,1.0,0.0,0.0," Call yourself a mate, mate?",5,Jeremy,5
+1550,0.167,0.833,0.0,-0.0516,I saw you leave her flat this morning.,5,Jeremy,8
+1551,0.0,1.0,0.0,0.0, She wanted bongo lessons!,5,Super Hans,4
+1552,0.0,0.727,0.273,0.4588,"What can I say, the lady has a passion for percussion.",5,Super Hans,11
+1553,0.0,1.0,0.0,0.0, She hasn't got a bongo.,5,Jeremy,5
+1554,0.0,1.0,0.0,0.0,You weren't carrying a bon...,5,Jeremy,5
+1555,0.454,0.546,0.0,-0.3595,There was no bongo!,5,Jeremy,4
+1556,0.0,1.0,0.0,0.0," Look, you don't need a drum to teach someone…",5,Super Hans,9
+1557,0.0,1.0,0.0,0.0,Your... noise last night.,5,Jeremy,4
+1558,0.0,0.414,0.586,0.836," Yeah, well you certainly seemed to enjoy the last few... a lot.",5,Jeremy,12
+1559,0.0,1.0,0.0,0.0," Hey mate, sometimes you gotta push for the burn.",5,Super Hans,9
+1560,0.444,0.556,0.0,-0.4939,It's the human time bomb.,5,Jeremy,5
+1561,0.0,1.0,0.0,0.0," Hey man, how you doing?",5,Jeremy,5
+1562,0.0,0.508,0.492,0.4404,Good to see you.,5,Jeremy,4
+1563,0.0,1.0,0.0,0.0,We're just hanging out with the band.,5,Jeremy,7
+1564,0.0,1.0,0.0,0.0,Long day at the studio.,5,Jeremy,5
+1565,0.0,1.0,0.0,0.0,"So, how you doing?",5,Jeremy,4
+1566,0.0,0.16,0.84,0.8591," Oh good, I'm feeling pretty good.",5,Mark,6
+1567,0.0,1.0,0.0,0.0," The way I see it now, Barbara is an experienced man-manager and if she thinks Sophie's right for the job, then Sophie's right for the job.",5,Mark,26
+1568,0.0,1.0,0.0,0.0,"Hey Barbara, thought we should have a follow-up meeting re.",5,Mark,10
+1569,0.066,0.82,0.115,0.2263,"Well, I'll just leave my new idea in your desk, give you time to think about it.",5,Mark,17
+1570,0.0,0.732,0.268,0.296,"Yeah, so my new idea is urine.",5,Mark,7
+1571,0.0,1.0,0.0,0.0,Loads and loads of urine flooding your drawers.,5,Mark,8
+1572,0.0,1.0,0.0,0.0,What do you think about that?,5,Mark,6
+1573,0.0,1.0,0.0,0.0,"Don't you think that would be ""just the ticket""?",5,Mark,9
+1574,0.0,0.645,0.355,0.296,"Yeah, you're getting some too.",5,Mark,5
+1575,0.327,0.187,0.486,0.1759," JLB Credit, fuck off please!",5,Mark,5
+1576,0.0,1.0,0.0,0.0,Application letter to... she did it.,5,Mark,6
+1577,0.0,0.851,0.149,0.2732,"Well, Sophie's drawer's getting a dousing too, or I could park a turd on her desk.",5,Mark,16
+1578,0.0,0.577,0.423,0.4466,Pissing's OK. Pissing's just horseplay.,5,Mark,5
+1579,0.0,1.0,0.0,0.0,I didn't do it!,5,Mark,4
+1580,0.0,0.541,0.459,0.3716,It's not my piss!,5,Mark,4
+1581,0.0,0.445,0.555,0.3595,It was a joke!,5,Mark,4
+1582,0.0,1.0,0.0,0.0,She did it to me last week.,5,Mark,7
+1583,0.0,1.0,0.0,0.0,I didn't realise you were still here.,5,Mark,7
+1584,0.0,0.761,0.239,0.296," Yeah, I've been working late down in marketing.",5,Sophie,8
+1585,0.0,1.0,0.0,0.0,What are you doing?,5,Sophie,4
+1586,0.0,1.0,0.0,0.0,Left a file here somewhere.,5,Mark,5
+1587,0.0,0.7,0.3,0.4588,"Um... Mark, I'm glad I bumped into you, actually.",5,Sophie,9
+1588,0.0,1.0,0.0,0.0,"About the other night at the restaurant, I just wanted you to know that I'm...",5,Sophie,15
+1589,0.0,0.571,0.429,0.3089,Don't notice the piss.,5,Mark,4
+1590,0.0,0.571,0.429,0.3089,Don't notice the piss.,5,Mark,4
+1591,0.0,1.0,0.0,0.0," Oh, it's the Finnemore numbers.",5,Sophie,5
+1592,0.0,1.0,0.0,0.0,I knew she had these somewhere.,5,Sophie,6
+1593,0.0,1.0,0.0,0.0," Oh, let me get those for you.",5,Mark,7
+1594,0.0,1.0,0.0,0.0,"Erm, listen, do you wanna...?",5,Sophie,5
+1595,0.0,1.0,0.0,0.0,Got a lot to do.,5,Mark,5
+1596,0.0,0.815,0.185,0.3595,"Yeah, I've gotta take the letter-shaped knife out of my back, Judas!",5,Mark,12
+1597,0.0,0.63,0.37,0.4466,"OK, they're a bit crinkled, so what?",5,Mark,7
+1598,0.219,0.781,0.0,-0.4215,Someone broke into my office and crinkled my papers and stuff.,5,Mark,11
+1599,0.0,1.0,0.0,0.0, I'm coming in if you're decent.,5,Sophie,6
+1600,0.0,1.0,0.0,0.0,I'm going for coffee.,5,Sophie,4
+1601,0.0,1.0,0.0,0.0," So, I offer a mixture of therapy with other disciplines such as careers guidance…",5,Therapist,14
+1602,0.0,1.0,0.0,0.0," But mainly, you're a careers guidance counsellor, right?",5,Mark,8
+1603,0.0,0.589,0.411,0.4927,"I mean, I just want to make it absolutely clear.",5,Mark,10
+1604,0.0,1.0,0.0,0.0,"I'm here for careers guidance, not therapy.",5,Mark,7
+1605,0.0,1.0,0.0,0.0, What are you trying to say?,5,Mark,6
+1606,0.0,0.722,0.278,0.4019,Just interested in why it is you feel…,5,Therapist,8
+1607,0.223,0.777,0.0,-0.4063," Look, I don't want to talk about any difficult feelings I may or may not be experiencing",5,Mark,17
+1608,0.0,0.685,0.315,0.5574,"Well, often I like to kick things off with a bit of word association.",5,Therapist,14
+1609,0.0,0.571,0.429,0.4601,It's kind of a fun way…,5,Therapist,6
+1610,0.0,1.0,0.0,0.0,I'll just say a word and you tell me the very first thing that pops into your mind.,5,Therapist,18
+1611,0.0,1.0,0.0,0.0,He's trying to therapise me,5,Mark,5
+1612,0.0,0.672,0.328,0.4466," OK, let's start with an obvious one.",5,Therapist,7
+1613,0.0,1.0,0.0,0.0, Just say the first thing that comes to mind.,5,Therapist,9
+1614,0.0,0.799,0.201,0.1935,I really get the feeling you're resisting something here.,5,Therapist,9
+1615,0.0,1.0,0.0,0.0, Can I change any of those?,5,Mark,6
+1616,0.0,1.0,0.0,0.0,What score did I get?,5,Mark,5
+1617,0.376,0.624,0.0,-0.3412,"It wasn't good, was it?",5,Mark,5
+1618,0.0,1.0,0.0,0.0, You don't get a score in word association.,5,Therapist,8
+1619,0.0,1.0,0.0,0.0, Maybe we should try something else.,5,Therapist,6
+1620,0.0,1.0,0.0,0.0,Have you ever done a Rorschach test?,5,Therapist,7
+1621,0.0,1.0,0.0,0.0,Just tell me what you see.,5,Therapist,6
+1622,0.688,0.312,0.0,-0.6597,"A hungry, devouring twat.",5,Mark,4
+1623,0.0,0.784,0.216,0.296,"After the hook, we need to hit something yeah?",5,Band member,9
+1624,0.0,1.0,0.0,0.0,They don't know that I am the owner of a massive musical brain.,5,Jeremy,13
+1625,0.0,1.0,0.0,0.0,"To them, I'm just the mild-mannered janitor.",5,Jeremy,7
+1626,0.0,1.0,0.0,0.0, Chorus is working too...,5,Band member,4
+1627,0.0,0.645,0.355,0.296,"Yeah, the chorus is working.",5,Jeremy,5
+1628,0.0,0.545,0.455,0.3612,Like the frog chorus.,5,Jeremy,4
+1629,0.0,1.0,0.0,0.0,Someone needs to tell them.,5,Jeremy,5
+1630,0.0,1.0,0.0,0.0,I'm an outsider but I'm on the inside.,5,Jeremy,8
+1631,0.0,1.0,0.0,0.0,This is my moment.,5,Jeremy,4
+1632,0.0,1.0,0.0,0.0,"Go on, do it.",5,Jeremy,4
+1633,0.0,1.0,0.0,0.0,"Cross the drawbridge, make the splash.",5,Jeremy,6
+1634,0.263,0.737,0.0,-0.3612,Maybe you should just mess things up a bit?,5,Jeremy,9
+1635,0.0,0.712,0.288,0.6871," I mean, don't you think it'd be better if the sound was more sort of like Ka-ZOW?!",5,Jeremy,17
+1636,0.0,1.0,0.0,0.0," Not so much A to B to C, but more sort of A to D and then back to A and then to X!",5,Jeremy,24
+1637,0.0,0.508,0.492,0.4404,"You know, just better.",5,Jeremy,4
+1638,0.0,0.545,0.455,0.3612,Like your first CD.,5,Jeremy,4
+1639,0.169,0.831,0.0,-0.0572,"I mean, obviously I don't want to butt in.",5,Jeremy,9
+1640,0.0,1.0,0.0,0.0,I mean It's your song.,5,Jeremy,5
+1641,0.0,0.815,0.185,0.3612,"Cos like I say, at the moment it is very sort of ""duh-duh-duh-duh.",5,Jeremy,13
+1642,0.0,0.741,0.259,0.2732,"Oh, God, we're doing the fucking song.",5,Jeremy,7
+1643,0.0,1.0,0.0,0.0,When's it gonna finish?,5,Jeremy,4
+1644,0.0,1.0,0.0,0.0,Whereas I'm thinking it should be more do-do-do-do-do-wa-wa!,5,Jeremy,8
+1645,0.0,0.592,0.408,0.7346,"Whereas, like I say, at the moment it is more kind of...",5,Jeremy,12
+1646,0.0,1.0,0.0,0.0,Which it doesn't have to be.,5,Jeremy,6
+1647,0.0,0.349,0.651,0.6808,This was definitely a good idea.,5,Jeremy,6
+1648,0.434,0.377,0.189,-0.383,There's no chance this wasn't a good idea.,5,Jeremy,8
+1649,0.0,0.645,0.355,0.296," Yeah, anyone could see that.",5,Super Hans,5
+1650,0.423,0.577,0.0,-0.296,"No, I'll tell him.",5,Super Hans,4
+1651,0.0,0.659,0.341,0.4767,"All right then, Mr T. Cheers then.",5,Super Hans,7
+1652,0.206,0.794,0.0,-0.0772,"Sorry, mate, there's nothing I can do.",5,Super Hans,7
+1653,0.429,0.571,0.0,-0.128, Ron's a tough nut.,5,Super Hans,4
+1654,0.0,1.0,0.0,0.0,I did everything I could.,5,Super Hans,5
+1655,0.0,0.506,0.494,0.4449,You didn't do shit.,5,Jeremy,4
+1656,0.0,1.0,0.0,0.0,Had the whole thing out with him earlier.,5,Super Hans,8
+1657,0.273,0.727,0.0,-0.4588,"I threatened to walk, he was having none of it.",5,Super Hans,10
+1658,0.0,1.0,0.0,0.0," Right, so are you gonna walk now?",5,Jeremy,7
+1659,0.0,1.0,0.0,0.0," Steady on, mate, I'm not um...",5,Super Hans,6
+1660,0.358,0.247,0.395,0.0772, That's pretty bloody obvious.,5,Jeremy,4
+1661,0.0,1.0,0.0,0.0,So what are you gonna do about that?,5,Jeremy,8
+1662,0.0,0.506,0.494,0.5994,"I'm still here, Super Hans.",5,Jeremy,5
+1663,0.0,1.0,0.0,0.0,I'm still standing here.,5,Jeremy,4
+1664,0.423,0.577,0.0,-0.296,"No, he won't go.",5,Super Hans,4
+1665,0.0,1.0,0.0,0.0, I see through you.,5,Jeremy,4
+1666,0.0,1.0,0.0,0.0,Trying to get me out so you can muscle in on my woman.,5,Jeremy,13
+1667,0.196,0.356,0.448,0.4278," No, all right, well you better... OK.",5,Super Hans,7
+1668,0.0,1.0,0.0,0.0,I'll put you onto him.,5,Super Hans,5
+1669,0.0,0.765,0.235,0.4728, Wouldn't it be so much easier if I just lay down and…,5,Jeremy,12
+1670,0.145,0.855,0.0,-0.296,"No, that won't be necessary because I'm going to be leaving the premises immediately.",5,Jeremy,14
+1671,0.0,1.0,0.0,0.0, That's your entire life.,5,TV,4
+1672,0.0,1.0,0.0,0.0," You see, he's not Lennon, but she is Yoko.",5,Jeremy,9
+1673,0.0,1.0,0.0,0.0,I'm Lennon but Yoko has gone off with Paul.,5,Jeremy,9
+1674,0.0,1.0,0.0,0.0,"I mean, imagine that.",5,Jeremy,4
+1675,0.0,1.0,0.0,0.0,That's the scenario we're talking.,5,Jeremy,5
+1676,0.0,1.0,0.0,0.0,Don't they mind you not going in?,5,Jeremy,7
+1677,0.483,0.517,0.0,-0.4215, They think I'm ill.,5,Mark,4
+1678,0.137,0.863,0.0,-0.2263,I'm screwing the system and there's not a thing they can do about it.,5,Mark,14
+1679,0.318,0.682,0.0,-0.1027,She'll pay all right.,5,Mark,4
+1680,0.243,0.674,0.082,-0.6486," Yeah, I mean, what's wrong with revenge, and the mark on the door, and plagues and pestilence and that kind of thing?",5,Jeremy,22
+1681,0.362,0.638,0.0,-0.5267, Suddenly you're not allowed to wreak revenge?,5,Jeremy,7
+1682,0.444,0.556,0.0,-0.4939, It's political correctness gone mad.,5,Mark,5
+1683,0.0,1.0,0.0,0.0,"Jeremy, have you seen Strangers On A Train?",5,Mark,7
+1684,0.605,0.395,0.0,-0.5574,No one suspects the chef.,5,Jeremy,5
+1685,0.195,0.61,0.195,0.0, It's about these two guys who take care of each other's enemies.,5,Mark,12
+1686,0.0,1.0,0.0,0.0,And what happens in the end?,5,Jeremy,6
+1687,0.0,0.58,0.42,0.8047," I can't remember, but I'm pretty sure it all turns out all right.",5,Mark,13
+1688,0.0,0.29,0.71,0.5994," ...happy painting, God bless.",5,TV,4
+1689,0.0,1.0,0.0,0.0, This is the ultimate.,5,Mark,4
+1690,0.348,0.652,0.0,-0.4939,And she's paying back in fear dollars.,5,Jeremy,7
+1691,0.0,0.732,0.268,0.296," Yeah, so what are you gonna say?",5,Mark,7
+1692,0.216,0.784,0.0,-0.3182, I thought I might just say I'm gonna cut her up and leave her in buckets.,5,Jeremy,16
+1693,0.0,1.0,0.0,0.0,"Just say something like... ask ""is Mrs Hugh Jass there"".",5,Mark,10
+1694,0.688,0.312,0.0,-0.5267,"No, no, not that.",5,Mark,4
+1695,0.0,1.0,0.0,0.0,She's got a thing about her bum.,5,Mark,7
+1696,0.0,1.0,0.0,0.0,How about Mike Hunt?,5,Mark,4
+1697,0.0,1.0,0.0,0.0, What shall I say then?,5,Jeremy,5
+1698,0.0,0.711,0.289,0.431,"Not in a horrible way, just I can see you.",5,Jeremy,10
+1699,0.0,1.0,0.0,0.0,I'm behind a bush.,5,Jeremy,4
+1700,0.176,0.78,0.044,-0.6597,"No, I'm not gonna tell you which... now look, I'm the one in charge here, I'm the one... now look there's no need to go over the top about this, I'm just shitting you up a bit.",5,Jeremy,37
+1701,0.373,0.627,0.0,-0.4534,"Jeremy, she's got a fucking air gun!",5,Mark,7
+1702,0.0,1.0,0.0,0.0,"Mark, she's going to...",5,Jeremy,4
+1703,0.535,0.465,0.0,-0.784,"Mother... Bollocks, that kills, that hurts SO MUCH!",5,Mark,8
+1704,0.0,1.0,0.0,0.0," She's coming, we've got to…",5,Jeremy,5
+1705,0.429,0.571,0.0,-0.3089,Why not come clean?,5,Mark,4
+1706,0.202,0.714,0.084,-0.5628,"You can say... you could say... nope, there is no possible way of making this look- Oh FUCK!",5,Mark,18
+1707,0.0,0.641,0.359,0.4215, It's lucky you had those boots.,5,Jeremy,6
+1708,0.0,0.565,0.435,0.6597," Yeah, I suppose everything turned out pretty much all right.",5,Mark,10
+1709,0.0,0.694,0.306,0.296," Yeah, I think she got the message.",5,Jeremy,7
+1710,0.144,0.701,0.155,0.0772,"I've made a psycho call to the woman I love, I've kicked a dog to death, and now I'm going to pepper-spray an acquaintance.",5,Mark,24
+1711,0.0,1.0,0.0,0.0,"I mean, what's happened to me?",5,Mark,6
+1712,0.0,1.0,0.0,0.0," So, you still up for this?",5,Jeremy,6
+1713,0.306,0.139,0.556,0.2023," Yeah, no, it's fine.",5,Mark,4
+1714,0.0,1.0,0.0,0.0,Give me the plan again.,5,Jeremy,5
+1715,0.08,0.697,0.223,0.6249," I give Super Hans the pizza, pepper-spray him, then kick him in the nuts and grab his wallet to make it look like a robbery.",5,Mark,25
+1716,0.0,1.0,0.0,0.0,"Go for it, buddy.",5,Jeremy,4
+1717,0.0,1.0,0.0,0.0,What am I doing?,5,Mark,4
+1718,0.0,1.0,0.0,0.0,I can't do this!,5,Mark,4
+1719,0.333,0.667,0.0,-0.3595,There's no way I can do this!,5,Mark,7
+1720,0.0,0.783,0.217,0.3612, Do I look like the kind of person who eats pizza?,5,Toni,11
+1721,0.096,0.76,0.143,0.2023,I've been sent to pepper-spray Super Hans and kick him in the nuts but I can't.,5,Mark,16
+1722,0.0,1.0,0.0,0.0,"I can't, all right?",5,Mark,4
+1723,0.0,1.0,0.0,0.0,It's all gone over the edge of reason.,5,Mark,8
+1724,0.167,0.641,0.192,0.101," Look, it would really help me if you could start screaming, a bit.",5,Mark,13
+1725,0.0,0.784,0.216,0.296," Yeah, and if you could tell Jeremy that I…",5,Mark,9
+1726,0.0,1.0,0.0,0.0, What the hell's going on?,5,Jeremy,5
+1727,0.0,1.0,0.0,0.0,Why haven't you pepper-sprayed him?,5,Jeremy,5
+1728,0.0,1.0,0.0,0.0,Is this for real?,5,Super Hans,4
+1729,0.0,1.0,0.0,0.0," Er, I am not Jeremy, I am... Oh, lookee lookee at this!",5,Jeremy,11
+1730,0.0,0.182,0.818,0.5411,Well what a surprise!,5,Jeremy,4
+1731,0.0,0.529,0.471,0.396,What a very big surprise!,5,Jeremy,5
+1732,0.0,1.0,0.0,0.0,Another late-night bongo lesson?,5,Jeremy,4
+1733,0.0,0.631,0.369,0.6249," Jeremy, we're two single people having a great time.",5,Toni,9
+1734,0.0,1.0,0.0,0.0,"If you can't handle that, go back to the '50s.",5,Toni,10
+1735,0.0,0.732,0.268,0.296,"Yeah, maybe you should make a move, mate.",5,Super Hans,8
+1736,0.0,0.438,0.562,0.6289," OK, yeah mate, I'll make a move.",5,Jeremy,7
+1737,0.0,1.0,0.0,0.0,How about this for a move?,5,Jeremy,6
+1738,0.355,0.645,0.0,-0.296,"Jez, there's no need to…",5,Mark,5
+1739,0.0,1.0,0.0,0.0,"Oh, you sprayed me!",5,Jeremy,4
+1740,0.0,1.0,0.0,0.0,You fucking sprayed me!,5,Jeremy,4
+1741,0.0,0.556,0.444,0.4926, It's for your own good!,5,Mark,5
+1742,0.0,0.506,0.494,0.4466," OK, enough careers guidance.",5,Mark,4
+1743,0.0,0.756,0.244,0.4404, How could it possibly have been for my own good?,5,Jeremy,10
+1744,0.133,0.867,0.0,-0.0572," Look, I don't want to talk about it any more.",5,Mark,10
+1745,0.223,0.777,0.0,-0.3182,You didn't kick him in the nuts - that's something.,5,Mark,10
+1746,0.0,1.0,0.0,0.0,You can build on that.,5,Mark,5
+1747,0.0,1.0,0.0,0.0,The spray's gone Jeremy.,5,Mark,4
+1748,0.0,1.0,0.0,0.0,Just tell me where it is.,5,Jeremy,6
+1749,0.0,0.764,0.236,0.4754," Look, Mr Klugman has a little mantra that I'm finding very helpful.",5,Mark,12
+1750,0.0,0.694,0.306,0.6946,Not to be patronising but perhaps you want to have a really good think about that.,5,Mark,16
+1751,0.0,0.508,0.492,0.4404,Good to see you.,5,Mark,4
+1752,0.0,0.506,0.494,0.4466," Mark, are you OK?",5,Sophie,4
+1753,0.218,0.602,0.181,-0.079, I've been feeling a little low lately but…,5,Mark,8
+1754,0.0,1.0,0.0,0.0,What happened with your...?,5,Sophie,4
+1755,0.0,1.0,0.0,0.0,"Jeremy just hit me, with the ladle.",5,Mark,7
+1756,0.0,1.0,0.0,0.0,You can't go around hitting people with ladles!,5,Sophie,8
+1757,0.0,1.0,0.0,0.0,He shouldn't have pepper-sprayed me.,5,Jeremy,5
+1758,0.0,1.0,0.0,0.0,"What's going on, Mark?",5,Sophie,4
+1759,0.0,1.0,0.0,0.0,You've been away for...,5,Sophie,4
+1760,0.0,0.508,0.492,0.4404," Sophie, Sophie, Sophie, relax.",5,Mark,4
+1761,0.0,1.0,0.0,0.0,I'm going to the solarium.,5,Mark,5
+1762,0.0,1.0,0.0,0.0,I have spoken with the Citizens Advice Bureau.,5,Mark,8
+1763,0.0,0.532,0.468,0.5448,There's nothing inside killing me.,5,Mark,5
+1764,0.0,1.0,0.0,0.0,Because I guess I just...,5,Sophie,5
+1765,0.0,0.698,0.302,0.3818,I wanted to apologise about the work thing.,5,Sophie,8
+1766,0.0,1.0,0.0,0.0,I know how much you wanted it.,5,Sophie,7
+1767,0.0,0.156,0.844,0.5267,"It's fine, fine, fine.",5,Mark,4
+1768,0.0,1.0,0.0,0.0,I've let go of all that stuff.,5,Mark,7
+1769,0.0,0.423,0.577,0.6249," Oh, that's great, really.",5,Sophie,4
+1770,0.0,0.732,0.268,0.5267,"And to tell you the truth, you're well out of it, it's all politics.",5,Sophie,14
+1771,0.059,0.865,0.077,0.0978,"And the joke is, I don't really want the job but Barbara made me write an official application letter to regional.",5,Sophie,21
+1772,0.296,0.704,0.0,-0.2746,"Jesus, so she didn't... Oh God!",5,Mark,6
+1773,0.0,1.0,0.0,0.0,I'm such a cockmuncher!,5,Mark,4
+1774,0.0,0.788,0.212,0.7351," So I guess I just wanted to say I enjoyed the badminton and everything and I hope when you're back on my team, we can get back to normal.",5,Sophie,29
+1775,0.0,0.766,0.234,0.6361,"Well, I guess it's very nice for the big lady to come down here and talk to the little man.",5,Mark,20
+1776,0.0,0.894,0.106,0.2263,I'm just surprised you can see me from all the way up there in your ivory tower.,5,Mark,17
+1777,0.219,0.625,0.156,-0.25," Oh look, if you're gonna be like that, you can fuck off.",5,Sophie,12
+1778,0.0,1.0,0.0,0.0," Hey, Mark, I found it.",5,Jeremy,5
+1779,0.0,0.58,0.42,0.4404,It's for your own good.,5,Jeremy,5
+1780,0.173,0.827,0.0,-0.3182, Plus it was so cold and wet and boring in the outfield.,6,Mark,12
+1781,0.0,1.0,0.0,0.0,"I mean personally, I don't think I've ever seen a ball that slippery, have you?",6,Mark,15
+1782,0.385,0.615,0.0,-0.3612," It was a difficult catch, Mark.",6,Sophie,7
+1783,0.0,1.0,0.0,0.0,And it's just softball.,6,Sophie,4
+1784,0.0,1.0,0.0,0.0,All systems are go.,6,Mark,4
+1785,0.0,1.0,0.0,0.0,"The apple is ripe, the cross hairs are centralised.",6,Mark,9
+1786,0.0,0.737,0.263,0.3612,"Soph, I was wondering, do you like Indonesian food?",6,Mark,9
+1787,0.0,0.589,0.411,0.4201," Um, Thai, I quite like so...",6,Sophie,6
+1788,0.0,1.0,0.0,0.0,Restaurant on a barge?,6,Mark,4
+1789,0.0,0.769,0.231,0.2732,I might as well ask her to marry me.,6,Mark,9
+1790,0.0,1.0,0.0,0.0,That's the English way.,6,Mark,4
+1791,0.0,1.0,0.0,0.0,"But listen, everyone's going to the pub.",6,Mark,7
+1792,0.0,1.0,0.0,0.0, The whole work gang?,6,Sophie,4
+1793,0.0,1.0,0.0,0.0,I don't think so.,6,Sophie,4
+1794,0.0,1.0,0.0,0.0,Do you mind if I get changed?,6,Sophie,7
+1795,0.524,0.476,0.0,-0.5267," Oh, no, no, not at all.",6,Mark,6
+1796,0.0,0.69,0.31,0.2023,She's taking off her top.,6,Mark,5
+1797,0.0,0.501,0.499,0.4576,This is very promising.,6,Mark,4
+1798,0.0,1.0,0.0,0.0,Would she do this if she fancied me?,6,Mark,8
+1799,0.427,0.281,0.292,-0.3382,"Maybe we're... oh, God, no, no, we're only bloody friends!",6,Mark,10
+1800,0.0,1.0,0.0,0.0, And then she gave me a peck on the cheek.,6,Mark,10
+1801,0.0,1.0,0.0,0.0,It's a living nightmare!,6,Mark,4
+1802,0.0,1.0,0.0,0.0," I've got to close the deal, I've gotta ask her out without actually asking her out.",6,Mark,16
+1803,0.0,0.781,0.219,0.4215,"One step forward, two steps back, that's the key to progress.",6,Mark,11
+1804,0.0,1.0,0.0,0.0, So how was your day?,6,Mark,5
+1805,0.273,0.727,0.0,-0.5423,"Kind of weird, Mum rang to say that my Uncle Ray is a bit ill.",6,Jeremy,15
+1806,0.0,1.0,0.0,0.0,"He's gone into the hospice, so I guess he's being looked after.",6,Jeremy,12
+1807,0.0,1.0,0.0,0.0,"You... Jez, you know what a hospice is, don't you?",6,Mark,10
+1808,0.0,0.263,0.737,0.6808, Like a hospital but nicer.,6,Jeremy,5
+1809,0.237,0.763,0.0,-0.4215, A hospice is where people go to... who are terminally ill.,6,Mark,11
+1810,0.0,0.761,0.239,0.296,"Yeah, Mum said he was... what you said.",6,Jeremy,8
+1811,0.0,0.423,0.577,0.4767,I'm sure he'll be fine.,6,Jeremy,5
+1812,0.0,1.0,0.0,0.0,He's not a quitter.,6,Jeremy,4
+1813,0.0,0.741,0.259,0.2732," Well, I have to say, probably not mate.",6,Mark,8
+1814,0.423,0.577,0.0,-0.296," No, he won't quit.",6,Jeremy,4
+1815,0.0,1.0,0.0,0.0,Do you know what I fancy now?,6,Jeremy,7
+1816,0.0,0.484,0.516,0.4927,Where's more Good Life?,6,Jeremy,4
+1817,0.0,0.714,0.286,0.34, Have you thought about giving him a call?,6,Mark,8
+1818,0.0,1.0,0.0,0.0,He's probably got people calling him night and day.,6,Jeremy,9
+1819,0.452,0.548,0.0,-0.5106,He's probably sick of it.,6,Jeremy,5
+1820,0.0,0.539,0.461,0.8271,I thought probably best just to give him some peace and quiet.,6,Jeremy,12
+1821,0.0,1.0,0.0,0.0," I don't know, I think maybe you should call him.",6,Mark,10
+1822,0.0,0.633,0.367,0.4404," Good to see you, Uncle Ray.",6,Jeremy,6
+1823,0.0,1.0,0.0,0.0,What you been up to?,6,Jeremy,5
+1824,0.272,0.56,0.168,-0.3182," Well, mostly I've been lying in bed taking painkillers.",6,Ray,9
+1825,0.553,0.447,0.0,-0.6045,"Jesus, that wasn't a very friendly joke.",6,Jeremy,7
+1826,0.0,1.0,0.0,0.0,At least I came.,6,Jeremy,4
+1827,0.0,1.0,0.0,0.0," So, Ray, Jez tells me you worked on the force.",6,Mark,10
+1828,0.0,0.634,0.366,0.6969,"So must be nice, getting a bit of support from your police mates.",6,Mark,13
+1829,0.0,0.645,0.355,0.5106,"You can trust the force, can't you?",6,Mark,7
+1830,0.0,1.0,0.0,0.0,This is meant to be my visit.,6,Jeremy,7
+1831,0.0,1.0,0.0,0.0,He's hijacking my visit.,6,Jeremy,4
+1832,0.217,0.783,0.0,-0.3612, Mostly they just eat my wine gums and look embarrassed.,6,Ray,10
+1833,0.0,1.0,0.0,0.0,"Come on, say something.",6,Jeremy,4
+1834,0.0,1.0,0.0,0.0,Something not about dying.,6,Jeremy,4
+1835,0.164,0.608,0.228,0.2596," People can be so funny when it comes to illness, can't they?",6,Mark,12
+1836,0.0,0.674,0.326,0.4404,"I mean, it's good that you... you know…",6,Mark,8
+1837,0.0,0.784,0.216,0.296," Yeah, that's the one upside of this whole thing.",6,Ray,9
+1838,0.0,1.0,0.0,0.0,Rediscovered that little guy with the crown of thorns and the big old heart.,6,Ray,14
+1839,0.0,0.347,0.653,0.8553," Yeah, that's really a great thing to have, a faith.",6,Mark,10
+1840,0.0,0.517,0.483,0.4215,Ray's such a nice guy.,6,Jeremy,5
+1841,0.307,0.693,0.0,-0.4767,What a shame everything he believes is total rubbish.,6,Jeremy,9
+1842,0.0,0.274,0.726,0.7865," OK, well, thanks for calling, Mum.",6,Jeremy,6
+1843,0.302,0.698,0.0,-0.0772," Oh, man, I'm sorry.",6,Mark,4
+1844,0.0,1.0,0.0,0.0,He was gonna make me a bow and arrow that could go through a metal dustbin.,6,Jeremy,16
+1845,0.0,0.536,0.464,0.7351,"He never did, of course but, wow.",6,Jeremy,7
+1846,0.0,1.0,0.0,0.0, Shall I turn over?,6,Mark,4
+1847,0.0,1.0,0.0,0.0,Maybe some Newsnight or something.,6,Jeremy,5
+1848,0.0,0.722,0.278,0.4019," I mean, I wish maybe the family could come together.",6,Jeremy,10
+1849,0.0,1.0,0.0,0.0,"We could campaign, against, or for something.",6,Jeremy,7
+1850,0.0,1.0,0.0,0.0,"The Ray Foundation, for Christians and coppers.",6,Jeremy,7
+1851,0.0,0.417,0.583,0.4215, That's a nice idea.,6,Mark,4
+1852,0.0,1.0,0.0,0.0, Something positive's got to come out of all this.,6,Jeremy,9
+1853,0.0,0.706,0.294,0.3612,I guess I just need some comfort right now.,6,Jeremy,9
+1854,0.0,1.0,0.0,0.0,"I mean, why does it have to happen?",6,Jeremy,8
+1855,0.565,0.435,0.0,-0.5994,Why does death happen?,6,Jeremy,4
+1856,0.265,0.735,0.0,-0.5574," Shit Jeremy, I don't even know which day the bin men come.",6,Toni,12
+1857,0.191,0.648,0.16,-0.2263,"Oh, this is pretty low, milking Uncle Ray to get a... hey, I'm feeling bad, why not get some nooky out of it?",6,Jeremy,23
+1858,0.344,0.656,0.0,-0.3851,"I just feel so alone, you know?",6,Jeremy,7
+1859,0.0,0.8,0.2,0.3612,"It's like after Tony left, I thought, this is it, everything's over.",6,Toni,12
+1860,0.239,0.761,0.0,-0.296,"But then I thought, hey, no, sort it out.",6,Toni,9
+1861,0.0,1.0,0.0,0.0," Right, but Toni maybe...",6,Jeremy,4
+1862,0.0,0.556,0.444,0.4927," Listen, you really better go.",6,Toni,5
+1863,0.266,0.734,0.0,-0.4391,These classified dates can be very uptight about times.,6,Toni,9
+1864,0.0,1.0,0.0,0.0,"But Toni, I really feel that tonight, I just need someone to-",6,Jeremy,12
+1865,0.0,1.0,0.0,0.0," Jeremy, this is a hot one.",6,Toni,6
+1866,0.0,0.791,0.209,0.5719,"He's six foot, he loves movies and walks, and we totally clicked on the phone.",6,Toni,15
+1867,0.328,0.672,0.0,-0.7469,I can't believe she would be this heartless to someone who's as upset as I say I am.,6,Jeremy,18
+1868,0.264,0.736,0.0,-0.5106,"Maybe I am as upset as I say I am, it's just coming out in a weird way.",6,Jeremy,18
+1869,0.247,0.57,0.184,-0.25,"Toni, listen, nothing could make me feel better about Ray's death.",6,Jeremy,11
+1870,0.0,0.734,0.266,0.4404,Except maybe one thing could make me feel better.,6,Jeremy,7
+1871,0.494,0.506,0.0,-0.8316," Look, Jeremy, death happens, people die, you gotta move on.",6,Toni,10
+1872,0.156,0.746,0.098,-0.2158,My dad died when I was three but I haven't let it screw me up.,6,Toni,15
+1873,0.0,0.811,0.189,0.3252, I don't waste my life looking for a man to fill a dad-shaped hole.,6,Toni,14
+1874,0.359,0.641,0.0,-0.4215,Big social occasion but no invites.,6,Mark,6
+1875,0.0,1.0,0.0,0.0,"It's not a date, but it is.",6,Mark,7
+1876,0.0,1.0,0.0,0.0,"What if it all goes right, though?",6,Mark,7
+1877,0.307,0.693,0.0,-0.4767,"What do I do about my massive, freakish balls?",6,Mark,9
+1878,0.0,1.0,0.0,0.0,Don't get ahead of yourself.,6,Mark,5
+1879,0.0,1.0,0.0,0.0," Hey, Mark, how's it going?",6,Sophie,5
+1880,0.108,0.504,0.388,0.5994," Well, actually, things have been a bit tough to be honest.",6,Mark,11
+1881,0.0,1.0,0.0,0.0,Jeremy's uncle passed away yesterday.,6,Mark,5
+1882,0.24,0.479,0.281,0.1111,"Oh, that is difficult, is he OK?",6,Sophie,7
+1883,0.0,0.645,0.355,0.296," Yeah, bearing up, you know.",6,Mark,5
+1884,0.0,0.784,0.216,0.5106,"But listen, Sophie, I wanted to ask you, might you be free on Friday?",6,Mark,14
+1885,0.428,0.572,0.0,-0.4585,"It's not perfect, it's cracked.",6,Mark,5
+1886,0.0,1.0,0.0,0.0,"I mean, you don't have to.",6,Mark,6
+1887,0.0,0.682,0.318,0.4215,I just thought it might be nice if…,6,Mark,8
+1888,0.458,0.208,0.333,-0.0516," No no, I'd be honoured.",6,Sophie,5
+1889,0.0,0.571,0.429,0.5423,"I mean if you want a friend to go, then…",6,Sophie,10
+1890,0.875,0.125,0.0,-0.7208," No, no, not friend.",6,Mark,4
+1891,0.0,1.0,0.0,0.0,As a kind of date.,6,Mark,5
+1892,0.0,0.783,0.217,0.3612,"I mean I thought afterwards, if you like, we could go somewhere.",6,Mark,12
+1893,0.0,1.0,0.0,0.0, Won't there be a wake?,6,Sophie,5
+1894,0.0,0.545,0.455,0.3612, Somewhere like the wake.,6,Mark,4
+1895,0.0,0.328,0.672,0.9055," OK sure, great, um, uh, if that's OK, I'm invited?",6,Sophie,10
+1896,0.376,0.32,0.304,0.0258," That's the beauty, no invites at a funeral.",6,Mark,8
+1897,0.236,0.764,0.0,-0.7783," ""As Jonno let rip with the stolen Kalashnikov, and Squarehead fired off a round of monkey puzzler, I looked down at the towel-head I'd just slotted...",6,Others,26
+1898,0.0,1.0,0.0,0.0,"Jesus, where did they get this guy?",6,Mark,7
+1899,0.367,0.633,0.0,-0.4404,This whole thing is a freak show.,6,Mark,7
+1900,0.0,1.0,0.0,0.0,Why am I even here?,6,Mark,5
+1901,0.0,1.0,0.0,0.0,Why is she here?,6,Mark,4
+1902,0.0,0.788,0.212,0.2235, ...I didn't stop to think about it long.,6,Others,8
+1903,0.0,1.0,0.0,0.0,"We all get slotted sometime.""",6,Others,5
+1904,0.368,0.632,0.0,-0.5423,"Scorpio Patrol, Real Life Behind Enemy Lines.",6,Others,7
+1905,0.0,1.0,0.0,0.0,One of my brother's favourites.,6,Others,5
+1906,0.081,0.815,0.104,0.1531,"Now as I was saying, whilst no one would suggest that the faith Ray claimed to find in those last few weeks was only a product....",6,Others,26
+1907,0.14,0.518,0.342,0.4818,God I'm so pleased we stopped going to Liz's for Christmas.,6,Jeremy,11
+1908,0.205,0.536,0.259,0.1531,"Oh thanks for the fair-trade nuts again, Auntie.",6,Jeremy,8
+1909,0.0,0.758,0.242,0.7906," ...now, in the humanist ceremony at this point, we like to encourage anyone who wants to share a thought or memory or reflection about my brother, to speak up.",6,Others,29
+1910,0.0,1.0,0.0,0.0,I'm gonna blow this gaff wide open.,6,Jeremy,7
+1911,0.0,1.0,0.0,0.0,I spent some time with Ray before he went.,6,Jeremy,9
+1912,0.0,0.83,0.17,0.5994,"And I just wanted to say that, um, I think we should all remember that Ray, by the end, he loved Jesus.",6,Jeremy,22
+1913,0.135,0.766,0.1,-0.0387,"Now, I know, Liz, there's no proof for Jesus, but then there's no proof for lots of things like science or the stock market, and we believe in them.",6,Jeremy,29
+1914,0.216,0.689,0.094,-0.9274,"Look, what I'm trying to say is that, if I was dying, and I decided that even though I'd never particularly been into, say uh... Enya before, but that now I really, really was into Enya and that in fact I thought Enya was great, and that Enya died for our sins and I wanted an Enya-themed funeral with pictures of Enya and lots and lots of mentions of... Enya, then I think it would be a bit bloody rich for my sister to ban all mention of Enya from my funeral.",6,Jeremy,92
+1915,0.0,0.574,0.426,0.6369,"Well done, Jez, old mate, you did him proud.",6,Mark,9
+1916,0.0,1.0,0.0,0.0,"He's in there, in that cardboard box.",6,Mark,7
+1917,0.0,0.396,0.604,0.7263,This just gets better and better!,6,Mark,6
+1918,0.0,0.833,0.167,0.296," Yeah, I guess it just came from in here, or maybe - up there?",6,Jeremy,13
+1919,0.0,1.0,0.0,0.0, Can I get you anything?,6,Sophie,5
+1920,0.221,0.302,0.476,0.368," No, I'm OK, I'll be fine.",6,Mark,6
+1921,0.0,0.645,0.355,0.5106,I've got to be strong for Jeremy.,6,Mark,7
+1922,0.0,0.388,0.612,0.743," Yeah he was great, wasn't he?",6,Sophie,6
+1923,0.0,0.828,0.172,0.3612,"Moments like this really make you realise how short life is, you know.",6,Sophie,13
+1924,0.333,0.465,0.202,-0.4019,"One minute we're alive, the next we're dead.",6,Mark,8
+1925,0.231,0.769,0.0,-0.4019, Sometimes we're so wrapped up in the nonsense of life.,6,Sophie,10
+1926,0.0,0.885,0.115,0.0772,"I mean, if I want an X-Box, why don't I just get an X-Box?",6,Mark,14
+1927,0.0,1.0,0.0,0.0,It's a brief candle.,6,Mark,4
+1928,0.592,0.408,0.0,-0.4404,A bloody brief candle.,6,Mark,4
+1929,0.0,0.606,0.394,0.5994," Sophie, c-can I say how beautiful you look?",6,Mark,8
+1930,0.0,0.588,0.412,0.4215,"Can- can I kiss you, Sophie?",6,Mark,6
+1931,0.0,1.0,0.0,0.0,Umm what about my abnormal knackers?,6,Mark,6
+1932,0.0,0.517,0.483,0.4215,"Ooh, this is nice.",6,Mark,4
+1933,0.362,0.638,0.0,-0.1779,How weird are they?,6,Mark,4
+1934,0.0,0.76,0.24,0.4877,"What I really need is a good, long look at another man's bollocks.",6,Mark,13
+1935,0.31,0.69,0.0,-0.4019,But that's so fraught with potential problems.,6,Mark,7
+1936,0.0,0.286,0.714,0.6124," Yeah, that was nice.",6,Sophie,4
+1937,0.411,0.589,0.0,-0.636,"Onward Christian soldiers, marching as to war!",6,Others,7
+1938,0.0,1.0,0.0,0.0, ...so it means it must have been taken shortly before he died...,6,TV,12
+1939,0.0,1.0,0.0,0.0,"You think you're in, and then the smiting, and the plagues and the pestilence starts.",6,Jeremy,15
+1940,0.545,0.455,0.0,-0.5574,"Shit, I can't believe it.",6,Jeremy,5
+1941,0.0,1.0,0.0,0.0, Sophie's coming away with me to a cottage with a bed for the weekend!,6,Mark,14
+1942,0.0,1.0,0.0,0.0,"Now, listen mate, I need to ask you a straight-up, man-to-man question about bollocks.",6,Mark,14
+1943,0.34,0.66,0.0,-0.5574,"What Ray died of, Boden-Georgeson syndrome, it's hereditary.",6,Jeremy,8
+1944,0.0,1.0,0.0,0.0, I might have it.,6,Jeremy,4
+1945,0.0,0.843,0.157,0.0772,They want me to go in for tests.,6,Jeremy,8
+1946,0.308,0.28,0.411,0.186,"No, are you OK?",6,Mark,4
+1947,0.315,0.326,0.359,0.1027,"To be honest, I'm scared.",6,Jeremy,5
+1948,0.0,0.555,0.445,0.3412," Look, don't be scared.",6,Mark,4
+1949,0.0,0.357,0.643,0.3818," That's fine, that's fine.",6,Mark,4
+1950,0.23,0.238,0.532,0.5859,It's perfectly natural to be scared.,6,Mark,6
+1951,0.0,1.0,0.0,0.0,Doctor Runcimen has seen this a thousand times.,6,Mark,8
+1952,0.0,0.789,0.211,0.4939,"It's just two guys, one with his hand on the other guy's balls.",6,Mark,13
+1953,0.0,1.0,0.0,0.0,Dr. Runcimen's on call.,6,Nurse,4
+1954,0.0,1.0,0.0,0.0,I'm the Practice Nurse.,6,Nurse,4
+1955,0.0,0.508,0.492,0.4404,Pleased to meet you.,6,Mark,4
+1956,1.0,0.0,0.0,-0.8402,"No, no, no, no, no.",6,Mark,5
+1957,0.0,0.503,0.497,0.4522, So how can I help?,6,Nurse,5
+1958,0.0,1.0,0.0,0.0," Oh, it was just- I think I should probably see the doctor.",6,Mark,12
+1959,0.0,0.726,0.274,0.5267,"You know, not that I've got anything against... your kind.",6,Mark,10
+1960,0.152,0.73,0.118,-0.1531," Well if you tell me the problem, we can see if I can deal with it.",6,Nurse,16
+1961,0.251,0.749,0.0,-0.5213," Basically, it's, uh, not wishing to beat about the bush, it's a problem with... with my...",6,Mark,16
+1962,0.0,0.595,0.405,0.5267,"So if you'd feel happier, I…",6,Mark,6
+1963,0.0,0.672,0.328,0.4466," OK, trousers down, hop on the couch.",6,Nurse,7
+1964,0.0,1.0,0.0,0.0,Let's have a look at the little fellows.,6,Nurse,8
+1965,0.0,0.594,0.406,0.5842,"Oh, I hope I don't- no leaping to attention, Captain Corrigan.",6,Mark,11
+1966,0.0,0.707,0.293,0.4404,I mean anyone would say she's an attractive woman.,6,Mark,9
+1967,0.0,1.0,0.0,0.0,She should have to wear a mask for this kind of thing.,6,Mark,12
+1968,0.0,0.758,0.242,0.4939,"Reagan or Batman or... actually, she'd look pretty horny as Batman.",6,Mark,11
+1969,0.0,1.0,0.0,0.0,So have you... worked here long?,6,Mark,6
+1970,0.0,0.675,0.325,0.3412," That doesn't feel painful, does it?",6,Nurse,6
+1971,0.52,0.157,0.323,-0.128," No, no, no, that feels great.",6,Mark,6
+1972,0.452,0.548,0.0,-0.5096,"I mean, not great, just normal.",6,Mark,6
+1973,0.0,1.0,0.0,0.0,"Ooh, how much can a man take?",6,Mark,7
+1974,0.0,0.685,0.315,0.5583," Yep, you've got a large hydrocele, nothing to worry about, a simple outpatients procedure.",6,Nurse,14
+1975,0.0,1.0,0.0,0.0,The scalpel just slips in at the back of the scrotum.,6,Nurse,11
+1976,0.0,0.833,0.167,0.296,"Yep, that's cooled things off, that's a regular bucket of water right there.",6,Mark,13
+1977,0.287,0.297,0.416,0.3182,"""Abandon self-cherishing, love only others.""",6,Jeremy,5
+1978,0.0,0.788,0.212,0.5106,"Yeah, well, Mr. Dalai Lama, I suppose you've got to be a suck-up if you haven't got your own country.",6,Jeremy,20
+1979,0.0,1.0,0.0,0.0,"Don't have to do them all, just till you find something to hold on to.",6,Jeremy,15
+1980,0.0,1.0,0.0,0.0,"Let's see, let's prioritise.",6,Jeremy,4
+1981,0.0,1.0,0.0,0.0,Not really such a fashionable religion.,6,Jeremy,6
+1982,0.0,0.517,0.483,0.4215,That's got a nice vibe.,6,Jeremy,5
+1983,0.0,1.0,0.0,0.0,Find out the Hin-do's and the Hin-don'ts.,6,Jeremy,7
+1984,0.0,1.0,0.0,0.0,"Bit ""dribble not the ass's milk on a Tuesday"".",6,Jeremy,9
+1985,0.0,1.0,0.0,0.0,"Anyway, I know most of that from The Omen.",6,Jeremy,9
+1986,0.0,1.0,0.0,0.0,I think that's about it.,6,Mark,5
+1987,0.0,0.375,0.625,0.6124,"Well, have a good time, mate.",6,Jeremy,6
+1988,0.0,1.0,0.0,0.0,He gets the test results on Monday.,6,Mark,7
+1989,0.0,1.0,0.0,0.0,What do you think?,6,Mark,4
+1990,0.0,1.0,0.0,0.0, He seems a bit on edge.,6,Sophie,6
+1991,0.273,0.727,0.0,-0.3089," The thing is, he's not definitely dying.",6,Mark,7
+1992,0.297,0.395,0.307,0.0191,He's not even definitely ill.,6,Mark,5
+1993,0.0,0.405,0.595,0.5267," Yeah, yeah you're probably right.",6,Sophie,5
+1994,0.0,1.0,0.0,0.0,But what about the carving on his arm?,6,Sophie,8
+1995,0.0,1.0,0.0,0.0, I think that's just Biro.,6,Mark,5
+1996,0.0,1.0,0.0,0.0,"Anyway, he seems to be over that now.",6,Mark,8
+1997,0.0,0.455,0.545,0.5574,Things are looking positive.,6,Mark,4
+1998,0.0,1.0,0.0,0.0,He's investigating the key to all spiritualities.,6,Mark,7
+1999,0.0,0.711,0.289,0.7579," Every day try and read a poem, listen to inspiring music, look at a wonderful painting, or go into nature...",6,TV,20
+2000,0.0,0.862,0.138,0.4939,"On the other hand I could finish off the last of that skunk, sit on Big Suze's dildo and wank myself dry.",6,Jeremy,22
+2001,0.0,0.719,0.281,0.5994,I could go down that place Super Hans says is a knocking shop.,6,Jeremy,13
+2002,0.0,1.0,0.0,0.0,"If it's not, bang a tab and get a four hour massage.",6,Jeremy,12
+2003,0.0,0.887,0.113,0.4005,"Me and Soph, we were just having a chat, and, well, what we were saying is that actually what we both really want is for you to come along on our weekend.",6,Mark,32
+2004,0.0,1.0,0.0,0.0,"Oh, I kind of had plans.",6,Jeremy,6
+2005,0.0,1.0,0.0,0.0," Oh, come on, you can take your religious texts with you.",6,Mark,11
+2006,0.23,0.77,0.0,-0.2004,Maybe he really doesn't want to come!,6,Mark,7
+2007,0.462,0.538,0.0,-0.7184," No point, I've got that taped, it's all bullshit.",6,Jeremy,9
+2008,0.0,0.769,0.231,0.2732,"God, he really really wants me to come.",6,Jeremy,8
+2009,0.0,0.526,0.474,0.5574, It'll just be such a laugh.,6,Mark,6
+2010,0.4,0.182,0.418,0.0516,"Please say no, please say no.",6,Mark,6
+2011,0.0,0.588,0.412,0.2732," Uh, well, all right.",6,Jeremy,4
+2012,0.0,0.79,0.21,0.1513,"I guess, if you really want me to.",6,Jeremy,8
+2013,0.343,0.505,0.152,-0.5647,"God, I didn't realise he was this terrified of sex.)",6,Jeremy,10
+2014,0.0,0.806,0.194,0.3412,If I can just get the first one over without a major embarrassment.,6,Mark,13
+2015,0.817,0.183,0.0,-0.836,First fuck is damage limitation.,6,Mark,5
+2016,0.0,0.69,0.31,0.743,"In, out, as much pleasure as I can give her, apologise, and then we can move on.",6,Mark,17
+2017,0.0,1.0,0.0,0.0,"Jesus, look at him.",6,Mark,4
+2018,0.0,1.0,0.0,0.0,"Jeremy, it's your go, isn't it?",6,Sophie,6
+2019,0.0,0.843,0.157,0.0772,"Carry on, I just want to rewind this bit.",6,Jeremy,9
+2020,0.0,1.0,0.0,0.0, Do you have to?,6,Mark,4
+2021,0.0,0.625,0.375,0.34,We're trying to play a game.,6,Mark,6
+2022,0.161,0.714,0.125,-0.2023," Mark, I gave you the choice, it's either Tom and Barbara being nice or Gloria and Mitzy being nasty.",6,Jeremy,19
+2023,0.259,0.613,0.129,-0.2783," Well, if you don't want your go, I'll take mine, I'm attacking Irkutsk.",6,Mark,13
+2024,0.0,0.84,0.16,0.431,Can't you get it into your tiny closed-off little mind that I just don't give a flying fuck?,6,Jeremy,18
+2025,0.0,0.538,0.462,0.5106, Yeah well you will when I take Asia.,6,Mark,8
+2026,0.879,0.121,0.0,-0.5093, Blah blah blah blah blah Mark!,6,Jeremy,6
+2027,0.393,0.607,0.0,-0.5983,"It's all just shit, the whole thing!",6,Jeremy,7
+2028,0.0,0.543,0.457,0.6369,"Games, snacks, fires, man, woman, love.",6,Jeremy,6
+2029,0.0,0.845,0.155,0.4466,"'Cause we're all gonna end up in the cold, deep ground, and that's all there is, OK?",6,Jeremy,17
+2030,0.0,1.0,0.0,0.0,I'm off for a shower.,6,Mark,5
+2031,0.0,1.0,0.0,0.0,"See you in the bed... room, Soph.",6,Mark,7
+2032,0.0,1.0,0.0,0.0,"Oh, what I really want's a woman.",6,Jeremy,7
+2033,0.0,0.826,0.174,0.2732,"Oh God, I'm never gonna have a woman again in my life.",6,Jeremy,12
+2034,0.0,1.0,0.0,0.0,I never planted my seed.,6,Jeremy,5
+2035,0.0,0.667,0.333,0.3612,My loins are like dried buckwheat.,6,Jeremy,6
+2036,0.0,1.0,0.0,0.0," So Jeremy, I'm going to turn in.",6,Sophie,7
+2037,0.0,0.255,0.745,0.7034,Hope you sleep OK.,6,Sophie,4
+2038,0.0,1.0,0.0,0.0," Uh, Sophie, could I have a quick word?",6,Jeremy,8
+2039,0.0,0.635,0.365,0.3182," Sure, I mean, this is private.",6,Sophie,6
+2040,0.315,0.685,0.0,-0.6808," Must be hell for you, trying to cope with all this.",6,Sophie,11
+2041,0.652,0.348,0.0,-0.8176," Bloody hell, what are you doing?",6,Sophie,6
+2042,0.0,1.0,0.0,0.0," Oh, go on Soph.",6,Jeremy,4
+2043,0.0,1.0,0.0,0.0,This could be the last time I do it with anyone.,6,Jeremy,11
+2044,0.0,0.741,0.259,0.2732,Can you imagine how committed I'd be?,6,Jeremy,7
+2045,0.0,1.0,0.0,0.0, I'm here with Mark!,6,Sophie,4
+2046,0.529,0.471,0.0,-0.5216, Mark doesn't love you.,6,Jeremy,4
+2047,0.345,0.655,0.0,-0.2755,He doesn't even like you.,6,Jeremy,5
+2048,0.0,0.784,0.216,0.296, He... he said he's only snogging you for a joke.,6,Jeremy,10
+2049,0.25,0.75,0.0,-0.7184,"And he draws horrible, vicious cartoons of you and then wraps them up in sausage meat and calls you a sausage-muncher.",6,Jeremy,21
+2050,0.0,1.0,0.0,0.0,Let's just both try and get some sleep.,6,Sophie,8
+2051,0.534,0.466,0.0,-0.68,I might be dead in a week!,6,Jeremy,7
+2052,0.0,0.833,0.167,0.2023," Jeremy look, I'm flattered, but I'm here with Mark and…",6,Sophie,10
+2053,0.0,1.0,0.0,0.0, What about a three's-up?,6,Jeremy,4
+2054,0.0,0.63,0.37,0.4466," All right, OK, I get the message.",6,Jeremy,7
+2055,0.0,1.0,0.0,0.0,Jez must've gone for a walk.,6,Mark,6
+2056,0.0,0.303,0.697,0.5574,Thank God for that.,6,Mark,4
+2057,0.0,0.603,0.397,0.5095,You think he'd be more grateful.,6,Mark,6
+2058,0.0,1.0,0.0,0.0,He'll change his tune when I'm the one in charge of the morphine supply.,6,Mark,14
+2059,0.0,0.589,0.411,0.4199,"It's like that, is it?!",6,Jeremy,5
+2060,0.0,1.0,0.0,0.0,"That's how it's going to be, is it?",6,Jeremy,8
+2061,0.0,1.0,0.0,0.0," Jez, I didn't— I mean, I didn't mean…",6,Mark,8
+2062,0.0,0.761,0.239,0.296,"Oh, yeah, she is so- where am I?",6,Mark,8
+2063,0.0,1.0,0.0,0.0,Put your tongue out and see.,6,Mark,6
+2064,0.0,0.707,0.293,0.3595,"You can do that again, oh, yeah!",6,Mark,7
+2065,0.0,1.0,0.0,0.0, Are you going to take your pants off?,6,Sophie,8
+2066,0.0,1.0,0.0,0.0,"But, Sophie, before I do, I need to prepare you for something.",6,Mark,12
+2067,0.207,0.793,0.0,-0.5319,"I intend to have an operation, but until I do, I don't want you to be alarmed by the size of my…",6,Mark,22
+2068,0.268,0.732,0.0,-0.296," Mark, stop boasting and get some johnnies.",6,Sophie,7
+2069,0.474,0.526,0.0,-0.5574," Shit, they're in the bathroom.",6,Mark,5
+2070,0.0,1.0,0.0,0.0,"Stay right there, don't go away.",6,Mark,6
+2071,0.0,1.0,0.0,0.0, I'm not going anywhere.,6,Sophie,4
+2072,0.0,1.0,0.0,0.0,Got to be quick.,6,Mark,4
+2073,0.109,0.891,0.0,-0.0572,Don't want to have to get her all worked up again.,6,Mark,11
+2074,0.0,1.0,0.0,0.0,"Jesus, did she say ""johnnies"", plural?",6,Mark,6
+2075,0.0,0.734,0.266,0.4404,Hope she doesn't think I'm some sort of superman.,6,Mark,9
+2076,0.0,0.781,0.219,0.2411,Couldn't even be bothered to go to bed.,6,Mark,8
+2077,0.328,0.395,0.277,-0.1007,Oh my God he's— no!,6,Mark,5
+2078,0.0,0.466,0.534,0.5334,"Don't be dead, mate.",6,Mark,4
+2079,0.0,1.0,0.0,0.0,In front of Tenko!,6,Mark,4
+2080,0.0,1.0,0.0,0.0,That was probably the last straw.,6,Mark,6
+2081,0.338,0.356,0.306,-0.09,"Oh, fuck, don't be dead, mate!",6,Mark,6
+2082,0.0,0.249,0.751,0.7214,Please don't be dead!,6,Mark,4
+2083,0.0,1.0,0.0,0.0,My cock's gone right down!,6,Mark,5
+2084,0.451,0.549,0.0,-0.5093,"Soph, something awful has happened!",6,Mark,5
+2085,0.0,1.0,0.0,0.0, He's opened his eyes!,6,Mark,4
+2086,0.0,1.0,0.0,0.0,"Jez, we're right here Jez!",6,Mark,5
+2087,0.0,0.775,0.225,0.4404," You're in safe hands now, Jez, you're gonna be all right.",6,Mark,11
+2088,0.216,0.784,0.0,-0.296, Was he behaving strangely before he took the overdose?,6,Paramedic,9
+2089,0.423,0.577,0.0,-0.296,No more than usual.,6,Mark,4
+2090,0.0,0.851,0.149,0.2732," Well, he did- I didn't tell you this, he did make a pass at me.",6,Sophie,15
+2091,0.416,0.584,0.0,-0.6908,He- the bloody- he's been under a lot of stress recently.,6,Mark,11
+2092,0.0,1.0,0.0,0.0," How many pills did you take, Jeremy?",6,Paramedic,7
+2093,0.0,0.811,0.189,0.2716,It's really important you remember how many pills you took.,6,Paramedic,10
+2094,0.231,0.769,0.0,-0.2023," He's delirious, the whole bottle was empty.",6,Mark,7
+2095,0.0,0.694,0.306,0.296," Yeah, it was the last one.",6,Jeremy,6
+2096,0.0,1.0,0.0,0.0,I had a headache.,6,Jeremy,4
+2097,0.0,1.0,0.0,0.0,I- has anyone got any Coke?,6,Jeremy,6
+2098,0.0,0.888,0.112,0.2244, I invite you here and you repay me by trying to... have it away with my girlfriend!,6,Mark,17
+2099,0.0,1.0,0.0,0.0, I don't think girlfriend's quite-,6,Sophie,5
+2100,0.269,0.562,0.169,-0.2247," I've been feeling very low, you know?",6,Jeremy,7
+2101,0.479,0.208,0.312,-0.2023,I was feeling desperate.,6,Jeremy,4
+2102,0.0,1.0,0.0,0.0,"I mean, that's why.",6,Jeremy,4
+2103,0.0,1.0,0.0,0.0,That's why I took the overdose.,6,Jeremy,6
+2104,0.443,0.557,0.0,-0.1511, I couldn't admit it.,6,Jeremy,4
+2105,0.339,0.661,0.0,-0.2617,"I was ashamed but, I did it.",6,Jeremy,7
+2106,0.0,1.0,0.0,0.0,"The bottle was full, I- I took the whole lot.",6,Jeremy,10
+2107,0.0,0.804,0.196,0.4466," OK, if you two step to one side, I'm gonna do a stomach pump.",6,Paramedic,14
+2108,0.202,0.459,0.339,0.128,"Uh, no actually, look I admit it, I was joking.",6,Jeremy,10
+2109,0.405,0.595,0.0,-0.5267,"I was lying just then, not before.",6,Jeremy,7
+2110,0.0,1.0,0.0,0.0,"I didn't take an overdose, you can put away the hardware.",6,Jeremy,11
+2111,0.298,0.702,0.0,-0.5267,I didn't do anything I was lying just then not before.,6,Jeremy,11
+2112,0.0,0.806,0.194,0.3412," Soph, don't worry, it's only me, I've got something for you.",6,Mark,11
+2113,0.0,0.761,0.239,0.296," Yeah don't do that, you shouldn't do that.",6,Sophie,8
+2114,0.306,0.694,0.0,-0.296," But I checked, no one was coming.",6,Mark,7
+2115,0.0,1.0,0.0,0.0, That's not the point.,6,Sophie,4
+2116,0.239,0.761,0.0,-0.296," No, Mark, umm, we need to have a talk.",6,Sophie,9
+2117,0.207,0.661,0.132,-0.2263," Mark, a funeral, it's an emotional time, there's lots of emotions.",6,Sophie,11
+2118,0.0,1.0,0.0,0.0, Are you finishing with me?,6,Mark,5
+2119,0.0,1.0,0.0,0.0, We weren't ever really...,6,Sophie,4
+2120,0.0,1.0,0.0,0.0," Not that something might not, someday, but I mean everything was a bit 'whoosh!'",6,Sophie,14
+2121,0.0,1.0,0.0,0.0,and I'd much rather it was a bit more 'dum-de-dum-de-dum' you know.,6,Sophie,12
+2122,0.0,0.498,0.502,0.6166," OK, well, that's just, I guess, you know…",6,Mark,8
+2123,0.0,0.822,0.178,0.0772, Did you want to give me something?,6,Sophie,7
+2124,0.306,0.694,0.0,-0.296," Uh, no, it's... it's your pants.",6,Mark,5
+2125,0.0,1.0,0.0,0.0," I found them in my suitcase and I thought... anyway, here you go.",6,Mark,13
+2126,0.0,0.719,0.281,0.3646," OK, well I'll see you... see you... not around, but here.",6,Sophie,11
+2127,0.0,1.0,0.0,0.0," So I, uh- I got the test results.",6,Jeremy,8
+2128,0.0,1.0,0.0,0.0, I don't know why it happens.,6,Toni,6
+2129,0.0,1.0,0.0,0.0,"There are all these people out there singing and dancing but it's never me, you know?",6,Toni,16
+2130,0.206,0.794,0.0,-0.0772," Oh I'm sorry, I'll shut up.",6,Toni,6
+2131,0.205,0.606,0.189,-0.0516,My problems are just like nothing compared to- three months?,6,Toni,10
+2132,0.0,0.513,0.487,0.5859,I'll say miracle drug cure.,6,Jeremy,5
+2133,0.0,0.642,0.358,0.5994,Maybe she'll give me another one as congratulations.,6,Jeremy,8
+2134,0.0,0.398,0.602,0.7618,"Oh God, hope she doesn't start crying again.",6,Jeremy,8
+2135,0.0,1.0,0.0,0.0,Got to- before she- come on.,6,Jeremy,6
+2136,0.186,0.814,0.0,-0.4101,"Oh, I am gonna feel so low just as soon as this is over.",6,Jeremy,14

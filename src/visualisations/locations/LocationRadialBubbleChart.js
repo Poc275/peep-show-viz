@@ -37,7 +37,9 @@ function LocationRadialBubbleChart(props) {
             const locationRadii = new Object();
             uniqueLocations.forEach((loc, idx) => locationRadii[loc] = maxRadius - idx * padding);
             
-            const theta = 2 * Math.PI / locations.length;
+            // const theta = 2 * Math.PI / locations.length;
+            // normalise to longest episode?
+            const theta = 2 * Math.PI / 26;
             const arcGenerator = d3.arc()
                 .innerRadius(0)
                 .outerRadius(d => d)

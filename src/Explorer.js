@@ -8,6 +8,7 @@ import WordSearch from "./visualisations/words/WordSearch";
 import Locations from "./visualisations/locations/Locations";
 import Timeline from "./visualisations/timeline/Timeline";
 import Sentences from "./visualisations/sentences/Sentences";
+import Sentiment from "./visualisations/sentiment/Sentiment";
 
 function Explorer() {
     const { series } = useParams();
@@ -61,6 +62,10 @@ function Explorer() {
 
             <section className="visualisation" id="words">
                 <Sentences />
+            </section>
+
+            <section className="visualisation" id="sentiment">
+                <Sentiment />
             </section>
         </div>
     );
