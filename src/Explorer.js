@@ -9,6 +9,7 @@ import Locations from "./visualisations/locations/Locations";
 import Timeline from "./visualisations/timeline/Timeline";
 import Sentences from "./visualisations/sentences/Sentences";
 import Sentiment from "./visualisations/sentiment/Sentiment";
+import Stats from "./visualisations/stats/Stats";
 
 function Explorer() {
     const { series } = useParams();
@@ -66,6 +67,10 @@ function Explorer() {
 
             <section className="visualisation" id="sentiment">
                 <Sentiment />
+            </section>
+
+            <section className="visualisation" id="stats">
+                <Stats />
             </section>
         </div>
     );

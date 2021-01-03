@@ -7,6 +7,7 @@ function Sentiment() {
     const chart = useRef(null);
     const { series } = useParams();
     const [data, setData] = useState(null);
+    const [finished, setFinished] = useState(false);
     const schema = (d) => {
         return {
           neg: +d.neg,
@@ -46,7 +47,8 @@ function Sentiment() {
             .append("g")
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
-        if(data) {
+        // schema results in a dataset of NaNs even if dataset doesn't exist, so check for this before rendering
+        if(data && data[0].sentence) {
             const x = d3.scaleBand()
                 .domain([1, 2, 3, 4, 5, 6])
                 .range([0, width])
@@ -127,7 +129,8 @@ function Sentiment() {
                 .force("x", d3.forceX(d => x(d.episode)).strength(0.02))
                 .force("y", d3.forceY(d => y(d.compound)).strength(0.02))
                 .force("collide", d3.forceCollide().radius(d => Math.sqrt(d.length + collisionRad)).iterations(2))
-                // .on("tick", ticked);
+                .on("tick", ticked)
+                .on("end", setFinished(true));
 
             // draw circles
             svg.selectAll(".sentiment-circle")
@@ -153,6 +156,7 @@ function Sentiment() {
     
     return (
         <>
+            <p>{finished ? "Simulation finished" : "Simulation running"}</p>
             <svg ref={chart}></svg>
             <div className="tooltip"></div>
         </>
