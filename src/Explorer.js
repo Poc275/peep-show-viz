@@ -1,15 +1,18 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
+import * as d3 from "d3";
+// import gsap from "gsap";
+// import ScrollTrigger from "gsap/ScrollTrigger";
+import "intersection-observer";
+import scrollama from "scrollama";
 import ChordDiagram from "./visualisations/chord/ChordDiagram";
-import "./Explorer.css";
 import WordSearch from "./visualisations/words/WordSearch";
 import Locations from "./visualisations/locations/Locations";
 import Timeline from "./visualisations/timeline/Timeline";
 import Sentences from "./visualisations/sentences/Sentences";
 import Sentiment from "./visualisations/sentiment/Sentiment";
 import Stats from "./visualisations/stats/Stats";
+import "./Explorer.css";
 
 function Explorer() {
     const { series } = useParams();
@@ -25,54 +28,68 @@ function Explorer() {
         "#150B41"
     ];
 
-    // useEffect(() => {
-    //     gsap.registerPlugin(ScrollTrigger);
+    useEffect(() => {
+        const main = d3.select("main");
+        const scrolly = main.select("#scrolly");
+        const figure = scrolly.select("figure");
+        const article = scrolly.select("article");
+        const step = article.selectAll(".step");
 
-    //     gsap.utils.toArray(".visualisation").forEach((visualisation, i) => {
-    //         ScrollTrigger.create({
-    //             trigger: visualisation,
-    //             start: "top top",
-    //             pin: true,
-    //             pinSpacing: false,
-    //         });
-    //     });
+        // initialise the scrollama
+        const scroller = scrollama();
 
-    //     ScrollTrigger.create({
-    //         snap: 1 / (gsap.utils.toArray(".visualisation").length - 1),
-    //       });
-    // }, []);
+        scroller.setup({
+            step: "#scrolly article .step",
+            offset: 0.3,    // sets the trigger to be half way down screen
+            debug: true,
+        })
+        .onStepEnter((res) => {
+            step.classed("is-active", (d, i) => i === res.index);
+            figure.select("p").text(res.index + 1);
+        });
+
+        window.addEventListener("resize", () => {
+            const stepHeight = Math.floor(window.innerHeight * 0.75);
+            step.style("height", stepHeight + "px");
+
+            const figureHeight = window.innerHeight / 2;
+            const figureMarginTop = (window.innerHeight - figureHeight) / 2;
+
+            figure
+                .style("height", figureHeight + "px")
+                .style("top", figureMarginTop + "px");
+
+            scroller.resize();
+        });
+
+    }, []);
 
     return (
-        <div id="explorer-container">
-            <section className="visualisation" id="chord">
-                <ChordDiagram />
-            </section>
+        <main>
+            <section id="scrolly">
+                <article>
+                    <div className="step" data-step="1">
+                        <p>STEP 1</p>
+                    </div>
 
-            <section className="visualisation" id="words">
-                <WordSearch />
-            </section>
+                    <div className="step" data-step="2">
+                        <p>STEP 2</p>
+                    </div>
 
-            {/* style={{ background: `radial-gradient(#fff, 85%, ${seriesColours[series - 1]})` }} */}
-            <section className="visualisation" id="locations">
-                <Locations />
-            </section>
+                    <div className="step" data-step="3">
+                        <p>STEP 3</p>
+                    </div>
 
-            <section className="visualisation" id="words">
-                <Timeline />
-            </section>
+                    <div className="step" data-step="4">
+                        <p>STEP 4</p>
+                    </div>
+                </article>
 
-            <section className="visualisation" id="words">
-                <Sentences />
+                <figure>
+                    <p>0</p>
+                </figure>
             </section>
-
-            <section className="visualisation" id="sentiment">
-                <Sentiment />
-            </section>
-
-            <section className="visualisation" id="stats">
-                <Stats />
-            </section>
-        </div>
+        </main>
     );
 }
 
