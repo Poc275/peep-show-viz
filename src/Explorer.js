@@ -15,6 +15,7 @@ import Stats from "./visualisations/stats/Stats";
 import "./Explorer.css";
 
 function Explorer() {
+    const [visualisation, setVisualisation] = useState(<ChordDiagram />);
     const { series } = useParams();
     const seriesColours = [
         "#0C662D",
@@ -28,6 +29,44 @@ function Explorer() {
         "#150B41"
     ];
 
+    const getVisualisation = (idx) => {
+        let component;
+        switch(idx) {
+            case 0:
+                component = <ChordDiagram />
+                break;
+
+            case 1:
+                component = <WordSearch />
+                break;
+
+            case 2:
+                component = <Locations />
+                break;
+
+            case 3:
+                component = <Timeline />
+                break;
+
+            case 4:
+                component = <Sentences />
+                break;
+
+            case 5:
+                component = <Sentiment />
+                break;
+
+            case 6:
+                component = <Stats />
+                break;
+
+            default:
+                component = null;
+        }
+
+        setVisualisation(component);
+    }
+
     useEffect(() => {
         const main = d3.select("main");
         const scrolly = main.select("#scrolly");
@@ -40,28 +79,31 @@ function Explorer() {
 
         scroller.setup({
             step: "#scrolly article .step",
-            offset: 0.3,    // sets the trigger to be half way down screen
+            offset: 0.1,
             debug: true,
         })
         .onStepEnter((res) => {
             step.classed("is-active", (d, i) => i === res.index);
-            figure.select("p").text(res.index + 1);
+            getVisualisation(res.index);
         });
 
-        window.addEventListener("resize", () => {
-            const stepHeight = Math.floor(window.innerHeight * 0.75);
-            step.style("height", stepHeight + "px");
+        const handleResize = () => {
+            // const stepHeight = Math.floor(window.innerHeight * 0.95);
+            // step.style("height", stepHeight + "px");
 
-            const figureHeight = window.innerHeight / 2;
-            const figureMarginTop = (window.innerHeight - figureHeight) / 2;
+            const figureHeight = window.innerHeight;
+            // const figureMarginTop = (window.innerHeight - figureHeight) / 2;
+            const figureMarginTop = 0;
 
             figure
                 .style("height", figureHeight + "px")
                 .style("top", figureMarginTop + "px");
 
             scroller.resize();
-        });
+        };
 
+        handleResize();
+        window.addEventListener("resize", handleResize);
     }, []);
 
     return (
@@ -69,24 +111,64 @@ function Explorer() {
             <section id="scrolly">
                 <article>
                     <div className="step" data-step="1">
-                        <p>STEP 1</p>
+                        <h1>Conversations</h1>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <div id="info-panel">
+                            <div id="info-avatar"></div>
+                            <p id="info-text">Hover over the characters for more info!</p>
+                            <h3 id="info-name"></h3>
+                            <p id="info-total-lines"></p>
+                            <h4 id="info-spoke-to-heading">Spoke To</h4>
+                            <p id="info-spoke-to"></p>
+                        </div>
                     </div>
 
                     <div className="step" data-step="2">
-                        <p>STEP 2</p>
+                        <h1>Words</h1>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
                     </div>
 
                     <div className="step" data-step="3">
-                        <p>STEP 3</p>
+                        <h1>Locations</h1>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
                     </div>
 
                     <div className="step" data-step="4">
-                        <p>STEP 4</p>
+                        <h1>Timeline</h1>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                    </div>
+
+                    <div className="step" data-step="5">
+                        <h1>Sentences</h1>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                    </div>
+
+                    <div className="step" data-step="6">
+                        <h1>Sentiment</h1>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                    </div>
+
+                    <div className="step" data-step="7">
+                        <h1>Stats</h1>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
                     </div>
                 </article>
 
                 <figure>
-                    <p>0</p>
+                    {visualisation}
                 </figure>
             </section>
         </main>

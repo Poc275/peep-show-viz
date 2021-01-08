@@ -19,7 +19,7 @@ function ChordDiagram() {
     // initialise chord diagram hook
     useEffect(() => {
         const height = 400;
-        const width = 800;
+        const width = 500;
         const outerRadius = Math.min(width, height) * 0.5 - 50;
         const innerRadius = outerRadius - 10;
         const ribbon = d3.ribbon().radius(innerRadius - 1).padAngle(1 / innerRadius);
@@ -311,7 +311,7 @@ function ChordDiagram() {
 
     return (
         <>
-            <div id="info-panel">
+            {/* <div id="info-panel">
                 <h2>Script Analysis</h2>
                 <div id="info-avatar"></div>
                 <p id="info-text">Hover over the characters for more info!</p>
@@ -319,7 +319,7 @@ function ChordDiagram() {
                 <p id="info-total-lines"></p>
                 <h4 id="info-spoke-to-heading">Spoke To</h4>
                 <p id="info-spoke-to"></p>
-            </div>
+            </div> */}
 
             <svg ref={svgContainer}></svg>
         </>
