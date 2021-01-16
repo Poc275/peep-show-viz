@@ -12,12 +12,14 @@ import Timeline from "./visualisations/timeline/Timeline";
 import Sentences from "./visualisations/sentences/Sentences";
 import Sentiment from "./visualisations/sentiment/Sentiment";
 import Stats from "./visualisations/stats/Stats";
+import ReferenceData from "./reference/ReferenceData";
 import "./Explorer.css";
 
 function Explorer() {
     const [visualisation, setVisualisation] = useState(null);
     const [dataStep, setDataStep] = useState(0);
     const [showVisual, setShowVisual] = useState("none");
+    const [seriesSummary, setSeriesSummary] = useState(null);
     const { series } = useParams();
     const seriesColours = [
         "#0C662D",
@@ -30,6 +32,12 @@ function Explorer() {
         "#AC0C59",
         "#150B41"
     ];
+
+    // series summary hook
+    useEffect(() => {
+        const referenceData = new ReferenceData();
+        setSeriesSummary(referenceData.seriesSummaries[series - 1]);
+    }, [series]);
 
     const getVisualisation = (idx) => {
         let component;
@@ -211,6 +219,9 @@ function Explorer() {
                     .style("stroke-opacity", 1)
                     .style("fill-opacity", 1)
                     .style("opacity", 1);
+
+                // now allow pointer events for hovering
+                d3.select("#fig").style("pointer-events", "all");
             }
         });
 
@@ -239,14 +250,7 @@ function Explorer() {
                 <article>
                     <div className="step" data-step="1">
                         <h1>Series {series}</h1>                    
-                        <p>Mark and Jez start out with similar aims of sleeping with their next-door neighbour Toni. Jez does this, while she is separating from her 
-                            husband, Tony. Mark is obsessed with his colleague Sophie, who is more interested in their manly colleague Jeff. Mark has a one-night stand 
-                            with a teenage goth girl. Mark and Jez endure awkward situations: Mark admires his boss, Alan Johnson, and struggles to work out whether or 
-                            not he is sexually attracted to him. Jez remembers engaging in fellatio with Super Hans during a drug binge. Sophie beats Mark to a promotion, 
-                            so Mark and Jez desperately team up to prank call Sophie, which leads to her shooting them with a pellet gun. They also launch a pepper 
-                            spray attack on Super Hans, who has begun a fling with Toni. Mark sees a therapist, and nearly succeeds in having sex with Sophie, but this 
-                            chance is ruined by Jez's apparent drug overdose. Shortly afterwards, Jez claims to Toni that he has a terminal illness in order to persuade 
-                            her to have sex with him.</p>
+                        <p>{seriesSummary}</p>
                     </div>
 
                     <div className="step" data-step="1" data-trigger="chord-tut-1">
@@ -341,7 +345,7 @@ function Explorer() {
                     </div>
                 </article>
 
-                <figure style={{ display: showVisual }}>
+                <figure id="fig" style={{ display: showVisual }}>
                     {visualisation}
                 </figure>
             </section>
