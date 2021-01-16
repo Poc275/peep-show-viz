@@ -1,7 +1,6 @@
 import React, { useEffect, useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import * as d3 from "d3";
-import "./ChordDiagram.css";
 
 function ChordDiagram() {
     const [data, setData] = useState(null);
@@ -196,10 +195,10 @@ function ChordDiagram() {
                         .style("background-image", `url(${process.env.PUBLIC_URL}/avatars/${avatars[i.index]})`)
                         .style("border", `5px solid ${colours[i.index]}`)
                         .style("width", "150px").style("height", "150px");
-                    d3.select("#info-text").transition().duration(200).delay(200).style("display", "none");
+                    // d3.select("#info-text").transition().duration(200).delay(200).style("display", "none");
                     d3.select("#info-name").transition().duration(200).delay(200).style("opacity", 1).text(names[i.index]);
                     d3.select("#info-total-lines").transition().duration(200).delay(200).style("opacity", 1).text(totalLines[i.index] === 1 ? `${totalLines[i.index]} Line` : `${totalLines[i.index]} Lines`);
-                    d3.select("#info-spoke-to-heading").transition().duration(200).delay(200).style("display", "block");
+                    // d3.select("#info-spoke-to-heading").transition().duration(200).delay(200).style("display", "inline-block");
                     d3.select("#info-spoke-to").transition().duration(200).delay(200).style("opacity", 1).text(`${spokeToString(spokeTo[i.index])}`);
 
                     // chords...
@@ -252,10 +251,10 @@ function ChordDiagram() {
                 return function(d, i) {
                     // info panel...
                     d3.select("#info-avatar").transition().duration(200).delay(200).style("background-image", "none").style("border", "none").style("width", "0").style("height", "0");
-                    d3.select("#info-text").transition().duration(200).delay(200).style("display", "inline-block");
+                    // d3.select("#info-text").transition().duration(200).delay(200).style("display", "inline-block");
                     d3.select("#info-name").transition().duration(200).delay(200).style("opacity", 0).text("");
                     d3.select("#info-total-lines").transition().duration(200).delay(200).style("opacity", 1).text("");
-                    d3.select("#info-spoke-to-heading").transition().duration(200).delay(200).style("display", "none");
+                    // d3.select("#info-spoke-to-heading").transition().duration(200).delay(200).style("display", "none");
                     d3.select("#info-spoke-to").transition().duration(200).delay(200).style("opacity", 1).text("");
 
                     // chords...

@@ -11,8 +11,22 @@
 
 article {
     position: relative;
-    /* padding: 0 1rem; */
+    padding: 0 1rem;
     max-width: 35rem;
+}
+
+article h1 {
+    margin: 0;
+    font-size: xx-large;
+}
+
+article h2 {
+    margin: 0;
+    font-size: x-large;
+}
+
+article h1, h2, p {
+    line-height: 1.6;
 }
 
 figure {
@@ -40,8 +54,8 @@ figure p {
 
 .step {
     /* margin: 0 auto 2rem auto; */
-    background-color: #3b3b3b;
-    color: #fff;
+    /* background-color: #3b3b3b; */
+    /* color: #fff; */
 }
 
 .step:last-child {
@@ -58,4 +72,24 @@ figure p {
 .step.is-active {
     background-color: goldenrod;
     color: #3b3b3b;
+}
+
+/* chord diagram info panel */
+#info-panel {
+    display: flex;
+}
+
+#info-col {
+    flex-direction: column;
+    margin-left: 2rem;
+}
+
+#info-avatar {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    min-width: 150px;
+    max-width: 150px;
+    /* margin: 0 auto; */
 }

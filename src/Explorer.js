@@ -284,10 +284,12 @@ function Explorer() {
                         <div id="info-panel">
                             <div id="info-avatar"></div>
                             {/* <p id="info-text">Hover over the characters for more info!</p> */}
-                            <h3 id="info-name"></h3>
-                            <p id="info-total-lines"></p>
-                            <h4 id="info-spoke-to-heading">Spoke To</h4>
-                            <p id="info-spoke-to"></p>
+                            <div id="info-col">
+                                <h3 id="info-name"></h3>
+                                <p id="info-total-lines"></p>
+                                {/* <h4 id="info-spoke-to-heading">Spoke To</h4> */}
+                                <p id="info-spoke-to"></p>
+                            </div>
                         </div>
                     </div>
 
