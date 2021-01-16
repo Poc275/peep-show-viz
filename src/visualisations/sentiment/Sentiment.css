@@ -1,5 +1,14 @@
-.xaxis .domain {
+.xaxis .domain,
+.yaxis .domain {
     stroke: none;
+}
+
+.yaxis .tick line {
+    stroke: none;
+}
+
+.yaxis .tick text {
+    font-size: 200%;
 }
 
 .tooltip {
@@ -8,4 +17,5 @@
     pointer-events: none;
     background: #eee;
     max-width: 200px;
+    padding: 5px;
 }

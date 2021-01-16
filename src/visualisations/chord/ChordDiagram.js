@@ -18,11 +18,11 @@ function ChordDiagram() {
 
     // initialise chord diagram hook
     useEffect(() => {
-        const height = 400;
-        const width = 500;
+        const height = 977 * .5;
+        const width = 1343 * .5;
         const outerRadius = Math.min(width, height) * 0.5 - 50;
         const innerRadius = outerRadius - 10;
-        const ribbon = d3.ribbon().radius(innerRadius - 1).padAngle(1 / innerRadius);
+        const ribbon = d3.ribbon().radius(innerRadius - 2).padAngle(1 / innerRadius);
         const arc = d3.arc().innerRadius(innerRadius).outerRadius(outerRadius);
         const chord = d3.chord()
             .padAngle(10 / innerRadius)
@@ -73,6 +73,8 @@ function ChordDiagram() {
                 ${formatValue(d.value)}`);
 
             const groupTick = group.append("g")
+                .attr("class", "axis")
+                .attr("id", (d, i) => `axis-${i}`)
                 .selectAll("g")
                 .data(ticks)
                 .join("g")
@@ -106,6 +108,7 @@ function ChordDiagram() {
                 .each((d) => { d.angle = (d.startAngle + d.endAngle) / 2; })
                 .attr("dy", ".35em")
                 .attr("id", d => `avatar-${d.index}`)
+                .attr("class", "avatar")
                 .attr("transform", d => "rotate(" + (d.angle * 180 / Math.PI - 90) + ")" + "translate(" + (innerRadius + 50) + ", 10)" + (d.angle > Math.PI ? "rotate(180)" : "translate(-20, -16)"));
 
             arcLabels.append("clipPath")
@@ -310,19 +313,7 @@ function ChordDiagram() {
     }, [data]);
 
     return (
-        <>
-            {/* <div id="info-panel">
-                <h2>Script Analysis</h2>
-                <div id="info-avatar"></div>
-                <p id="info-text">Hover over the characters for more info!</p>
-                <h3 id="info-name"></h3>
-                <p id="info-total-lines"></p>
-                <h4 id="info-spoke-to-heading">Spoke To</h4>
-                <p id="info-spoke-to"></p>
-            </div> */}
-
-            <svg ref={svgContainer}></svg>
-        </>
+        <svg id="chord-viz" ref={svgContainer}></svg>
     );
 }
 

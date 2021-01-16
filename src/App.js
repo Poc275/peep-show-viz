@@ -4,6 +4,7 @@ import Welcome from './Welcome';
 import { Switch, Route, useLocation } from 'react-router-dom';
 import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Explorer from './Explorer';
+import Test from './Test';
 
 function App() {
   let location = useLocation();
@@ -22,6 +23,10 @@ function App() {
 
           <Route path="/:series/explore">
             <Explorer />
+          </Route>
+
+          <Route path="/:series/test">
+            <Test />
           </Route>
         </Switch>
       </CSSTransition>

@@ -5,20 +5,24 @@ import LocationRadialBubbleChart from "./LocationRadialBubbleChart";
 
 function Locations() {
     const [data, setData] = useState(null);
+    const [longest, setLongest] = useState(0);
     const { series } = useParams();
 
     // fetch data hook
     useEffect(() => {
         async function fetchLocationData(url) {
-            d3.json(url).then(data => setData(data));
+            d3.json(url).then(data => {
+                setData(data)
+                // get length of longest locations
+                setLongest(d3.max(Object.values(data).map(d => d.length)));
+            });
         }
         fetchLocationData(`${process.env.PUBLIC_URL}/data/locations/S${series}_Locations.json`);
     }, [series]);
     
     return (
         <>
-            <h2>Locations</h2>
-            { data ? Object.keys(data).map(d => <LocationRadialBubbleChart data={data[d]} />) : null }
+            { data && longest ? Object.keys(data).map(d => <LocationRadialBubbleChart data={data[d]} longest={longest} />) : null }
         </>
     );
 }

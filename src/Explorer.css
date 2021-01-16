@@ -2,7 +2,7 @@
     position: relative;
     display: flex;
     background-color: #f3f3f3;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 
 #scrolly > * {
@@ -11,17 +11,19 @@
 
 article {
     position: relative;
-    padding: 0 1rem;
-    max-width: 40rem;
+    /* padding: 0 1rem; */
+    max-width: 35rem;
 }
 
 figure {
     position: sticky;
-    width: 100%;
+    /* width: 100%; */
+    /* max-width: 1200px; */
     margin: 0;
-    transform: translate3d(0, 0, 0);
+    /* transform: translate3d(0, 0, 0); */
     /* background-color: #8a8a8a; */
-    z-index: 0;
+    /* z-index: 0; */
+    /* overflow: scroll; */
 }
 
 figure p {
@@ -37,13 +39,14 @@ figure p {
 }
 
 .step {
-    margin: 0 auto 2rem auto;
+    /* margin: 0 auto 2rem auto; */
     background-color: #3b3b3b;
     color: #fff;
 }
 
 .step:last-child {
-    margin-bottom: 0;
+    /* just pads out bottom so last step can be scrolled into */
+    margin-bottom: 800px;
 }
 
 .step p {
