@@ -21,6 +21,7 @@ function Explorer() {
     const [showVisual, setShowVisual] = useState("none");
     const [seriesSummary, setSeriesSummary] = useState("");
     const [chordTutorial, setChordTutorial] = useState("");
+    const [chordAnnotations, setChordAnnotations] = useState("");
     const { series } = useParams();
 
     // series information hook
@@ -28,6 +29,7 @@ function Explorer() {
         const referenceData = new ReferenceData();
         setSeriesSummary(referenceData.seriesSummaries[series - 1]);
         setChordTutorial(referenceData.chordTutorial[series - 1]);
+        setChordAnnotations(referenceData.chordAnnotations[series - 1]);
     }, [series]);
 
     const getVisualisation = (idx) => {
@@ -341,6 +343,9 @@ function Explorer() {
                             not speak are gathered together under "Others" to keep the visual from becoming too cluttered. But don't worry, we'll explore these 
                             minor characters later on.
                         </p>
+
+                        <p>{chordAnnotations}</p>
+
                         <p>Feel free to interact with the visualisation. Hover over the characters for more info and hover over the chords to see the percentages.</p>
                         <div id="info-panel">
                             <div id="info-avatar"></div>
