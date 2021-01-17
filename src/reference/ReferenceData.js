@@ -1,4 +1,64 @@
 const ReferenceData = function() {
+    this.chordTutorial = [
+        {
+            arc: "Here we can see Jez's arc which shows Jez had around 27% of all lines spoken in the series.",
+            chords: "For example here is the chord for conversations between Jez and Mark which shows that just under half of Jez's lines were with Mark. The chords are directional meaning that we can read them in the opposite direction which shows that Mark spent less of his lines speaking to Jez, under a third.",
+            mounds: "Here we can see Mark had more internal thoughts (around 11% of his lines) than Jez (around 5%)."
+        },
+        {
+            arc: "Here we can see Jez's arc which shows Jez had around 27% of all lines spoken in the series.",
+            chords: "For example here is the chord for conversations between Jez and Mark which shows that around 40% of Jez's lines were with Mark. The chords are directional meaning that we can read them in the opposite direction which shows that Mark spent less of his lines speaking to Jez, around 30%.",
+            mounds: "Here we can see Mark had more internal thoughts (around 8% of his lines) than Jez (around 3%)."
+        },
+        {
+            arc: "Here we can see Jez's arc which shows Jez had around 34% of all lines spoken in the series.",
+            chords: "For example here is the chord for conversations between Jez and Mark which shows that nearly half of Jez's lines were with Mark. The chords are directional meaning that we can read them in the opposite direction which shows that Mark spent less of his lines speaking to Jez, around 40%.",
+            mounds: "Here we can see Mark had more internal thoughts (around 8% of his lines) than Jez (around 5%)."
+        },
+        {
+            arc: "Here we can see Soph's arc which shows Sophie had around 5% of all lines spoken in the series.",
+            chords: "For example here is the chord for conversations between Jez and Mark which shows that around 40% of Mark's lines were with Jez. The chords are directional meaning that we can read them in the opposite direction which shows that Jez spent over half of his lines speaking to Mark.",
+            mounds: "Here we can see Mark had more internal thoughts (around 8% of his lines) than Jez (around 4%)."
+        },
+        {
+            arc: "Here we can see Mark's arc which shows Mark had around 40% of all lines spoken in the series.",
+            chords: "For example here is the chord for conversations between Jez and Mark which shows that around 30% of Mark's lines were with Jez. The chords are directional meaning that we can read them in the opposite direction which shows that Jez spent more of his lines speaking to Mark, around 40%.",
+            mounds: "Here we can see Mark had more internal thoughts (around 10% of his lines) than Jez (around 4%)."
+        },
+        {
+            arc: "Here we can see Mark's arc which shows Mark had around 42% of all lines spoken in the series.",
+            chords: "For example here is the chord for conversations between Jez and Mark which shows that around 30% of Mark's lines were with Jez. The chords are directional meaning that we can read them in the opposite direction which shows that Jez spent more of his lines speaking to Mark, around 40%.",
+            mounds: "Here we can see Mark had more internal thoughts (around 12% of his lines) than Jez (around 4%)."
+        },
+        {
+            arc: "Here we can see Mark's arc which shows Mark had around 40% of all lines spoken in the series.",
+            chords: "For example here is the chord for conversations between Jez and Mark which shows that 40% of Mark's lines were with Jez. The chords are directional meaning that we can read them in the opposite direction which shows that Jez spent half of his lines speaking to Mark.",
+            mounds: "Here we can see Mark had more internal thoughts (around 9% of his lines) than Jez (around 5%)."
+        },
+        {
+            arc: "Here we can see Super Hans' arc which shows Super Hans had around 5% of all lines spoken in the series.",
+            chords: "For example here is the chord for conversations between Jez and Mark which shows that nearly half of Jez's lines were with Mark. The chords are directional meaning that we can read them in the opposite direction which shows that Mark spent only a third of his lines speaking to Jez.",
+            mounds: "Here we can see Mark had more internal thoughts (around 10% of his lines) than Jez (around 5%)."
+        },
+        {
+            arc: "Here we can see Jez's arc which shows Jez had around 30% of all lines spoken in the series.",
+            chords: "For example here is the chord for conversations between Jez and Mark which shows that over half of Jez's lines were with Mark. The chords are directional meaning that we can read them in the opposite direction which shows that Mark spent less of his lines speaking to Jez, around 40%.",
+            mounds: "Here we can see Mark had more internal thoughts (around 11% of his lines) than Jez (around 4%)."
+        },
+    ];
+
+    this.seriesColours = [
+        "#0C662D",
+        "#005E8D",
+        "#A9251E",
+        "#882373",
+        "#F07122",
+        "#29AB87",
+        "#5147BB",
+        "#AC0C59",
+        "#150B41"
+    ];
+
     this.seriesSummaries = [
         "Mark and Jez start out with similar aims of sleeping with their next-door neighbour Toni. Jez does this, while she is separating from her husband, Tony. Mark is obsessed with his colleague Sophie, who is more interested in their manly colleague Jeff. Mark has a one-night stand with a teenage goth girl. Mark and Jez endure awkward situations: Mark admires his boss, Alan Johnson, and struggles to work out whether or not he is sexually attracted to him. Jez remembers engaging in fellatio with Super Hans during a drug binge. Sophie beats Mark to a promotion, so Mark and Jez desperately team up to prank call Sophie, which leads to her shooting them with a pellet gun. They also launch a pepper spray attack on Super Hans, who has begun a fling with Toni. Mark sees a therapist, and nearly succeeds in having sex with Sophie, but this chance is ruined by Jez's apparent drug overdose. Shortly afterwards, Jez claims to Toni that he has a terminal illness in order to persuade her to have sex with him.",
         "Tony moves back in with Toni. Super Hans develops a crack cocaine addiction. Jez meets, falls in love with and starts an open relationship with Nancy, an attractive and happy-go-lucky American. They briefly enjoy a wild sex life, but Nancy then decides to become celibate. Jez briefly appears to be having some success with his music career with Super Hans. Mark's life is falling apart, as Sophie plans to move in with Jeff. Mark forges a brief friendship with a colleague, Daryl, which he ends after he discovers that Daryl is a neo-Nazi. Mark falls for a shy, attractive student in a shoe shop and makes an ill-judged visit to his old university, Dartmouth, where she studies. Mark finds out from Jez that Jeff has been cheating on Sophie, and Mark informs Sophie of that, after which Sophie ends the relationship. Nancy asks Jez to marry her, for visa reasons, and Jez accepts gleefully; Mark gets Super Hans to lie to Jez and say that she had sex with him, but after they see his reaction they cannot go through with it. Jez and Nancy do get married despite Mark's efforts, but after they decide to start having sex again Jez admits to Nancy, who is now his wife, that he hooked up with Toni. Nancy leaves him.",

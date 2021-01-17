@@ -19,24 +19,15 @@ function Explorer() {
     const [visualisation, setVisualisation] = useState(null);
     const [dataStep, setDataStep] = useState(0);
     const [showVisual, setShowVisual] = useState("none");
-    const [seriesSummary, setSeriesSummary] = useState(null);
+    const [seriesSummary, setSeriesSummary] = useState("");
+    const [chordTutorial, setChordTutorial] = useState("");
     const { series } = useParams();
-    const seriesColours = [
-        "#0C662D",
-        "#005E8D",
-        "#A9251E",
-        "#882373",
-        "#F07122",
-        "#29AB87",
-        "#5147BB",
-        "#AC0C59",
-        "#150B41"
-    ];
 
-    // series summary hook
+    // series information hook
     useEffect(() => {
         const referenceData = new ReferenceData();
         setSeriesSummary(referenceData.seriesSummaries[series - 1]);
+        setChordTutorial(referenceData.chordTutorial[series - 1]);
     }, [series]);
 
     const getVisualisation = (idx) => {
@@ -133,12 +124,14 @@ function Explorer() {
                 d3.select("#chord-viz")
                     .select("path.arc")
                     .transition()
+                    .duration(1000)
                     .style("stroke-opacity", 0.8)
                     .style("fill-opacity", 0.8);
 
                 d3.select("#chord-viz")
                     .select(".axis")
                     .transition()
+                    .duration(1000)
                     .style("stroke-opacity", 0.8)
                     .style("fill-opacity", 0.8)
                     .style("opacity", 0.8);
@@ -146,37 +139,104 @@ function Explorer() {
                 d3.select("#chord-viz")
                     .select(".avatar")
                     .transition()
+                    .duration(1000)
                     .style("stroke-opacity", 1)
                     .style("fill-opacity", 1)
                     .style("opacity", 1);
             }
 
             if(trigger === "chord-tut-3") {
+                let selectId = "1";
+                if(series === "3") {
+                    // Mark is the third speaker in this series
+                    selectId = "2";
+                }
+                else if(series === "6") {
+                    // Jez is the third speaker in this series
+                    selectId = "2";
+                }
+
                 d3.select("#chord-viz")
                     .select("path.chord")
                     .transition()
+                    .duration(1000)
                     .style("stroke-opacity", 0.8)
                     .style("fill-opacity", 0.8);
 
                 d3.select("#chord-viz")
-                    .select("#arc-1")
+                    .select(`#arc-${selectId}`)
                     .transition()
+                    .duration(1000)
                     .style("stroke-opacity", 0.8)
                     .style("fill-opacity", 0.8);
 
                 d3.select("#chord-viz")
-                    .select("#axis-1")
+                    .select(`#axis-${selectId}`)
                     .transition()
+                    .duration(1000)
                     .style("stroke-opacity", 0.8)
                     .style("fill-opacity", 0.8)
                     .style("opacity", 0.8);
 
                 d3.select("#chord-viz")
-                    .select("#avatar-1")
+                    .select(`#avatar-${selectId}`)
                     .transition()
+                    .duration(1000)
                     .style("stroke-opacity", 1)
                     .style("fill-opacity", 1)
                     .style("opacity", 1);
+
+                if(series === "4") {
+                    // select Jez as he's the third person in this series
+                    d3.select("#chord-viz")
+                        .select("#arc-2")
+                        .transition()
+                        .duration(1000)
+                        .style("stroke-opacity", 0.8)
+                        .style("fill-opacity", 0.8);
+
+                    d3.select("#chord-viz")
+                        .select("#axis-2")
+                        .transition()
+                        .duration(1000)
+                        .style("stroke-opacity", 0.8)
+                        .style("fill-opacity", 0.8)
+                        .style("opacity", 0.8);
+
+                    d3.select("#chord-viz")
+                        .select("#avatar-2")
+                        .transition()
+                        .duration(1000)
+                        .style("stroke-opacity", 1)
+                        .style("fill-opacity", 1)
+                        .style("opacity", 1);
+                }
+
+                if(series === "8") {
+                    // select Mark as he's the third person in this series
+                    d3.select("#chord-viz")
+                        .select("#arc-2")
+                        .transition()
+                        .duration(1000)
+                        .style("stroke-opacity", 0.8)
+                        .style("fill-opacity", 0.8);
+
+                    d3.select("#chord-viz")
+                        .select("#axis-2")
+                        .transition()
+                        .duration(1000)
+                        .style("stroke-opacity", 0.8)
+                        .style("fill-opacity", 0.8)
+                        .style("opacity", 0.8);
+
+                    d3.select("#chord-viz")
+                        .select("#avatar-2")
+                        .transition()
+                        .duration(1000)
+                        .style("stroke-opacity", 1)
+                        .style("fill-opacity", 1)
+                        .style("opacity", 1);
+                }
             }
 
             if(trigger === "chord-tut-4") {
@@ -185,9 +245,11 @@ function Explorer() {
                     .filter(function(d) {
                         // return internal thought chords only which are where the source and target are the same
                         // also just return mark and jez's mounds as some "Others" speak to each other too
-                        return d.source.index === d.target.index && (d.source.index === 0 || d.source.index === 1);
+                        // (Mark & Jez are always in the first 3 speakers i.e. index 0, 1, or 2)
+                        return d.source.index === d.target.index && (d.source.index === 0 || d.source.index === 1 || d.source.index === 2);
                     })
                     .transition()
+                    .duration(2000)
                     .ease(d3.easeLinear)
                     .style("stroke-opacity", 1)
                     .style("fill-opacity", 1);
@@ -259,24 +321,19 @@ function Explorer() {
                     </div>
 
                     <div className="step" data-step="1" data-trigger="chord-tut-2">
-                        <p>Each "arc" represents a character from the series with the length of the arc representing the number of lines that 
-                            character spoke. Here we can see Jez's arc which shows Jez had around 27% of all lines spoken in the series.
-                        </p>
+                        <p>Each "arc" represents a character from the series with the length of the arc representing the number of lines that character 
+                            spoke. {chordTutorial.arc}</p>
                     </div>
 
                     <div className="step" data-step="1" data-trigger="chord-tut-3">
                         <p>The chords between the arcs visualise the number of lines spoken between characters. The thickness of the chord encodes the 
-                            percentage of that character's overall lines that were spent speaking to that character. For example here is the chord for 
-                            conversations between Jez and Mark which shows that just under half of Jez's lines were with Mark. The chords are directional meaning 
-                            that we can read them in the opposite direction which shows that Mark spent less of his lines speaking to Jez, under a third.
-                        </p>
+                            percentage of that character's overall lines that were spent speaking to that character. {chordTutorial.chords}</p>
                     </div>
 
                     <div className="step" data-step="1" data-trigger="chord-tut-4">
-                        <p>Although chord diagrams are better at visualising asymmetrical patterns (conversations are usually symmetrical, but not always!), you 
-                            can still get an overall picture of who spoke to whom. An interesting aspect of the visual are the "mounds" which show how many 
-                            "internal" thoughts Mark &amp; Jez had. Here we can see Mark had more internal thoughts (around 11% of his lines) than Jez (around 5%).
-                        </p>
+                        <p>Although chord diagrams are better at visualising asymmetrical patterns (conversations should be symmetrical 😏), you can still get 
+                            an overall picture of who spoke to whom. An interesting aspect of the visual are the "mounds" which show how many "internal" thoughts 
+                            Mark and Jez had. {chordTutorial.mounds}</p>
                     </div>
 
                     <div className="step" data-step="1" data-trigger="chord-tut-5">
