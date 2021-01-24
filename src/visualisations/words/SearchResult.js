@@ -9,7 +9,7 @@ function SearchResult(props) {
         <>
             <div className="search-result">
                 <div className="avatar" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/avatars/${speakerImg})` }}></div>
-                <p>{props.res.Line.trim()}</p>
+                <p className="search-result-text">{props.res.Line.trim()}</p>
                 <div className="avatar" style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/avatars/${listenerImg})` }}></div>
             </div>
             <small>Episode {props.res.Episode} - {props.res.Location}</small>

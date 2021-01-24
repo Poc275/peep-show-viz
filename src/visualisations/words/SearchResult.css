@@ -8,10 +8,10 @@
     background-repeat: no-repeat;
     position: relative;
     top: 18px;
-    margin: 0 12px;
+    margin: 0 18px;
 }
 
-p {
-    /* display: inline-block;
-    max-width: 80%; */
+.search-result-text {
+    display: inline-block;
+    max-width: 80%;
 }

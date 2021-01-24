@@ -120,6 +120,39 @@ function Explorer() {
                     chordDiagramTutorial.tutorialFive();
                     break;
 
+                case "words-intro":
+                    d3.selectAll(".top-word")
+                        .style("opacity", 0);
+
+                    d3.select("#search-results")
+                        .style("opacity", 0);
+
+                    d3.select("#search-input")
+                        .style("opacity", 0);
+                    break;
+
+                case "words-reveal":
+                    d3.selectAll(".top-word")
+                        .transition()
+                        .delay((d, i) => i * 200)
+                        .duration(500)
+                        .ease(d3.easeLinear)
+                        .style("opacity", 1)
+                        .style("pointer-events", "all");
+                    break;
+
+                case "word-search-reveal":
+                    d3.select("#search-results")
+                        .transition()
+                        .duration(500)
+                        .style("opacity", 1);
+
+                    d3.select("#search-input")
+                        .transition()
+                        .duration(500)
+                        .style("opacity", 1);
+                    break;
+
             }
         });
 
@@ -146,6 +179,7 @@ function Explorer() {
         <main>
             <section id="scrolly">
                 <article>
+                    {/* Conversation (chords) Section */}
                     <div className="step" data-step="1">
                         <h1>Series {series}</h1>                    
                         <p>{seriesSummary}</p>
@@ -194,15 +228,24 @@ function Explorer() {
                     </div>
 
 
-
-
-
-                    <div className="step" data-step="2">
+                    {/* Words Section */}
+                    <div className="step" data-step="2" data-trigger="words-intro">
                         <h1>Words</h1>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>Now we'll take a look at the actual words used throughout the series.</p>
                     </div>
+
+                    <div className="step" data-step="2" data-trigger="words-reveal">
+                        <p>Here are the top ten words used most in the series. Common words have been ignored to try and make the analysis 
+                            more interesting. Hover over them to see who said them the most.
+                        </p>
+                    </div>
+
+                    <div className="step" data-step="2" data-trigger="word-search-reveal">
+                        <p>Now use the search feature to look for your own words to see where they appear in the series.</p>
+                    </div>
+
+
+
 
                     <div className="step" data-step="3">
                         <h1>Locations</h1>
