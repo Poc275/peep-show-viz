@@ -4,8 +4,8 @@ import * as d3 from "d3";
 import SentencesChart from "./SentencesChart";
 import Averages from "./Averages";
 import InternalProportion from "./InternalProportion";
-import "./Sentences.css";
 import TopNouns from "./TopNouns";
+import "./Sentences.css";
 
 function Sentences() {
     const schema = (d) => {
@@ -14,7 +14,8 @@ function Sentences() {
             Episode: +d.Episode,
             Speaker: d.Speaker,
             Internal: d.Internal === "True" ? true : false,
-            NumWords: +d.NumWords
+            NumWords: +d.NumWords,
+            Sentences: d.Sentences
         }
     };
 

@@ -1,5 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
+// import * as d3Annotation from "d3-svg-annotation";
+import ReferenceData from "../../reference/ReferenceData";
 
 function SentencesChart(sentenceData) {
     const chart = useRef(null);
@@ -9,14 +11,16 @@ function SentencesChart(sentenceData) {
 
     // initialise viz hook
     useEffect(() => {
+        const referenceData = new ReferenceData();
+
         const margin = {
             top: 60,
-            right: 50,
-            bottom: 20, 
+            right: 0,
+            bottom: 10, 
             left: 50
         };
-        const height = 800 - margin.top - margin.bottom;
-        const width = 150 - margin.left - margin.right;
+        const height = 700 - margin.top - margin.bottom;
+        const width = 100 - margin.left - margin.right;
         const svg = d3.select(chart.current)
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
@@ -64,17 +68,24 @@ function SentencesChart(sentenceData) {
                 .append("rect")
                     .attr("x", 0)
                     .attr("y", d => y(d.index))
-                    .attr("width", d => x(d.NumWords))
+                    .attr("width", 0)
+                    // .attr("width", d => x(d.NumWords))
                     .attr("height", y.step())
                     // .attr("height", 2)
                     .attr("class", "num-words-bar")
+                    .attr("id", (d, i) => `sentence-${d.index}`)
+                    .attr("fill", d => d.Internal ? "tomato" : "dodgerblue")
+                    // .style("opacity", 0.25)
+                    .on("mouseover", function(d, i) { d3.select(this).attr("opacity", "0.25") })
+                    .on("mouseout", function(d, i) { d3.select(this).attr("opacity", "1") })
+                    .on("click", function(d, i) { console.log(i, d) })  // for debugging
+                    .transition()
+                    .duration(2000)
                     .attr("transform", (d) => {
                         let width = x(d.NumWords);
                         return `translate(-${width / 2}, 0)`
                     })
-                    .attr("fill", d => d.Internal ? "tomato" : "dodgerblue")
-                    .on("mouseover", function(d, i) { d3.select(this).attr("opacity", "0.25") })
-                    .on("mouseout", function(d, i) { d3.select(this).attr("opacity", "1") });
+                    .attr("width", d => x(d.NumWords));
 
              // Draw header.
             const header = svg.append('g')
@@ -88,9 +99,9 @@ function SentencesChart(sentenceData) {
             header.append('tspan')
                 .attr('x', 0)
                 .attr('dy', '1.5em')
-                .style('font-size', '0.8em')
+                .style('font-size', '0.6em')
                 .style('fill', '#555')
-                .text(`Episode ${episode}`);
+                .text(`${referenceData.episodeTitles[episode - 1]}`);
         }
 
         // effect cleanup function

@@ -14,23 +14,31 @@ import Sentences from "./visualisations/sentences/Sentences";
 import Sentiment from "./visualisations/sentiment/Sentiment";
 import Stats from "./visualisations/stats/Stats";
 import ReferenceData from "./reference/ReferenceData";
+import SentenceAnnotations from "./visualisations/sentences/SentenceAnnotations";
+import SentenceAnnotation from "./visualisations/sentences/SentenceAnnotation";
 import "./Explorer.css";
 
 function Explorer() {
+    const referenceData = new ReferenceData();
+    const sentenceAnnotations = new SentenceAnnotations();
+
     const [visualisation, setVisualisation] = useState(null);
     const [dataStep, setDataStep] = useState(0);
     const [showVisual, setShowVisual] = useState("none");
     const [seriesSummary, setSeriesSummary] = useState("");
     const [chordTutorial, setChordTutorial] = useState("");
     const [chordAnnotations, setChordAnnotations] = useState("");
+    const [seriesSentenceAnnotations, setSeriesSentenceAnnotations] = useState([]);
+    // const [isPlaying, setIsPlaying] = useState(false);
+
     const { series } = useParams();
 
     // series information hook
     useEffect(() => {
-        const referenceData = new ReferenceData();
         setSeriesSummary(referenceData.seriesSummaries[series - 1]);
         setChordTutorial(referenceData.chordTutorial[series - 1]);
         setChordAnnotations(referenceData.chordAnnotations[series - 1]);
+        setSeriesSentenceAnnotations(sentenceAnnotations.annotations.filter(a => a.series === series));
     }, [series]);
 
     const getVisualisation = (idx) => {
@@ -153,6 +161,22 @@ function Explorer() {
                         .style("opacity", 1);
                     break;
 
+                case "sentence-annotation":
+                    const sentenceIndex = res.element.dataset.sentence;
+                    // highlight this specific sentence
+                    d3.selectAll(".num-words-bar")
+                        .transition()
+                        .duration(500)
+                        .style("opacity", (d, i) => {
+                            // only == as custom "data-" attribute is a string
+                            if(d.index == sentenceIndex) {
+                                return 1;
+                            } else {
+                                return 0.25;
+                            }
+                        });
+                    break;
+
             }
         });
 
@@ -173,7 +197,7 @@ function Explorer() {
 
         handleResize();
         window.addEventListener("resize", handleResize);
-    }, []);
+    }, [seriesSentenceAnnotations]);
 
     return (
         <main>
@@ -261,12 +285,52 @@ function Explorer() {
                         <p>This chord diagram visualises who spoke with whom.</p>
                     </div>
 
+
+                    {/* Mark v Jez sentences chart */}
                     <div className="step" data-step="5">
-                        <h1>Sentences</h1>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <h1>Mark vs Jez</h1>
+                        <p>Let's focus in on Mark and Jez now, looking at how their sentences compare with each other.</p>
+                        <p>Each horizontal bar represents a sentence spoken by Mark and Jez for each episode. The width of the bar 
+                            indicates the number of words in the sentence with the colour highlighting if it was 
+                            spoken <span style={{ borderBottom: "3px solid dodgerblue"}}>aloud</span> or <span style={{ borderBottom: "3px solid tomato"}}>"internally"</span>.
+                        </p>
+                        <p>The horizontal "ticks" below represent the average number of words per sentence where each tick equals one word. So 
+                            for example, Mark's average sentence length was 6 words during the first episode and likewise for Jez.
+                        </p>
+                        <p>The circles visualise the ratio of internal versus external sentences.</p>
+                        <p>Finally, the words show the top five most common nouns utterred by each character per episode.</p>
                     </div>
+
+                    {
+                        seriesSentenceAnnotations.map((a, idx) => {
+                            return (
+                                <div key={idx} className="step" data-step="5" data-trigger="sentence-annotation" data-sentence={a.index}>
+                                    <SentenceAnnotation annotation={a} />
+                                </div>
+                            )
+                        })
+                    }
+
+                    {/* <div className="step" data-step="5" data-trigger="sentence-one"> */}
+                        {/* <p>This one is during Jeremy's interview at JLB where he tries to come across as 
+                            an unemployable freak so as "not to accidentally get the bugger":</p> */}
+
+                        {/* <p>
+                            <span className="sound-clip">
+                                <span className="sound-clip-control" onClick={playAudio}>
+                                    { isPlaying ? " ❙ ❙ " : " ▶ " }
+                                </span>Right you are. I might wobble a bit because I'm still a bit pissed from last night you see, and I don't want to get your hopes up 
+                                too much 'cause I have to say, I'm only really here because, you know...
+                            </span>
+                        </p> */}
+                    {/* </div> */}
+
+                    {/* <div className="step" data-step="5" data-trigger="sentence-two">
+                        <p>This is Jez's "Enya" speech during Uncle Ray's funeral.</p>
+                    </div> */}
+
+
+
 
                     <div className="step" data-step="6">
                         <h1>Sentiment</h1>

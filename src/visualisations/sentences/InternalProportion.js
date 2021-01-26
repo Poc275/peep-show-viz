@@ -8,13 +8,13 @@ function InteralProportion(sentenceData) {
     // initialise viz hook
     useEffect(() => {
         const margin = {
-            top: 20,
-            right: 50,
-            bottom: 20, 
+            top: 5,
+            right: 0,
+            bottom: 5, 
             left: 50
         };
-        const height = 100 - margin.top - margin.bottom;
-        const width = 150 - margin.left - margin.right;
+        const height = 50 - margin.top - margin.bottom;
+        const width = 100 - margin.left - margin.right;
         const svg = d3.select(chart.current)
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)

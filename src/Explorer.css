@@ -97,3 +97,15 @@ figure p {
 figure {
     pointer-events: none;
 }
+
+
+
+.sound-clip {
+    background-color: dodgerblue;
+    padding: 3px 0;
+    line-height: 2;
+}
+
+.sound-clip-control {
+    cursor: pointer;
+}
