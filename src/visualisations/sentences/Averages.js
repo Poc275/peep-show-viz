@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 
-function Averages(sentenceData) {
+function Averages(props) {
     const chart = useRef(null);
-    const { data } = sentenceData;
+    const { data } = props;
     // console.log(data);
 
     // initialise viz hook
@@ -36,12 +36,9 @@ function Averages(sentenceData) {
                 .domain([0, 1])
                 .range([0, width]);
 
-            // y axis (293 is largest num of words spoken)
             const y = d3.scaleBand()
-                // .domain(averageData.map(d => d.idx))
                 .domain([1, 2, 3, 4, 5, 6])
                 .range([height, 0]);
-                // .padding(6);
 
             // append axes
             const xAxis = d3.axisTop(x)

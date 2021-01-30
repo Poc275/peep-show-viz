@@ -98,6 +98,9 @@ figure {
     pointer-events: none;
 }
 
+.bold {
+    font-weight: bold;
+}
 
 
 .sound-clip {

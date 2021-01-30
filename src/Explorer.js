@@ -5,6 +5,7 @@ import * as d3 from "d3";
 // import ScrollTrigger from "gsap/ScrollTrigger";
 import "intersection-observer";
 import scrollama from "scrollama";
+
 import ChordDiagram from "./visualisations/chord/ChordDiagram";
 import ChordDiagramTutorial from "./visualisations/chord/ChordDiagramTutorial";
 import WordSearch from "./visualisations/words/WordSearch";
@@ -13,32 +14,39 @@ import Timeline from "./visualisations/timeline/Timeline";
 import Sentences from "./visualisations/sentences/Sentences";
 import Sentiment from "./visualisations/sentiment/Sentiment";
 import Stats from "./visualisations/stats/Stats";
+import SentenceAnnotation from "./visualisations/sentences/SentenceAnnotation";
+
 import ReferenceData from "./reference/ReferenceData";
 import SentenceAnnotations from "./visualisations/sentences/SentenceAnnotations";
-import SentenceAnnotation from "./visualisations/sentences/SentenceAnnotation";
 import "./Explorer.css";
 
 function Explorer() {
     const referenceData = new ReferenceData();
-    const sentenceAnnotations = new SentenceAnnotations();
+    const sentenceAnnotationsData = new SentenceAnnotations();
 
     const [visualisation, setVisualisation] = useState(null);
     const [dataStep, setDataStep] = useState(0);
     const [showVisual, setShowVisual] = useState("none");
+    
     const [seriesSummary, setSeriesSummary] = useState("");
+    
     const [chordTutorial, setChordTutorial] = useState("");
     const [chordAnnotations, setChordAnnotations] = useState("");
-    const [seriesSentenceAnnotations, setSeriesSentenceAnnotations] = useState([]);
-    // const [isPlaying, setIsPlaying] = useState(false);
+
+    const [sentenceAnnotations, setSentenceAnnotations] = useState("");
+    const [audioAnnotations, setAudioAnnotations] = useState([]);
 
     const { series } = useParams();
 
-    // series information hook
+    // annotations hook
     useEffect(() => {
         setSeriesSummary(referenceData.seriesSummaries[series - 1]);
+
         setChordTutorial(referenceData.chordTutorial[series - 1]);
         setChordAnnotations(referenceData.chordAnnotations[series - 1]);
-        setSeriesSentenceAnnotations(sentenceAnnotations.annotations.filter(a => a.series === series));
+
+        setSentenceAnnotations(sentenceAnnotationsData.sentenceAnnotations[series - 1]);
+        setAudioAnnotations(sentenceAnnotationsData.audioAnnotations.filter(a => a.series === series));
     }, [series]);
 
     const getVisualisation = (idx) => {
@@ -96,6 +104,7 @@ function Explorer() {
             // debug: true,
         })
         .onStepEnter((res) => {
+            console.log(res);
             const scrolledDataStep = res.element.dataset.step;
             const trigger = res.element.dataset.trigger;
             step.classed("is-active", (d, i) => i === res.index);
@@ -161,6 +170,16 @@ function Explorer() {
                         .style("opacity", 1);
                     break;
 
+                case "mark-vs-jez":
+                    // if scrolling back up then reset opacity
+                    if(res.direction === "up") {
+                        d3.selectAll(".num-words-bar")
+                            .transition()
+                            .duration(1000)
+                            .style("opacity", 1);
+                    }
+                    break;
+
                 case "sentence-annotation":
                     const sentenceIndex = res.element.dataset.sentence;
                     // highlight this specific sentence
@@ -197,7 +216,7 @@ function Explorer() {
 
         handleResize();
         window.addEventListener("resize", handleResize);
-    }, [seriesSentenceAnnotations]);
+    }, [audioAnnotations]);
 
     return (
         <main>
@@ -287,22 +306,21 @@ function Explorer() {
 
 
                     {/* Mark v Jez sentences chart */}
-                    <div className="step" data-step="5">
+                    <div className="step" data-step="5" data-trigger="mark-vs-jez">
                         <h1>Mark vs Jez</h1>
-                        <p>Let's focus in on Mark and Jez now, looking at how their sentences compare with each other.</p>
-                        <p>Each horizontal bar represents a sentence spoken by Mark and Jez for each episode. The width of the bar 
-                            indicates the number of words in the sentence with the colour highlighting if it was 
-                            spoken <span style={{ borderBottom: "3px solid dodgerblue"}}>aloud</span> or <span style={{ borderBottom: "3px solid tomato"}}>"internally"</span>.
+                        <p>Let's focus in on Mark and Jez now, looking at how their lines compare with each other.</p>
+                        <p>Each horizontal bar represents a line spoken by Mark and Jez for each episode. The width of the bar 
+                            indicates the number of words in the line with the colour highlighting if it was 
+                            spoken <span style={{ borderBottom: "3px solid dodgerblue"}}>aloud</span> or <span style={{ borderBottom: "3px solid tomato"}}>"internally"</span>. From 
+                            the number of bars we can also see who had the most lines per episode.
                         </p>
-                        <p>The horizontal "ticks" below represent the average number of words per sentence where each tick equals one word. So 
-                            for example, Mark's average sentence length was 6 words during the first episode and likewise for Jez.
-                        </p>
-                        <p>The circles visualise the ratio of internal versus external sentences.</p>
-                        <p>Finally, the words show the top five most common nouns utterred by each character per episode.</p>
+                        <p>The horizontal "ticks" below represent the average number of words per <span className="bold">sentence</span> where each tick equals one word. {sentenceAnnotations[0]}</p>
+                        <p>The circles visualise the ratio of internal versus external lines. {sentenceAnnotations[1]}</p>
+                        <p>Finally, the words show the top five most common nouns utterred by each character per episode. {sentenceAnnotations[2]}</p>
                     </div>
 
                     {
-                        seriesSentenceAnnotations.map((a, idx) => {
+                        audioAnnotations.map((a, idx) => {
                             return (
                                 <div key={idx} className="step" data-step="5" data-trigger="sentence-annotation" data-sentence={a.index}>
                                     <SentenceAnnotation annotation={a} />

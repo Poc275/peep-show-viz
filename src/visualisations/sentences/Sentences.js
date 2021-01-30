@@ -15,7 +15,8 @@ function Sentences() {
             Speaker: d.Speaker,
             Internal: d.Internal === "True" ? true : false,
             NumWords: +d.NumWords,
-            Sentences: d.Sentences
+            // Sentences: d.Sentences
+            Lines: d.Lines
         }
     };
 
@@ -26,14 +27,14 @@ function Sentences() {
     // fetch data hook
     useEffect(() => {
         async function fetchSentenceData(url) {
+            const episodeDatasets = [];
+
             d3.csv(url, schema).then(data => {
                 for(let i = 1; i <= 6; i++) {
-                    const markData = data.filter(s => s.Speaker === "Mark" && s.Episode === i);
-                    const jezData = data.filter(s => s.Speaker === "Jeremy" && s.Episode === i);
-                    
-                    setDatasets(prevDatasets => [...prevDatasets, [markData]]);
-                    setDatasets(prevDatasets => [...prevDatasets, [jezData]]);
+                    episodeDatasets.push(data.filter(s => s.Speaker === "Mark" && s.Episode === i));
+                    episodeDatasets.push(data.filter(s => s.Speaker === "Jeremy" && s.Episode === i));
                 }
+                setDatasets(episodeDatasets);
             });
         }
 
@@ -49,16 +50,16 @@ function Sentences() {
             });
         }
         
-        fetchSentenceData(`${process.env.PUBLIC_URL}/data/sentences/sentences-s${series}.csv`);
+        fetchSentenceData(`${process.env.PUBLIC_URL}/data/sentences/lines-s${series}.csv`);
         fetchTopNounData(`${process.env.PUBLIC_URL}/data/sentences/top-nouns-s${series}.json`);
     }, [series]);
 
-    
     return (
         <>
-            { datasets.map((d, idx) => <SentencesChart key={idx} data={d[0]} index={idx} />) }
-            { datasets.map((d, idx) => <Averages key={idx} data={d[0]} />) }
-            { datasets.map((d, idx) => <InternalProportion key={idx} data={d[0]} />) }
+            { /* pass max number of lines to sentences chart to visualise the difference in number of lines spoken in each episode */ }
+            { datasets.map((d, idx) => <SentencesChart key={idx} data={d} index={idx} maxLines={d3.max(datasets.map(d => d.length))} />) }
+            { datasets.map((d, idx) => <Averages key={idx} data={d} />) }
+            { datasets.map((d, idx) => <InternalProportion key={idx} data={d} />) }
             { topNounDatasets.map((d, idx) => <TopNouns key={idx} topNounData={d[0]} />) }
         </>
     );

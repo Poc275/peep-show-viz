@@ -2,10 +2,11 @@ import React, { useEffect, useRef } from "react";
 import * as d3 from "d3";
 // import * as d3Annotation from "d3-svg-annotation";
 import ReferenceData from "../../reference/ReferenceData";
+import { min } from "lodash";
 
-function SentencesChart(sentenceData) {
+function SentencesChart(props) {
     const chart = useRef(null);
-    const { data, index } = sentenceData;
+    const { data, index, maxLines } = props;
     const speaker = index % 2 === 0 ? "Mark" : "Jeremy";
     const episode = Math.floor((index / 2) + 1);
 
@@ -33,15 +34,17 @@ function SentencesChart(sentenceData) {
                 .domain([0, d3.max(data, d => d.NumWords)])
                 .range([0, width]);
 
+            // range of indices for the y scale
             const range = [];
+            // each episode will have a different starting index, so get that first
             const minIdx = d3.min(data, d => d.index);
-            for(let i = minIdx; i <= minIdx + 293; i++) {
+            // set scale to the longest number of lines spoken throughout the series
+            // this way we can also visualise how who spoke the most lines per episode
+            for(let i = minIdx; i <= minIdx + maxLines; i++) {
                 range.push(i);
             }
 
-            // y axis (293 is largest num of words spoken)
             const y = d3.scaleBand()
-                // .domain(data.map(d => d.index))
                 .domain(range)
                 .range([0, height]);
                 // .padding(6);
@@ -70,8 +73,8 @@ function SentencesChart(sentenceData) {
                     .attr("y", d => y(d.index))
                     .attr("width", 0)
                     // .attr("width", d => x(d.NumWords))
-                    .attr("height", y.step())
-                    // .attr("height", 2)
+                    .attr("height", y.step() * 0.8)
+                    // .attr("height", 4)
                     .attr("class", "num-words-bar")
                     .attr("id", (d, i) => `sentence-${d.index}`)
                     .attr("fill", d => d.Internal ? "tomato" : "dodgerblue")
