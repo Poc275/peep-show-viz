@@ -5,9 +5,9 @@ const SentenceAnnotations = function() {
         // index 1 = internal vs external ratio annotations
         // index 2 = top noun annotations
         [
-            "So for example, Mark's average sentence length was 6 words during the first episode and likewise for Jez.",
+            "So for example, Mark's average sentence length was 6 words during the first episode and likewise for Jez. In fact this holds pretty much throughout except for episodes 4 and 5 where Mark's average drops to 5. So much for him being the more learned of the two.",
             "We see for the very first episode Mark nearly had a 50/50 split internal vs external but this tapered off during the series. In contrast Jez started with very few internal lines, but this increased as the series progressed.",
-            "Cancer is mentioned a lot during episode 1 as an argument ensues over the doctor's name for Toni's sister. You can see which episode Johnson makes his grand first appearance. In the final episode we see a lot of soul searching going on as Jez contemplates his own existence after Uncle Ray passes away."
+            "Cancer is mentioned a lot during episode 1 as an argument ensues over the doctor's name for Toni's sister. You can see which episode Johnson makes his grand first appearance and in the final episode we see a lot of soul searching going on as Jez contemplates his own existence after Uncle Ray passes away."
         ],
         [""],
         [""],
@@ -49,7 +49,7 @@ const SentenceAnnotations = function() {
             index: 236,
             internal: false,
             audio: "ira.mp3",
-            annotation: "Here's Jez trying and failing to join in with a political debate between Mark and Johnson:",
+            annotation: "Here's Jez trying, and failing, to join in with a political debate between Mark and Johnson:",
             line: "What I mean is that they should be more honest. I mean, at least Tony Adams from the IRA, he's like \"Yeah, I shoot people. I like shooting people.\" You know, if they were more honest, then maybe people would vote and not switch straight over when the news comes on.",
         },
         {
@@ -57,7 +57,7 @@ const SentenceAnnotations = function() {
             index: 838,
             internal: true,
             audio: "gay.mp3",
-            annotation: "Noticeable are the episodes with more shorter bars because of an extra long line outlier. Here Mark performs an experiment to see if he really does fancy Johnson:",
+            annotation: "Noticeable are the episodes with more shorter bars because of an extra long outlier. Here Mark performs an experiment to see if he really does fancy Johnson:",
             line: "Good old unfriendly Mr Patel. Never says a word... whether you're buying cornflakes, fabric softener, or gay porn. So here we go, watch without prejudice. I'm just testing the water. I'm a sexual scientist. So OK, I'm keeping in trim. This is fine. Typical evening in, Johnson's doing the spreadsheet. There's nothing to be afraid of. It was very popular with the Romans and they got a lot done. How's it going Johnson? Haha, so quick. Yeah, some good kissing. Maybe I'm just bi-curious? What if that actually was Johnson, would that make me hotter? What about if he had Sophie's face? Or Sophie's body with Johnson's face. Mum, dad, I'm bi-curious. Yeah right, the bum. Nothing wrong with the bum. Ah! That's a little too rich for me! I just don't know!",
         },
         {
