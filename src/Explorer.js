@@ -104,7 +104,7 @@ function Explorer() {
             // debug: true,
         })
         .onStepEnter((res) => {
-            console.log(res);
+            // console.log(res);
             const scrolledDataStep = res.element.dataset.step;
             const trigger = res.element.dataset.trigger;
             step.classed("is-active", (d, i) => i === res.index);

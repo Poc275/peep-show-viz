@@ -103,10 +103,18 @@ figure {
 }
 
 
+/* Sound Clip styles - TODO: move to SentenceAnnotation style */
 .sound-clip {
-    background-color: dodgerblue;
     padding: 3px 0;
     line-height: 2;
+}
+
+.sound-clip.external {
+    background-color: dodgerblue;
+}
+
+.sound-clip.internal {
+    background-color: tomato;
 }
 
 .sound-clip-control {

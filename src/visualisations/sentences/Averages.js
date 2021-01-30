@@ -4,7 +4,6 @@ import * as d3 from "d3";
 function Averages(props) {
     const chart = useRef(null);
     const { data } = props;
-    // console.log(data);
 
     // initialise viz hook
     useEffect(() => {
@@ -23,9 +22,10 @@ function Averages(props) {
                 .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
         if(data) {
-            const average = Math.round(d3.mean(data, d => d.NumWords));
+            // data is a number representing the average number of words per sentence
+            // make a range between 1 and this number for a band scale
             const averageData = [];
-            for(let i = 1; i <= average; i++) {
+            for(let i = 1; i <= data; i++) {
                 averageData.push({
                     idx: i
                 });

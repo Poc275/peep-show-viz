@@ -27,8 +27,14 @@ function SentenceAnnotation(props) {
                     .attr("width", delta);
 
                 // linear gradient progress bar on text
-                d3.select(`#sound-clip-${annotation.index}`)
-                    .style('background', 'linear-gradient(to right, rgb(30,144,255)' + ' ' + percent + '%,' + 'rgba(30,144,255,0.5)' + ' ' + (percent + 0.5) + '%)');
+                // switch bg colour depending on internal/external line
+                if(annotation.internal) {
+                    d3.select(`#sound-clip-${annotation.index}`)
+                        .style('background', 'linear-gradient(to right, rgb(255,99,71)' + ' ' + percent + '%,' + 'rgba(255,99,71,0.5)' + ' ' + (percent + 0.5) + '%)');
+                } else {
+                    d3.select(`#sound-clip-${annotation.index}`)
+                        .style('background', 'linear-gradient(to right, rgb(30,144,255)' + ' ' + percent + '%,' + 'rgba(30,144,255,0.5)' + ' ' + (percent + 0.5) + '%)');
+                }
                 
                 if (audioElement.currentTime === audioElement.duration) {
                     clearInterval(intervalId);
@@ -43,10 +49,10 @@ function SentenceAnnotation(props) {
             <p>{annotation.annotation}</p>
 
             <p>
-                <span className="sound-clip" id={`sound-clip-${annotation.index}`}>
+                <span className={`sound-clip ${annotation.internal ? "internal" : "external"}`} id={`sound-clip-${annotation.index}`}>
                     <span className="sound-clip-control" onClick={playAudio}>
                         { isPlaying ? " ❙❙ " : " ▶ " }
-                    </span>{annotation.sentence}
+                    </span>{annotation.line}
                 </span>
             </p>
         </>
