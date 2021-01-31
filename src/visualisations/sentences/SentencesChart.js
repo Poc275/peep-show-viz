@@ -1,10 +1,11 @@
 import React, { useEffect, useRef } from "react";
+import { useParams } from "react-router-dom";
 import * as d3 from "d3";
 // import * as d3Annotation from "d3-svg-annotation";
 import ReferenceData from "../../reference/ReferenceData";
-import { min } from "lodash";
 
 function SentencesChart(props) {
+    const { series } = useParams();
     const chart = useRef(null);
     const { data, index, maxLines } = props;
     const speaker = index % 2 === 0 ? "Mark" : "Jeremy";
@@ -104,7 +105,7 @@ function SentencesChart(props) {
                 .attr('dy', '1.5em')
                 .style('font-size', '0.6em')
                 .style('fill', '#555')
-                .text(`${referenceData.episodeTitles[episode - 1]}`);
+                .text(`${referenceData.episodeTitles[series][episode - 1]}`);
         }
 
         // effect cleanup function

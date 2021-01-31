@@ -13,7 +13,7 @@ function Averages(props) {
             bottom: 0, 
             left: 50
         };
-        const height = 40 - margin.top - margin.bottom;
+        const height = 60 - margin.top - margin.bottom;
         const width = 100 - margin.left - margin.right;
         const svg = d3.select(chart.current)
             .attr("width", width + margin.left + margin.right)
@@ -37,7 +37,8 @@ function Averages(props) {
                 .range([0, width]);
 
             const y = d3.scaleBand()
-                .domain([1, 2, 3, 4, 5, 6])
+                // .domain(averageData.map(d => d.idx))
+                .domain([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
                 .range([height, 0]);
 
             // append axes

@@ -65,9 +65,9 @@ function Sentences() {
             });
         }
         
-        fetchSentenceData(`${process.env.PUBLIC_URL}/data/sentences/lines-s${series}.csv`);
-        fetchTopNounData(`${process.env.PUBLIC_URL}/data/sentences/top-nouns-s${series}.json`);
-        fetchAverageSentenceLengthData(`${process.env.PUBLIC_URL}/data/sentences/ave-sentence-length-s${series}.json`);
+        fetchSentenceData(`${process.env.PUBLIC_URL}/data/sentences/s${series}-lines.csv`);
+        fetchTopNounData(`${process.env.PUBLIC_URL}/data/sentences/s${series}-top-nouns.json`);
+        fetchAverageSentenceLengthData(`${process.env.PUBLIC_URL}/data/sentences/s${series}-ave-sentence-length.json`);
     }, [series]);
 
     return (
