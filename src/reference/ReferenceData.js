@@ -59,6 +59,10 @@ const ReferenceData = function() {
         },
     ];
 
+    this.sentimentAnnotations = [
+        "We can see the majority of sentences are fairly neutral in sentiment from the clustering in the centre. "
+    ];
+
     this.seriesColours = [
         "#0C662D",
         "#005E8D",
@@ -156,6 +160,29 @@ const ReferenceData = function() {
             "Kid Farm",
             "Are We Going To Be Alright?"
         ]
+    };
+
+    this.characterColours = {
+        "Mark": "#005E8D",
+        "Jeremy": "#0C662D",
+        "Sophie": "#A9251E",
+        "Boys": "#111111",
+        "TV": "#555555",
+        "Toni": "#29AB87",
+        "Super Hans": "#882373",
+        "Paula": "#AC0C59",
+        "Barry": "#777777",
+        "Others": "#333333",
+        "Jeff": "#5147BB",
+        "Barbara": "#b2df8a",
+        "Valerie": "#ffff99",
+        "Tony": "#fb9a99",
+        "Johnson": "#F07122",
+        "Therapist": "#150B41",
+        "Band Member": "#333333",
+        "Ray": "#666666",
+        "Nurse": "#cab2d6",
+        "Paramedic": "#222222",
     };
 }
 

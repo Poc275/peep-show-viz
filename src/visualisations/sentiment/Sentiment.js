@@ -67,12 +67,12 @@ function Sentiment() {
     useEffect(() => {
         const margin = {
             top: 20,
-            right: 30,
+            right: 60,
             bottom: 50,
-            left: 200
+            left: 150
         };
-        const height = 800;
-        const width = 600;
+        const height = 850;
+        const width = 1100;
         const svg = d3.select(chart.current)
             .attr("width", width + margin.left + margin.right)
             .attr("height", height + margin.top + margin.bottom)
@@ -88,8 +88,8 @@ function Sentiment() {
 
             const x = d3.scaleBand()
                 .domain([1, 2, 3, 4, 5, 6])
-                .range([0, width]);
-                // .paddingInner(40);
+                .range([0, width])
+                .paddingInner(10);
 
             const y = d3.scaleLinear()
                 .domain([1, -1])
@@ -101,7 +101,7 @@ function Sentiment() {
             // draw axes
             const xAxisDraw = d3.axisBottom(x)
                 // .tickFormat((d, i) => `Episode ${i + 1}`)
-                .tickFormat((d, i) => referenceData.episodeTitles[i])
+                .tickFormat((d, i) => referenceData.episodeTitles[i + 1][i])
                 .tickPadding(20)
                 .tickSize(-height)
                 .tickSizeOuter(0);
@@ -136,24 +136,40 @@ function Sentiment() {
 
             // mouse handlers
             const mouseover = (event, data) => {
+                console.log(event);
+                console.log(data);
+
+                const speaker = data.speaker.replace(' ', '-').toLowerCase();
                 const tip = d3.select(".tooltip");
 
-                tip.style("left", `${event.offsetX + 15}px`)
-                    .style("top", `${event.offsetY}px`)
-                    .transition()
-                    .style("opacity", 0.8);
+                // work out position for tooltip so it doesn't venture off screen
+                const xPos = data.episode === 6 ? event.offsetX + 400 : event.clientX;
+                const yPos = event.clientY > 700 ? event.clientY - 300 : event.clientY;
+                console.log(yPos);
 
-                tip.html(data.sentence);
+                tip.style("left", `${xPos}px`)
+                    .style("top", `${yPos}px`)
+                    .style("border-top", `60px solid ${referenceData.characterColours[data.speaker]}`)
+                    .transition()
+                    .style("opacity", 0.9);
+
+                tip.select(".tooltip-avatar").style("background-image", `url('${process.env.PUBLIC_URL}/avatars/${speaker}.jpg')`);
+
+                tip.select(".tooltip-text").html(data.sentence);
 
                 // highlight all sentences by that person
-                svg.selectAll(`.sentiment-circle.${data.speaker.replace(' ', '-').toLowerCase()}`)
+                svg.selectAll(`.sentiment-circle.${speaker}`)
                     .style("fill", "#f00");
             };
 
-            const mousemove = (event) => {
+            const mousemove = (event, data) => {
+                // work out position for tooltip so it doesn't venture off screen
+                const xPos = data.episode === 6 ? event.offsetX + 400 : event.clientX;
+                const yPos = event.clientY > 700 ? event.clientY - 300 : event.clientY;
+
                 d3.select(".tooltip")
-                    .style("left", `${event.offsetX + 15}px`)
-                    .style("top", `${event.offsetY}px`);
+                    .style("left", `${xPos}px`)
+                    .style("top", `${yPos}px`);
             };
               
             const mouseout = (event, data) => {
@@ -162,7 +178,7 @@ function Sentiment() {
                     .style("opacity", 0);
 
                 svg.selectAll(`.sentiment-circle.${data.speaker.replace(' ', '-').toLowerCase()}`)
-                    .style("fill", "#69b3a2");
+                    .style("fill", referenceData.seriesColours[series]);
             };
 
             // simulation - adds x and y attributes to the data
@@ -188,7 +204,7 @@ function Sentiment() {
                 .attr("r", d => Math.sqrt(d.length * fudgeFactor))
                 .attr("class", d => `sentiment-circle ${d.speaker.replace(' ', '-').toLowerCase()}`)
                 // .attr("class", "sentiment-circle")
-                .style("fill", "#69b3a2")
+                .style("fill", referenceData.seriesColours[series])
                 .on("mouseover", mouseover)
                 .on("mousemove", mousemove)
                 .on("mouseout", mouseout);
@@ -258,7 +274,11 @@ function Sentiment() {
             <svg ref={chart}></svg>
             <button id="groupDataBtn" onClick={showGroupedData} disabled={!finished}>Group Data</button>
             {/* <p>{finished ? "Simulation finished" : "Simulation running"}</p> */}
-            <div className="tooltip"></div>
+            <div className="tooltip">
+                {/* <img src="" alt="character avatar" className="tooltip-avatar" /> */}
+                <div className="tooltip-avatar"></div>
+                <p className="tooltip-text"></p>
+            </div>
         </>
     );
 }

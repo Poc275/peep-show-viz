@@ -36,6 +36,8 @@ function Explorer() {
     const [sentenceAnnotations, setSentenceAnnotations] = useState("");
     const [audioAnnotations, setAudioAnnotations] = useState([]);
 
+    const [sentimentAnnotations, setSentimentAnnotations] = useState("");
+
     const { series } = useParams();
 
     // annotations hook
@@ -47,6 +49,8 @@ function Explorer() {
 
         setSentenceAnnotations(sentenceAnnotationsData.sentenceAnnotations[series - 1]);
         setAudioAnnotations(sentenceAnnotationsData.audioAnnotations.filter(a => a.series === series));
+
+        setSentimentAnnotations(referenceData.sentimentAnnotations[series - 1]);
     }, [series]);
 
     const getVisualisation = (idx) => {
@@ -329,33 +333,18 @@ function Explorer() {
                         })
                     }
 
-                    {/* <div className="step" data-step="5" data-trigger="sentence-one"> */}
-                        {/* <p>This one is during Jeremy's interview at JLB where he tries to come across as 
-                            an unemployable freak so as "not to accidentally get the bugger":</p> */}
-
-                        {/* <p>
-                            <span className="sound-clip">
-                                <span className="sound-clip-control" onClick={playAudio}>
-                                    { isPlaying ? " ❙ ❙ " : " ▶ " }
-                                </span>Right you are. I might wobble a bit because I'm still a bit pissed from last night you see, and I don't want to get your hopes up 
-                                too much 'cause I have to say, I'm only really here because, you know...
-                            </span>
-                        </p> */}
-                    {/* </div> */}
-
-                    {/* <div className="step" data-step="5" data-trigger="sentence-two">
-                        <p>This is Jez's "Enya" speech during Uncle Ray's funeral.</p>
-                    </div> */}
-
-
-
-
+                    { /* Sentiment Analysis */}
                     <div className="step" data-step="6">
                         <h1>Sentiment</h1>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>Let us delve further in to see if we can deduce a sentiment behind the lines. Is Mark always angry and anxious? Is Jez always too laid back? Let us find out.</p>
+                        <p>Each bubble represents a sentence from the script, where the size of the bubble represents the number of words in the sentence. The bubbles are positioned by episode 
+                            and by sentiment, ranging from a positive sentiment at the top, to negative at the bottom.
+                        </p>
+                        <p>{sentimentAnnotations}</p>
                     </div>
+
+
+
 
                     <div className="step" data-step="7">
                         <h1>Stats</h1>
