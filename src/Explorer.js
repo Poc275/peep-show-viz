@@ -37,6 +37,7 @@ function Explorer() {
     const [audioAnnotations, setAudioAnnotations] = useState([]);
 
     const [sentimentAnnotations, setSentimentAnnotations] = useState("");
+    const [sentimentSelectedCharacter, setSentimentSelectedCharacter] = useState("Mark");
 
     const { series } = useParams();
 
@@ -200,6 +201,20 @@ function Explorer() {
                         });
                     break;
 
+                case "mark-sentiment":
+                    // highlight Mark's sentence bubbles
+                    d3.selectAll(".sentiment-circle")
+                        .transition()
+                        .duration(500)
+                        .style("opacity", 0.25);
+
+                    d3.selectAll(".sentiment-circle.mark")
+                        .classed("focus", true)
+                        .transition()
+                        .duration(500)
+                        .style("opacity", 1);
+                    break;
+
             }
         });
 
@@ -221,6 +236,29 @@ function Explorer() {
         handleResize();
         window.addEventListener("resize", handleResize);
     }, [audioAnnotations]);
+
+    // character selection change in sentiment viz
+    useEffect(() => {
+        d3.selectAll(".sentiment-circle")
+            .transition()
+            .duration(500)
+            .style("opacity", 0.25);
+
+        d3.selectAll(`.sentiment-circle.${sentimentSelectedCharacter.replace(' ', '-').toLowerCase()}`)
+            .classed("focus", true)
+            .transition()
+            .duration(500)
+            .style("opacity", 1);
+
+    }, [sentimentSelectedCharacter]);
+
+    const filterSentimentBubbles = (e) => {
+        setSentimentSelectedCharacter(e.target.dataset.character);
+        // remove selected class from previous selection and add to current
+        const elements = document.getElementsByClassName("sentiment-avatar");
+        Array.prototype.forEach.call(elements, el => el.classList.remove("selected"));
+        e.target.classList.add("selected");
+    };
 
     return (
         <main>
@@ -336,11 +374,27 @@ function Explorer() {
                     { /* Sentiment Analysis */}
                     <div className="step" data-step="6">
                         <h1>Sentiment</h1>
-                        <p>Let us delve further in to see if we can deduce a sentiment behind the lines. Is Mark always angry and anxious? Is Jez always too laid back? Let us find out.</p>
-                        <p>Each bubble represents a sentence from the script, where the size of the bubble represents the number of words in the sentence. The bubbles are positioned by episode 
-                            and by sentiment, ranging from a positive sentiment at the top, to negative at the bottom.
+                        <p>Now let's delve a level deeper by breaking the lines down into individual sentences.</p>
+                        <p>Each bubble represents a sentence from the script, where the size of the bubble represents the number of words in the sentence. Sentiment analysis has 
+                            been performed on each sentence and positioned ranging from a positive sentiment at the top, to a negative sentiment at the bottom.
                         </p>
-                        <p>{sentimentAnnotations}</p>
+                        <p>Hover over the bubbles to see the sentence info. It also highlights all of the sentences spoken by that particular character.</p>
+                    </div>
+
+                    <div className="step" data-step="6" data-trigger="mark-sentiment">
+                        {/* <p>{sentimentAnnotations}</p> */}
+                        <p>Here we have highlighted just Mark's sentences. As you can see it is hard to infer an overall sentiment. This is especially true for 
+                            the main characters as we watch their journey through life and the wide gamut of emotions that come with it.
+                        </p>
+                        <p>Feel free to highlight other characters below and see if you can deduce an overall positive or negative sentiment.</p>
+                        {
+                            referenceData.seriesCharacters[series - 1].map(c => 
+                                <div className={c === "Mark" ? "sentiment-avatar selected" : "sentiment-avatar"} data-character={c} 
+                                     style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/avatars/${c.replace(' ', '-').toLowerCase()}.jpg)` }}
+                                     onClick={filterSentimentBubbles}>
+                                </div>
+                            )
+                        }
                     </div>
 
 

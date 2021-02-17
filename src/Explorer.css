@@ -120,3 +120,21 @@ figure {
 .sound-clip-control {
     cursor: pointer;
 }
+
+/* sentiment section styles */
+.sentiment-avatar {
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: inline-block;
+    border-radius: 60px;
+    margin: 5px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.sentiment-avatar.selected {
+    border: 3px solid #f00;
+}

@@ -184,6 +184,11 @@ const ReferenceData = function() {
         "Nurse": "#cab2d6",
         "Paramedic": "#222222",
     };
+
+    this.seriesCharacters = [
+        ["Mark", "Jeremy", "Sophie", "Boys", "TV", "Toni", "Super Hans", "Paula", "Barry", "Others", "Jeff", "Barbara", "Valerie", "Tony", "Johnson", 
+            "Therapist", "Band Member", "Ray", "Nurse", "Paramedic"],
+    ];
 }
 
 export default ReferenceData;

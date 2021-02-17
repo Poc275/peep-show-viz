@@ -13,6 +13,7 @@ function Sentiment() {
     const [svg, setSvg] = useState(null);
     const [x, setX] = useState(null);
     const [y, setY] = useState(null);
+    // const [yAxisDraw, setYAxisDraw] = useState(null);
     const [finished, setFinished] = useState(false);
     const schema = (d) => {
         return {
@@ -30,7 +31,7 @@ function Sentiment() {
             // vy: +d.vy,
             // vx: +d.vx
         }
-      };
+    };
 
     // fetch data hook
     useEffect(() => {
@@ -118,6 +119,8 @@ function Sentiment() {
                 // .tickSize(-width)
                 .tickSizeOuter(0);
 
+            // setYAxisDraw(() => yAxisDraw);
+
             svg.append("g")
                 .attr("class", "yaxis")
                 .attr("transform", `translate(${-margin.left / 2},0)`)
@@ -136,8 +139,8 @@ function Sentiment() {
 
             // mouse handlers
             const mouseover = (event, data) => {
-                console.log(event);
-                console.log(data);
+                // console.log(event);
+                // console.log(data);
 
                 const speaker = data.speaker.replace(' ', '-').toLowerCase();
                 const tip = d3.select(".tooltip");
@@ -145,7 +148,6 @@ function Sentiment() {
                 // work out position for tooltip so it doesn't venture off screen
                 const xPos = data.episode === 6 ? event.offsetX + 400 : event.clientX;
                 const yPos = event.clientY > 700 ? event.clientY - 300 : event.clientY;
-                console.log(yPos);
 
                 tip.style("left", `${xPos}px`)
                     .style("top", `${yPos}px`)
@@ -158,8 +160,18 @@ function Sentiment() {
                 tip.select(".tooltip-text").html(data.sentence);
 
                 // highlight all sentences by that person
-                svg.selectAll(`.sentiment-circle.${speaker}`)
-                    .style("fill", "#f00");
+                // unless we're in focus mode in which case we don't want to interfere with the current display
+                if(svg.selectAll(".sentiment-circle.focus").empty()) {
+                    svg.selectAll(".sentiment-circle")
+                        .transition()
+                        .duration(500)
+                        .style("opacity", 0.25);
+
+                    svg.selectAll(`.sentiment-circle.${speaker}`)
+                        .transition()
+                        .duration(500)
+                        .style("opacity", "1");
+                }
             };
 
             const mousemove = (event, data) => {
@@ -177,8 +189,14 @@ function Sentiment() {
                     .transition()
                     .style("opacity", 0);
 
-                svg.selectAll(`.sentiment-circle.${data.speaker.replace(' ', '-').toLowerCase()}`)
-                    .style("fill", referenceData.seriesColours[series]);
+                // re-highlight all elements if we're not in focus mode
+                // otherwise we can leave the display as is
+                if(svg.selectAll(".sentiment-circle.focus").empty()) {
+                    svg.selectAll(".sentiment-circle")
+                        .transition()
+                        .duration(500)
+                        .style("opacity", 1);
+                }
             };
 
             // simulation - adds x and y attributes to the data
@@ -219,16 +237,107 @@ function Sentiment() {
 
     const showGroupedData = (e) => {
         const t = d3.transition().duration(3000);
-        const collisionRad = 0.5;
+        const collisionRad = 1;
+        const fudgeFactor = 2;
+
+        // transition axis - decided to leave as is otherwise bubbles are cramped at the top of the screen
+        // const newDomain = d3.extent(groupedData, d => d.compound);
+        // console.log(newDomain);
+        // // const newY = d3.scaleLinear().domain([newDomain[1], newDomain[0]]).range([0, 850]);
+        // // setY(() => newY);
+        // y.domain([newDomain[1], newDomain[0]]);
+        // console.log(y(newDomain[0]));
+        // console.log(y(newDomain[1]));
+        // svg.select(".yaxis")
+        //     .transition()
+        //     .duration(2000)
+        //     .call(yAxisDraw);
+
+        // add defs for avatars
+        const patterns = svg.append("defs").selectAll("patterns")
+            .data(referenceData.seriesCharacters[series - 1])
+            .enter().append("pattern")
+            .attr("id", d => d.replace(' ', '-'))
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("gradientUnits", "userSpaceOnUse")
+            .attr("height", 40)
+            .attr("width", 40);
+
+        // append images to pattern defs
+        patterns.append("image")
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("height", 40)
+            .attr("width", 40)
+            .attr("xlink:href", d => `${process.env.PUBLIC_URL}/avatars/${d.replace(' ', '-').toLowerCase()}.jpg`);
 
         const ticked = (e) => {
             svg.selectAll(".sentiment-circle")
                 .transition()
                 // .ease(d3.easeCircle)
-                .delay((d, i) => i * 1)
+                // .delay((d, i) => i * 1)
                 .attr("cx", d => d.x)
                 .attr("cy", d => d.y);
                 // .style("fill", "#69b3a2");
+        };
+
+        const simulation = d3.forceSimulation(groupedData)
+                .velocityDecay(0.1)
+                .force("x", d3.forceX(d => x(d.episode)).strength(0.02))
+                .force("y", d3.forceY(d => y(d.compound)).strength(0.02))
+                .force("collide", d3.forceCollide().radius(d => 25).iterations(1))
+                .on("tick", ticked)
+                .tick(50);
+
+        // mouse handlers for grouped data
+        const mouseover = (event, data) => {
+            console.log(event);
+            console.log(data);
+
+            const speaker = data.speaker.replace(' ', '-').toLowerCase();
+            const tip = d3.select(".tooltip");
+
+            // work out position for tooltip so it doesn't venture off screen
+            const xPos = data.episode === 6 ? event.offsetX + 400 : event.clientX;
+            const yPos = event.clientY > 700 ? event.clientY - 300 : event.clientY;
+
+            const tooltipText = `<h2>${data.speaker}</h2><p>Average Sentiment<br />${data.compound.toFixed(2)}</p>`;
+
+            tip.style("left", `${xPos}px`)
+                .style("top", `${yPos}px`)
+                .style("border-top", `60px solid ${referenceData.characterColours[data.speaker]}`)
+                .transition()
+                .style("opacity", 0.9);
+
+            tip.select(".tooltip-avatar").style("background-image", `url('${process.env.PUBLIC_URL}/avatars/${speaker}.jpg')`);
+
+            tip.select(".tooltip-text").html(tooltipText);
+
+            // highlight all sentences by that person
+            svg.selectAll(`.sentiment-circle.${speaker}`)
+                .style("stroke", "#f00")
+                .style("stroke-width", 4);
+        };
+
+        const mousemove = (event, data) => {
+            // work out position for tooltip so it doesn't venture off screen
+            const xPos = data.episode === 6 ? event.offsetX + 400 : event.clientX;
+            const yPos = event.clientY > 700 ? event.clientY - 300 : event.clientY;
+
+            d3.select(".tooltip")
+                .style("left", `${xPos}px`)
+                .style("top", `${yPos}px`);
+        };
+          
+        const mouseout = (event, data) => {
+            d3.select(".tooltip")
+                .transition()
+                .style("opacity", 0);
+
+            svg.selectAll(`.sentiment-circle.${data.speaker.replace(' ', '-').toLowerCase()}`)
+                .style("stroke", d => referenceData.characterColours[d.speaker])
+                .style("stroke-width", 3);
         };
 
         svg.selectAll(".sentiment-circle")
@@ -239,34 +348,32 @@ function Sentiment() {
                         .attr("cx", d => x(d.episode))
                         .attr("cy", d => y(d.compound))
                         .attr("r", 20)
-                        .attr("class", "sentiment-circle")
-                        .style("fill", "#f00");
+                        .attr("class", d => `sentiment-circle ${d.speaker.replace(' ', '-').toLowerCase()}`)
+                        // .style("fill", "#f00");
+                        .style("fill", d => `url(#${d.speaker.replace(' ', '-')})`)
+                        .style("stroke", d => referenceData.characterColours[d.speaker])
+                        .style("stroke-width", 3)
+                        .on("mouseover", mouseover)
+                        .on("mousemove", mousemove)
+                        .on("mouseout", mouseout);
                 },
-                update => {                    
-                    update.style("fill", "brown")
+                // update => {
+                    // update.style("fill", "brown")
                         // .call(update => update.transition(t)
                         //     .delay((d, i) => i * 2)
                         //     .attr("cx", d => x(d.episode))
                         //     .attr("cy", d => y(d.compound))
                         //     .attr("r", 20))
                             // .style("fill", "#f00"));
-                },
-                // exit => { exit.transition(t).style("opacity", 0).remove(); }
-                exit => {
-                    exit.style("fill", "brown")
-                        .call(exit => exit.transition(t)
-                            .attr("cy", 30)
-                            .remove());
-                }
+                // },
+                exit => { exit.transition(t).style("opacity", 0).remove(); }
+                // exit => {
+                //     exit.style("fill", "brown")
+                //         .call(exit => exit.transition(t)
+                //             .attr("cy", 30)
+                //             .remove());
+                // }
             );
-
-        // const simulation = d3.forceSimulation(groupedData)
-        //     .velocityDecay(0.1)
-        //     .force("x", d3.forceX(d => x(d.episode)).strength(0.02))
-        //     .force("y", d3.forceY(d => y(d.compound)).strength(0.02))
-        //     .force("collide", d3.forceCollide().radius(20 + collisionRad).iterations(1))
-        //     .on("tick", ticked)
-        //     .on("end", setFinished(true));
     };
     
     return (
