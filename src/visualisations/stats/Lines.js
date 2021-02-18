@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import * as d3 from "d3";
+import chroma from "chroma-js";
 import ReferenceData from "../../reference/ReferenceData";
 
 function Lines() {
@@ -27,6 +28,9 @@ function Lines() {
     // initialise chart hook
     useEffect(() => {
         const referenceData = new ReferenceData();
+        const episodeTitles = Object.values(referenceData.episodeTitles).flatMap(x => x);
+        const seriesColour = referenceData.seriesColours[series];
+
         const margin = {
             top: 50,
             right: 100,
@@ -53,7 +57,7 @@ function Lines() {
 
             // draw axes
             const xAxisDraw = d3.axisBottom(x)
-                .tickFormat((d, i) => referenceData.episodeTitles[i]);
+                .tickFormat((d, i) => episodeTitles[i]);
                 // .tickPadding(20)
                 // .tickSize(-height)
                 // .tickSizeOuter(0);
@@ -104,7 +108,8 @@ function Lines() {
                 .attr("y1", d => y(d[0].NumLines))
                 .attr("y2", d => y(d[1].NumLines))
                 .style("fill", "none")
-                .style("stroke", d => d[0].Season === +series ? "#999" : "#333");
+                .style("stroke", d => d[0].Season === +series ? seriesColour : chroma(seriesColour).brighten().alpha(0.5).hex())
+                .style("stroke-width", 2);
         }
 
         // effect cleanup function

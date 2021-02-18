@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import * as d3 from "d3";
+import chroma from "chroma-js";
 import ReferenceData from "../../reference/ReferenceData";
 
 function Swears() {
@@ -27,6 +28,9 @@ function Swears() {
     // initialise chart hook
     useEffect(() => {
         const referenceData = new ReferenceData();
+        const episodeTitles = Object.values(referenceData.episodeTitles).flatMap(x => x);
+        const seriesColour = referenceData.seriesColours[series];
+
         const margin = {
             top: 50,
             right: 100,
@@ -53,7 +57,7 @@ function Swears() {
 
             // draw axes
             const xAxisDraw = d3.axisBottom(x)
-                .tickFormat((d, i) => referenceData.episodeTitles[i]);
+                .tickFormat((d, i) => episodeTitles[i]);
                 // .tickPadding(20)
                 // .tickSize(-height)
                 // .tickSizeOuter(0);
@@ -95,7 +99,7 @@ function Swears() {
                 .delay((d, i) => i * 20)
                 .attr("y", d => y(d.NumSwears))
                 .attr("height", d => height - y(d.NumSwears))
-                .style("fill", d => d.Season === +series ? "#999" : "#333");
+                .style("fill", d => d.Season === +series ? seriesColour : chroma(seriesColour).brighten().alpha(0.5).hex());
         }
 
         // effect cleanup function
