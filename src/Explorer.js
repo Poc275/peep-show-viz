@@ -36,6 +36,8 @@ function Explorer() {
     const [sentenceAnnotations, setSentenceAnnotations] = useState("");
     const [audioAnnotations, setAudioAnnotations] = useState([]);
 
+    // ref for the sentiment component (gives us access to its group function)
+    const sentimentRef = useRef();
     const [sentimentAnnotations, setSentimentAnnotations] = useState("");
     const [sentimentSelectedCharacter, setSentimentSelectedCharacter] = useState("Mark");
 
@@ -78,7 +80,7 @@ function Explorer() {
                 break;
 
             case 5:
-                component = <Sentiment />
+                component = <Sentiment ref={sentimentRef} />
                 break;
 
             case 6:
@@ -213,6 +215,12 @@ function Explorer() {
                         .transition()
                         .duration(500)
                         .style("opacity", 1);
+                    break;
+
+                case "sentiment-grouped":
+                    // now we can invoke the group function inside the Sentiment component 
+                    // thanks to the useRef/useImperativeHandle hooks
+                    sentimentRef.current.showGroupedData();
                     break;
 
             }
@@ -375,8 +383,8 @@ function Explorer() {
                     <div className="step" data-step="6">
                         <h1>Sentiment</h1>
                         <p>Now let's delve a level deeper by breaking the lines down into individual sentences.</p>
-                        <p>Each bubble represents a sentence from the script, where the size of the bubble represents the number of words in the sentence. Sentiment analysis has 
-                            been performed on each sentence and positioned ranging from a positive sentiment at the top, to a negative sentiment at the bottom.
+                        <p>Here, each bubble represents a sentence from the script, where the size of the bubble represents the number of words in the sentence. Sentiment analysis has 
+                            been performed on each sentence and the bubble positioned ranging from a positive sentiment at the top, to a negative sentiment at the bottom.
                         </p>
                         <p>Hover over the bubbles to see the sentence info. It also highlights all of the sentences spoken by that particular character.</p>
                     </div>
@@ -395,6 +403,10 @@ function Explorer() {
                                 </div>
                             )
                         }
+                    </div>
+
+                    <div className="step" data-step="6" data-trigger="sentiment-grouped">
+                        <p>Now let's group all of the sentences together by character and get an overall sentiment average. {sentimentAnnotations}</p>
                     </div>
 
 

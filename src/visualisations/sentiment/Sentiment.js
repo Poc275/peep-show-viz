@@ -1,10 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import * as d3 from "d3";
 import ReferenceData from "../../reference/ReferenceData";
 import "./Sentiment.css";
 
-function Sentiment() {
+// using forwardRef in order to gain access to the 'ref' object that is assigned using the 'ref' prop 
+// inside the Explorer component which will allow us to access functions in this component inside Explorer.
+const Sentiment = forwardRef((props, ref) => {
     const referenceData = new ReferenceData();
     const chart = useRef(null);
     const { series } = useParams();
@@ -235,159 +237,163 @@ function Sentiment() {
         }
     }, [data]);
 
-    const showGroupedData = (e) => {
-        const t = d3.transition().duration(3000);
-        const collisionRad = 1;
-        const fudgeFactor = 2;
+    // useImperativeHandle hook means the component will be extended with 
+    // whatever we return from the callback passed as the 2nd argument
+    useImperativeHandle(ref, () => ({
+        // we return our grouping functionality as this will be invoked 
+        // inside the Explorer component once it scrolls into place
+        showGroupedData() {
+            const t = d3.transition().duration(3000);
+            const collisionRad = 1;
+            const fudgeFactor = 2;
 
-        // transition axis - decided to leave as is otherwise bubbles are cramped at the top of the screen
-        // const newDomain = d3.extent(groupedData, d => d.compound);
-        // console.log(newDomain);
-        // // const newY = d3.scaleLinear().domain([newDomain[1], newDomain[0]]).range([0, 850]);
-        // // setY(() => newY);
-        // y.domain([newDomain[1], newDomain[0]]);
-        // console.log(y(newDomain[0]));
-        // console.log(y(newDomain[1]));
-        // svg.select(".yaxis")
-        //     .transition()
-        //     .duration(2000)
-        //     .call(yAxisDraw);
+            // transition axis - decided to leave as is otherwise bubbles are cramped at the top of the screen
+            // const newDomain = d3.extent(groupedData, d => d.compound);
+            // console.log(newDomain);
+            // // const newY = d3.scaleLinear().domain([newDomain[1], newDomain[0]]).range([0, 850]);
+            // // setY(() => newY);
+            // y.domain([newDomain[1], newDomain[0]]);
+            // console.log(y(newDomain[0]));
+            // console.log(y(newDomain[1]));
+            // svg.select(".yaxis")
+            //     .transition()
+            //     .duration(2000)
+            //     .call(yAxisDraw);
 
-        // add defs for avatars
-        const patterns = svg.append("defs").selectAll("patterns")
-            .data(referenceData.seriesCharacters[series - 1])
-            .enter().append("pattern")
-            .attr("id", d => d.replace(' ', '-'))
-            .attr("x", 0)
-            .attr("y", 0)
-            .attr("gradientUnits", "userSpaceOnUse")
-            .attr("height", 40)
-            .attr("width", 40);
+            // add defs for avatars
+            const patterns = svg.append("defs").selectAll("patterns")
+                .data(referenceData.seriesCharacters[series - 1])
+                .enter().append("pattern")
+                .attr("id", d => d.replace(' ', '-'))
+                .attr("x", 0)
+                .attr("y", 0)
+                .attr("gradientUnits", "userSpaceOnUse")
+                .attr("height", 40)
+                .attr("width", 40);
 
-        // append images to pattern defs
-        patterns.append("image")
-            .attr("x", 0)
-            .attr("y", 0)
-            .attr("height", 40)
-            .attr("width", 40)
-            .attr("xlink:href", d => `${process.env.PUBLIC_URL}/avatars/${d.replace(' ', '-').toLowerCase()}.jpg`);
+            // append images to pattern defs
+            patterns.append("image")
+                .attr("x", 0)
+                .attr("y", 0)
+                .attr("height", 40)
+                .attr("width", 40)
+                .attr("xlink:href", d => `${process.env.PUBLIC_URL}/avatars/${d.replace(' ', '-').toLowerCase()}.jpg`);
 
-        const ticked = (e) => {
+            const ticked = (e) => {
+                svg.selectAll(".sentiment-circle")
+                    .transition()
+                    // .ease(d3.easeCircle)
+                    // .delay((d, i) => i * 1)
+                    .attr("cx", d => d.x)
+                    .attr("cy", d => d.y);
+                    // .style("fill", "#69b3a2");
+            };
+
+            const simulation = d3.forceSimulation(groupedData)
+                    .velocityDecay(0.1)
+                    .force("x", d3.forceX(d => x(d.episode)).strength(0.02))
+                    .force("y", d3.forceY(d => y(d.compound)).strength(0.02))
+                    .force("collide", d3.forceCollide().radius(d => 25).iterations(1))
+                    .on("tick", ticked)
+                    .tick(50);
+
+            // mouse handlers for grouped data
+            const mouseover = (event, data) => {
+                // console.log(event);
+                // console.log(data);
+
+                const speaker = data.speaker.replace(' ', '-').toLowerCase();
+                const tip = d3.select(".tooltip");
+
+                // work out position for tooltip so it doesn't venture off screen
+                const xPos = data.episode === 6 ? event.offsetX + 400 : event.clientX;
+                const yPos = event.clientY > 700 ? event.clientY - 300 : event.clientY;
+
+                const tooltipText = `<h2>${data.speaker}</h2><p>Average Sentiment<br />${data.compound.toFixed(2)}</p>`;
+
+                tip.style("left", `${xPos}px`)
+                    .style("top", `${yPos}px`)
+                    .style("border-top", `60px solid ${referenceData.characterColours[data.speaker]}`)
+                    .transition()
+                    .style("opacity", 0.9);
+
+                tip.select(".tooltip-avatar").style("background-image", `url('${process.env.PUBLIC_URL}/avatars/${speaker}.jpg')`);
+
+                tip.select(".tooltip-text").html(tooltipText);
+
+                // highlight all sentences by that person
+                svg.selectAll(`.sentiment-circle.${speaker}`)
+                    .style("stroke", "#f00")
+                    .style("stroke-width", 4);
+            };
+
+            const mousemove = (event, data) => {
+                // work out position for tooltip so it doesn't venture off screen
+                const xPos = data.episode === 6 ? event.offsetX + 400 : event.clientX;
+                const yPos = event.clientY > 700 ? event.clientY - 300 : event.clientY;
+
+                d3.select(".tooltip")
+                    .style("left", `${xPos}px`)
+                    .style("top", `${yPos}px`);
+            };
+            
+            const mouseout = (event, data) => {
+                d3.select(".tooltip")
+                    .transition()
+                    .style("opacity", 0);
+
+                svg.selectAll(`.sentiment-circle.${data.speaker.replace(' ', '-').toLowerCase()}`)
+                    .style("stroke", d => referenceData.characterColours[d.speaker])
+                    .style("stroke-width", 3);
+            };
+
             svg.selectAll(".sentiment-circle")
-                .transition()
-                // .ease(d3.easeCircle)
-                // .delay((d, i) => i * 1)
-                .attr("cx", d => d.x)
-                .attr("cy", d => d.y);
-                // .style("fill", "#69b3a2");
-        };
-
-        const simulation = d3.forceSimulation(groupedData)
-                .velocityDecay(0.1)
-                .force("x", d3.forceX(d => x(d.episode)).strength(0.02))
-                .force("y", d3.forceY(d => y(d.compound)).strength(0.02))
-                .force("collide", d3.forceCollide().radius(d => 25).iterations(1))
-                .on("tick", ticked)
-                .tick(50);
-
-        // mouse handlers for grouped data
-        const mouseover = (event, data) => {
-            console.log(event);
-            console.log(data);
-
-            const speaker = data.speaker.replace(' ', '-').toLowerCase();
-            const tip = d3.select(".tooltip");
-
-            // work out position for tooltip so it doesn't venture off screen
-            const xPos = data.episode === 6 ? event.offsetX + 400 : event.clientX;
-            const yPos = event.clientY > 700 ? event.clientY - 300 : event.clientY;
-
-            const tooltipText = `<h2>${data.speaker}</h2><p>Average Sentiment<br />${data.compound.toFixed(2)}</p>`;
-
-            tip.style("left", `${xPos}px`)
-                .style("top", `${yPos}px`)
-                .style("border-top", `60px solid ${referenceData.characterColours[data.speaker]}`)
-                .transition()
-                .style("opacity", 0.9);
-
-            tip.select(".tooltip-avatar").style("background-image", `url('${process.env.PUBLIC_URL}/avatars/${speaker}.jpg')`);
-
-            tip.select(".tooltip-text").html(tooltipText);
-
-            // highlight all sentences by that person
-            svg.selectAll(`.sentiment-circle.${speaker}`)
-                .style("stroke", "#f00")
-                .style("stroke-width", 4);
-        };
-
-        const mousemove = (event, data) => {
-            // work out position for tooltip so it doesn't venture off screen
-            const xPos = data.episode === 6 ? event.offsetX + 400 : event.clientX;
-            const yPos = event.clientY > 700 ? event.clientY - 300 : event.clientY;
-
-            d3.select(".tooltip")
-                .style("left", `${xPos}px`)
-                .style("top", `${yPos}px`);
-        };
-          
-        const mouseout = (event, data) => {
-            d3.select(".tooltip")
-                .transition()
-                .style("opacity", 0);
-
-            svg.selectAll(`.sentiment-circle.${data.speaker.replace(' ', '-').toLowerCase()}`)
-                .style("stroke", d => referenceData.characterColours[d.speaker])
-                .style("stroke-width", 3);
-        };
-
-        svg.selectAll(".sentiment-circle")
-            .data(groupedData, d => d.id)
-            .join(
-                enter => {
-                    enter.append("circle")
-                        .attr("cx", d => x(d.episode))
-                        .attr("cy", d => y(d.compound))
-                        .attr("r", 20)
-                        .attr("class", d => `sentiment-circle ${d.speaker.replace(' ', '-').toLowerCase()}`)
-                        // .style("fill", "#f00");
-                        .style("fill", d => `url(#${d.speaker.replace(' ', '-')})`)
-                        .style("stroke", d => referenceData.characterColours[d.speaker])
-                        .style("stroke-width", 3)
-                        .on("mouseover", mouseover)
-                        .on("mousemove", mousemove)
-                        .on("mouseout", mouseout);
-                },
-                // update => {
-                    // update.style("fill", "brown")
-                        // .call(update => update.transition(t)
-                        //     .delay((d, i) => i * 2)
-                        //     .attr("cx", d => x(d.episode))
-                        //     .attr("cy", d => y(d.compound))
-                        //     .attr("r", 20))
-                            // .style("fill", "#f00"));
-                // },
-                exit => { exit.transition(t).style("opacity", 0).remove(); }
-                // exit => {
-                //     exit.style("fill", "brown")
-                //         .call(exit => exit.transition(t)
-                //             .attr("cy", 30)
-                //             .remove());
-                // }
-            );
-    };
+                .data(groupedData, d => d.id)
+                .join(
+                    enter => {
+                        enter.append("circle")
+                            .attr("cx", d => x(d.episode))
+                            .attr("cy", d => y(d.compound))
+                            .attr("r", 20)
+                            .attr("class", d => `sentiment-circle ${d.speaker.replace(' ', '-').toLowerCase()}`)
+                            // .style("fill", "#f00");
+                            .style("fill", d => `url(#${d.speaker.replace(' ', '-')})`)
+                            .style("stroke", d => referenceData.characterColours[d.speaker])
+                            .style("stroke-width", 3)
+                            .on("mouseover", mouseover)
+                            .on("mousemove", mousemove)
+                            .on("mouseout", mouseout);
+                    },
+                    // update => {
+                        // update.style("fill", "brown")
+                            // .call(update => update.transition(t)
+                            //     .delay((d, i) => i * 2)
+                            //     .attr("cx", d => x(d.episode))
+                            //     .attr("cy", d => y(d.compound))
+                            //     .attr("r", 20))
+                                // .style("fill", "#f00"));
+                    // },
+                    exit => { exit.transition(t).style("opacity", 0).remove(); }
+                    // exit => {
+                    //     exit.style("fill", "brown")
+                    //         .call(exit => exit.transition(t)
+                    //             .attr("cy", 30)
+                    //             .remove());
+                    // }
+                );
+        }
+    }));
     
     return (
         <>
             <svg ref={chart}></svg>
-            <button id="groupDataBtn" onClick={showGroupedData} disabled={!finished}>Group Data</button>
             {/* <p>{finished ? "Simulation finished" : "Simulation running"}</p> */}
             <div className="tooltip">
-                {/* <img src="" alt="character avatar" className="tooltip-avatar" /> */}
                 <div className="tooltip-avatar"></div>
                 <p className="tooltip-text"></p>
             </div>
         </>
     );
-}
+});
 
 export default Sentiment;
