@@ -42,7 +42,6 @@ const Sentiment = forwardRef((props, ref) => {
             // d3.json(url, schema).then(data => setData(data));
         }
         fetchSentimentData(`${process.env.PUBLIC_URL}/data/sentiment/S${series}_Sentiment.csv`);
-        // fetchSentimentData(`${process.env.PUBLIC_URL}/data/sentiment/sentiment-force-s${series}.json`);
     }, [series]);
 
     const groupData = () => {

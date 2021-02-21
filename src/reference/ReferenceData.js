@@ -179,11 +179,34 @@ const ReferenceData = function() {
         "Ray": "#666666",
         "Nurse": "#cab2d6",
         "Paramedic": "#222222",
+        "Dance Teacher": "#b5946e",
+        "Nancy": "#AC0C59",
+        "Gwyn": "#b2df8a",
+        "Gog": "#ffff99",
+        "Daryl": "#150B41",
+        "Security Guys": "#777777",
+        "Nim": "#cab2d6",
+        "April": "#8dd3c7",
+        "MacLeish": "#fb8072",
+        "Student": "#d9d9d9",
+        "Pete": "#b3de69",
+        "Karen": "#80b1d3",
+        "Sam": "#bc80bd",
+        "Registrar": "#222222",
     };
 
     this.seriesCharacters = [
         ["Mark", "Jeremy", "Sophie", "Boys", "TV", "Toni", "Super Hans", "Paula", "Barry", "Others", "Jeff", "Barbara", "Valerie", "Tony", "Johnson", 
             "Therapist", "Band member", "Ray", "Nurse", "Paramedic"],
+        ["Jeremy", "Mark", "Johnson", "Sophie", "Jeff", "Toni", "Tony", "Dance Teacher", "Others", "Nancy", "Gwyn", "Super Hans", "Gog", "Daryl", "Security Guys", 
+            "Nim", "April", "MacLeish", "Student", "Pete", "Karen", "Sam", "Registrar"], 
+        [],
+        [],
+        [],
+        [],
+        [],
+        [],
+        []
     ];
 }
 
