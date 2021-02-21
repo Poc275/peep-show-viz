@@ -15,14 +15,16 @@ import Sentences from "./visualisations/sentences/Sentences";
 import Sentiment from "./visualisations/sentiment/Sentiment";
 import Stats from "./visualisations/stats/Stats";
 import SentenceAnnotation from "./visualisations/sentences/SentenceAnnotation";
-
 import ReferenceData from "./reference/ReferenceData";
 import SentenceAnnotations from "./visualisations/sentences/SentenceAnnotations";
+import SentimentAnnotations from "./visualisations/sentiment/SentimentAnnotations";
 import "./Explorer.css";
+
 
 function Explorer() {
     const referenceData = new ReferenceData();
     const sentenceAnnotationsData = new SentenceAnnotations();
+    const sentimentAnnotationsData = new SentimentAnnotations();
 
     const [visualisation, setVisualisation] = useState(null);
     const [dataStep, setDataStep] = useState(0);
@@ -38,7 +40,7 @@ function Explorer() {
 
     // ref for the sentiment component (gives us access to its group function)
     const sentimentRef = useRef();
-    const [sentimentAnnotations, setSentimentAnnotations] = useState("");
+    // const [sentimentAnnotations, setSentimentAnnotations] = useState("");
     const [sentimentSelectedCharacter, setSentimentSelectedCharacter] = useState("Mark");
 
     const { series } = useParams();
@@ -53,7 +55,7 @@ function Explorer() {
         setSentenceAnnotations(sentenceAnnotationsData.sentenceAnnotations[series - 1]);
         setAudioAnnotations(sentenceAnnotationsData.audioAnnotations.filter(a => a.series === series));
 
-        setSentimentAnnotations(referenceData.sentimentAnnotations[series - 1]);
+        // setSentimentAnnotations(sentimentAnnotationsData.sentimentAnnotations[series - 1]);
     }, [series]);
 
     const getVisualisation = (idx) => {
@@ -395,18 +397,20 @@ function Explorer() {
                             the main characters as we watch their journey through life and the wide gamut of emotions that come with it.
                         </p>
                         <p>Feel free to highlight other characters below and see if you can deduce an overall positive or negative sentiment.</p>
-                        {
-                            referenceData.seriesCharacters[series - 1].map(c => 
-                                <div className={c === "Mark" ? "sentiment-avatar selected" : "sentiment-avatar"} data-character={c} 
-                                     style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/avatars/${c.replace(' ', '-').toLowerCase()}.jpg)` }}
-                                     onClick={filterSentimentBubbles}>
-                                </div>
-                            )
-                        }
+                        <div>
+                            {
+                                referenceData.seriesCharacters[series - 1].map(c => 
+                                    <div className={c === "Mark" ? "sentiment-avatar selected" : "sentiment-avatar"} data-character={c} 
+                                        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/avatars/${c.replace(' ', '-').toLowerCase()}.jpg)` }}
+                                        title={c} onClick={filterSentimentBubbles}>
+                                    </div>
+                                )
+                            }
+                        </div>
                     </div>
 
                     <div className="step" data-step="6" data-trigger="sentiment-grouped">
-                        <p>Now let's group all of the sentences together by character and get an overall sentiment average. {sentimentAnnotations}</p>
+                        <p>Now let's group all of the sentences together by character and get an overall sentiment average.</p>
                     </div>
 
 

@@ -104,7 +104,7 @@ const Sentiment = forwardRef((props, ref) => {
             // draw axes
             const xAxisDraw = d3.axisBottom(x)
                 // .tickFormat((d, i) => `Episode ${i + 1}`)
-                .tickFormat((d, i) => referenceData.episodeTitles[i + 1][i])
+                .tickFormat((d, i) => referenceData.episodeTitles[series][i])
                 .tickPadding(20)
                 .tickSize(-height)
                 .tickSizeOuter(0);
@@ -224,7 +224,7 @@ const Sentiment = forwardRef((props, ref) => {
                 .attr("r", d => Math.sqrt(d.length * fudgeFactor))
                 .attr("class", d => `sentiment-circle ${d.speaker.replace(' ', '-').toLowerCase()}`)
                 // .attr("class", "sentiment-circle")
-                .style("fill", referenceData.seriesColours[series])
+                .style("fill", referenceData.seriesColours[series - 1])
                 .on("mouseover", mouseover)
                 .on("mousemove", mousemove)
                 .on("mouseout", mouseout);

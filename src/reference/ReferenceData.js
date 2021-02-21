@@ -59,10 +59,6 @@ const ReferenceData = function() {
         },
     ];
 
-    this.sentimentAnnotations = [
-        "We can see the majority of sentences are fairly neutral in sentiment from the clustering in the centre. "
-    ];
-
     this.seriesColours = [
         "#0C662D",
         "#005E8D",
