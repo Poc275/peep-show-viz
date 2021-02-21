@@ -202,17 +202,17 @@ const Sentiment = forwardRef((props, ref) => {
             };
 
             // simulation - adds x and y attributes to the data
-            const collisionRad = 1;
+            const collisionRad = 5;
             const fudgeFactor = 2;
-            const simulation = d3.forceSimulation(data)
-                .velocityDecay(0.1)
+            d3.forceSimulation(data)
+                .velocityDecay(0.2)
                 .force("x", d3.forceX(d => x(d.episode)).strength(0.02))
                 .force("y", d3.forceY(d => y(d.compound)).strength(0.02))
-                .force("collide", d3.forceCollide().radius(d => Math.sqrt(d.length * fudgeFactor + collisionRad)).iterations(1))
+                .force("collide", d3.forceCollide().radius(d => Math.sqrt(d.length * fudgeFactor + collisionRad)))
                 .on("tick", ticked)
-                .on("end", setFinished(true))
+                .on("end", setFinished(true));
                 // .stop()
-                .tick(50);
+                // .tick(50);
 
             // draw circles
             svg.selectAll(".sentiment-circle")
@@ -243,7 +243,7 @@ const Sentiment = forwardRef((props, ref) => {
         // we return our grouping functionality as this will be invoked 
         // inside the Explorer component once it scrolls into place
         showGroupedData() {
-            const t = d3.transition().duration(3000);
+            const t = d3.transition().delay(1000).duration(3000);
             const collisionRad = 1;
             const fudgeFactor = 2;
 
@@ -289,13 +289,13 @@ const Sentiment = forwardRef((props, ref) => {
                     // .style("fill", "#69b3a2");
             };
 
-            const simulation = d3.forceSimulation(groupedData)
-                    .velocityDecay(0.1)
-                    .force("x", d3.forceX(d => x(d.episode)).strength(0.02))
-                    .force("y", d3.forceY(d => y(d.compound)).strength(0.02))
-                    .force("collide", d3.forceCollide().radius(d => 25).iterations(1))
-                    .on("tick", ticked)
-                    .tick(50);
+            d3.forceSimulation(groupedData)
+                .velocityDecay(0.1)
+                .force("x", d3.forceX(d => x(d.episode)).strength(0.02))
+                .force("y", d3.forceY(d => y(d.compound)).strength(0.02))
+                .force("collide", d3.forceCollide().radius(d => 25))
+                .on("tick", ticked)
+                .tick(70);
 
             // mouse handlers for grouped data
             const mouseover = (event, data) => {
@@ -364,21 +364,17 @@ const Sentiment = forwardRef((props, ref) => {
                             .on("mousemove", mousemove)
                             .on("mouseout", mouseout);
                     },
+                    update => { update.style("opacity", 0).remove() },
                     // update => {
-                        // update.style("fill", "brown")
-                            // .call(update => update.transition(t)
-                            //     .delay((d, i) => i * 2)
-                            //     .attr("cx", d => x(d.episode))
-                            //     .attr("cy", d => y(d.compound))
-                            //     .attr("r", 20))
-                                // .style("fill", "#f00"));
+                    //     update.call(update => update.transition(t)
+                    //         .style("opacity", 0)
+                    //         .remove());
                     // },
-                    exit => { exit.transition(t).style("opacity", 0).remove(); }
+                    exit => { exit.style("opacity", 0).remove() }
                     // exit => {
-                    //     exit.style("fill", "brown")
-                    //         .call(exit => exit.transition(t)
-                    //             .attr("cy", 30)
-                    //             .remove());
+                    //     exit.call(exit => exit.transition(t)
+                    //         .attr("opacity", 0)
+                    //         .remove());
                     // }
                 );
         }

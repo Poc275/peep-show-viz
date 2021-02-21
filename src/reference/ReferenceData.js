@@ -175,7 +175,7 @@ const ReferenceData = function() {
         "Tony": "#fb9a99",
         "Johnson": "#F07122",
         "Therapist": "#150B41",
-        "Band Member": "#333333",
+        "Band member": "#333333",
         "Ray": "#666666",
         "Nurse": "#cab2d6",
         "Paramedic": "#222222",
@@ -183,7 +183,7 @@ const ReferenceData = function() {
 
     this.seriesCharacters = [
         ["Mark", "Jeremy", "Sophie", "Boys", "TV", "Toni", "Super Hans", "Paula", "Barry", "Others", "Jeff", "Barbara", "Valerie", "Tony", "Johnson", 
-            "Therapist", "Band Member", "Ray", "Nurse", "Paramedic"],
+            "Therapist", "Band member", "Ray", "Nurse", "Paramedic"],
     ];
 }
 

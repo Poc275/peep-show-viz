@@ -40,7 +40,7 @@ function Explorer() {
 
     // ref for the sentiment component (gives us access to its group function)
     const sentimentRef = useRef();
-    // const [sentimentAnnotations, setSentimentAnnotations] = useState("");
+    const [sentimentAnnotations, setSentimentAnnotations] = useState("");
     const [sentimentSelectedCharacter, setSentimentSelectedCharacter] = useState("Mark");
 
     const { series } = useParams();
@@ -55,7 +55,7 @@ function Explorer() {
         setSentenceAnnotations(sentenceAnnotationsData.sentenceAnnotations[series - 1]);
         setAudioAnnotations(sentenceAnnotationsData.audioAnnotations.filter(a => a.series === series));
 
-        // setSentimentAnnotations(sentimentAnnotationsData.sentimentAnnotations[series - 1]);
+        setSentimentAnnotations(sentimentAnnotationsData.characterSentiments[series - 1]);
     }, [series]);
 
     const getVisualisation = (idx) => {
@@ -386,13 +386,13 @@ function Explorer() {
                         <h1>Sentiment</h1>
                         <p>Now let's delve a level deeper by breaking the lines down into individual sentences.</p>
                         <p>Here, each bubble represents a sentence from the script, where the size of the bubble represents the number of words in the sentence. Sentiment analysis has 
-                            been performed on each sentence and the bubble positioned ranging from a positive sentiment at the top, to a negative sentiment at the bottom.
+                            been performed on each sentence and the bubble positioned ranging from a positive sentiment at the top, to a negative sentiment at the bottom, staggered 
+                            to prevent any overlaps.
                         </p>
                         <p>Hover over the bubbles to see the sentence info. It also highlights all of the sentences spoken by that particular character.</p>
                     </div>
 
                     <div className="step" data-step="6" data-trigger="mark-sentiment">
-                        {/* <p>{sentimentAnnotations}</p> */}
                         <p>Here we have highlighted just Mark's sentences. As you can see it is hard to infer an overall sentiment. This is especially true for 
                             the main characters as we watch their journey through life and the wide gamut of emotions that come with it.
                         </p>
@@ -410,7 +410,7 @@ function Explorer() {
                     </div>
 
                     <div className="step" data-step="6" data-trigger="sentiment-grouped">
-                        <p>Now let's group all of the sentences together by character and get an overall sentiment average.</p>
+                        <p>Now let's group all of the sentences together by character and get an overall sentiment average. {sentimentAnnotations}</p>
                     </div>
 
 
