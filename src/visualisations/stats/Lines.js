@@ -29,7 +29,7 @@ function Lines() {
     useEffect(() => {
         const referenceData = new ReferenceData();
         const episodeTitles = Object.values(referenceData.episodeTitles).flatMap(x => x);
-        const seriesColour = referenceData.seriesColours[series];
+        const seriesColour = referenceData.seriesColours[series - 1];
 
         const margin = {
             top: 50,
