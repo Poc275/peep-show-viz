@@ -15,7 +15,7 @@ const Sentiment = forwardRef((props, ref) => {
     const [svg, setSvg] = useState(null);
     const [x, setX] = useState(null);
     const [y, setY] = useState(null);
-    // const [yAxisDraw, setYAxisDraw] = useState(null);
+    const [yAxisDraw, setYAxisDraw] = useState(null);
     const [finished, setFinished] = useState(false);
     const schema = (d) => {
         return {
@@ -28,10 +28,6 @@ const Sentiment = forwardRef((props, ref) => {
             episode: +d.episode,
             speaker: d.speaker,
             length: +d.length,
-            // x: +d.x,
-            // y: +d.y,
-            // vy: +d.vy,
-            // vx: +d.vx
         }
     };
 
@@ -39,7 +35,6 @@ const Sentiment = forwardRef((props, ref) => {
     useEffect(() => {
         async function fetchSentimentData(url) {
             d3.csv(url, schema).then(data => setData(data));
-            // d3.json(url, schema).then(data => setData(data));
         }
         fetchSentimentData(`${process.env.PUBLIC_URL}/data/sentiment/S${series}_Sentiment.csv`);
     }, [series]);
@@ -120,7 +115,7 @@ const Sentiment = forwardRef((props, ref) => {
                 // .tickSize(-width)
                 .tickSizeOuter(0);
 
-            // setYAxisDraw(() => yAxisDraw);
+            setYAxisDraw(() => yAxisDraw);
 
             svg.append("g")
                 .attr("class", "yaxis")
@@ -247,18 +242,18 @@ const Sentiment = forwardRef((props, ref) => {
                 const collisionRad = 1;
                 const fudgeFactor = 2;
 
-                // transition axis - decided to leave as is otherwise bubbles are cramped at the top of the screen
-                // const newDomain = d3.extent(groupedData, d => d.compound);
-                // console.log(newDomain);
-                // // const newY = d3.scaleLinear().domain([newDomain[1], newDomain[0]]).range([0, 850]);
-                // // setY(() => newY);
-                // y.domain([newDomain[1], newDomain[0]]);
-                // console.log(y(newDomain[0]));
-                // console.log(y(newDomain[1]));
-                // svg.select(".yaxis")
-                //     .transition()
-                //     .duration(2000)
-                //     .call(yAxisDraw);
+                // transition axis
+                // update y axis domain (add 10% to make sure bubbles don't get cropped)
+                const newDomain = d3.extent(groupedData, d => d.compound);
+                const min = newDomain[0] + newDomain[0] * 0.1;
+                const max = newDomain[1] + newDomain[1] * 0.1;
+                y.domain([max, min]);
+                // update tick value positions before redrawing
+                yAxisDraw.tickValues([max, 0, min]);
+                svg.select(".yaxis")
+                    .transition()
+                    .duration(2000)
+                    .call(yAxisDraw);
 
                 // add defs for avatars
                 const patterns = svg.append("defs").selectAll("patterns")
@@ -291,9 +286,9 @@ const Sentiment = forwardRef((props, ref) => {
 
                 d3.forceSimulation(groupedData)
                     .velocityDecay(0.1)
-                    .force("x", d3.forceX(d => x(d.episode)).strength(0.02))
-                    .force("y", d3.forceY(d => y(d.compound)).strength(0.02))
-                    .force("collide", d3.forceCollide().radius(d => 25))
+                    .force("x", d3.forceX(d => x(d.episode)).strength(0.2))
+                    .force("y", d3.forceY(d => y(d.compound)).strength(0.2))
+                    .force("collide", d3.forceCollide().radius(d => 21))
                     .on("tick", ticked)
                     .tick(70);
 
