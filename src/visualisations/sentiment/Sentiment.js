@@ -143,7 +143,7 @@ const Sentiment = forwardRef((props, ref) => {
                 // console.log(event);
                 // console.log(data);
 
-                const speaker = data.speaker.replace(' ', '-').toLowerCase();
+                const speaker = data.speaker.replaceAll(' ', '-').replace("'", "").toLowerCase();
                 const tip = d3.select(".tooltip");
 
                 // work out position for tooltip so it doesn't venture off screen
@@ -221,7 +221,7 @@ const Sentiment = forwardRef((props, ref) => {
                 .attr("cx", d => x(d.episode))
                 .attr("cy", d => y(d.compound))
                 .attr("r", d => Math.sqrt(d.length * fudgeFactor))
-                .attr("class", d => `sentiment-circle ${d.speaker.replace(' ', '-').toLowerCase()}`)
+                .attr("class", d => `sentiment-circle ${d.speaker.replaceAll(' ', '-').replace("'", "").toLowerCase()}`)
                 // .attr("class", "sentiment-circle")
                 .style("fill", referenceData.seriesColours[series - 1])
                 .on("mouseover", mouseover)
@@ -263,7 +263,7 @@ const Sentiment = forwardRef((props, ref) => {
             const patterns = svg.append("defs").selectAll("patterns")
                 .data(referenceData.seriesCharacters[series - 1])
                 .enter().append("pattern")
-                .attr("id", d => d.replace(' ', '-'))
+                .attr("id", d => d.replaceAll(' ', '-').replace("'", ""))
                 .attr("x", 0)
                 .attr("y", 0)
                 .attr("gradientUnits", "userSpaceOnUse")
@@ -276,7 +276,7 @@ const Sentiment = forwardRef((props, ref) => {
                 .attr("y", 0)
                 .attr("height", 40)
                 .attr("width", 40)
-                .attr("xlink:href", d => `${process.env.PUBLIC_URL}/avatars/${d.replace(' ', '-').toLowerCase()}.jpg`);
+                .attr("xlink:href", d => `${process.env.PUBLIC_URL}/avatars/${d.replaceAll(' ', '-').replace("'", "").toLowerCase()}.jpg`);
 
             const ticked = (e) => {
                 svg.selectAll(".sentiment-circle")
@@ -301,7 +301,7 @@ const Sentiment = forwardRef((props, ref) => {
                 // console.log(event);
                 // console.log(data);
 
-                const speaker = data.speaker.replace(' ', '-').toLowerCase();
+                const speaker = data.speaker.replaceAll(" ", "-").replace("'", "").toLowerCase();
                 const tip = d3.select(".tooltip");
 
                 // work out position for tooltip so it doesn't venture off screen
@@ -341,7 +341,7 @@ const Sentiment = forwardRef((props, ref) => {
                     .transition()
                     .style("opacity", 0);
 
-                svg.selectAll(`.sentiment-circle.${data.speaker.replace(' ', '-').toLowerCase()}`)
+                svg.selectAll(`.sentiment-circle.${data.speaker.replaceAll(' ', '-').replace("'", "").toLowerCase()}`)
                     .style("stroke", d => referenceData.characterColours[d.speaker])
                     .style("stroke-width", 3);
             };
@@ -354,9 +354,9 @@ const Sentiment = forwardRef((props, ref) => {
                             .attr("cx", d => x(d.episode))
                             .attr("cy", d => y(d.compound))
                             .attr("r", 20)
-                            .attr("class", d => `sentiment-circle ${d.speaker.replace(' ', '-').toLowerCase()}`)
+                            .attr("class", d => `sentiment-circle ${d.speaker.replaceAll(' ', '-').replace("'", "").toLowerCase()}`)
                             // .style("fill", "#f00");
-                            .style("fill", d => `url(#${d.speaker.replace(' ', '-')})`)
+                            .style("fill", d => `url(#${d.speaker.replaceAll(' ', '-').replace("'", "")})`)
                             .style("stroke", d => referenceData.characterColours[d.speaker])
                             .style("stroke-width", 3)
                             .on("mouseover", mouseover)

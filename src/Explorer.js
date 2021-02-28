@@ -254,7 +254,7 @@ function Explorer() {
             .duration(500)
             .style("opacity", 0.25);
 
-        d3.selectAll(`.sentiment-circle.${sentimentSelectedCharacter.replace(' ', '-').toLowerCase()}`)
+        d3.selectAll(`.sentiment-circle.${sentimentSelectedCharacter.replaceAll(' ', '-').replace("'", "").toLowerCase()}`)
             .classed("focus", true)
             .transition()
             .duration(500)
@@ -401,7 +401,7 @@ function Explorer() {
                             {
                                 referenceData.seriesCharacters[series - 1].map(c => 
                                     <div className={c === "Mark" ? "sentiment-avatar selected" : "sentiment-avatar"} data-character={c} 
-                                        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/avatars/${c.replace(' ', '-').toLowerCase()}.jpg)` }}
+                                        style={{ backgroundImage: `url(${process.env.PUBLIC_URL}/avatars/${c.replaceAll(' ', '-').replace("'", "").toLowerCase()}.jpg)` }}
                                         title={c} onClick={filterSentimentBubbles}>
                                     </div>
                                 )
