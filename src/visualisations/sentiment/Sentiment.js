@@ -1,6 +1,7 @@
 import React, { forwardRef, useEffect, useImperativeHandle, useRef, useState } from "react";
 import { useParams } from "react-router-dom";
 import * as d3 from "d3";
+import chroma from "chroma-js";
 import ReferenceData from "../../reference/ReferenceData";
 import "./Sentiment.css";
 
@@ -282,7 +283,46 @@ const Sentiment = forwardRef((props, ref) => {
                         .attr("cx", d => d.x)
                         .attr("cy", d => d.y);
                         // .style("fill", "#69b3a2");
+
+                    // remember to update connector lines as well!
+                    svg.selectAll(".sentiment-connector")
+                        .attr("x1", d => d[0].x)
+                        .attr("x2", d => d[1].x)
+                        .attr("y1", d => d[0].y)
+                        .attr("y2", d => d[1].y);
                 };
+
+                // function which draws lines between a characters average episode sentiment
+                const drawLines = () => {
+                    const speakerGroups = d3.group(groupedData, d => d.speaker);
+                    // ignore any speakers who only appeared in a single episode
+                    for(let speaker of speakerGroups.keys()) {
+                        if(speakerGroups.get(speaker).length === 1) {
+                            speakerGroups.delete(speaker);
+                        }
+                    }
+
+                    // pair data for lines
+                    const dataset = [];
+                    for(let speaker of speakerGroups.keys()) {
+                        const data = speakerGroups.get(speaker);
+                        const pairedData = d3.pairs(data);
+                        dataset.push(pairedData);
+                    }
+
+                    svg.selectAll(".sentiment-connector")
+                        .data(dataset.flatMap(el => el))
+                        .enter()
+                        .append("line")
+                        .attr("class", d => `sentiment-connector ${d[0].speaker.replaceAll(' ', '-').replace("'", "").toLowerCase()}`)
+                        .attr("x1", d => d[0].x)
+                        .attr("x2", d => d[1].x)
+                        .attr("y1", d => d[0].y)
+                        .attr("y2", d => d[1].y)
+                        .style("fill", "none")
+                        .style("stroke", d => chroma(referenceData.characterColours[d[0].speaker]).alpha(0.25).hex())
+                        .style("stroke-width", 2);
+                }
 
                 d3.forceSimulation(groupedData)
                     .velocityDecay(0.1)
@@ -290,13 +330,11 @@ const Sentiment = forwardRef((props, ref) => {
                     .force("y", d3.forceY(d => y(d.compound)).strength(0.2))
                     .force("collide", d3.forceCollide().radius(d => 21))
                     .on("tick", ticked)
+                    .on("end", drawLines())
                     .tick(70);
 
                 // mouse handlers for grouped data
                 const mouseover = (event, data) => {
-                    // console.log(event);
-                    // console.log(data);
-
                     const speaker = data.speaker.replaceAll(" ", "-").replace("'", "").toLowerCase();
                     const tip = d3.select(".tooltip");
 
@@ -316,10 +354,21 @@ const Sentiment = forwardRef((props, ref) => {
 
                     tip.select(".tooltip-text").html(tooltipText);
 
-                    // highlight all sentences by that person
+                    // highlight this person
+                    svg.selectAll(".sentiment-circle")
+                        .transition()
+                        .style("opacity", 0.25);
+                    svg.selectAll('.sentiment-connector')
+                        .transition()
+                        .style("opacity", 0.25);
+
                     svg.selectAll(`.sentiment-circle.${speaker}`)
-                        .style("stroke", "#f00")
-                        .style("stroke-width", 4);
+                        .transition()
+                        .style("opacity", 1);
+                    svg.selectAll(`.sentiment-connector.${speaker}`)
+                        .transition()
+                        .style("stroke", d => chroma(referenceData.characterColours[d[0].speaker]).alpha(1).hex())
+                        .style("opacity", 1);
                 };
 
                 const mousemove = (event, data) => {
@@ -337,9 +386,14 @@ const Sentiment = forwardRef((props, ref) => {
                         .transition()
                         .style("opacity", 0);
 
-                    svg.selectAll(`.sentiment-circle.${data.speaker.replaceAll(' ', '-').replace("'", "").toLowerCase()}`)
-                        .style("stroke", d => referenceData.characterColours[d.speaker])
-                        .style("stroke-width", 3);
+                    svg.selectAll(".sentiment-circle")
+                        .transition()
+                        .style("opacity", 1);
+
+                    svg.selectAll(".sentiment-connector")
+                        .transition()
+                        .style("stroke", d => chroma(referenceData.characterColours[d[0].speaker]).alpha(0.25).hex())
+                        .style("opacity", 1);
                 };
 
                 svg.selectAll(".sentiment-circle")
