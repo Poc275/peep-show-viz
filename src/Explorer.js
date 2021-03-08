@@ -18,6 +18,7 @@ import SentenceAnnotation from "./visualisations/sentences/SentenceAnnotation";
 import ReferenceData from "./reference/ReferenceData";
 import SentenceAnnotations from "./visualisations/sentences/SentenceAnnotations";
 import SentimentAnnotations from "./visualisations/sentiment/SentimentAnnotations";
+import WordAnnotations from "./visualisations/words/WordAnnotations";
 import "./Explorer.css";
 
 
@@ -25,6 +26,7 @@ function Explorer() {
     const referenceData = new ReferenceData();
     const sentenceAnnotationsData = new SentenceAnnotations();
     const sentimentAnnotationsData = new SentimentAnnotations();
+    const wordAnnotationData = new WordAnnotations();
 
     const [visualisation, setVisualisation] = useState(null);
     const [dataStep, setDataStep] = useState(0);
@@ -43,6 +45,8 @@ function Explorer() {
     const [sentimentAnnotations, setSentimentAnnotations] = useState("");
     const [sentimentSelectedCharacter, setSentimentSelectedCharacter] = useState("Mark");
 
+    const [wordAnnotations, setWordAnnotations] = useState("");
+
     const { series } = useParams();
 
     // annotations hook
@@ -56,6 +60,8 @@ function Explorer() {
         setAudioAnnotations(sentenceAnnotationsData.audioAnnotations.filter(a => a.series === series));
 
         setSentimentAnnotations(sentimentAnnotationsData.characterSentiments[series - 1]);
+
+        setWordAnnotations(wordAnnotationData.annotations[series - 1]);
     }, [series]);
 
     const getVisualisation = (idx) => {
@@ -168,6 +174,10 @@ function Explorer() {
                     break;
 
                 case "word-search-reveal":
+                    d3.select(".word-search-top-words")
+                        .transition()
+                        .style("display", "none");
+
                     d3.select("#search-results")
                         .transition()
                         .duration(500)
@@ -326,22 +336,25 @@ function Explorer() {
                     {/* Words Section */}
                     <div className="step" data-step="2" data-trigger="words-intro">
                         <h1>Words</h1>
-                        <p>Now we'll take a look at the actual words used throughout the series.</p>
+                        <p>Now let's break down the sentences into individual words and look at how they are used throughout the series.</p>
                     </div>
 
                     <div className="step" data-step="2" data-trigger="words-reveal">
                         <p>Here are the top ten words used most in the series. Common words have been ignored to try and make the analysis 
-                            more interesting. Hover over them to see who said them the most.
+                            more interesting. Hover over them to see who said what.
                         </p>
+                        <p>{wordAnnotations}</p>
                     </div>
 
                     <div className="step" data-step="2" data-trigger="word-search-reveal">
-                        <p>Now use the search feature to look for your own words to see where they appear in the series.</p>
+                        <p>You can now use the search feature to look for your own words to see where they appear in the series. This will show every line from 
+                            the series where that word appears, who said it to whom and where it was said.
+                        </p>
                     </div>
 
 
 
-
+                    {/* Locations Section */}
                     <div className="step" data-step="3">
                         <h1>Locations</h1>
                         <p>This chord diagram visualises who spoke with whom.</p>

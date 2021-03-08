@@ -6,18 +6,18 @@ import SearchResult from "./SearchResult";
 import ReferenceData from "../../reference/ReferenceData";
 
 function WordSearch() {
+    const referenceData = new ReferenceData();
     const { series } = useParams();
     const [data, setData] = useState(null);
     const [searchTerm, setSearchTerm] = useState("");
     const [searchResults, setSearchResults] = useState([]);
-    const [topWords, setTopWords] = useState(null);
+    const [topWords, setTopWords] = useState([]);
     const [topWordUsage, setTopWordUsage] = useState(null);
     const [topWordSaidBy, setTopWordSaidBy] = useState(null);
     const [seriesColour, setSeriesColour] = useState("#0C662D");
 
     // reference data hook
     useEffect(() => {
-        const referenceData = new ReferenceData();
         setSeriesColour(referenceData.seriesColours[series - 1]);
     }, [series]);
 
@@ -55,16 +55,18 @@ function WordSearch() {
         // apply series colour underline to word on hover
         event.target.style.borderBottom = `5px solid ${seriesColour}`;
 
-        const word = event.target.outerText.trim();
+        const word = event.target.outerText.replace(',', '').trim();
         const usage = topWords[word];
         setTopWordUsage(usage);
 
         const saidBy = [];
-        for(const person in usage.who) {
-            saidBy.push({
-                saidBy: person,
-                total: usage.who[person]
-            });
+        if(usage) {
+            for(const person in usage.who) {
+                saidBy.push({
+                    saidBy: person,
+                    total: usage.who[person]
+                });
+            }
         }
         setTopWordSaidBy(saidBy);
     };
@@ -81,28 +83,28 @@ function WordSearch() {
             <h1 className="word-search-top-words">
                 {topWords ? Object.keys(topWords).map((word, idx) => {
                     return (
-                        <span key={idx} className="top-word" onMouseOver={showTopWordUsage} onMouseLeave={clearTopWordUsage}>
-                            {word} </span>
+                        <>
+                            <span key={idx} className="top-word" onMouseOver={showTopWordUsage} onMouseLeave={clearTopWordUsage}>
+                                {idx === 9 ? word : word + ','}</span>
+                            <span> </span>
+                        </>
                     );
                 }) : null}
             </h1>
-
             {
-                topWordUsage ? <p>Used {topWordUsage.total} times</p> : <p></p>
-            }
-            {
-                topWordSaidBy ? <p>Said by {topWordSaidBy.map(w => `${w.saidBy} ${w.total} times `)}</p> : <p></p>
+                topWordUsage && topWordSaidBy ? 
+                    <p>Said {topWordUsage.total} times by {topWordSaidBy.map((w, idx) => `${w.saidBy} (${w.total}) ${idx === topWordSaidBy.length - 1 ? '' : ', '}`)}</p> : 
+                    <p></p>
             }
 
             <div id="search-input">
-                <input 
+                <input style={{ borderBottom: `3px solid ${seriesColour}` }}
                     type="text" 
                     name="search" 
                     placeholder="Search for a word or phrase"
                     value={searchTerm}
                     onChange={searchOnChange}
                 />
-                <label htmlFor="search">Search for a word or phrase</label>
             </div>
 
             <div id="search-results">

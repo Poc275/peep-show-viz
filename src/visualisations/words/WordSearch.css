@@ -5,6 +5,7 @@
     align-content: stretch;
     align-items: center;
     text-align: center;
+    margin-right: 20px;
 }
 
 .word-search-top-words {
@@ -13,7 +14,7 @@
 }
 
 .top-word {
-    font-size: xx-large;
+    font-size: 2.5rem;
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
@@ -25,8 +26,38 @@
     align-self: center;
 }
 
+#search-input input {
+    width: 500px;
+    padding: 1rem 0 8px 0;
+    margin: 0;
+    border: none;
+    background: none;
+    font-size: larger;
+}
+
+#search-input input:focus {
+    outline: none;
+}
+
 #search-results {
     order: 2;
-    overflow: hidden;
-    max-height: 700px;
+    overflow-y: scroll;
+    max-height: 900px;
+    scrollbar-width: thin;
+    box-sizing: border-box;
+    /* add extra whitespace at the end to give room to scroll without skipping to next viz */
+    padding-bottom: 350px;
+}
+
+#search-results::-webkit-scrollbar {
+    width: 6px;
+}
+
+#search-results::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+#search-results::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
 }
