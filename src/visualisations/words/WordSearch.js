@@ -93,7 +93,7 @@ function WordSearch() {
             </h1>
             {
                 topWordUsage && topWordSaidBy ? 
-                    <p>Said {topWordUsage.total} times by {topWordSaidBy.map((w, idx) => `${w.saidBy} (${w.total}) ${idx === topWordSaidBy.length - 1 ? '' : ', '}`)}</p> : 
+                    <p>Said {topWordUsage.total} times by {topWordSaidBy.map((w, idx) => `${w.saidBy} (${w.total})${idx === topWordSaidBy.length - 1 ? '' : ', '}`)}</p> : 
                     <p></p>
             }
 

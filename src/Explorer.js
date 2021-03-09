@@ -164,6 +164,9 @@ function Explorer() {
                     break;
 
                 case "words-reveal":
+                    d3.select(".word-search-top-words")
+                        .style("display", "initial");
+
                     d3.selectAll(".top-word")
                         .transition()
                         .delay((d, i) => i * 200)
