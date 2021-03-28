@@ -13,12 +13,15 @@ import Locations from "./visualisations/locations/Locations";
 import Timeline from "./visualisations/timeline/Timeline";
 import Sentences from "./visualisations/sentences/Sentences";
 import Sentiment from "./visualisations/sentiment/Sentiment";
-import Stats from "./visualisations/stats/Stats";
+import Lines from "./visualisations/stats/Lines";
+import Swears from "./visualisations/stats/Swears";
+
 import SentenceAnnotation from "./visualisations/sentences/SentenceAnnotation";
 import ReferenceData from "./reference/ReferenceData";
 import SentenceAnnotations from "./visualisations/sentences/SentenceAnnotations";
 import SentimentAnnotations from "./visualisations/sentiment/SentimentAnnotations";
 import WordAnnotations from "./visualisations/words/WordAnnotations";
+import StatsAnnotations from "./visualisations/stats/StatsAnnotations";
 import "./Explorer.css";
 
 
@@ -27,6 +30,7 @@ function Explorer() {
     const sentenceAnnotationsData = new SentenceAnnotations();
     const sentimentAnnotationsData = new SentimentAnnotations();
     const wordAnnotationData = new WordAnnotations();
+    const statsAnnotations = new StatsAnnotations();
 
     const [visualisation, setVisualisation] = useState(null);
     const [dataStep, setDataStep] = useState(0);
@@ -47,6 +51,8 @@ function Explorer() {
 
     const [wordAnnotations, setWordAnnotations] = useState("");
 
+    const [linesAnnotations, setLinesAnnotations] = useState("");
+
     const { series } = useParams();
 
     // annotations hook
@@ -62,6 +68,8 @@ function Explorer() {
         setSentimentAnnotations(sentimentAnnotationsData.characterSentiments[series - 1]);
 
         setWordAnnotations(wordAnnotationData.annotations[series - 1]);
+
+        setLinesAnnotations(statsAnnotations.linesAnnotations[series - 1]);
     }, [series]);
 
     const getVisualisation = (idx) => {
@@ -92,7 +100,11 @@ function Explorer() {
                 break;
 
             case 6:
-                component = <Stats />
+                component = <Lines />
+                break;
+
+            case 7:
+                component = <Swears />
                 break;
 
             default:
@@ -238,6 +250,14 @@ function Explorer() {
                     sentimentRef.current.showGroupedData();
                     break;
 
+                case "swear-bars-highlight":
+                    // highlight 90th percentile and above swear bars which is 53 swears
+                    d3.selectAll(".swear-bar")
+                        .transition()
+                        .duration(800)
+                        .style("fill", d => referenceData.seriesColours[series - 1])
+                        .style("opacity", d => d.NumSwears >= 53 ? 1 : 0.4);
+
             }
         });
 
@@ -336,47 +356,10 @@ function Explorer() {
                     </div>
 
 
-                    {/* Words Section */}
-                    <div className="step" data-step="2" data-trigger="words-intro">
-                        <h1>Words</h1>
-                        <p>Now let's break down the sentences into individual words and look at how they are used throughout the series.</p>
-                    </div>
-
-                    <div className="step" data-step="2" data-trigger="words-reveal">
-                        <p>Here are the top ten words used most in the series. Common words have been ignored to try and make the analysis 
-                            more interesting. Hover over them to see who said what.
-                        </p>
-                        <p>{wordAnnotations}</p>
-                    </div>
-
-                    <div className="step" data-step="2" data-trigger="word-search-reveal">
-                        <p>You can now use the search feature to look for your own words to see where they appear in the series. This will show every line from 
-                            the series where that word appears, who said it to whom and where it was said.
-                        </p>
-                    </div>
-
-
-
-                    {/* Locations Section */}
-                    <div className="step" data-step="3">
-                        <h1>Locations</h1>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                    </div>
-
-                    <div className="step" data-step="4">
-                        <h1>Timeline</h1>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                        <p>This chord diagram visualises who spoke with whom.</p>
-                    </div>
-
-
                     {/* Mark v Jez sentences chart */}
                     <div className="step" data-step="5" data-trigger="mark-vs-jez">
                         <h1>Mark vs Jez</h1>
-                        <p>Let's focus in on Mark and Jez now, looking at how their lines compare with each other.</p>
+                        <p>As the main characters with the vast majority of lines, let's focus in on Mark and Jez now, looking at how their lines compare with each other.</p>
                         <p>Each horizontal bar represents a line spoken by Mark and Jez for each episode. The width of the bar 
                             indicates the number of words in the line with the colour highlighting if it was 
                             spoken <span style={{ borderBottom: "3px solid dodgerblue"}}>aloud</span> or <span style={{ borderBottom: "3px solid tomato"}}>"internally"</span>. From 
@@ -396,6 +379,7 @@ function Explorer() {
                             )
                         })
                     }
+
 
                     { /* Sentiment Analysis */}
                     <div className="step" data-step="6">
@@ -430,15 +414,79 @@ function Explorer() {
                     </div>
 
 
+                    {/* Words Section */}
+                    {/* <div className="step" data-step="2" data-trigger="words-intro">
+                        <h1>Words</h1>
+                        <p>Now let's break down the sentences into individual words and look at how they are used throughout the series.</p>
+                    </div>
+
+                    <div className="step" data-step="2" data-trigger="words-reveal">
+                        <p>Here are the top ten words used most in the series. Common words have been ignored to try and make the analysis 
+                            more interesting. Hover over them to see who said what.
+                        </p>
+                        <p>{wordAnnotations}</p>
+                    </div> */}
+
+                    <div className="step" data-step="2" data-trigger="word-search-reveal">
+                        <h1>Words</h1>
+                        <p>Now let's break down the sentences into individual words and look at how they are used throughout the series.</p>
+                        <p>You can use the search feature to look for your own words to see where they appear in the series. This will show every line from 
+                            the series where that word appears, who said it to whom and where it was said.
+                        </p>
+                    </div>
 
 
-                    <div className="step" data-step="7">
-                        <h1>Stats</h1>
-                        <p>This chord diagram visualises who spoke with whom.</p>
+                    {/* Locations Section */}
+                    {/* <div className="step" data-step="3">
+                        <h1>Locations</h1>
                         <p>This chord diagram visualises who spoke with whom.</p>
                         <p>This chord diagram visualises who spoke with whom.</p>
                         <p>This chord diagram visualises who spoke with whom.</p>
                     </div>
+
+                    <div className="step" data-step="4">
+                        <h1>Timeline</h1>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                        <p>This chord diagram visualises who spoke with whom.</p>
+                    </div> */}
+
+                    
+                    {/* Stats - Number of lines Section */}
+                    <div className="step" data-step="7">
+                        <h1>Stats</h1>
+                        <h3>Lines</h3>
+                        <p>Up to this point we've focused in on individual series, so finally, let's look at some statistics and see how this series compared with the 
+                            others. Here we have the number of lines per episode with the current series highlighted. We can see a definite upward trend as the series 
+                            progress.</p>
+                        <p>{linesAnnotations}</p>
+                    </div>
+
+
+                    {/* Stats - Swears Section */}
+                    <div className="step" data-step="8">
+                        <h3>Swears</h3>
+                        <p>Now let's look at the number of curse words per episode to see how strong the characters' swear game is. Over use of swearing can sometimes 
+                            be a ploy to get a cheap laugh out of a bad line, but I believe Peep Show uses swearing in a much more intelligent way so I was interested 
+                            to see how often it is used.
+                        </p>
+                        <p>Surprisingly, you get at least 25 swear words per episode, often a lot more. This seems high but there were over a quarter of a million words 
+                            throughout the entire nine series and with just over 2000 total swear words, it equates to less than 1%.
+                        </p>
+                        <p>The highlighted bars are from the current series but there is no clear trend either per series or overall. What we tend to see is more 
+                            swearing during acutely stressful or embarrassing situations, particularly when it is Mark who is under stress.
+                        </p>
+                    </div>
+
+                    <div className="step" data-step="8" data-trigger="swear-bars-highlight">
+                        <p>Here we have highlighted the 90th percentile and above and can see they are almost exclusively episodes where Mark is stressed 
+                            out, more than usual anyway. With the exception of "The Interview" episode where it was probably Jez that was stressed a bit more than Mark as he had 
+                            to go to an interview at JLB, the rest are due to Mark. "Conference" is when Mark has to pitch the unworkable "Project Zeus" to the JLB 
+                            board. "The Wedding" is the sweariest episode in the entire show, for obvious reasons. "Quantocking II" is where Mark finds out Jez is in love 
+                            with Dobby and plans to steal her from him and the final episode, "Are We Going To Be Alright?", is where Mark gets sacked from the bank for 
+                            approving Jez for a dodgy loan and thinks he's won April only to find out Super Hans and Jez have kidnapped Angus.</p>
+                    </div>
+
                 </article>
 
                 <figure id="fig" style={{ display: showVisual }}>

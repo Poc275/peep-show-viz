@@ -13,6 +13,7 @@ article {
     position: relative;
     padding: 0 1rem;
     max-width: 35rem;
+    min-width: 32rem;
 }
 
 article h1 {

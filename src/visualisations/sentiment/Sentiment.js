@@ -238,7 +238,7 @@ const Sentiment = forwardRef((props, ref) => {
         // we return our grouping functionality as this will be invoked 
         // inside the Explorer component once it scrolls into place
         showGroupedData() {
-            if(svg) {
+            if(svg && data) {
                 const t = d3.transition().delay(1000).duration(3000);
                 const collisionRad = 1;
                 const fudgeFactor = 2;

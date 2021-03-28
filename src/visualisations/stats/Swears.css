@@ -1,0 +1,24 @@
+.swears-yaxis .tick line {
+    stroke: #fff;
+    stroke-opacity: 0.25;
+    /* stroke-dasharray: 2,2; */
+}
+
+.swears-yaxis .tick text {
+    font-size: large;
+}
+
+.swears-tooltip {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    background: #eee;
+    max-width: 200px;
+    padding: 0 3px;
+}
+
+.swears-tooltip p {
+    margin: 0.5rem 0;
+    padding: 0;
+    text-align: center;
+}

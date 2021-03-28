@@ -1,0 +1,25 @@
+.lines-xaxis .tick line,
+.lines-yaxis .tick line {
+    stroke: #999;
+    stroke-opacity: 0.4;
+    stroke-dasharray: 2,2;
+}
+
+.lines-yaxis .tick text {
+    font-size: large;
+}
+
+.lines-tooltip {
+    position: fixed;
+    opacity: 0;
+    pointer-events: none;
+    background: #eee;
+    max-width: 200px;
+    padding: 0 3px;
+}
+
+.lines-tooltip p {
+    margin: 0.5rem 0;
+    padding: 0;
+    text-align: center;
+}

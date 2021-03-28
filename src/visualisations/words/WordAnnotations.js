@@ -5,7 +5,7 @@ const WordAnnotations = function() {
         "We see a lot of the same words from series 1 repeated again (really, going, mean, maybe, actually, sure). Interestingly we see \"love\" appear in this series as the focus shifts on to Mark and Jez's relationships.",
         "Again we see a repeat of words from the first two series. Interestingly Jez says \"love\" a lot more than Mark in this series as he tries to get back together with Big Suze whereas Mark has finally got together with Sophie.",
         "We don't see any new words that haven't appeared in previous series, continuing the theme. Mark mentions \"love\" more than Jez as he struggles with the prospect of marriage. We see the re-appearance of a curse word for the first time since the first series. This is probably due to the wedding fiasco.",
-        "",
+        "We see a lot of words from previous series reappear like really, going, maybe and actually. The potty-mouth level seems to have increased in this series with the presence of two curse words. Interestingly Super Hans is one of the most foul-mouted in this series, even beating Mark in some cases.",
         "",
         "",
         "",
@@ -13,4 +13,4 @@ const WordAnnotations = function() {
     ]
 }
 
-export default WordAnnotations;
+export default WordAnnotations; 
