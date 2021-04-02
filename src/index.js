@@ -7,7 +7,7 @@ import './index.css';
 
 ReactDOM.render(
   <React.StrictMode>
-    <Router>
+    <Router basename={'/peep-show-viz'}>
       <Switch>
         <Route path="*">
           <App />
