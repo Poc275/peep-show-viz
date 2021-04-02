@@ -442,9 +442,10 @@ function Explorer() {
                         <p>This chord diagram visualises who spoke with whom.</p>
                         <p>This chord diagram visualises who spoke with whom.</p>
                         <p>This chord diagram visualises who spoke with whom.</p>
-                    </div>
+                    </div> */}
 
-                    <div className="step" data-step="4">
+                    {/* Timeline Section */}
+                    {/* <div className="step" data-step="4">
                         <h1>Timeline</h1>
                         <p>This chord diagram visualises who spoke with whom.</p>
                         <p>This chord diagram visualises who spoke with whom.</p>

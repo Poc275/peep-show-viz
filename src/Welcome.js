@@ -85,6 +85,8 @@ function Welcome() {
 
     return (
         <div className="welcome-body">
+            <span id="release-ribbon"><a href="https://poc275.me/peep-show#alpha">Alpha - Find out more</a></span>
+
             <div className="wrapper">
                 <div className="loader" id="js-loader">
                     <div className="loader__cube" id="js-loader-cube"></div>
