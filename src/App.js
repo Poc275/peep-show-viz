@@ -1,36 +1,21 @@
-// import logo from './logo.svg';
 import './App.css';
-import Welcome from './Welcome';
 import { Switch, Route, useLocation } from 'react-router-dom';
-import { CSSTransition, TransitionGroup } from 'react-transition-group';
 import Explorer from './Explorer';
-import Test from './Test';
+import Splash from './Splash';
 
 function App() {
   let location = useLocation();
 
   return (
-    <TransitionGroup>
-      <CSSTransition 
-        key={location.key}
-        classNames="fade"
-        timeout={1300}
-      >
-        <Switch location={location}>
-          <Route exact path="/">
-            <Welcome />
-          </Route>
+    <Switch location={location}>
+      <Route exact path="/">
+        <Splash />
+      </Route>
 
-          <Route path="/:series/explore">
-            <Explorer />
-          </Route>
-
-          <Route path="/:series/test">
-            <Test />
-          </Route>
-        </Switch>
-      </CSSTransition>
-    </TransitionGroup>
+      <Route path="/:series/explore">
+        <Explorer />
+      </Route>
+    </Switch>
   );
 }
 

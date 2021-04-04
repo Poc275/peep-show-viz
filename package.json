@@ -4,6 +4,9 @@
   "private": true,
   "homepage": "https://poc275.me/peep-show-viz",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.35",
+    "@fortawesome/free-solid-svg-icons": "^5.15.3",
+    "@fortawesome/react-fontawesome": "^0.1.14",
     "@testing-library/jest-dom": "^5.11.6",
     "@testing-library/react": "^11.1.2",
     "@testing-library/user-event": "^12.2.2",
@@ -13,6 +16,8 @@
     "gsap": "^3.5.1",
     "intersection-observer": "^0.12.0",
     "lodash": "^4.17.20",
+    "pixi-filters": "^4.0.0",
+    "pixi.js": "^6.0.1",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-router-dom": "^5.2.0",
