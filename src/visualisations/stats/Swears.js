@@ -86,7 +86,10 @@ function Swears() {
                     <small>Series ${data.Season}, Episode ${data.Episode}</small>
                     <p>${data.NumSwears} swears</p>`;
 
-                tip.style("left", `${event.clientX + 20}px`)
+                // work out position for tooltip so it doesn't venture off screen
+                const xPos = data.Season === 9 ? event.offsetX + 400 : event.clientX;
+
+                tip.style("left", `${xPos + 20}px`)
                     .style("top", `${event.clientY}px`)
                     .transition()
                     .style("opacity", 0.9);
@@ -95,8 +98,11 @@ function Swears() {
             };
 
             const mousemove = (event, data) => {
+                // work out position for tooltip so it doesn't venture off screen
+                const xPos = data.Season === 9 ? event.offsetX + 400 : event.clientX;
+
                 d3.select(".tooltip")
-                    .style("left", `${event.clientX + 20}px`)
+                    .style("left", `${xPos + 20}px`)
                     .style("top", `${event.clientY}px`);
             };
 

@@ -100,7 +100,10 @@ function Lines() {
                     <small>Series ${data.Season}, Episode ${data.Episode}</small>
                     <p>${data.NumLines} lines</p>`;
 
-                tip.style("left", `${event.clientX + 20}px`)
+                // work out position for tooltip so it doesn't venture off screen
+                const xPos = data.Season === 9 ? event.offsetX + 400 : event.clientX;
+
+                tip.style("left", `${xPos + 20}px`)
                     .style("top", `${event.clientY}px`)
                     .transition()
                     .style("opacity", 0.9);
