@@ -306,6 +306,18 @@ function Explorer() {
     return (
         <main>
             <section id="scrolly">
+                <p id="menu">
+                    <a href="/1/explore"><span className={`series-tick${series == 1 ? ' active' : ''}`}></span></a>
+                    <a href="/2/explore"><span className={`series-tick${series == 2 ? ' active' : ''}`}></span></a>
+                    <a href="/3/explore"><span className={`series-tick${series == 3 ? ' active' : ''}`}></span></a>
+                    <a href="/4/explore"><span className={`series-tick${series == 4 ? ' active' : ''}`}></span></a>
+                    <a href="/5/explore"><span className={`series-tick${series == 5 ? ' active' : ''}`}></span></a>
+                    <a href="/6/explore"><span className={`series-tick${series == 6 ? ' active' : ''}`}></span></a>
+                    <a href="/7/explore"><span className={`series-tick${series == 7 ? ' active' : ''}`}></span></a>
+                    <a href="/8/explore"><span className={`series-tick${series == 8 ? ' active' : ''}`}></span></a>
+                    <a href="/9/explore"><span className={`series-tick${series == 9 ? ' active' : ''}`}></span></a>
+                </p>
+
                 <article>
                     {/* Conversation (chords) Section */}
                     <div className="step" data-step="1">

@@ -1,7 +1,7 @@
 #scrolly {
     position: relative;
     display: flex;
-    background-color: #f3f3f3;
+    background-color: #f5f5f5;
     /* padding: 1rem; */
 }
 
@@ -14,15 +14,16 @@ article {
     padding: 0 1rem;
     max-width: 35rem;
     min-width: 32rem;
+    top: 2rem;
 }
 
 article h1 {
-    margin: 0;
+    /* margin: 0; */
     font-size: xx-large;
 }
 
 article h2 {
-    margin: 0;
+    /* margin: 0; */
     font-size: x-large;
 }
 
@@ -138,4 +139,62 @@ figure {
 
 .sentiment-avatar.selected {
     border: 3px solid #f00;
+}
+
+/* menu styles */
+#menu {
+    position: fixed;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 1rem 0 1rem 1rem;
+    width: 35rem;
+    z-index: 2;
+}
+
+#menu > a {
+    margin: 0 6px 0 0;
+}
+
+#menu .series-tick {
+    opacity: 0.2;
+}
+
+#menu .series-tick.active {
+    opacity: 1;
+}
+
+#menu > a:nth-child(1) .series-tick {
+    border-left: 3px solid #0C662D;
+}
+
+#menu > a:nth-child(2) .series-tick {
+    border-left: 3px solid #005E8D;
+}
+
+#menu > a:nth-child(3) .series-tick {
+    border-left: 3px solid #A9251E;
+}
+
+#menu > a:nth-child(4) .series-tick {
+    border-left: 3px solid #882373;
+}
+
+#menu > a:nth-child(5) .series-tick {
+    border-left: 3px solid #F07122;
+}
+
+#menu > a:nth-child(6) .series-tick {
+    border-left: 3px solid #29AB87;
+}
+
+#menu > a:nth-child(7) .series-tick {
+    border-left: 3px solid #5147BB;
+}
+
+#menu > a:nth-child(8) .series-tick {
+    border-left: 3px solid #AC0C59;
+}
+
+#menu > a:nth-child(9) .series-tick {
+    border-left: 3px solid #150B41;
 }
