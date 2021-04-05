@@ -153,14 +153,14 @@ figure {
 
 #menu .nav {
     color: #130f30;
-}
-
-#menu > a {
     margin: 0 6px 0 0;
+    cursor: pointer;
 }
 
 #menu .series-tick {
+    margin: 0 6px 0 0;
     opacity: 0.2;
+    cursor: pointer;
 }
 
 #menu .series-tick.active {
@@ -170,38 +170,38 @@ figure {
 /* colour the ticks as per the series colour, 
   index starts at 2 as the first <a> is the 
   left chevron */
-#menu > a:nth-child(2) .series-tick {
+#menu > .series-tick:nth-child(2) {
     border-left: 3px solid #0C662D;
 }
 
-#menu > a:nth-child(3) .series-tick {
+#menu > .series-tick:nth-child(3) {
     border-left: 3px solid #005E8D;
 }
 
-#menu > a:nth-child(4) .series-tick {
+#menu > .series-tick:nth-child(4) {
     border-left: 3px solid #A9251E;
 }
 
-#menu > a:nth-child(5) .series-tick {
+#menu > .series-tick:nth-child(5) {
     border-left: 3px solid #882373;
 }
 
-#menu > a:nth-child(6) .series-tick {
+#menu > .series-tick:nth-child(6) {
     border-left: 3px solid #F07122;
 }
 
-#menu > a:nth-child(7) .series-tick {
+#menu > .series-tick:nth-child(7) {
     border-left: 3px solid #29AB87;
 }
 
-#menu > a:nth-child(8) .series-tick {
+#menu > .series-tick:nth-child(8) {
     border-left: 3px solid #5147BB;
 }
 
-#menu > a:nth-child(9) .series-tick {
+#menu > .series-tick:nth-child(9) {
     border-left: 3px solid #AC0C59;
 }
 
-#menu > a:nth-child(10) .series-tick {
+#menu >  .series-tick:nth-child(10) {
     border-left: 3px solid #150B41;
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import * as d3 from "d3";
 import "intersection-observer";
 import scrollama from "scrollama";
@@ -54,6 +54,7 @@ function Explorer() {
     const [linesAnnotations, setLinesAnnotations] = useState("");
 
     const { series } = useParams();
+    const history = useHistory();
 
     // annotations hook
     useEffect(() => {
@@ -303,25 +304,25 @@ function Explorer() {
         e.target.classList.add("selected");
     };
 
+    const goToSeries = (series) => {
+        history.push(`/${series}/explore`);
+    };
+
     return (
         <main>
             <section id="scrolly">
                 <p id="menu">
-                    <a href={`/peep-show-viz/${parseInt(series) - 1 === 0 ? 9 : parseInt(series) - 1}/explore`} className="nav">
-                        <FontAwesomeIcon icon={faChevronLeft} />
-                    </a>
-                    <a href="/peep-show-viz/1/explore"><span className={`series-tick${parseInt(series) === 1 ? ' active' : ''}`}></span></a>
-                    <a href="/peep-show-viz/2/explore"><span className={`series-tick${parseInt(series) === 2 ? ' active' : ''}`}></span></a>
-                    <a href="/peep-show-viz/3/explore"><span className={`series-tick${parseInt(series) === 3 ? ' active' : ''}`}></span></a>
-                    <a href="/peep-show-viz/4/explore"><span className={`series-tick${parseInt(series) === 4 ? ' active' : ''}`}></span></a>
-                    <a href="/peep-show-viz/5/explore"><span className={`series-tick${parseInt(series) === 5 ? ' active' : ''}`}></span></a>
-                    <a href="/peep-show-viz/6/explore"><span className={`series-tick${parseInt(series) === 6 ? ' active' : ''}`}></span></a>
-                    <a href="/peep-show-viz/7/explore"><span className={`series-tick${parseInt(series) === 7 ? ' active' : ''}`}></span></a>
-                    <a href="/peep-show-viz/8/explore"><span className={`series-tick${parseInt(series) === 8 ? ' active' : ''}`}></span></a>
-                    <a href="/peep-show-viz/9/explore"><span className={`series-tick${parseInt(series) === 9 ? ' active' : ''}`}></span></a>
-                    <a href={`/peep-show-viz/${parseInt(series) + 1 === 10 ? 1 : parseInt(series) + 1}/explore`} className="nav">
-                        <FontAwesomeIcon icon={faChevronRight} />
-                    </a>
+                    <FontAwesomeIcon icon={faChevronLeft} className="nav" onClick={() => goToSeries(parseInt(series) - 1 === 0 ? 9 : parseInt(series) - 1)} />
+                    <span className={`series-tick${parseInt(series) === 1 ? ' active' : ''}`} onClick={() => goToSeries(1)}></span>
+                    <span className={`series-tick${parseInt(series) === 2 ? ' active' : ''}`} onClick={() => goToSeries(2)}></span>
+                    <span className={`series-tick${parseInt(series) === 3 ? ' active' : ''}`} onClick={() => goToSeries(3)}></span>
+                    <span className={`series-tick${parseInt(series) === 4 ? ' active' : ''}`} onClick={() => goToSeries(4)}></span>
+                    <span className={`series-tick${parseInt(series) === 5 ? ' active' : ''}`} onClick={() => goToSeries(5)}></span>
+                    <span className={`series-tick${parseInt(series) === 6 ? ' active' : ''}`} onClick={() => goToSeries(6)}></span>
+                    <span className={`series-tick${parseInt(series) === 7 ? ' active' : ''}`} onClick={() => goToSeries(7)}></span>
+                    <span className={`series-tick${parseInt(series) === 8 ? ' active' : ''}`} onClick={() => goToSeries(8)}></span>
+                    <span className={`series-tick${parseInt(series) === 9 ? ' active' : ''}`} onClick={() => goToSeries(9)}></span>
+                    <FontAwesomeIcon icon={faChevronRight} className="nav" onClick={() => goToSeries(parseInt(series) + 1 === 10 ? 1 : parseInt(series) + 1)} />
                 </p>
 
                 <article>
