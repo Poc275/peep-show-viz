@@ -307,19 +307,19 @@ function Explorer() {
         <main>
             <section id="scrolly">
                 <p id="menu">
-                    <a href={`/${parseInt(series) - 1 === 0 ? 9 : parseInt(series) - 1}/explore`} className="nav">
+                    <a href={`/peep-show-viz/${parseInt(series) - 1 === 0 ? 9 : parseInt(series) - 1}/explore`} className="nav">
                         <FontAwesomeIcon icon={faChevronLeft} />
                     </a>
-                    <a href="/1/explore"><span className={`series-tick${parseInt(series) === 1 ? ' active' : ''}`}></span></a>
-                    <a href="/2/explore"><span className={`series-tick${parseInt(series) === 2 ? ' active' : ''}`}></span></a>
-                    <a href="/3/explore"><span className={`series-tick${parseInt(series) === 3 ? ' active' : ''}`}></span></a>
-                    <a href="/4/explore"><span className={`series-tick${parseInt(series) === 4 ? ' active' : ''}`}></span></a>
-                    <a href="/5/explore"><span className={`series-tick${parseInt(series) === 5 ? ' active' : ''}`}></span></a>
-                    <a href="/6/explore"><span className={`series-tick${parseInt(series) === 6 ? ' active' : ''}`}></span></a>
-                    <a href="/7/explore"><span className={`series-tick${parseInt(series) === 7 ? ' active' : ''}`}></span></a>
-                    <a href="/8/explore"><span className={`series-tick${parseInt(series) === 8 ? ' active' : ''}`}></span></a>
-                    <a href="/9/explore"><span className={`series-tick${parseInt(series) === 9 ? ' active' : ''}`}></span></a>
-                    <a href={`/${parseInt(series) + 1 === 10 ? 1 : parseInt(series) + 1}/explore`} className="nav">
+                    <a href="/peep-show-viz/1/explore"><span className={`series-tick${parseInt(series) === 1 ? ' active' : ''}`}></span></a>
+                    <a href="/peep-show-viz/2/explore"><span className={`series-tick${parseInt(series) === 2 ? ' active' : ''}`}></span></a>
+                    <a href="/peep-show-viz/3/explore"><span className={`series-tick${parseInt(series) === 3 ? ' active' : ''}`}></span></a>
+                    <a href="/peep-show-viz/4/explore"><span className={`series-tick${parseInt(series) === 4 ? ' active' : ''}`}></span></a>
+                    <a href="/peep-show-viz/5/explore"><span className={`series-tick${parseInt(series) === 5 ? ' active' : ''}`}></span></a>
+                    <a href="/peep-show-viz/6/explore"><span className={`series-tick${parseInt(series) === 6 ? ' active' : ''}`}></span></a>
+                    <a href="/peep-show-viz/7/explore"><span className={`series-tick${parseInt(series) === 7 ? ' active' : ''}`}></span></a>
+                    <a href="/peep-show-viz/8/explore"><span className={`series-tick${parseInt(series) === 8 ? ' active' : ''}`}></span></a>
+                    <a href="/peep-show-viz/9/explore"><span className={`series-tick${parseInt(series) === 9 ? ' active' : ''}`}></span></a>
+                    <a href={`/peep-show-viz/${parseInt(series) + 1 === 10 ? 1 : parseInt(series) + 1}/explore`} className="nav">
                         <FontAwesomeIcon icon={faChevronRight} />
                     </a>
                 </p>
